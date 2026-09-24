@@ -309,7 +309,7 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Settings") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -659,7 +659,7 @@ screen file_slots(title):
                 yalign 1.0
 
                 hbox:
-                    xalign 0.5
+                    xalign 0.5  
 
                     spacing gui.page_spacing
 
@@ -734,81 +734,88 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    add "images/Diner_Background.png" align (0.0, 0.0) zoom 0.5
+    add "gui/overlay/notepad_background.png" align (0.5, 0.5)
+    add "gui/overlay/top_page.png" align (0.5, 0.5)
+    
+
+    if renpy.variant("pc") or renpy.variant("web"):
+        hbox:        
+            text "Windowed" color "FF0000"
+            imagebutton:
+                idle "gui/button/switch_left.png"
+                hover "gui/button/switch_left.png"
+                selected_idle "gui/button/switch_right.png"
+                selected_hover "gui/button/switch_right.png"
+                action Preference("display", "toggle")
+            text "Fullscreen" color "C4C4C4"
+            xalign 0.5
+            yalign 0.2
+                    
 
         vbox:
-
-            hbox:
-                box_wrap True
-
-                if renpy.variant("pc") or renpy.variant("web"):
-
-                    vbox:
-                        style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
-
-                vbox:
-                    style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
-
-                ## Additional vboxes of type "radio_pref" or "check_pref" can be
-                ## added here, to add additional creator-defined preferences.
-
-            null height (4 * gui.pref_spacing)
-
-            hbox:
-                style_prefix "slider"
-                box_wrap True
-
-                vbox:
-
-                    label _("Text Speed")
-
-                    bar value Preference("text speed")
-
-                    label _("Auto-Forward Time")
-
-                    bar value Preference("auto-forward time")
-
-                vbox:
-
-                    if config.has_music:
-                        label _("Music Volume")
-
-                        hbox:
-                            bar value Preference("music volume")
-
-                    if config.has_sound:
-
-                        label _("Sound Volume")
-
-                        hbox:
-                            bar value Preference("sound volume")
-
-                            if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+            label _("")
+            textbutton _("Skip Unseen Text") action Preference("skip", "toggle") style ("check_button")
+            textbutton _("Skip After Choices") action Preference("after choices", "toggle") style ("check_button")
+            textbutton _("Skip Transitions") action InvertSelected(Preference("transitions", "toggle")) style ("check_button")
+            xalign 0.44
+            yalign 0.395
+            spacing 6 
 
 
-                    if config.has_voice:
-                        label _("Voice Volume")
+            ## Additional vboxes of type "radio_pref" or "check_pref" can be
+            ## added here, to add additional creator-defined preferences.
 
-                        hbox:
-                            bar value Preference("voice volume")
+        null height (4 * gui.pref_spacing)
 
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+        hbox:
+            style_prefix "slider"
+            box_wrap True
 
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
+            vbox:
 
-                        textbutton _("Mute All"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+                label _("Text Speed")
+
+                bar value Preference("text speed")
+
+                label _("Auto-Forward Time")
+
+                bar value Preference("auto-forward time")
+
+            vbox:
+
+                if config.has_music:
+                    label _("Music Volume")
+
+                    hbox:
+                        bar value Preference("music volume")
+
+                if config.has_sound:
+
+                    label _("Sound Volume")
+
+                    hbox:
+                        bar value Preference("sound volume")
+
+                        if config.sample_sound:
+                            textbutton _("Test") action Play("sound", config.sample_sound)
+
+
+                if config.has_voice:
+                    label _("Voice Volume")
+
+                    hbox:
+                        bar value Preference("voice volume")
+
+                        if config.sample_voice:
+                            textbutton _("Test") action Play("voice", config.sample_voice)
+
+                if config.has_music or config.has_sound or config.has_voice:
+                    null height gui.pref_spacing
+
+                    textbutton _("Mute All"):
+                        action Preference("all mute", "toggle")
+                        style "mute_all_button"
 
 
 style pref_label is gui_label
@@ -863,6 +870,7 @@ style check_vbox:
 style check_button:
     properties gui.button_properties("check_button")
     foreground "gui/button/check_[prefix_]foreground.png"
+
 
 style check_button_text:
     properties gui.text_properties("check_button")
