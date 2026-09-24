@@ -258,4 +258,4 @@ m "...thank you."
 
     # This ends the game.
 
-return
+jump mainroute2
