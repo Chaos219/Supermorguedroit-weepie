@@ -30,9 +30,9 @@ label start:
 "Outside my window, dead in the daylight, the diner downstairs is already bleeding its aggressive neon sign through the curtains:"
 "THE SUPERMURGIDROID WEEPIE."
 show mc_annoyed:
-    xalign 0.7
+    xpos 0.7
     yalign 1.0
-    zoom 0.4
+    zoom 0.35
 "I swing my legs out of bed and immediately trip."
 "My foot catches on a pile of thrifted clothes I tossed onto the scorch mark on the carpet."
 "I stumble forward, barely catching my balance."
@@ -45,17 +45,17 @@ show mc_annoyed:
 "I snatch it up without breaking stride, tossing it aside as I lunge for the heavy rotary phone."
 hide mc_annoyed
 show mc_main:
-    xalign 0.7
+    xpos 0.65
     yalign 1.0
-    zoom 0.5
+    zoom 0.455
 m "Courier, Kessler - ah, I mean. Hello, Dorothy speaking."
 b "Dorothy."
 "His voice is unhurried. Almost too calm. My jaw clenches tight."
 hide mc_main
 show mc_annoyed:
-    xalign 0.7
+    xpos 0.7
     yalign 1.0
-    zoom 0.4
+    zoom 0.35
 m "M-Mr. Hollis."
 b "I'm giving Chet the Glenn piece."
 m "T-The… I pitched that. Multiple times. A-And I already have the Mercury press packet, a source at Lewis-"
@@ -76,18 +76,18 @@ b "You'll write about every wedding, yard sale, and Garden Club, and you'll stop
 "I stand there, my hand clutching the receiver. The dial tone hums against my ear."
 hide mc_annoyed
 show mc_angry:
-    xalign 0.7
+    xpos 0.7
     yalign 1.0
-    zoom 0.4
+    zoom 0.35
 m "The nerve of that man! I have filed at least a hundred pieces, and only one of them had to have a correction."
 m "So what if it happened to be the most important one?!"
 m "For the love of god, Chet put a dead woman's name on a wedding announcement in June, and nobody said as much as boo-"
 "I slam the receiver back onto the cradle. All the fight drains out of me, exchanged for existential dread."
 hide mc_angry
 show mc_main:
-    xalign 0.7
+    xpos 0.65
     yalign 1.0
-    zoom 0.5
+    zoom 0.455
 "I force my face into the tight smile aimed at precisely no one. I've been using it far too often lately."
 m "You want a story? Fine. I'll give you one."
 menu:
@@ -97,15 +97,15 @@ menu:
         "I put the phone back down."
         hide mc_main
         show mc_annoyed:
-            xalign 0.7
+            xpos 0.7
             yalign 1.0
-            zoom 0.4
+            zoom 0.35
         m "Must be at the shop already."
         hide mc_annoyed
         show mc_main:
-            xalign 0.7
+            xpos 0.65
             yalign 1.0
-            zoom 0.5
+            zoom 0.455
         "Unwilling to do any real writing, I decide to clean up my room—at least a little."
     "Get to Work":
         "I stretch, adjust the pencil in my hair, and sit down at my typewriter."
@@ -119,9 +119,9 @@ menu:
 "Perhaps I should open the windows. Later."
 hide mc_main
 show mc_annoyed:
-    xalign 0.7
+    xpos 0.7
     yalign 1.0
-    zoom 0.4
+    zoom 0.35
 "And there it is. Glaring at me, sprawled a ridiculous four columns wide."
 "NEW EATERY OPENS ON ROUTE NINE - THE SUPERMURGIDROID WEEPIE" 
 "PROMISES ROLLER SERVICE, OPEN LATE HOURS"
@@ -156,7 +156,17 @@ m "Who looked at that name and said yes?"
 "Then, I groan, lean precariously over the edge of the bed, and retrieve it."
 "Because no matter how furious I am at the world, I simply cannot leave a newspaper on the floor."
 #Scene 2 Dorothys Apartment - Afternoon
+hide mc_annoyed
+show mc_main:
+    xpos 0.65
+    yalign 1.0
+    zoom 0.455
 "The afternoon sun bakes the cramped room, casting long, mocking shadows across the floorboards."
+hide mc_main
+show mc_annoyed:
+    xpos 0.7
+    yalign 1.0
+    zoom 0.35
 "I pace. Three fast steps across the rug. Pivot. Three steps back."
 "I gnaw on the edge of an already-ruined thumbnail, my eyes constantly darting back to the typewriter."
 "The floor is currently a graveyard for six violently crumpled balls of paper."
@@ -174,6 +184,11 @@ m "The machine plant. The line workers have been causing trouble at the tavern l
 m "Maybe there’s a strike brewing. Dad works the floor; he'd definitely know something..."
 "I let out a hollow, humourless laugh, gesturing wildly at the empty room with my pencil."
 m "Except he’d rather take a bullet than snitch on a soul."
+hide mc_annoyed
+show mc_main:
+    xpos 0.65
+    yalign 1.0
+    zoom 0.455
 "I force myself to stand perfectly still."
 "The sheer desperation is starting to leak into my voice, and I absolutely hate the sound of it."
 m "I have one month. That's plenty of time! I don't have to figure it all out today."
@@ -181,6 +196,11 @@ m "I have one month. That's plenty of time! I don't have to figure it all out to
 "An argument is breaking out downstairs in the diner."
 "It’s muffled by the wood and plaster, but the furious cadence is unmistakable."
 "Two distinct voices, rapidly escalating in volume."
+hide mc_main
+show mc_annoyed:
+    xpos 0.7
+    yalign 1.0
+    zoom 0.35
 "I glare down at the floor."
 "Instantly, the tight, suffocating knot of anxiety in my chest hardens into a sharp spike of righteous fury."
 m "I cannot WORK in this ruckus."
@@ -188,6 +208,11 @@ m "I cannot WORK in this ruckus."
 "A second later, a massive CLANG echoes through the floor as something large and metallic violently crashes over."
 "By the time the noise stops, I am already reaching for my shoes."
 # Scene 3. The Supermurgidroid Weepie - Evening
+hide mc_annoyed
+show mc_angry:
+    xpos 0.7
+    yalign 1.0
+    zoom 0.35
 "I push through the heavy doors at a brisk pace, my winter coat thrown hastily over my nightgown."
 "I still have a steno pencil tucked in my hair."
 "I am entirely, resolutely prepared to interrupt somebody's evening."
@@ -200,6 +225,15 @@ m "I cannot WORK in this ruckus."
 "Behind the counter, the specials board proudly reads MONDAY: STRAWBERRY MILKSHAKE in an elegant, sweeping cursive that looks like it belongs on a 19th-century treaty, not a diner menu."
 "Two milkshakes sit on the counter like evidence at a high-stakes trial."
 "Standing over them is the duo responsible."
+hide mc_angry
+show adelaide_main:
+    xpos -0.05
+    yalign 1.0
+    zoom 0.55
+show leeroy_sigh:
+    xpos 0.7
+    yalign 1.0
+    zoom 0.49
 "LEEROY looks to be in his early twenties."
 "He is African-American, wears a paper hat with dreads tucked underneath in a ponytail."
 "Before I have the chance to assess his appearance further, he gestures animatedly with a long metal spoon."
@@ -210,18 +244,62 @@ m "I cannot WORK in this ruckus."
 l "- it's about balance, Adelaide. You can't just put cold things in a cup and call it a beverage-"
 a "I followed the card."
 l "Like a hostage."
+hide leeroy_sigh
+hide adelaide_main
+show mc_annoyed:
+    xpos 0.7
+    yalign 1.0
+    zoom 0.35
 "I march right up to the chrome counter."
 m "It is twenty past nine. I am trying to sleep and yet, and I can hear every single-"
+hide mc_annoyed
+show adelaide_main:
+    xpos -0.05
+    yalign 1.0
+    zoom 0.55
+show leeroy_main:
+    xpos 0.55
+    yalign 1.0
+    zoom 0.5
 "I stop. Both of them have turned to look at me."
 "They do not look guilty. Nor do they look annoyed that I barged into their conversation."
 "The man looks at me with sheer, unadulterated delight."
 l "A customer!"
+show adelaide_main:
+    xpos -0.05
+    yalign 1.0
+    zoom 0.55
 a "She's not a customer, Leeroy. She's the upstairs."
 l "But she can be the judge!"
+hide adelaide_main
+hide leeroy_main
+show mc_annoyed:
+    xpos 0.7
+    yalign 1.0
+    zoom 0.35
 m "I beg your-"
+hide mc_annoyed
+show mc_annoyed:
+    xpos 0.0
+    yalign 1.0
+    zoom 0.35
+show leeroy_main:
+    xpos 0.55
+    yalign 1.0
+    zoom 0.5
 "(already sliding both frosted glasses down the counter toward me)"
 l "Help us determine which milkshake is better."
+hide mc_annoyed
+show adelaide_main:
+    xpos -0.05
+    yalign 1.0
+    zoom 0.55
 a "Leeroy, why are you dragging her into-."
+hide leeroy_main
+show mc_annoyed:
+    xpos 0.7
+    yalign 1.0
+    zoom 0.35
 "I look at the milkshakes. I look at the door I just came through. I look back at the milkshakes."
 "I strongly dislike milkshakes."
 "I think of them as dessert pretending to be a drink, and I consider anyone who orders them to be, well, children."
@@ -229,14 +307,34 @@ a "Leeroy, why are you dragging her into-."
 m "Fine. Fine! Just because I want to sleep this century,"
 "I say, sitting on a stool."
 "I take LeeRoy's glass. I take a reluctant sip."
+hide adelaide_main
 "It is genuinely not bad. Not great either, but it's not like I'm an expert on the things I dislike."
 m "Hm."
+hide mc_annoyed
+show mc_annoyed:
+    xpos 0.0
+    yalign 1.0
+    zoom 0.35
+show leeroy_main:
+    xpos 0.55
+    yalign 1.0
+    zoom 0.5
 l "You see? That's the ratio right there. Four parts to one."
 l "You get the cold hitting you up front, and then it comes back around on you, sweet at the back, like a-"
 "He delivers this entire speech with total, sweeping conviction."
 "But it sounds off. Has he been rehearsing it?"
 "It sounds far too polished, like words you'd find in a novel rather than spoken."
 m "It's fine. An… average milkshake."
+hide leeroy_main
+hide mc_annoyed
+show mc_annoyed:
+    xpos 0.7
+    yalign 1.0
+    zoom 0.35
+show adelaide_main:
+    xpos -0.05
+    yalign 1.0
+    zoom 0.55
 "I reach for Adelaide's glass. I take a sip."
 "I freeze as my taste buds are deeply shocked—my entire face changes, scrunches."
 "My soul takes a brief vacation."
@@ -252,19 +350,35 @@ a "A pinch. I don't know how much a pinch is. I used what I could pick up."
 "A long pause. I stare at her perfectly manicured hands."
 m "Have you tasted it?"
 a "I'm not feeling like drinking dairy."
+hide mc_annoyed
+hide adelaide_main
 "And then, from directly behind them, a voice speaks from the shadows at the end of the counter."
 o "She is right about the salt."
 "I flinch and spin around."
+show oe_main:
+    xpos 0.62
+    yalign 1.0
+    zoom 0.5
 "Another person has been standing there the entire scene. In the dark. Perfectly, impossibly still."
 "They are holding a broom in one hand, but they hold it gracefully like a butler rather than a cleaner."
 "They do not blink. They do not shift their weight as they address me."
 "They haven't moved a single muscle since before I walked in, and I am only now, startlingly, aware that they were there at all."
+hide oe_main
+show mc_annoyed:
+    xpos 0.7
+    yalign 1.0
+    zoom 0.35
+show oe_main:
+    xpos -0.08
+    yalign 1.0
+    zoom 0.5
 m "How long have you been sta-"
 o "Yes."
 m "That's not... that isn't an answer to that question."
 "Ōe considers this. Seriously."
 "As though regular social interaction is a puzzle they haven't quite solved yet."
 "They do not produce a second answer."
+hide oe_main
 menu:
     "Give them the whole lecture.":
         "I cross my arms and deliver my unexpected food criticism."
@@ -273,22 +387,45 @@ menu:
         "I pay good money for this room, and as landlords they're certainly not delivering."
     "Ask what they were actually arguing about.":
         "The frustration seeps out of me."
+        show leeroy_sigh:
+            xpos 0.05
+            yalign 1.0
+            zoom 0.5
         "I ask, and LeeRoy admits, deflated, that nobody has come in since they opened."
         l "Well, they did the first time, but for some reason customers are not returning."
+        hide mc_annoyed
+        show adelaide_main:
+            xpos 0.6
+            yalign 1.0
+            zoom 0.55
         "Adelaide looks away and says, quietly,"
         a "He wanted tonight to go well."
         # [LISTEN +1]
-
+hide adelaide_main
+show mc_annoyed:
+    xpos 0.7
+    yalign 1.0
+    zoom 0.35
 "Either way, I end up giving LeeRoy some practical advice—less syrup."
 "Chill the glasses first."
 "Under no circumstances let Adelaide near the salt shaker."
 "Perhaps she should be banned from using salt altogether."
+hide leeroy_sigh
+show leeroy_main:
+    xpos -0.1
+    yalign 1.0
+    zoom 0.5
 "LeeRoy writes it all down."
 "He has no pen and thus resorts to scribbling ink on his hand."
 "I consider giving him one of my papers, but then—he should have enough money to afford his own writing supplies."
 m "Right. Wonderful. Delighted to help. Now if you'd be so kind, I'm intending to return to sleep."
+hide leeroy_main
 "I stand up, pulling my coat tighter around my nightgown."
 "I am halfway out the door when the voice stops me."
+show oe_main:
+    xpos -0.08
+    yalign 1.0
+    zoom 0.5
 o "Miss Kessler."
 "I freeze. I slowly turn around."
 "I don't recall introducing myself to them."
@@ -296,8 +433,10 @@ o "Miss Kessler."
 o "Sleep well."
 "A quiet silence spreads between us."
 m "...thank you."
+hide oe_main
 "I push the door open and leave."
 "It swings shut behind me, drowning out the rest of their conversation."
+hide mc_annoyed
 
     # This ends the game.
 
