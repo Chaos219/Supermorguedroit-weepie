@@ -50,8 +50,8 @@ define gui.muted_color = '#003d51'
 define gui.hover_muted_color = '#005b7a'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#ffffff'
-define gui.interface_text_color = '#ffffff'
+define gui.text_color = '#000000'
+define gui.interface_text_color = '#000000'
 
 
 ## Fonts and Font Sizes ########################################################
@@ -134,7 +134,7 @@ define gui.dialogue_xpos = 402
 define gui.dialogue_ypos = 75
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 1116
+define gui.dialogue_width = 1000
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -187,8 +187,6 @@ define gui.check_button_borders = Borders(27, 6, 6, 6)
 define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(15, 6, 15, 6)
-
-define gui.Skip_button_borders = Borders(0, 100, 0, 0)
 
 define gui.quick_button_borders = Borders(15, 6, 15, 0)
 define gui.quick_button_text_size = 21

@@ -135,7 +135,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox_adjustedlines.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -242,18 +242,24 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
-            style_prefix "quick"
-            style "quick_menu"
+        add "gui/quick_menu_notepad.png" align (0.92, 1.2)
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+        transform:
+
+            rotate 4
+
+            vbox:
+                style_prefix "quick"
+                style "quick_menu"
+
+                textbutton _("Back") action Rollback()
+                textbutton _("History") action ShowMenu('history')
+                textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+                textbutton _("Auto") action Preference("auto-forward", "toggle")
+                textbutton _("Save") action ShowMenu('save')
+                textbutton _("Q.Save") action QuickSave()
+                textbutton _("Q.Load") action QuickLoad()
+                textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -263,12 +269,12 @@ init python:
 
 default quick_menu = True
 
-style quick_menu is hbox
+style quick_menu is vbox
 style quick_button is default
 style quick_button_text is button_text
 
 style quick_menu:
-    xalign 0.5
+    xalign 0.9
     yalign 1.0
 
 style quick_button:
@@ -352,6 +358,19 @@ style navigation_button_text:
 
 screen main_menu():
 
+    # add "Diner_Background.png" zoom 0.5
+    # add "gui/title_card_front.png" align (0.9, 1.0)
+
+    # label("The Supermorguedroit Weepie") align (0.8, 0.2)
+
+    
+    # textbutton ("Start Game . . . . . . . . . . . . . . . . . . . . .1.50") xpos 1000 ypos 400 action Start()
+    # textbutton ("Load Game . . . . . . . . . . . . . . . . . . . . . 1.50") xpos 1000 ypos 450 action Jump("load")
+    # textbutton ("Settings . . . . . . . . . . . . . . . . . . . . . .1.50") xpos 1000 ypos 500 action Jump("preferences")
+    # textbutton ("Credits . . . . . . . . . . . . . . . . . . . . . . 1.50") xpos 1000 ypos 550 action Jump("help")
+    # textbutton ("Quit . . . . . . . . . . . . . . . . . . . . . . . .1.50") xpos 1000 ypos 600 action Quit(confirm=not main_menu)
+
+
     ## This ensures that any other menu screen is replaced.
     tag menu
 
@@ -404,6 +423,9 @@ style main_menu_title:
 
 style main_menu_version:
     properties gui.text_properties("version")
+
+    
+
 
 
 ## Game Menu screen ############################################################
@@ -731,92 +753,180 @@ style slot_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
 screen preferences():
-
+    
     tag menu
 
-    add "images/Diner_Background.png" align (0.0, 0.0) zoom 0.5
-    add "gui/overlay/notepad_background.png" align (0.5, 0.5)
-    add "gui/overlay/top_page.png" align (0.5, 0.5)
-    
-
-    if renpy.variant("pc") or renpy.variant("web"):
-        hbox:        
-            text "Windowed" color "FF0000"
-            imagebutton:
-                idle "gui/button/switch_left.png"
-                hover "gui/button/switch_left.png"
-                selected_idle "gui/button/switch_right.png"
-                selected_hover "gui/button/switch_right.png"
-                action Preference("display", "toggle")
-            text "Fullscreen" color "C4C4C4"
-            xalign 0.5
-            yalign 0.2
-                    
+    use game_menu(_("Preferences"), scroll="viewport"):
 
         vbox:
-            label _("")
-            textbutton _("Skip Unseen Text") action Preference("skip", "toggle") style ("check_button")
-            textbutton _("Skip After Choices") action Preference("after choices", "toggle") style ("check_button")
-            textbutton _("Skip Transitions") action InvertSelected(Preference("transitions", "toggle")) style ("check_button")
-            xalign 0.44
-            yalign 0.395
-            spacing 6 
+
+            hbox:
+                box_wrap True
+
+                if renpy.variant("pc") or renpy.variant("web"):
+
+                    vbox:
+                        style_prefix "radio"
+                        label _("Display")
+                        textbutton _("Window") action Preference("display", "window")
+                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+
+                vbox:
+                    style_prefix "check"
+                    label _("Skip")
+                    textbutton _("Unseen Text") action Preference("skip", "toggle")
+                    textbutton _("After Choices") action Preference("after choices", "toggle")
+                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+
+                ## Additional vboxes of type "radio_pref" or "check_pref" can be
+                ## added here, to add additional creator-defined preferences.
+
+            null height (4 * gui.pref_spacing)
+
+            hbox:
+                style_prefix "slider"
+                box_wrap True
+
+                vbox:
+
+                    label _("Text Speed")
+
+                    bar value Preference("text speed")
+
+                    label _("Auto-Forward Time")
+
+                    bar value Preference("auto-forward time")
+
+                vbox:
+
+                    if config.has_music:
+                        label _("Music Volume")
+
+                        hbox:
+                            bar value Preference("music volume")
+
+                    if config.has_sound:
+
+                        label _("Sound Volume")
+
+                        hbox:
+                            bar value Preference("sound volume")
+
+                            if config.sample_sound:
+                                textbutton _("Test") action Play("sound", config.sample_sound)
 
 
-            ## Additional vboxes of type "radio_pref" or "check_pref" can be
-            ## added here, to add additional creator-defined preferences.
+                    if config.has_voice:
+                        label _("Voice Volume")
 
-        null height (4 * gui.pref_spacing)
+                        hbox:
+                            bar value Preference("voice volume")
 
-        hbox:
-            style_prefix "slider"
-            box_wrap True
+                            if config.sample_voice:
+                                textbutton _("Test") action Play("voice", config.sample_voice)
 
-            vbox:
+                    if config.has_music or config.has_sound or config.has_voice:
+                        null height gui.pref_spacing
 
-                label _("Text Speed")
+                        textbutton _("Mute All"):
+                            action Preference("all mute", "toggle")
+                            style "mute_all_button"
 
-                bar value Preference("text speed")
-
-                label _("Auto-Forward Time")
-
-                bar value Preference("auto-forward time")
-
-            vbox:
-
-                if config.has_music:
-                    label _("Music Volume")
-
-                    hbox:
-                        bar value Preference("music volume")
-
-                if config.has_sound:
-
-                    label _("Sound Volume")
-
-                    hbox:
-                        bar value Preference("sound volume")
-
-                        if config.sample_sound:
-                            textbutton _("Test") action Play("sound", config.sample_sound)
+    # add "images/Diner_Background.png" align (0.0, 0.0) zoom 0.5
+    # add "gui/overlay/notepad_background.png" align (0.5, 0.5)
+    # imagebutton:
+        
+    #     idle "gui/overlay/tab_idle_background.png"
+    #     hover "gui/overlay/tab_selected_background.png"
+    #     align (0.36, 0.3)
+    #     action ShowMenu("save")
+    # add "gui/overlay/top_page.png" align (0.5, 0.5)
+    
+    # textbutton _("Main Menu") action MainMenu()
 
 
-                if config.has_voice:
-                    label _("Voice Volume")
+    # if renpy.variant("pc") or renpy.variant("web"):
+    #     hbox:        
+    #         text "Windowed" color "FF0000"
+    #         imagebutton:
+    #             idle "gui/button/switch_left.png"
+    #             hover "gui/button/switch_left.png"
+    #             selected_idle "gui/button/switch_right.png"
+    #             selected_hover "gui/button/switch_right.png"
+    #             action Preference("display", "toggle")
+    #         text "Fullscreen" color "C4C4C4"
+    #         xalign 0.5
+    #         yalign 0.3
+                    
 
-                    hbox:
-                        bar value Preference("voice volume")
+    #     vbox:
+    #         label _("")
+    #         textbutton _("Skip Unseen Text") action Preference("skip", "toggle") style ("check_button")
+    #         textbutton _("Skip After Choices") action Preference("after choices", "toggle") style ("check_button")
+    #         textbutton _("Skip Transitions") action InvertSelected(Preference("transitions", "toggle")) style ("check_button")
+    #         xalign 0.44
+    #         yalign 0.395
+    #         spacing 6 
 
-                        if config.sample_voice:
-                            textbutton _("Test") action Play("voice", config.sample_voice)
 
-                if config.has_music or config.has_sound or config.has_voice:
-                    null height gui.pref_spacing
+    #         ## Additional vboxes of type "radio_pref" or "check_pref" can be
+    #         ## added here, to add additional creator-defined preferences.
 
-                    textbutton _("Mute All"):
-                        action Preference("all mute", "toggle")
-                        style "mute_all_button"
+    #     null height (4 * gui.pref_spacing)
 
+    #     vbox:
+    #         style_prefix "slider"
+    #         box_wrap True
+
+
+    #         vbox:
+
+    #             if config.has_music:
+    #                 label _("Music Volume")
+
+    #                 hbox:
+    #                     bar value Preference("music volume")
+
+    #             if config.has_sound:
+
+    #                 label _("Sound Volume")
+
+    #                 hbox:
+    #                     bar value Preference("sound volume")
+
+    #                     if config.sample_sound:
+    #                         textbutton _("Test") action Play("sound", config.sample_sound)
+            
+
+
+    #             if config.has_voice:
+    #                 label _("Voice Volume")
+
+    #                 hbox:
+    #                     bar value Preference("voice volume")
+
+    #                     if config.sample_voice:
+    #                         textbutton _("Test") action Play("voice", config.sample_voice)
+
+    #             if config.has_music or config.has_sound or config.has_voice:
+    #                 null height gui.pref_spacing
+
+    #                 textbutton _("Mute All"):
+    #                     action Preference("all mute", "toggle")
+    #                     style "mute_all_button"
+
+    #         vbox:
+
+    #             label _("Text Speed")
+
+    #             bar value Preference("text speed")
+
+    #             label _("Auto-Forward Time")
+
+    #             bar value Preference("auto-forward time")
+            
+    #         xalign 0.56
+    #         yalign 1.0
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text
