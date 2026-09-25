@@ -11,6 +11,9 @@ define b = Character("Mr. Hollis")
 define c = Character("Chet")
 define t1 = Character("Teenager1")
 define t2 = Character("Teenager2")
+image bg bedroom = im.Scale("images/bedroom_bg.png",1920,1080)
+image bg diner = im.Scale("images/diner_bg.png",1920,1080)
+image bg office = im.Scale("images/office_bg.png",1920,1080)
 
 
 # The game starts here.
@@ -40,7 +43,7 @@ label mainroute2:
     menu:
         "Handle things your way":
             show mc_main:
-                xpos 0.65
+                xpos -0.05
                 yalign 1.0
                 zoom 0.455
             "I drop into the chair at the Royal and hammer out three pages of notes before I budge."
@@ -49,7 +52,7 @@ label mainroute2:
             "Now to hit them with the facts and hope they take even a scrap of it seriously."
         "Ask what they are struggling with":
             show mc_main:
-                xpos 0.65
+                xpos -0.05
                 yalign 1.0
                 zoom 0.455
             "I grab my steno pad and a pencil."
@@ -60,18 +63,23 @@ label mainroute2:
 "I slip my shoes back on, one after the other."
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "Deep breath. Out the door and down the stairs."
 # Scene 5: The Supermurgidroid Weepie - Day
+scene bg diner
+show mc_annoyed:
+    xpos 0.0
+    yalign 1.0
+    zoom 0.35
 "I take the narrow, creaking stairs down to the ground floor and push through the swinging door."
 "The diner is completely dead."
 "The buzzing neon sign outside bleeds a harsh red light across the black-and-white checkered linoleum."
 "I slide into the nearest booth and let my steno pad land on the Formica with a sigh that rattles the sugar packets."
 "I barely have time to reach for my pen before LeeRoy materialises at my elbow, clutching a tall, frosted glass in both hands like he’s guarding a sacred relic."
 show leeroy_shrug:
-    xpos 0.05
+    xpos 0.7
     yalign 1.0
     zoom 0.49
 l "On the house."
@@ -81,7 +89,7 @@ l "It’s an apology. For the racket."
 m "You can’t bribe me with food, LeeRoy."
 hide leeroy_shrug
 show leeroy_sigh:
-    xpos 0.05
+    xpos 0.7
     yalign 1.0
     zoom 0.49
 "He sets it down anyway."
@@ -89,7 +97,7 @@ l "I know. I'm just apologising with it."
 "I drag the straw closer and take a sip."
 hide mc_annoyed
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "My eyebrows go up, just a little. For me, that’s practically applause."
@@ -100,7 +108,7 @@ l "Four to one ratio."
 m "…This is a genuinely good milkshake, LeeRoy. Thank you."
 hide leeroy_sigh
 show leeroy_main:
-    xpos -0.1
+    xpos 0.55
     yalign 1.0
     zoom 0.5
 "He slides into the booth across from me, uninvited, grinning so wide I’m surprised his face doesn’t crack."
@@ -110,7 +118,7 @@ show leeroy_main:
 m "I meant to ask, who did the-"
 hide leeroy_main
 show leeroy_shrug:
-    xpos 0.05
+    xpos 0.7
     yalign 1.0
     zoom 0.49
 "And then LeeRoy’s face falls, all at once, the way a child’s does when a balloon pops."
@@ -121,7 +129,7 @@ l "Eleven days our doors have been open, and I’ve had a fella ask to use the p
 "For a second, I think about going easy. I don’t."
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 m "Well. It’s the name."
@@ -145,7 +153,7 @@ m "Super Morgue. There is a spelling mistake."
 l "But-"
 hide leeroy_shrug
 show leeroy_sigh:
-    xpos 0.05
+    xpos 0.7
     yalign 1.0
     zoom 0.5
 "LeeRoy stares past me at his own sign, glowing red through the window."
@@ -199,7 +207,7 @@ o "I have work to do. Goodbye."
 hide oe_main
 hide leeroy_sigh
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "I reach into my coat pocket, pull out the crumpled newspaper clipping, and slide it across the table toward LeeRoy."
@@ -210,14 +218,14 @@ m "Even if you changed the sign, people will probably stick with the 'first' ver
 "I tip my glass toward the booth where the teenagers are busy arranging themselves on the floor to look like corpses for the camera."
 m "And frankly? It seems to resonate with the youth."
 show adelaide_main:
-    xpos -0.05
+    xpos 0.6
     yalign 1.0
     zoom 0.55
 "Adelaide walks briskly past us on her way back from taking their order, sliding the handwritten ticket onto the kitchen pass without breaking her stride."
 a "It isn’t the worst name he’s had."
 hide mc_main
 show leeroy_sigh:
-    xpos 0.7
+    xpos 0.05
     yalign 1.0
     zoom 0.49
 "(Instantly)"
@@ -227,35 +235,35 @@ l "We’re not talking about it."
 hide leeroy_sigh
 hide adelaide_main
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "They scatter back to work. I watch them serve customers and feel a flicker of satisfaction. There’s potential here."
 menu:
     "Ask Adelaide what the other name was.":
         show adelaide_main:
-            xpos -0.05
+            xpos 0.6
             yalign 1.0
             zoom 0.55
         "I decide to push my luck and ask her."
         "She claims she swore a solemn oath never to say it out loud."
         hide adelaide_main
         show leeroy_blush:
-            xpos 0.05
+            xpos 0.7
             yalign 1.0
             zoom 0.5
         "LeeRoy turns a shade of red I didn’t know the human body was capable of and suddenly finds something incredibly urgent to scrub at the far end of the counter."
         hide leeroy_blush
     "Ask LeeRoy what the diner is struggling with.":
         show leeroy_sigh:
-            xpos 0.05
+            xpos 0.7
             yalign 1.0
             zoom 0.5
         "He rattles off a list-some things I’d already scribbled in my notepad, others I hadn’t even thought of."
         "Turns out running a diner is a messier business than I figured."
         hide leeroy_sigh
         show leeroy_main:
-            xpos -0.1
+            xpos 0.55
             yalign 1.0
             zoom 0.5
         "I jot down a few ideas to help and slide the note across to LeeRoy. He gives me a grateful look."
@@ -263,7 +271,7 @@ menu:
         # [LISTEN +1]
 
 show leeroy_main:
-    xpos -0.1
+    xpos 0.55
     yalign 1.0
     zoom 0.5
 "The teenagers finally clear out, leaving sticky coin trays and a tip big enough for LeeRoy to gawk at like it belongs in a museum."
@@ -273,7 +281,7 @@ hide leeroy_main
 "She holds the Kodak Brownie up to her eye, squinting through the viewfinder, and photographs the buzzing red neon sign over and over from different angles until the novelty finally wears off and she jogs to catch up with her friends."
 "I watch them go from my spot in the vinyl booth, chin in my hand."
 show oe_main:
-    xpos -0.08
+    xpos 0.6
     yalign 1.0
     zoom 0.5
 "A few feet away, Ōe stands at the far end of the counter, where the neon can’t quite reach."
@@ -290,6 +298,11 @@ hide oe_main
 "Among the scribbled drafts and interview notes, I write the word “morgue” and underline it twice, hard and deep into the page."
 "I’ve got an idea."
 # Scene 1: Dorothy's Apartment - Night
+scene bg bedroom
+show mc_main:
+    xpos -0.05
+    yalign 1.0
+    zoom 0.455
 "I drop onto the sagging edge of the mattress, night robe still wrapped around my chin, trapping in the October chill."
 "The fabric reeks of dust and cigarettes."
 "No matter how many times I wash my hair, that smell clings to me like a bad habit."
@@ -300,7 +313,7 @@ hide oe_main
 "Whoever is down there sweeps like he’s never seen a broom before."
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 m "Who the hell writes notes on their hand?"
@@ -344,8 +357,9 @@ m "I am absolutely not getting involved."
 "Then the scrape starts up again. Scuff-drag. Scuff-drag."
 hide mc_annoyed
 # Scene 2: Vesper Falls Courier - Newsroom - Day
+scene bg office
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "Tuesday, Special of the Day: Cheeseburger"
@@ -371,7 +385,7 @@ c "Focus on the roller skates, Anne. The readers eat that stuff up."
 "That’s not my name?"
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "I whip around to face Chet, every muscle wound tight as a spring."
@@ -379,7 +393,7 @@ show mc_annoyed:
 b "Two hundred words."
 hide mc_annoyed
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "My jaw snaps shut. The fight drains out of me, puddling on the floor."
@@ -392,7 +406,7 @@ b "Good."
 # Scene 3: Courier - Stairwell - Continuous
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "I barely make it to the landing before my feet lock up."
@@ -406,6 +420,11 @@ m "Absolute garbage."
 "I stare her down for a beat."
 "Then I fold the clipping in half, neat as I can, tuck it deep in my coat pocket, and head back toward the diner."
 # Scene 4: Dorothy's Apartment - Day
+scene bg bedroom
+show mc_melancholy:
+    xpos 0.0
+    yalign 1.0
+    zoom 0.35
 "The old shortbread tin sits open on the kitchen table, jammed up against the heavy black Singer just to make enough room to work."
 "Inside, a roll of crumpled bills sits pinched by a tired rubber band, barely thicker than a deck of cards."
 "Next to it, the Greyhound timetable, creased and worn soft from being folded to the same page over and over. CLEVELAND - NEW YORK CITY."
@@ -425,11 +444,6 @@ m "…well, at least the rent’s cheap."
 "Maybe it's the name that goes on forever, maybe it's the lousy service, but whatever it is, it keeps folks away from this place like it's contagious."
 m "Nobody's eating there."
 "I fold my arms tight against the cold seeping through the glass."
-hide mc_annoyed
-show mc_melancholy:
-    xpos 0.7
-    yalign 1.0
-    zoom 0.35
 m "But if this keeps up-"
 "I glance back at the sad little tin on the table."
 m "-then the diner goes under. And the building goes into foreclosure with it. And I lose the room."
@@ -443,8 +457,9 @@ m "…there are only so many excuses I can use."
 m "I have to keep the milkshake people in business."
 hide mc_melancholy
 # Scene 6: Dorothy's Apartment - Wednesday Evening
+scene bg bedroom
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "Wednesday, Special of the Day: Cheesy Fries"
@@ -461,7 +476,7 @@ show mc_main:
 "Now the room is swallowed by real, honest darkness."
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 m "Oh, come on."
@@ -469,7 +484,7 @@ m "Oh, come on."
 "Then there’s a knock at my door. Three taps. Precise, sharp, spaced out just so."
 "I blindly feel my way across the room, bump my hip against the edge of the desk, and pull the door open."
 show oe_main:
-    xpos -0.08
+    xpos 0.6
     yalign 1.0
     zoom 0.5
 "Ōe stand in the drafty hallway, holding a thick wax candle."
@@ -493,6 +508,15 @@ o "I do not know how."
 "Ōe is still standing there in the dark, looking at me with the calm patience of a house cat waiting for a door to open."
 m "Lead the way."
 # Scene 7: Basement - Continuous
+scene bg diner
+show mc_annoyed:
+    xpos 0.0
+    yalign 1.0
+    zoom 0.35
+show oe_main:
+    xpos 0.6
+    yalign 1.0
+    zoom 0.5
 "I have to really lean into it to get the basement fuse box open."
 "The metal door groans, rust flaking off under my hands."
 "I strike a match against the wall-Oe just stands there, holding the candle."
@@ -527,7 +551,7 @@ menu:
         "Ōe don’t answer."
         hide oe_main
         show oe_smile:
-            xpos -0.13
+            xpos 0.55
             yalign 1.0
             zoom 0.52
         "They just keep smiling at me-a thin, polite, utterly dead smile."
@@ -544,7 +568,7 @@ menu:
         # [LISTEN +1]
 
 show oe_main:
-    xpos -0.08
+    xpos 0.6
     yalign 1.0
     zoom 0.5
 "I turn for the stairs, hand landing on the bannister, but I stop short."
@@ -556,8 +580,9 @@ m "…Right. Good. Good night."
 hide oe_main
 hide mc_annoyed
 # Scene 8: The Supermurgidroid Weepie - Thursday
+scene bg diner
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "Thursday, Special of the Day: Onion rings"
@@ -569,7 +594,7 @@ show mc_main:
 "Not browned, not seared, just wet and pale, like it was boiled by mistake."
 "There’s a single limp leaf of iceberg lettuce sitting right in the middle. A tragic little hat."
 show leeroy_shrug:
-    xpos 0.05
+    xpos 0.7
     yalign 1.0
     zoom 0.5
 "LeeRoy is on the other side of the counter, hands behind his back, rocking on his heels."
@@ -578,7 +603,7 @@ l "Well? What do you think? On the house, just like promised."
 "I pick up the burger. The bottom bun is damp. I take a bite. Chew."
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "It’s like biting into a wet kitchen sponge."
@@ -586,7 +611,7 @@ show mc_annoyed:
 m "LeeRoy. Who made this?"
 hide leeroy_shrug
 show leeroy_main:
-    xpos -0.1
+    xpos 0.55
     yalign 1.0
     zoom 0.5
 "(Beaming proudly)"
@@ -594,7 +619,7 @@ l "I did!"
 m "What in God's name have you done to it?"
 hide leeroy_main
 show leeroy_sigh:
-    xpos 0.05
+    xpos 0.7
     yalign 1.0
     zoom 0.5
 "(His smile faltering slightly)"
@@ -612,21 +637,22 @@ l "Wait, Miss Kessler, you can't go behind the-"
 hide leeroy_sigh
 hide mc_annoyed
 # Scene 9: Diner Kitchen - Continuous
+scene bg diner
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "I know my way around a kitchen."
 "I move through the cramped kitchen fast."
 "I yank open the under-counter icebox, pop the lids off stainless steel prep pans, and make noises of genuine, unfiltered disgust."
 show leeroy_sigh:
-    xpos 0.05
+    xpos 0.7
     yalign 1.0
     zoom 0.5
 "LeeRoy trails closely behind me, hovering over my shoulder like an anxious duckling."
 hide leeroy_sigh
 show adelaide_main:
-    xpos -0.05
+    xpos 0.6
     yalign 1.0
     zoom 0.55
 "Adelaide appears in the doorway, leaning against the frame with her arms folded, watching the show with detached interest."
@@ -638,7 +664,7 @@ m "Why is the ketchup warm? Why is it sitting next to the radiator? And what-"
 "Instantly, I regret it. It smells like burnt tyres."
 m "-is this Monday's coffee?"
 show leeroy_sigh:
-    xpos 0.05
+    xpos 0.7
     yalign 1.0
     zoom 0.5
 l "We keep it on a low simmer. Just in case somebody comes in."
@@ -648,13 +674,13 @@ m "Have any of you ever actually worked in a kitchen? Any of you?"
 "Silence drops over the room."
 hide leeroy_sigh
 show adelaide_main:
-    xpos -0.05
+    xpos 0.6
     yalign 1.0
     zoom 0.55
 "Adelaide suddenly finds a water stain on the ceiling absolutely fascinating."
 hide adelaide_main
 show leeroy_sigh:
-    xpos 0.05
+    xpos 0.7
     yalign 1.0
     zoom 0.5
 "LeeRoy studies the scuff marks on his saddle shoes."
@@ -666,14 +692,14 @@ hide leeroy_sigh
 "Ōe’s beautiful, antique cursive gets wiped away, replaced by my own ugly scrawl."
 "At least you can read it from the street."
 show oe_main:
-    xpos -0.08
+    xpos 0.6
     yalign 1.0
     zoom 0.5
 "Ōe stands by the jukebox, staring at the board with a look I can't decipher."
 "Back in the kitchen, I crank the griddle up to three-hundred-and-fifty degrees."
 hide oe_main
 show leeroy_main:
-    xpos -0.1
+    xpos 0.55
     yalign 1.0
     zoom 0.5
 "I teach LeeRoy how to season a patty."
@@ -702,21 +728,22 @@ hide adelaide_main
 "Or maybe he's on some new health kick his friend's friend swears by."
 "He says it all so earnestly, I can't even argue. I just shake my head and keep cooking."
 # Scene 10: The Supermurgidroid Weepie - Evening
+scene bg diner
 "The specials board finally makes sense through the window, bold chalk letters lit up by the streetlights."
 "The counter shines."
 "Under the heat lamp, there’s a cheeseburger, fresh off the griddle."
 "The bun is golden."
 "The American cheese has melted just right, dripping over the patty’s edge."
 "For once, it looks like food. Better yet, it smells like food too."
+show mc_main:
+    xpos -0.05
+    yalign 1.0
+    zoom 0.455
 "I step back from the pass and wipe grease from my forehead with my wrist."
 "I’m out of breath, cheeks burning from the griddle’s heat, and I can’t help grinning."
 "I cross my arms tight, trying not to let it show."
-show mc_annoyed:
-    xpos 0.7
-    yalign 1.0
-    zoom 0.35
 show leeroy_main:
-    xpos -0.1
+    xpos 0.55
     yalign 1.0
     zoom 0.5
 "LeeRoy leans over the counter, staring at the burger like it’s the Crown Jewels."
@@ -732,7 +759,7 @@ m "Look, I have to write some hundred words about this diner by Friday."
 m "I’d rather not have to write a piece about a tragic municipal foreclosure. That's all."
 hide leeroy_main
 show adelaide_main:
-    xpos -0.05
+    xpos 0.6
     yalign 1.0
     zoom 0.55
 "Adelaide sits in the corner booth, eyes glued to her ledger."

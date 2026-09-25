@@ -8,7 +8,9 @@ define a = Character("Adelaide")
 define l = Character("LeeRoy")
 define o = Character("Ōe")
 define b = Character("Mr. Hollis")
-
+image bg bedroom = im.Scale("images/bedroom_bg.png",1920,1080)
+image bg diner = im.Scale("images/diner_bg.png",1920,1080)
+image bg office = im.Scale("images/office_bg.png",1920,1080)
 
 # The game starts here.
 
@@ -29,8 +31,9 @@ label start:
 "The room smells of stale coffee and aerosol hairspray, and as far as my eye can see, it’s in a state of chaotic disarray."
 "Outside my window, dead in the daylight, the diner downstairs is already bleeding its aggressive neon sign through the curtains:"
 "THE SUPERMURGIDROID WEEPIE."
+scene bg bedroom
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "I swing my legs out of bed and immediately trip."
@@ -45,7 +48,7 @@ show mc_annoyed:
 "I snatch it up without breaking stride, tossing it aside as I lunge for the heavy rotary phone."
 hide mc_annoyed
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 m "Courier, Kessler - ah, I mean. Hello, Dorothy speaking."
@@ -53,7 +56,7 @@ b "Dorothy."
 "His voice is unhurried. Almost too calm. My jaw clenches tight."
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 m "M-Mr. Hollis."
@@ -76,7 +79,7 @@ b "You'll write about every wedding, yard sale, and Garden Club, and you'll stop
 "I stand there, my hand clutching the receiver. The dial tone hums against my ear."
 hide mc_annoyed
 show mc_angry:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 m "The nerve of that man! I have filed at least a hundred pieces, and only one of them had to have a correction."
@@ -85,7 +88,7 @@ m "For the love of god, Chet put a dead woman's name on a wedding announcement i
 "I slam the receiver back onto the cradle. All the fight drains out of me, exchanged for existential dread."
 hide mc_angry
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "I force my face into the tight smile aimed at precisely no one. I've been using it far too often lately."
@@ -97,13 +100,13 @@ menu:
         "I put the phone back down."
         hide mc_main
         show mc_annoyed:
-            xpos 0.7
+            xpos 0.0
             yalign 1.0
             zoom 0.35
         m "Must be at the shop already."
         hide mc_annoyed
         show mc_main:
-            xpos 0.65
+            xpos -0.05
             yalign 1.0
             zoom 0.455
         "Unwilling to do any real writing, I decide to clean up my room—at least a little."
@@ -119,7 +122,7 @@ menu:
 "Perhaps I should open the windows. Later."
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "And there it is. Glaring at me, sprawled a ridiculous four columns wide."
@@ -158,13 +161,13 @@ m "Who looked at that name and said yes?"
 #Scene 2 Dorothys Apartment - Afternoon
 hide mc_annoyed
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "The afternoon sun bakes the cramped room, casting long, mocking shadows across the floorboards."
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "I pace. Three fast steps across the rug. Pivot. Three steps back."
@@ -186,7 +189,7 @@ m "Maybe there’s a strike brewing. Dad works the floor; he'd definitely know s
 m "Except he’d rather take a bullet than snitch on a soul."
 hide mc_annoyed
 show mc_main:
-    xpos 0.65
+    xpos -0.05
     yalign 1.0
     zoom 0.455
 "I force myself to stand perfectly still."
@@ -198,7 +201,7 @@ m "I have one month. That's plenty of time! I don't have to figure it all out to
 "Two distinct voices, rapidly escalating in volume."
 hide mc_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "I glare down at the floor."
@@ -208,9 +211,10 @@ m "I cannot WORK in this ruckus."
 "A second later, a massive CLANG echoes through the floor as something large and metallic violently crashes over."
 "By the time the noise stops, I am already reaching for my shoes."
 # Scene 3. The Supermurgidroid Weepie - Evening
+scene bg diner
 hide mc_annoyed
 show mc_angry:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "I push through the heavy doors at a brisk pace, my winter coat thrown hastily over my nightgown."
@@ -247,7 +251,7 @@ l "Like a hostage."
 hide leeroy_sigh
 hide adelaide_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "I march right up to the chrome counter."
@@ -274,7 +278,7 @@ l "But she can be the judge!"
 hide adelaide_main
 hide leeroy_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 m "I beg your-"
@@ -291,13 +295,13 @@ show leeroy_main:
 l "Help us determine which milkshake is better."
 hide mc_annoyed
 show adelaide_main:
-    xpos -0.05
+    xpos 0.6
     yalign 1.0
     zoom 0.55
 a "Leeroy, why are you dragging her into-."
 hide leeroy_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "I look at the milkshakes. I look at the door I just came through. I look back at the milkshakes."
@@ -328,11 +332,11 @@ m "It's fine. An… average milkshake."
 hide leeroy_main
 hide mc_annoyed
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 show adelaide_main:
-    xpos -0.05
+    xpos 0.6
     yalign 1.0
     zoom 0.55
 "I reach for Adelaide's glass. I take a sip."
@@ -356,7 +360,7 @@ hide adelaide_main
 o "She is right about the salt."
 "I flinch and spin around."
 show oe_main:
-    xpos 0.62
+    xpos 0.6
     yalign 1.0
     zoom 0.5
 "Another person has been standing there the entire scene. In the dark. Perfectly, impossibly still."
@@ -365,11 +369,11 @@ show oe_main:
 "They haven't moved a single muscle since before I walked in, and I am only now, startlingly, aware that they were there at all."
 hide oe_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 show oe_main:
-    xpos -0.08
+    xpos 0.6
     yalign 1.0
     zoom 0.5
 m "How long have you been sta-"
@@ -388,14 +392,14 @@ menu:
     "Ask what they were actually arguing about.":
         "The frustration seeps out of me."
         show leeroy_sigh:
-            xpos 0.05
+            xpos 0.7
             yalign 1.0
             zoom 0.5
         "I ask, and LeeRoy admits, deflated, that nobody has come in since they opened."
         l "Well, they did the first time, but for some reason customers are not returning."
         hide mc_annoyed
         show adelaide_main:
-            xpos 0.6
+            xpos -0.05
             yalign 1.0
             zoom 0.55
         "Adelaide looks away and says, quietly,"
@@ -403,7 +407,7 @@ menu:
         # [LISTEN +1]
 hide adelaide_main
 show mc_annoyed:
-    xpos 0.7
+    xpos 0.0
     yalign 1.0
     zoom 0.35
 "Either way, I end up giving LeeRoy some practical advice—less syrup."
@@ -412,7 +416,7 @@ show mc_annoyed:
 "Perhaps she should be banned from using salt altogether."
 hide leeroy_sigh
 show leeroy_main:
-    xpos -0.1
+    xpos 0.55
     yalign 1.0
     zoom 0.5
 "LeeRoy writes it all down."
@@ -423,7 +427,7 @@ hide leeroy_main
 "I stand up, pulling my coat tighter around my nightgown."
 "I am halfway out the door when the voice stops me."
 show oe_main:
-    xpos -0.08
+    xpos 0.6
     yalign 1.0
     zoom 0.5
 o "Miss Kessler."
@@ -437,6 +441,7 @@ hide oe_main
 "I push the door open and leave."
 "It swings shut behind me, drowning out the rest of their conversation."
 hide mc_annoyed
+scene bg bedroom
 
     # This ends the game.
 
