@@ -120,7 +120,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 25
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
@@ -207,3 +207,7 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+default preferences.volume.music = 0.7
+default preferences.volume.sfx = 0.7
+default preferences.volume.voice = 0.7
