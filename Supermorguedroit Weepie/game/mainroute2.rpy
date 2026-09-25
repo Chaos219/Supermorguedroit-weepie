@@ -3,7 +3,11 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define m = Character("Dorothy")
+define a = Character("Adelaide")
+define l = Character("LeeRoy")
+define o = Character("Ōe")
+define b = Character("Mr. Hollis")
 
 
 # The game starts here.
