@@ -29,6 +29,7 @@ label start:
 "The room smells of stale coffee and aerosol hairspray, and as far as my eye can see, it’s in a state of chaotic disarray."
 "Outside my window, dead in the daylight, the diner downstairs is already bleeding its aggressive neon sign through the curtains:"
 "THE SUPERMURGIDROID WEEPIE."
+show mc_annoyed
 "I swing my legs out of bed and immediately trip."
 "My foot catches on a pile of thrifted clothes I tossed onto the scorch mark on the carpet."
 "I stumble forward, barely catching my balance."
@@ -39,9 +40,11 @@ label start:
 "Waiting for me to finish up my next grandiose story that will finally hit the mark. Surely."
 "A stray sock lies abandoned on the floorboards."
 "I snatch it up without breaking stride, tossing it aside as I lunge for the heavy rotary phone."
+show mc_main
 m "Courier, Kessler - ah, I mean. Hello, Dorothy speaking."
 b "Dorothy."
 "His voice is unhurried. Almost too calm. My jaw clenches tight."
+show mc_annoyed
 m "M-Mr. Hollis."
 b "I'm giving Chet the Glenn piece."
 m "T-The… I pitched that. Multiple times. A-And I already have the Mercury press packet, a source at Lewis-"
@@ -60,10 +63,12 @@ m "And if I fail?"
 b "You'll write about every wedding, yard sale, and Garden Club, and you'll stop being a nuisance about it."
 "Click. The line goes dead."
 "I stand there, my hand clutching the receiver. The dial tone hums against my ear."
+show mc_angry
 m "The nerve of that man! I have filed at least a hundred pieces, and only one of them had to have a correction."
 m "So what if it happened to be the most important one?!"
 m "For the love of god, Chet put a dead woman's name on a wedding announcement in June, and nobody said as much as boo-"
 "I slam the receiver back onto the cradle. All the fight drains out of me, exchanged for existential dread."
+show mc_main
 "I force my face into the tight smile aimed at precisely no one. I've been using it far too often lately."
 m "You want a story? Fine. I'll give you one."
 menu:
@@ -71,7 +76,9 @@ menu:
         "I pick up the receiver. My fingers dial the all-too-familiar number."
         "It rings and rings. She doesn't pick up."
         "I put the phone back down."
+        show mc_annoyed
         m "Must be at the shop already."
+        show mc_main
         "Unwilling to do any real writing, I decide to clean up my room—at least a little."
     "Get to Work":
         "I stretch, adjust the pencil in my hair, and sit down at my typewriter."
@@ -83,6 +90,7 @@ menu:
 "I read—no, I consume the text, chewing through the column the way other people chew their overcooked bacon."
 "I snap the broadsheet open, the scent of black ink briefly cutting through the stale air of my apartment."
 "Perhaps I should open the windows. Later."
+show mc_annoyed
 "And there it is. Glaring at me, sprawled a ridiculous four columns wide."
 "NEW EATERY OPENS ON ROUTE NINE - THE SUPERMURGIDROID WEEPIE" 
 "PROMISES ROLLER SERVICE, OPEN LATE HOURS"
