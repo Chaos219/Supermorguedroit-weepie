@@ -1,15 +1,12 @@
 # The script of the game goes in this file.
 
 init python:
-    def boopy_voice(event, interact=True, boopfile="bleep007.ogg", **kwargs):
-        if not interact:
-            return
+    def boopy_voice(event, boopfile="bleep007.ogg", **kwargs):
 
         if event == "show_done":
-            renpy.sound.play(boopfile)
+            renpy.sound.play(boopfile, loop=True)
         elif event == "slow_done":
-            renpy.sound.stop()
-
+            renpy.sound.stop()    
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
@@ -54,6 +51,7 @@ label start:
         perspective True
 
 "Monday, Special of the Day: Strawberry Milkshake"
+play music "intro.ogg"
 "The tape starts to play. A drum fill. Then brass."
 "TITLE CARD slashes across the screen in hot pink, cutting perfectly to the rhythm of the music."
 "Black-and-white stock footage flashes by: A lonely two-lane highway. A rusted water tower."
@@ -61,18 +59,20 @@ label start:
 "A row of identical front porches with perfectly cut lawns."
 "A woman in a pressed apron, waving mindlessly at nothing."
 "The footage is beautiful, but lacks substance. A soul. It's just so… ordinary. Mundane."
-"The music cuts out mid-phase. A postcard is shown on the screen."
+"A postcard is shown on the screen."
 "VESPER FALLS, OHIO - SEPTEMBER 1962"
+stop music
+play sound "phone.ogg"
 "A telephone rings. The shrill sound tears through the silence."
-"I bolt upright."
-"The room smells of stale coffee and aerosol hairspray, and as far as my eye can see, it’s in a state of chaotic disarray."
-"Outside my window, dead in the daylight, the diner downstairs is already bleeding its aggressive neon sign through the curtains:"
-"THE SUPERMURGIDROID WEEPIE."
 scene bg bedroom
 show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
+"I bolt upright."
+"The room smells of stale coffee and aerosol hairspray, and as far as my eye can see, it’s in a state of chaotic disarray."
+"Outside my window, dead in the daylight, the diner downstairs is already bleeding its aggressive neon sign through the curtains:"
+"THE SUPERMURGIDROID WEEPIE."
     
 camera:
     subpixel True zoom 1.32 
@@ -157,6 +157,7 @@ show M annoyed:
 with hpunch
 "I stumble forward, barely catching my balance."
 "I weave through the room, passing a hissing radiator and orange crates stacked high with my prized rock-and-roll vinyls."
+play sound "phone.ogg"
 "I pass the kitchen table, the current domain of my sewing machine."
 
 show M annoyed:
@@ -183,6 +184,7 @@ with zoomin
 
 "Waiting for me to finish up my next grandiose story that will finally hit the mark. Surely."
 "A stray sock lies abandoned on the floorboards."
+play sound "phone.ogg"
 
 show M melancholy:
     subpixel True 
@@ -201,8 +203,8 @@ show M main:
 
 show M main:
     subpixel True pos (0.01, 1.42) zoom 0.72 
-
-
+stop sound
+play sound "pickup.ogg"
 m "Courier, Kessler - ah, I mean. Hello, Dorothy speaking."
 b "Dorothy."
 "His voice is unhurried. Almost too calm. My jaw clenches tight."
