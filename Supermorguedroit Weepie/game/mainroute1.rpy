@@ -86,7 +86,7 @@ show M annoyed:
 "I bolt upright."
 "The room smells of stale coffee and aerosol hairspray, and as far as my eye can see, it’s in a state of chaotic disarray."
 "Outside my window, dead in the daylight, the diner downstairs is already bleeding its aggressive neon sign through the curtains:"
-"THE SUPERMURGIDROID WEEPIE."
+"THE SUPERMORGUEDROID WEEPIE."
     
 camera:
     subpixel True zoom 1.32 
@@ -194,7 +194,7 @@ show M melancholy:
     subpixel True pos (0.46, 1600) zoom 0.65 
 show M melancholy:
     subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-with zoomin
+with dissolve
 
 "Waiting for me to finish up my next grandiose story that will finally hit the mark. Surely."
 "A stray sock lies abandoned on the floorboards."
@@ -217,6 +217,7 @@ show M main:
 
 show M main:
     subpixel True pos (0.01, 1.42) zoom 0.72 
+with dissolve
 stop sound
 play sound "pickup.ogg"
 m "Courier, Kessler - ah, I mean. Hello, Dorothy speaking."
@@ -236,6 +237,7 @@ camera:
 
 m "M-Mr. Hollis."
 b "I'm giving Chet the Glenn piece."
+show M melancholy
 m "T-The… I pitched that. Multiple times. A-And I already have the Mercury press packet, a source at Lewis-"
 b "Dorothy."
 camera:
@@ -269,6 +271,7 @@ m "I refuse to write any more columns for the women's page."
 b "You want to play a journalist? Be my guest. I'm giving you a month."
 b "Bring me something worthy of being put on the front page. A story that can sell."
 b "And then we can talk about moving you off the women's page."
+show M melancholy with dissolve
 m "And if I fail?"
 b "You'll write about every wedding, yard sale, and Garden Club, and you'll stop being a nuisance about it."
 show M annoyed:
@@ -299,15 +302,16 @@ show M angry:
     xzoom 1.0 yzoom 1.0 zoom 0.35 
 
 with hpunch 
-m "The nerve of that man! I have filed at least a hundred pieces, and only one of them had to have a correction."
+m "The nerve of that man! I have filed at least A HUNDRED pieces, and only one of them had to have a correction."
 m "So what if it happened to be the most important one?!"
-m "For the love of god, Chet put a dead woman's name on a wedding announcement in June, and nobody said as much as boo-"
+m "For the love of god, Chet put a DEAD woman's name on a wedding announcement in June, and nobody said as much as boo-"
 with hpunch
 "I slam the receiver back onto the cradle. All the fight drains out of me, exchanged for existential dread."
 show M main:
     xpos 0.12
     yalign 1.0
     zoom 0.455
+with dissolve
 "I force my face into the tight smile aimed at precisely no one. I've been using it far too often lately."
 m "You want a story? Fine. I'll give you one."
 menu:
@@ -337,6 +341,7 @@ menu:
             xpos 0.12
             yalign 1.0
             zoom 0.35
+        with dissolve
         m "Must be at the shop already."
         
         show M main:
@@ -349,7 +354,7 @@ menu:
         show M main:
             xpos 0.12 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
-        "Unwilling to do any real writing, I decide to clean up my room—at least a little."
+        "Unwilling to do any real writing, I decide to clean up my room — at least a little."
     "Get to Work":
 
         show M main:
@@ -362,20 +367,32 @@ menu:
 
         "I stretch, adjust the pencil in my hair, and sit down at my typewriter."
         "I commit to writing about the upcoming celebration that's to take place in the square."
+        
+        show M melancholy:
+            subpixel True zoom 0.46 
+        with dissolve
+
+
         "Why is this city so obsessed with corn?"
+
+show M melancholy:
+    subpixel True zoom 0.46
+    pos (0.28, 1.2)
+with dissolve
 
 "I collapse backwards onto the mattress, the worn springs groaning in protest."
 "In my hand is yesterday's edition of the Vesper Falls Courier."
-"I read—no, I consume the text, chewing through the column the way other people chew their overcooked bacon."
+"I read — no, I consume the text, chewing through the column the way other people chew their overcooked bacon."
 "I snap the broadsheet open, the scent of black ink briefly cutting through the stale air of my apartment."
 "Perhaps I should open the windows. Later."
 
 show M annoyed:
-    subpixel True pos (0.34, 1.1) zoom 0.46 
+    subpixel True zoom 0.46 
+with dissolve
 
 "And there it is. Glaring at me, sprawled a ridiculous four columns wide."
-"NEW EATERY OPENS ON ROUTE NINE - THE SUPERMURGIDROID WEEPIE" 
-"PROMISES ROLLER SERVICE, OPEN LATE HOURS"
+"NEW EATERY OPENS ON ROUTE NINE - THE SUPERMORGUEDROID WEEPIE!" 
+"PROMISES ROLLER SERVICE, OPEN LATE HOURS!"
 "I stare at the headline for a long, agonising moment."
 "The bold typeface seems set on making my brain hurt."
 m "… such riveting news."
@@ -383,25 +400,27 @@ m "… such riveting news."
 "I trace the letters with my nail, just to confirm I’m not hallucinating."
 m "All it apparently takes is slapping skates on teenage girls, and you're ready for the front page of a newspaper. Ugh."
 "I flip over to page four, glaring at a tiny column tucked next to a sprawling advertisement for a Hoover vacuum cleaner."
+show M melancholy with dissolve
 "It promises to clean all my worries!"
 m "First American to orbit the Earth."
 "I chew my lip."
+show M annoyed with dissolve
 m "Three times around and then made a safe landing. And they reduced his latest speech to a… footnote."
 "A thought crosses my mind."
-show M melancholy
+show M melancholy with dissolve
 m "I wonder if it's because he chose Florida."
-"I let my head fall back against the mattress, staring up at the water-stained ceiling—"
-"—which is, practically speaking, a very good analogy to the current state of my life."
-m "Overshadowed by a diner,"
-"I mumble."
+"I let my head fall back against the mattress, staring up at the water-stained ceiling —"
+"— which is, practically speaking, a very good analogy to the current state of my life."
+m "Overshadowed by a diner..."
 "I lift the paper again."
 show M annoyed
 "My eyes keep snagging on that absurd, borderline-offensive string of letters."
 "It makes my editorial senses itch."
-m "The Supermurgidroid Weepie…"
+m "The Supermurgitroid Weepie…"
 "I try sounding it out."
-m "The Super-murgi-droid. Weepie."
-"I lower the newspaper, squinting at the red neon light currently invading my personal space with a red glow."
+m "The Super-morgue-droid. Weepie."
+m "It's not even spelled correctly. How charming."
+"I lower the newspaper, squinting at the red neon light currently invading my personal space with an eyestraining glow."
 m "Who looked at that name and said yes?"
 with hpunch
 "Upset, I toss the Courier aside."
@@ -437,7 +456,7 @@ show M annoyed:
 "I pace. Three fast steps across the rug. Pivot. Three steps back."
 "I gnaw on the edge of an already-ruined thumbnail, my eyes constantly darting back to the typewriter."
 "The floor is currently a graveyard for six violently crumpled balls of paper."
-"In the carriage of the secondhand Royal, the seventh page sits waiting. It is blank."
+"In the carriage of the secondhand Royal, the seventh page sits waiting. Sadly, it did not magically fill itself while I was pacing around."
 "I start thinking out loud, my voice bouncing off the peeling wallpaper."
 
 show M annoyed:
@@ -499,6 +518,7 @@ m "Except he’d rather take a bullet than snitch on a soul."
 
 show M main:
     subpixel True xpos 0.12 zoom 0.46
+with dissolve
 
 "I force myself to stand perfectly still."
 "The sheer desperation is starting to leak into my voice, and I absolutely hate the sound of it."
