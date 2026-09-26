@@ -13,14 +13,39 @@ init python:
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+# Characters
 define m = Character("Dorothy", callback=boopy_voice)
 define a = Character("Adelaide")
 define l = Character("LeeRoy")
 define o = Character("Ōe")
 define b = Character("Mr. Hollis")
+define c = Character("Chet")
+define t1 = Character("Teenager1")
+define t2 = Character("Teenager2")
+
+# Backgrounds
 image bg bedroom = im.Scale("images/bedroom_bg.png",1920,1080)
 image bg diner = im.Scale("images/diner_bg.png",1920,1080)
 image bg office = im.Scale("images/office_bg.png",1920,1080)
+
+# Sprites
+image M main="mc_main.png"
+image M annoyed="mc_annoyed.png"
+image M angry="mc_angry.png"
+image M melancholy="mc_melancholy.png"
+image A main="adelaide_main.png"
+image A happy="adelaide_happy.png"
+image A shy="adelaide_shy.png"
+image A evil="adelaide_evil.png"
+image L main="leeroy_main.png"
+image L sigh="leeroy_sigh.png"
+image L shrug="leeroy_shrug.png"
+image L blush="leeroy_blush.png"
+image L confused="leeroy_confused.png"
+image O main="oe_main.png"
+image O smile="oe_smile.png"
+image O solemn="oe_solemn.png"
+image O excited="oe_excited.png"
 
 # The game starts here.
 
@@ -44,13 +69,10 @@ label start:
 "Outside my window, dead in the daylight, the diner downstairs is already bleeding its aggressive neon sign through the curtains:"
 "THE SUPERMURGIDROID WEEPIE."
 scene bg bedroom
-show mc_annoyed:
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
-    
-
-window auto hide
     
 camera:
     subpixel True zoom 1.32 
@@ -58,7 +80,7 @@ show bg bedroom:
     subpixel True xzoom 1.0 
     pos (0.5, 1.06) zoom 1.47 
     linear 0.54 pos (0.5, 1.0) zoom 1.0 
-show mc_annoyed:
+show M annoyed:
     subpixel True 
     parallel:
         xpos 0.06 
@@ -76,25 +98,22 @@ show mc_annoyed:
         linear 0.37 matrixtransform ScaleMatrix(0.92, 1.03, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         linear 0.08 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.72)
-    
 show bg bedroom:
     pos (0.5, 1.0) zoom 1.0 
-show mc_annoyed:
+show M annoyed:
     pos (0.08, 0.94) zrotate 0.0 orientation (0.0, 0.0, 0.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 zoom 0.38 
-
-window auto show
 
 
 "I swing my legs out of bed and immediately trip."
 
 
 
-show mc_annoyed:
+show M annoyed:
     subpixel True xzoom 1.0 yzoom 1.0 zoom 0.38 alpha 1.0 blur 0.0 
     pos (0.08, 0.94) 
     linear 0.42 pos (0.2, 1.07) 
 with Pause(0.52)
-show mc_annoyed:
+show M annoyed:
     pos (0.2, 1.07) 
 
 
@@ -104,34 +123,34 @@ camera:
     subpixel True 
     zoom 1.32 
     linear 0.18 zoom 1.0 
-show mc_annoyed:
+show M annoyed:
     subpixel True 
     pos (0.08, 0.94) 
     linear 0.18 pos (0.16, 1.0) 
 with Pause(0.28)    
 camera:
     zoom 1.0 
-show mc_annoyed:
+show M annoyed:
     pos (0.16, 1.0) 
 "My foot catches on a pile of thrifted clothes I tossed onto the scorch mark on the carpet."
 
-show mc_annoyed:
+show M annoyed:
     pos (0.16, 1.0) 
 
-show mc_annoyed:
+show M annoyed:
     subpixel True 
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     linear 0.58 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.68)
-show mc_annoyed:
+show M annoyed:
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
-show mc_annoyed:
+show M annoyed:
     subpixel True 
     xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     linear 0.44 xpos 0.32 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.54)
-show mc_annoyed:
+show M annoyed:
     xpos 0.32 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
 
@@ -140,8 +159,8 @@ with hpunch
 "I weave through the room, passing a hissing radiator and orange crates stacked high with my prized rock-and-roll vinyls."
 "I pass the kitchen table, the current domain of my sewing machine."
 
-show mc_annoyed:
-    subpixel True 
+show M annoyed:
+    subpixel True
     parallel:
         xpos 0.16 
         linear 0.50 xpos 0.51 
@@ -149,60 +168,90 @@ show mc_annoyed:
         matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         linear 0.23 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.60)
-show mc_annoyed:
+show M annoyed:
     xpos 0.51 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
 
 
 "There's a half-finished hem pinned down that I've been telling myself to stitch since last week."
 "On the windowsill, my secondhand Royal Quiet De Luxe typewriter sits poised with a blank page."
-show mc_melancholy:
-    subpixel True pos (0.38, -99) xzoom 1.0 zoom 0.8 
-show mc_melancholy:
+show M melancholy:
+    subpixel True pos (0.46, 1600) zoom 0.65 
+show M melancholy:
     subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with zoomin
 
 "Waiting for me to finish up my next grandiose story that will finally hit the mark. Surely."
 "A stray sock lies abandoned on the floorboards."
 
-show mc_melancholy:
+show M melancholy:
     subpixel True 
     parallel:
-        pos (0.38, -99) 
-        linear 0.45 pos (0.12, 90) 
+        xpos 0.46 
+        linear 6.46 xpos 0.46 
+        linear 0.01 xpos 0.46 
+        linear 0.53 xpos 0.16 
     parallel:
-        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.8 
-        linear 0.19 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.49 
-with Pause(0.55)
-show mc_melancholy:
-    pos (0.12, 90) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.49 
+        ypos 1600 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.65 
+        linear 6.46 ypos 1600 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.65 
+        linear 0.54 ypos 1100 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.38 
+with Pause(7.10)
+show M melancholy:
+    pos (0.16, 1100) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.38 
+
 
 "I snatch it up without breaking stride, tossing it aside as I lunge for the heavy rotary phone."
-hide mc_melancholy
-show mc_main:
+show M main:
     xpos -0.05
     yalign 1.0
     zoom 0.455
 
-show mc_main:
+show M main:
     subpixel True pos (0.01, 1.42) zoom 0.72 
 
 
 m "Courier, Kessler - ah, I mean. Hello, Dorothy speaking."
 b "Dorothy."
 "His voice is unhurried. Almost too calm. My jaw clenches tight."
-hide mc_main
-show mc_annoyed:
-    xpos 0.0
-    yalign 1.0
-    zoom 0.35
 with hpunch
+camera:
+    subpixel True 
+    pos (0, 0) yzoom 1.0 zoom 1.0 
+    linear 0.55 pos (163, 81) yzoom 1.0 zoom 1.25 
+show M annoyed:
+    subpixel True pos (0.12, 1.2) zoom 0.5
+with Pause(0.65)
+camera:
+    pos (163, 81) yzoom 1.0 zoom 1.25 
+
+
 m "M-Mr. Hollis."
 b "I'm giving Chet the Glenn piece."
 m "T-The… I pitched that. Multiple times. A-And I already have the Mercury press packet, a source at Lewis-"
 b "Dorothy."
+camera:
+    subpixel True 
+    pos (163, 81) zoom 1.25 
+    linear 0.25 pos (0, 0) zoom 1.0 
+with Pause(0.35)
+camera:
+    pos (0, 0) zoom 1.0 
 "There's a pause."
 b "Dolly. I've already made up my mind."
+camera:
+    subpixel True pos (0, 0) zoom 1.0 
+    xzoom 1.0 
+    linear 0.08 xzoom 1.0 
+show M annoyed:
+    subpixel True 
+    xzoom 1.0 yzoom 1.0 
+    linear 0.08 xzoom 0.92 yzoom 1.12 
+    linear 0.10 xzoom 1.0 yzoom 1.0 
+with Pause(0.5)
+camera:
+    xzoom 1.0 
+show M annoyed:
+    xzoom 1.0 yzoom 1.0 
 "I flinch at the pet name."
 m "With all due respect, Chet spells orbit with two t's."
 b "Your hatred toward that man is getting old."
@@ -213,20 +262,41 @@ b "Bring me something worthy of being put on the front page. A story that can se
 b "And then we can talk about moving you off the women's page."
 m "And if I fail?"
 b "You'll write about every wedding, yard sale, and Garden Club, and you'll stop being a nuisance about it."
+show M annoyed:
+    subpixel True 
+    xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.24 xpos 0.33 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.34)
 "Click. The line goes dead."
+show M annoyed:
+    subpixel True 
+    pos (0.33, 1.5) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.63 
+    linear 0.66 pos (0.16, 1.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.38 
+with Pause(0.76)
+show M annoyed:
+    pos (0.16, 1.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.38 
 "I stand there, my hand clutching the receiver. The dial tone hums against my ear."
-hide mc_annoyed
-show mc_angry:
-    xpos 0.0
-    yalign 1.0
-    zoom 0.35
+show M angry:
+    subpixel True xpos 0.16 ypos 1.0
+    parallel:
+        xzoom 1.0 yzoom 1.0 
+        linear 0.10 xzoom 0.8 yzoom 1.2 
+        linear 0.10 xzoom 1.0 yzoom 1.0 
+    parallel:
+        zoom 0.35 
+        linear 0.10 zoom 0.35
+with Pause(0.30)
+show M angry:
+    xzoom 1.0 yzoom 1.0 zoom 0.35 
+
+with hpunch 
 m "The nerve of that man! I have filed at least a hundred pieces, and only one of them had to have a correction."
 m "So what if it happened to be the most important one?!"
 m "For the love of god, Chet put a dead woman's name on a wedding announcement in June, and nobody said as much as boo-"
+with hpunch
 "I slam the receiver back onto the cradle. All the fight drains out of me, exchanged for existential dread."
-hide mc_angry
-show mc_main:
-    xpos -0.05
+show M main:
+    xpos 0.12
     yalign 1.0
     zoom 0.455
 "I force my face into the tight smile aimed at precisely no one. I've been using it far too often lately."
@@ -234,17 +304,24 @@ m "You want a story? Fine. I'll give you one."
 menu:
     "Call my Friend":
         "I pick up the receiver. My fingers dial the all-too-familiar number."
+        
+        camera:
+            subpixel True 
+            zoom 1.0 
+            linear 0.24 zoom 1.15 
+        with Pause(0.34)
+        camera:
+            zoom 1.15 
+
         "It rings and rings. She doesn't pick up."
         "I put the phone back down."
-        hide mc_main
-        show mc_annoyed:
-            xpos 0.0
+        show M annoyed:
+            xpos 0.12
             yalign 1.0
             zoom 0.35
         m "Must be at the shop already."
-        hide mc_annoyed
-        show mc_main:
-            xpos -0.05
+        show M main:
+            xpos 0.12
             yalign 1.0
             zoom 0.455
         "Unwilling to do any real writing, I decide to clean up my room—at least a little."
@@ -258,8 +335,7 @@ menu:
 "I read—no, I consume the text, chewing through the column the way other people chew their overcooked bacon."
 "I snap the broadsheet open, the scent of black ink briefly cutting through the stale air of my apartment."
 "Perhaps I should open the windows. Later."
-hide mc_main
-show mc_annoyed:
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
@@ -297,14 +373,12 @@ m "Who looked at that name and said yes?"
 "Then, I groan, lean precariously over the edge of the bed, and retrieve it."
 "Because no matter how furious I am at the world, I simply cannot leave a newspaper on the floor."
 #Scene 2 Dorothys Apartment - Afternoon
-hide mc_annoyed
-show mc_main:
+show M main:
     xpos -0.05
     yalign 1.0
     zoom 0.455
 "The afternoon sun bakes the cramped room, casting long, mocking shadows across the floorboards."
-hide mc_main
-show mc_annoyed:
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
@@ -325,8 +399,7 @@ m "The machine plant. The line workers have been causing trouble at the tavern l
 m "Maybe there’s a strike brewing. Dad works the floor; he'd definitely know something..."
 "I let out a hollow, humourless laugh, gesturing wildly at the empty room with my pencil."
 m "Except he’d rather take a bullet than snitch on a soul."
-hide mc_annoyed
-show mc_main:
+show M main:
     xpos -0.05
     yalign 1.0
     zoom 0.455
@@ -337,8 +410,7 @@ m "I have one month. That's plenty of time! I don't have to figure it all out to
 "An argument is breaking out downstairs in the diner."
 "It’s muffled by the wood and plaster, but the furious cadence is unmistakable."
 "Two distinct voices, rapidly escalating in volume."
-hide mc_main
-show mc_annoyed:
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
@@ -350,11 +422,11 @@ m "I cannot WORK in this ruckus."
 "By the time the noise stops, I am already reaching for my shoes."
 # Scene 3. The Supermurgidroid Weepie - Evening
 scene bg diner
-hide mc_annoyed
-show mc_angry:
+show M angry:
     xpos 0.0
     yalign 1.0
     zoom 0.35
+with hpunch
 "I push through the heavy doors at a brisk pace, my winter coat thrown hastily over my nightgown."
 "I still have a steno pencil tucked in my hair."
 "I am entirely, resolutely prepared to interrupt somebody's evening."
@@ -367,12 +439,11 @@ show mc_angry:
 "Behind the counter, the specials board proudly reads MONDAY: STRAWBERRY MILKSHAKE in an elegant, sweeping cursive that looks like it belongs on a 19th-century treaty, not a diner menu."
 "Two milkshakes sit on the counter like evidence at a high-stakes trial."
 "Standing over them is the duo responsible."
-hide mc_angry
-show adelaide_main:
+show A main:
     xpos -0.05
     yalign 1.0
     zoom 0.55
-show leeroy_sigh:
+show L sigh:
     xpos 0.7
     yalign 1.0
     zoom 0.49
@@ -386,20 +457,20 @@ show leeroy_sigh:
 l "- it's about balance, Adelaide. You can't just put cold things in a cup and call it a beverage-"
 a "I followed the card."
 l "Like a hostage."
-hide leeroy_sigh
-hide adelaide_main
-show mc_annoyed:
+hide L sigh
+hide A main
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
 "I march right up to the chrome counter."
 m "It is twenty past nine. I am trying to sleep and yet, and I can hear every single-"
-hide mc_annoyed
-show adelaide_main:
+hide M annoyed
+show A main:
     xpos -0.05
     yalign 1.0
     zoom 0.55
-show leeroy_main:
+show L main:
     xpos 0.55
     yalign 1.0
     zoom 0.5
@@ -407,38 +478,38 @@ show leeroy_main:
 "They do not look guilty. Nor do they look annoyed that I barged into their conversation."
 "The man looks at me with sheer, unadulterated delight."
 l "A customer!"
-show adelaide_main:
+show A main:
     xpos -0.05
     yalign 1.0
     zoom 0.55
 a "She's not a customer, Leeroy. She's the upstairs."
 l "But she can be the judge!"
-hide adelaide_main
-hide leeroy_main
-show mc_annoyed:
+hide A main
+hide L main
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
 m "I beg your-"
-hide mc_annoyed
-show mc_annoyed:
+hide M annoyed
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
-show leeroy_main:
+show L main:
     xpos 0.55
     yalign 1.0
     zoom 0.5
 "(already sliding both frosted glasses down the counter toward me)"
 l "Help us determine which milkshake is better."
-hide mc_annoyed
-show adelaide_main:
+hide M annoyed
+show A main:
     xpos 0.6
     yalign 1.0
     zoom 0.55
 a "Leeroy, why are you dragging her into-."
-hide leeroy_main
-show mc_annoyed:
+hide L main
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
@@ -449,15 +520,14 @@ show mc_annoyed:
 m "Fine. Fine! Just because I want to sleep this century,"
 "I say, sitting on a stool."
 "I take LeeRoy's glass. I take a reluctant sip."
-hide adelaide_main
+hide A main
 "It is genuinely not bad. Not great either, but it's not like I'm an expert on the things I dislike."
 m "Hm."
-hide mc_annoyed
-show mc_annoyed:
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
-show leeroy_main:
+show L main:
     xpos 0.55
     yalign 1.0
     zoom 0.5
@@ -467,13 +537,13 @@ l "You get the cold hitting you up front, and then it comes back around on you, 
 "But it sounds off. Has he been rehearsing it?"
 "It sounds far too polished, like words you'd find in a novel rather than spoken."
 m "It's fine. An… average milkshake."
-hide leeroy_main
-hide mc_annoyed
-show mc_annoyed:
+hide L main
+hide M annoyed
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
-show adelaide_main:
+show A main:
     xpos 0.6
     yalign 1.0
     zoom 0.55
@@ -492,12 +562,12 @@ a "A pinch. I don't know how much a pinch is. I used what I could pick up."
 "A long pause. I stare at her perfectly manicured hands."
 m "Have you tasted it?"
 a "I'm not feeling like drinking dairy."
-hide mc_annoyed
-hide adelaide_main
+hide M annoyed
+hide A main
 "And then, from directly behind them, a voice speaks from the shadows at the end of the counter."
 o "She is right about the salt."
 "I flinch and spin around."
-show oe_main:
+show O main:
     xpos 0.6
     yalign 1.0
     zoom 0.5
@@ -505,12 +575,12 @@ show oe_main:
 "They are holding a broom in one hand, but they hold it gracefully like a butler rather than a cleaner."
 "They do not blink. They do not shift their weight as they address me."
 "They haven't moved a single muscle since before I walked in, and I am only now, startlingly, aware that they were there at all."
-hide oe_main
-show mc_annoyed:
+hide O main
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
-show oe_main:
+show O main:
     xpos 0.6
     yalign 1.0
     zoom 0.5
@@ -520,7 +590,7 @@ m "That's not... that isn't an answer to that question."
 "Ōe considers this. Seriously."
 "As though regular social interaction is a puzzle they haven't quite solved yet."
 "They do not produce a second answer."
-hide oe_main
+hide O main
 menu:
     "Give them the whole lecture.":
         "I cross my arms and deliver my unexpected food criticism."
@@ -529,22 +599,22 @@ menu:
         "I pay good money for this room, and as landlords they're certainly not delivering."
     "Ask what they were actually arguing about.":
         "The frustration seeps out of me."
-        show leeroy_sigh:
+        show L sigh:
             xpos 0.7
             yalign 1.0
             zoom 0.5
         "I ask, and LeeRoy admits, deflated, that nobody has come in since they opened."
         l "Well, they did the first time, but for some reason customers are not returning."
-        hide mc_annoyed
-        show adelaide_main:
+        hide M annoyed
+        show A main:
             xpos -0.05
             yalign 1.0
             zoom 0.55
         "Adelaide looks away and says, quietly,"
         a "He wanted tonight to go well."
         # [LISTEN +1]
-hide adelaide_main
-show mc_annoyed:
+hide A main
+show M annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
@@ -552,8 +622,8 @@ show mc_annoyed:
 "Chill the glasses first."
 "Under no circumstances let Adelaide near the salt shaker."
 "Perhaps she should be banned from using salt altogether."
-hide leeroy_sigh
-show leeroy_main:
+hide L sigh
+show L main:
     xpos 0.55
     yalign 1.0
     zoom 0.5
@@ -561,10 +631,10 @@ show leeroy_main:
 "He has no pen and thus resorts to scribbling ink on his hand."
 "I consider giving him one of my papers, but then—he should have enough money to afford his own writing supplies."
 m "Right. Wonderful. Delighted to help. Now if you'd be so kind, I'm intending to return to sleep."
-hide leeroy_main
+hide L main
 "I stand up, pulling my coat tighter around my nightgown."
 "I am halfway out the door when the voice stops me."
-show oe_main:
+show O main:
     xpos 0.6
     yalign 1.0
     zoom 0.5
@@ -575,10 +645,10 @@ o "Miss Kessler."
 o "Sleep well."
 "A quiet silence spreads between us."
 m "...thank you."
-hide oe_main
+hide O main
 "I push the door open and leave."
 "It swings shut behind me, drowning out the rest of their conversation."
-hide mc_annoyed
+hide M annoyed
 scene bg bedroom
 
     # This ends the game.
