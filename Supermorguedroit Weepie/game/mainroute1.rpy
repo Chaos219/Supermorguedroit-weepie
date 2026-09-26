@@ -186,21 +186,14 @@ with zoomin
 
 show M melancholy:
     subpixel True 
-    parallel:
-        xpos 0.46 
-        linear 6.46 xpos 0.46 
-        linear 0.01 xpos 0.46 
-        linear 0.53 xpos 0.16 
-    parallel:
-        ypos 1600 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.65 
-        linear 6.46 ypos 1600 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.65 
-        linear 0.54 ypos 1100 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.38 
-with Pause(7.10)
+    pos (0.46, 1600) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.65 
+    linear 0.51 pos (0.12, 1200) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.46 
+with Pause(0.61)
 show M melancholy:
-    pos (0.16, 1100) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.38 
-
+    pos (0.12, 1200) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.46 
 
 "I snatch it up without breaking stride, tossing it aside as I lunge for the heavy rotary phone."
+
 show M main:
     xpos -0.05
     yalign 1.0
@@ -314,18 +307,43 @@ menu:
             zoom 1.15 
 
         "It rings and rings. She doesn't pick up."
+
+        camera:
+            subpixel True 
+            zoom 1.15 
+            linear 0.28 zoom 1.0 
+        with Pause(0.38)
+        camera:
+            zoom 1.0 
+
         "I put the phone back down."
         show M annoyed:
             xpos 0.12
             yalign 1.0
             zoom 0.35
         m "Must be at the shop already."
+        
         show M main:
-            xpos 0.12
-            yalign 1.0
-            zoom 0.455
+            subpixel True 
+            xpos 0.12 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+            easein 1.16 xpos 0.42 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+            easeout 1.08 xpos 0.42 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+            easein 1.23 xpos 0.12 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        with Pause(3.57)
+        show M main:
+            xpos 0.12 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
         "Unwilling to do any real writing, I decide to clean up my room—at least a little."
     "Get to Work":
+
+        show M main:
+            subpixel True 
+            pos (0.12, 1.0) zoom 0.455 
+            linear 0.61 pos (0.28, 1.2) zoom 0.63 
+        with Pause(0.71)
+        show M main:
+            pos (0.28, 1.2) zoom 0.63 
+
         "I stretch, adjust the pencil in my hair, and sit down at my typewriter."
         "I commit to writing about the upcoming celebration that's to take place in the square."
         "Why is this city so obsessed with corn?"
@@ -335,10 +353,10 @@ menu:
 "I read—no, I consume the text, chewing through the column the way other people chew their overcooked bacon."
 "I snap the broadsheet open, the scent of black ink briefly cutting through the stale air of my apartment."
 "Perhaps I should open the windows. Later."
+
 show M annoyed:
-    xpos 0.0
-    yalign 1.0
-    zoom 0.35
+    subpixel True pos (0.34, 1.1) zoom 0.46 
+
 "And there it is. Glaring at me, sprawled a ridiculous four columns wide."
 "NEW EATERY OPENS ON ROUTE NINE - THE SUPERMURGIDROID WEEPIE" 
 "PROMISES ROLLER SERVICE, OPEN LATE HOURS"
@@ -354,12 +372,14 @@ m "First American to orbit the Earth."
 "I chew my lip."
 m "Three times around and then made a safe landing. And they reduced his latest speech to a… footnote."
 "A thought crosses my mind."
+show M melancholy
 m "I wonder if it's because he chose Florida."
 "I let my head fall back against the mattress, staring up at the water-stained ceiling—"
 "—which is, practically speaking, a very good analogy to the current state of my life."
 m "Overshadowed by a diner,"
 "I mumble."
 "I lift the paper again."
+show M annoyed
 "My eyes keep snagging on that absurd, borderline-offensive string of letters."
 "It makes my editorial senses itch."
 m "The Supermurgidroid Weepie…"
@@ -367,63 +387,144 @@ m "The Supermurgidroid Weepie…"
 m "The Super-murgi-droid. Weepie."
 "I lower the newspaper, squinting at the red neon light currently invading my personal space with a red glow."
 m "Who looked at that name and said yes?"
+with hpunch
 "Upset, I toss the Courier aside."
 "It hits the edge of the blanket and slides off, hitting the floorboards with a sad, dull thwack."
 "I leave it there for precisely two seconds before I rethink my actions."
+
+show M annoyed:
+    subpixel True 
+    pos (0.34, 1.1) zoom 0.46
+    linear 0.37 pos (0.16, 1.0) zoom 0.35 
+with Pause(0.47)
+show M annoyed:
+    pos (0.16, 1.0) zoom 0.35 
+
 "Then, I groan, lean precariously over the edge of the bed, and retrieve it."
 "Because no matter how furious I am at the world, I simply cannot leave a newspaper on the floor."
 #Scene 2 Dorothys Apartment - Afternoon
 show M main:
-    xpos -0.05
+    xpos 0.12
     yalign 1.0
     zoom 0.455
 "The afternoon sun bakes the cramped room, casting long, mocking shadows across the floorboards."
+
 show M annoyed:
-    xpos 0.0
-    yalign 1.0
+    subpixel True 
     zoom 0.35
+    xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.42 xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.52)
+show M annoyed:
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "I pace. Three fast steps across the rug. Pivot. Three steps back."
 "I gnaw on the edge of an already-ruined thumbnail, my eyes constantly darting back to the typewriter."
 "The floor is currently a graveyard for six violently crumpled balls of paper."
 "In the carriage of the secondhand Royal, the seventh page sits waiting. It is blank."
 "I start thinking out loud, my voice bouncing off the peeling wallpaper."
+
+show M annoyed:
+    subpixel True 
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.47 xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.57)
+show M annoyed:
+    xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "Talking out loud helps me sort my thoughts faster."
+
+show M melancholy:
+    subpixel True 
+    ypos 1.0 zoom 0.35 
+    easein 0.38 ypos 1.2 zoom 0.5 
+with Pause(0.48)
+show M melancholy:
+    ypos 1.2 zoom 0.5 
+
 m "Okay. Dorothy, think. Think. What was the last rumour floating around?"
 m "Right, the farmers' auction. Every town has dirty money. Somebody is definitely crooked..."
 m "... but I don't know the first thing about livestock. They wouldn't trust a woman either."
 "Three steps. Pivot. I keep pacing."
+
+show M melancholy:
+    subpixel True 
+    parallel:
+        xpos 0.16000000000000003 
+        easeout 0.20 xpos 0.16000000000000003 
+        easeout 0.50 xpos 0.5 
+    parallel:
+        ypos 1.2 zoom 0.5 
+        linear 0.20 ypos 1.0 zoom 0.35 
+    parallel:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.70 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.30 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(1.10)
+show M melancholy:
+    pos (0.5, 1.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.35 
+
 m "A story on the mayor? No."
 m "Everyone knows Mayor Lindqvist cries at parades like his life depends on it. That's not news."
+
+show M annoyed:
+    subpixel True 
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.51 xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.61)
+show M annoyed:
+    xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "I pull the steno pencil from my hair, twirling it furiously through my fingers."
 m "The machine plant. The line workers have been causing trouble at the tavern lately."
 m "Maybe there’s a strike brewing. Dad works the floor; he'd definitely know something..."
 "I let out a hollow, humourless laugh, gesturing wildly at the empty room with my pencil."
 m "Except he’d rather take a bullet than snitch on a soul."
+
 show M main:
-    xpos -0.05
-    yalign 1.0
-    zoom 0.455
+    subpixel True xpos 0.12 zoom 0.46
+
 "I force myself to stand perfectly still."
 "The sheer desperation is starting to leak into my voice, and I absolutely hate the sound of it."
+
+camera:
+    subpixel True 
+    zoom 1.0 
+    linear 0.45 zoom 1.2 
+with Pause(0.55)
+camera:
+    zoom 1.2 
+
 m "I have one month. That's plenty of time! I don't have to figure it all out today."
+with hpunch
 "And then, right beneath my feet, the floorboards vibrate."
 "An argument is breaking out downstairs in the diner."
 "It’s muffled by the wood and plaster, but the furious cadence is unmistakable."
 "Two distinct voices, rapidly escalating in volume."
 show M annoyed:
-    xpos 0.0
+    xpos 0.16
     yalign 1.0
     zoom 0.35
 "I glare down at the floor."
+
+camera:
+    subpixel True 
+    zoom 1.2 
+    linear 0.20 zoom 1.0 
+with Pause(0.30)
+camera:
+    zoom 1.0 
+
 "Instantly, the tight, suffocating knot of anxiety in my chest hardens into a sharp spike of righteous fury."
 m "I cannot WORK in this ruckus."
 "Downstairs, the shouting spikes."
+with hpunch
 "A second later, a massive CLANG echoes through the floor as something large and metallic violently crashes over."
 "By the time the noise stops, I am already reaching for my shoes."
 # Scene 3. The Supermurgidroid Weepie - Evening
 scene bg diner
 show M angry:
-    xpos 0.0
+    xpos 0.16
     yalign 1.0
     zoom 0.35
 with hpunch
