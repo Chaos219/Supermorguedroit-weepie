@@ -26,25 +26,157 @@
     # This ends the game.
 
     #return
+
 label mainroute2:
-    menu:
-        "Handle things your way":
-            show M main:
-                xpos -0.05
-                yalign 1.0
-                zoom 0.455
-            "I drop into the chair at the Royal and hammer out three pages of notes before I budge."
-            "Problems, root causes, fixes, all lined up by cost."
-            "When I yank the last sheet from the carriage, I've got a battle plan."
-            "Now to hit them with the facts and hope they take even a scrap of it seriously."
-        "Ask what they are struggling with":
-            show M main:
-                xpos -0.05
-                yalign 1.0
-                zoom 0.455
-            "I grab my steno pad and a pencil."
-            "It'll be a whole lot easier to patch this sinking ship if I know where they think the leak is."
-            "I've got my own ideas, but I don't have the full picture."
+# Scene 1: Dorothy's Apartment - Night
+
+"I drop onto the sagging edge of the mattress, night robe still wrapped around my chin, trapping in the October chill."
+"The fabric reeks of dust and cigarettes."
+"No matter how many times I wash my hair, that smell clings to me like a bad habit."
+"Downstairs, someone’s pushing a broom."
+"Slow, steady, like they’re getting paid by the hour."
+"That scuff-drag, scuff-drag of stiff bristles on linoleum has been going since I hauled myself up the stairs ten minutes ago."
+"It’s the kind of sound that could drive a person mad."
+"Whoever is down there sweeps like he’s never seen a broom before."
+m "Who the hell writes notes on their hand?"
+"Silence. Just the groan of the floorboards settling and that relentless scrape."
+m "…like some schoolkid trying to cheat on a spelling test. Tsk."
+"I finally peel off the gown and let it fall in a wrinkled heap on the floor."
+"I’ll curse the creases tomorrow, but tonight, it’s the least of my worries."
+"I cross the cramped room to the orange crates stacked in the corner my so-called record cabinet."
+"I flip through the sleeves, pretending I’m picking at random. I’m not."
+"My fingers land on a battered label, edges frayed and soft."
+"Cleveland, 1957. Muddy Waters."
+"Four of us jammed into Jimmy’s old Buick, windows down, music spilling into the sticky night while we promised ourselves we’d change the world."
+"I slide the record out, slap it onto the hi-fi, and drop the needle."
+"It pops and hisses, then the bass rolls in."
+"I twist the volume up past the point where any neighbor with sense would start banging on the pipes."
+"Not that it matters. There’s nobody left to bother."
+"Just the diner downstairs, and they already ruined my day."
+"It’s not like they’ve got customers. The place is a ghost town."
+m "Twenty-nine days. Twenty-nine days, and then I’m on a Greyhound out of here, and I am never looking back."
+"I start pacing the threadbare strip of rug between the bed and the desk."
+"Three steps, turn, three steps back."
+"The typewriter waits in the shadows, a new blank page loaded, just daring me to try something."
+m "I just don’t get it. Why open a restaurant if you don’t know how to run one?"
+m "Why hire counter staff who can’t even mix a basic fountain drink?"
+"I freeze, one foot hovering above the rug."
+m "Why am I letting this get under my skin? It’s not my racket."
+"I start pacing again, faster now, grinding a deeper groove into the rug."
+"The slow blues on the hi-fi does nothing to ease my unrest."
+m "I have less than a month to break the biggest story in this county."
+m "I have the chief breathing down my neck, ready to banish me to the society pages… and here I am, stewing over the proper syrup-to-soda ratio."
+"My hand’s already on the cold window frame before I realize I’ve stopped."
+"I’m staring down at the neon sign buzzing against the brick outside."
+"Red. Off. Red. Off."
+"The letters bleed through the thin curtains and crawl across my ceiling."
+"I yank the curtain shut, hard. The brass rings screech against the rod."
+"I flop back onto the bed, sinking into the lumpy springs, staring up at the ceiling."
+"The red light still sneaks through the gap in the curtain, painting long, bloody shadows across the room."
+m "I am absolutely not getting involved."
+"Downstairs, the sweeping cuts out."
+"A heavy pause settles in, thick enough to choke on."
+"Then the scrape starts up again. Scuff-drag. Scuff-drag."
+
+# Scene 2: Vesper Falls Courier - Newsroom - Day
+
+"Tuesday, Special of the Day: Unknown"
+
+"Click. Clack. My low heels echo on the scuffed linoleum as I cross the main room."
+"Just a handful of desks jammed together, radiator hissing slow and steady."
+"The Underwood in the corner clacks out a lazy rhythm, and the air is thick and yellow with old cigarette smoke."
+"I shoulder through the frosted glass door into the editor’s office, coat slipping down my arms."
+"Three pitches rattle in my head, each one practiced on the walk over."
+"Chet’s already there, sprawled in the corner chair, wingtips kicked up on a side desk."
+"Cigarette hanging from his lip, ash dropping onto his wrinkled tie."
+m "Mr. Hollis, I’ve got a"
+b "Kessler. Good. Sit down."
+"I drop into the stiff wooden chair across from him."
+"He doesn’t bother looking up from the galley proofs."
+"Just slides a ragged square of newsprint across the green desk blotter, eyes still down."
+b "I want it by Friday."
+"I pick it up and skim the ink."
+"Tear-sheet from last night’s edition. A girl in a poodle skirt, roller skates, tray balanced outside a diner. Adelaide."
+m "Mr. Hollis, we already ran a photo spread on this joint yesterday. What exactly am I supposed to write about…"
+b "It’s local color. Human interest."
+b "Get a quote from whoever runs the place, write something cute about the milkshakes, ask if they’re hiring. Keep it breezy."
+c "Focus on the roller skates, Anne. The readers eat that stuff up."
+"That’s not my name?"
+"I whip around to face Chet, every muscle wound tight as a spring."
+"I open my mouth, ready to wipe that smug look off his face."
+b "Two hundred words."
+"My jaw snaps shut. The fight drains out of me, puddling on the floor."
+m "…Yes, Chief."
+b "Good."
+"He keeps talking, something about the point spread for the pennant race, but it all turns to static."
+"I nod, stand up, and slip back to my cramped desk in the bullpen."
+"I trade a few empty words with the switchboard girl, shrug my coat back on."
+"Before anyone can toss me another fluff piece, I slip out the glass doors, quiet as a ghost."
+
+# Scene 3: Courier - Stairwell - Continuous
+
+"I barely make it to the landing before my feet lock up."
+"My fist is so tight, my nails carve little half-moons into my palm."
+"I glance down and pry my fingers open."
+"The newspaper clipping is mashed into a damp wad, stuck to my sweaty hand."
+m "Absolute garbage."
+"I press the crumpled paper against the hallway wall, right where the plaster flakes off in chalky curls."
+"I scrub at the cheap newsprint with my thumb, trying to smooth out the mess I made."
+"The girl in the poodle skirt grins at me through the smeared ink, all teeth and empty eyes, like some cheerleader who got her brains scooped out and replaced with whipped cream."
+"I stare her down for a beat."
+"Then I fold the clipping in half, neat as I can, tuck it deep in my coat pocket, and head back toward the diner."
+
+# Scene 4: Dorothy's Apartment - Day
+
+"The old shortbread tin sits open on the kitchen table, jammed up against the heavy black Singer just to make enough room to work."
+"Inside, a roll of crumpled bills sits pinched by a tired rubber band, barely thicker than a deck of cards."
+"Next to it, the Greyhound timetable, creased and worn soft from being folded to the same page over and over. CLEVELAND - NEW YORK CITY."
+"I count the money out on the Formica tabletop."
+"Then I count it again, slower this time, smoothing down the dog-eared corners as if giving the bills a little more care might miraculously make them multiply."
+m "Forty-one dollars."
+"I glance at the fare printed on the timetable. The math runs through my head."
+m "Eleven weeks. That's if I don't buy a single record, skip lunch on Tuesdays, and pray to God nothing in this room breaks."
+"I shove the tin aside. The rent book waits underneath."
+"I flip the cover back."
+"The monthly rate is written in that same old-fashioned, looping cursive as the specials board downstairs. The number is low. The kind of low that reads charity."
+m "…well, at least the rent’s cheap."
+"It sounds even sadder when I say it out loud."
+"I push my chair back and head to the window."
+"The neon sign buzzes below, throwing a harsh red glare. Beyond that, the parking lot, all cracked asphalt."
+"Empty. Not a single headlight out there. No surprise."
+"Maybe it's the name that goes on forever, maybe it's the lousy service, but whatever it is, it keeps folks away from this place like it's contagious."
+m "Nobody's eating there."
+"I fold my arms tight against the cold seeping through the glass."
+m "But if this keeps up"
+"I glance back at the sad little tin on the table."
+m "then the diner goes under. And the building goes into foreclosure with it. And I lose the room."
+"I drop onto the narrow windowsill, right beside my typewriter. The keys press cold against my arm."
+m "And then the saving stops. And then there's no Greyhound to New York."
+m "And then I'm stuck writing the women's page until I'm sixty, just like Hollis said... and mother asks me every single Christmas when I'm finally going to settle down."
+"I fish the crumpled newspaper clipping from my coat pocket and smooth it out beside the typewriter."
+m "…there are only so many excuses I can use."
+"Somewhere below my feet, a heavy plate crashes to the floor."
+"A second later, two voices drift up through the floorboards, laughing like it's nothing."
+m "I have to keep the milkshake people in business."
+
+menu:
+    "Handle things your way":
+        show M main:
+            xpos -0.05
+            yalign 1.0
+            zoom 0.455
+        "I drop into the chair at the Royal and hammer out three pages of notes before I budge."
+        "Problems, root causes, fixes, all lined up by cost."
+        "When I yank the last sheet from the carriage, I've got a battle plan."
+        "Now to hit them with the facts and hope they take even a scrap of it seriously."
+    "Ask what they are struggling with":
+        show M main:
+            xpos -0.05
+            yalign 1.0
+            zoom 0.455
+        "I grab my steno pad and a pencil."
+        "It'll be a whole lot easier to patch this sinking ship if I know where they think the leak is."
+        "I've got my own ideas, but I don't have the full picture."
         # [LISTEN +1]
 
 "I slip my shoes back on, one after the other."
@@ -748,4 +880,5 @@ a "Mm."
 hide A main
 "I shove through the swinging gate and head up the narrow stairs to my room."
 
-return
+jump mainroute3
+
