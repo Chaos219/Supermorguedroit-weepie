@@ -540,14 +540,13 @@ with hpunch
 "Behind the counter, the specials board proudly reads MONDAY: STRAWBERRY MILKSHAKE in an elegant, sweeping cursive that looks like it belongs on a 19th-century treaty, not a diner menu."
 "Two milkshakes sit on the counter like evidence at a high-stakes trial."
 "Standing over them is the duo responsible."
+hide M angry
+
 show A main:
-    xpos -0.05
-    yalign 1.0
-    zoom 0.55
+    subpixel True xpos 0.22 zoom 0.55
 show L sigh:
-    xpos 0.7
-    yalign 1.0
-    zoom 0.49
+    subpixel True xpos 0.6 ypos 0.1 zoom 0.5
+
 "LEEROY looks to be in his early twenties."
 "He is African-American, wears a paper hat with dreads tucked underneath in a ponytail."
 "Before I have the chance to assess his appearance further, he gestures animatedly with a long metal spoon."
@@ -555,138 +554,449 @@ show L sigh:
 "She looks late twenties, immaculate, and is wearing expensive, sharp-heeled shoes."
 "She also wears a diner apron, though her expression strongly suggests the apron was not her idea."
 "Her arms are tightly folded."
+
+show L sigh:
+    subpixel True xpos 0.6 
+    ypos 0.1 
+    linear 0.07 ypos 0.05 
+    linear 0.07 ypos 0.1 
+with Pause(0.24)
+show L sigh:
+    pos (0.6, 0.1) 
+
 l "- it's about balance, Adelaide. You can't just put cold things in a cup and call it a beverage-"
+
+show A main:
+    subpixel True xpos 0.22 
+    ypos 0.0 
+    linear 0.06 ypos -0.05 
+    linear 0.05 ypos 0.0 
+with Pause(0.21)
+show A main:
+    pos (0.22, 0.0) 
+
 a "I followed the card."
+
+show L sigh:
+    subpixel True xpos 0.6 
+    ypos 0.1 
+    linear 0.07 ypos 0.05 
+    linear 0.07 ypos 0.1 
+with Pause(0.24)
+show L sigh:
+    pos (0.6, 0.1) 
+
 l "Like a hostage."
+
 hide L sigh
 hide A main
-show M annoyed:
-    xpos 0.0
+show M angry:
+    xpos 0.16
     yalign 1.0
     zoom 0.35
+
 "I march right up to the chrome counter."
+with hpunch
 m "It is twenty past nine. I am trying to sleep and yet, and I can hear every single-"
-hide M annoyed
+
+hide M angry
 show A main:
-    xpos -0.05
-    yalign 1.0
+    xpos 0.22
+    ypos 0.0
     zoom 0.55
 show L main:
-    xpos 0.55
-    yalign 1.0
+    xpos 0.45
+    ypos 0.1
     zoom 0.5
+
+show A main:
+    subpixel True 
+    xpos 0.22 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.19 xpos 0.12 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+show L main:
+    subpixel True 
+    xpos 0.45 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.19 xpos 0.45 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.29)
+show A main:
+    xpos 0.12 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+show L main:
+    xpos 0.45 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "I stop. Both of them have turned to look at me."
+
 "They do not look guilty. Nor do they look annoyed that I barged into their conversation."
 "The man looks at me with sheer, unadulterated delight."
+
+show L main:
+    subpixel True xpos 0.45
+    ypos 0.1 
+    linear 0.07 ypos 0.05 
+    linear 0.07 ypos 0.1 
+with Pause(0.24)
+show L main:
+    pos (0.45, 0.1) 
+
 l "A customer!"
+
 show A main:
-    xpos -0.05
-    yalign 1.0
-    zoom 0.55
+    subpixel True xpos 0.12
+    ypos 0.1 
+    linear 0.07 ypos 0.0
+    linear 0.07 ypos -0.05
+with Pause(0.24)
+show A main:
+    pos (0.12, 0.0) 
+
 a "She's not a customer, Leeroy. She's the upstairs."
+
+show L main:
+    subpixel True xpos 0.45
+    ypos 0.1 
+    linear 0.07 ypos 0.05 
+    linear 0.07 ypos 0.1 
+with Pause(0.24)
+show L main:
+    pos (0.45, 0.1) 
+
 l "But she can be the judge!"
+
 hide A main
 hide L main
 show M annoyed:
-    xpos 0.0
-    yalign 1.0
-    zoom 0.35
-m "I beg your-"
-hide M annoyed
+    subpixel True xpos 0.12 zoom 0.35
+    ypos 0.2
+    linear 0.07 ypos 0.1
+    linear 0.07 ypos 0.2
+with Pause(0.24)
 show M annoyed:
-    xpos 0.0
-    yalign 1.0
-    zoom 0.35
+    pos (0.12, 0.2) 
+
+m "I beg your-"
+
 show L main:
-    xpos 0.55
-    yalign 1.0
-    zoom 0.5
+    subpixel True zoom 0.5
+    xpos 0.45 ypos 81
+    linear 0.28 xpos 0.25 
+with Pause(0.38)
+show L main:
+    subpixel True ypos 81 zoom 0.5 
+
 "(already sliding both frosted glasses down the counter toward me)"
+
+show L main:
+    subpixel True xpos 0.25
+    ypos 0.1 
+    linear 0.07 ypos 0.05 
+    linear 0.07 ypos 0.1 
+with Pause(0.24)
+show L main:
+    pos (0.25, 0.1) 
+
 l "Help us determine which milkshake is better."
+
 hide M annoyed
 show A main:
-    xpos 0.6
-    yalign 1.0
-    zoom 0.55
+    subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)
+show A main:
+    subpixel True xpos 0.5 zoom 0.55
+    ypos 0.1 
+    linear 0.07 ypos 0.0
+    linear 0.07 ypos -0.05
+with Pause(0.24)
+show A main:
+    pos (0.5, 0.0) 
+
 a "Leeroy, why are you dragging her into-."
+
 hide L main
+hide A main
 show M annoyed:
-    xpos 0.0
+    xpos 0.12
     yalign 1.0
     zoom 0.35
+
 "I look at the milkshakes. I look at the door I just came through. I look back at the milkshakes."
 "I strongly dislike milkshakes."
 "I think of them as dessert pretending to be a drink, and I consider anyone who orders them to be, well, children."
 "But I am exhausted, and I just want the bickering to stop."
+
+show M annoyed:
+    subpixel True xpos 0.12 zoom 0.35
+    ypos 1.0
+    linear 0.07 ypos 1.05
+    linear 0.07 ypos 1.0
+with Pause(0.24)
+show M annoyed:
+    pos (0.12, 1.0) 
+    
 m "Fine. Fine! Just because I want to sleep this century,"
+
+show M annoyed:
+    subpixel True 
+    pos (0.12, 1.0) zoom 0.35 
+    linear 0.19 pos (0.35, 1.0) zoom 0.35 
+with Pause(0.32)
+show M annoyed:
+    pos (0.35, 1.0) zoom 0.35 
+
+camera:
+    subpixel True 
+    pos (0, 0) zoom 1.0 
+    easein 0.20 pos (475, 51) zoom 1.25 
+with Pause(0.30)
+camera:
+    pos (475, 51) zoom 1.25 
+
 "I say, sitting on a stool."
 "I take LeeRoy's glass. I take a reluctant sip."
-hide A main
 "It is genuinely not bad. Not great either, but it's not like I'm an expert on the things I dislike."
-m "Hm."
+
 show M annoyed:
-    xpos 0.0
-    yalign 1.0
-    zoom 0.35
+    subpixel True xpos 0.35 zoom 0.35
+    ypos 1.0
+    linear 0.07 ypos 1.05
+    linear 0.07 ypos 1.0
+with Pause(0.24)
+show M annoyed:
+    pos (0.35, 1.0) 
+
+m "Hm."
+
 show L main:
-    xpos 0.55
-    yalign 1.0
-    zoom 0.5
+    subpixel True xpos 0.45 zoom 0.5
+    ypos 0.07
+    linear 0.07 ypos 0.02
+    linear 0.07 ypos 0.07
+with Pause(0.24)
+show L main:
+    pos (0.45, 0.07) 
+
 l "You see? That's the ratio right there. Four parts to one."
+
+show L main:
+    subpixel True xpos 0.45 zoom 0.5
+    ypos 0.07
+    linear 0.07 ypos 0.02
+    linear 0.07 ypos 0.07
+with Pause(0.24)
+show L main:
+    pos (0.45, 0.07) 
+
 l "You get the cold hitting you up front, and then it comes back around on you, sweet at the back, like a-"
 "He delivers this entire speech with total, sweeping conviction."
+
+show M melancholy:
+    xpos 0.35 zoom 0.35
+
 "But it sounds off. Has he been rehearsing it?"
 "It sounds far too polished, like words you'd find in a novel rather than spoken."
-m "It's fine. An… average milkshake."
-hide L main
-hide M annoyed
+
 show M annoyed:
-    xpos 0.0
-    yalign 1.0
-    zoom 0.35
+    xpos 0.35 zoom 0.35
+
+show M annoyed:
+    subpixel True xpos 0.35 zoom 0.35
+    ypos 1.0
+    linear 0.07 ypos 1.05
+    linear 0.07 ypos 1.0
+with Pause(0.24)
+show M annoyed:
+    pos (0.35, 1.0) 
+
+m "It's fine. An… average milkshake."
+
+hide L main
 show A main:
-    xpos 0.6
-    yalign 1.0
+    xpos 0.5
     zoom 0.55
+
 "I reach for Adelaide's glass. I take a sip."
+with hpunch
 "I freeze as my taste buds are deeply shocked—my entire face changes, scrunches."
 "My soul takes a brief vacation."
 "I pull the glass away from my mouth and set it back on the counter very, very slowly as I struggle to keep a neutral face."
+
+show M annoyed:
+    subpixel True xpos 0.35 zoom 0.35
+    ypos 1.0
+    linear 0.07 ypos 1.05
+    linear 0.07 ypos 1.0
+with Pause(0.24)
+show M annoyed:
+    pos (0.35, 1.0) 
+
 m "What is in that?"
+
+show A main:
+    subpixel True xpos 0.5 zoom 0.55
+    ypos 0.0
+    linear 0.07 ypos -0.05
+    linear 0.07 ypos 0.0
+with Pause(0.24)
+show A main:
+    pos (0.5, 0.0) 
+
 a "Strawberries. Milk. Ice."
+
+show M annoyed:
+    subpixel True xpos 0.35 zoom 0.35
+    ypos 1.0
+    linear 0.07 ypos 1.05
+    linear 0.07 ypos 1.0
+with Pause(0.24)
+show M annoyed:
+    pos (0.35, 1.0) 
+
 m "There's something else."
+
+show A main:
+    subpixel True xpos 0.5 zoom 0.55
+    ypos 0.0
+    linear 0.07 ypos -0.05
+    linear 0.07 ypos 0.0
+with Pause(0.24)
+show A main:
+    pos (0.5, 0.0) 
+
 a "Salt."
+
+show M annoyed:
+    subpixel True xpos 0.35 zoom 0.35
+    ypos 1.0
+    linear 0.07 ypos 1.05
+    linear 0.07 ypos 1.0
+with Pause(0.24)
+show M annoyed:
+    pos (0.35, 1.0) 
+
 m "How… much salt?"
+
+show A main:
+    subpixel True xpos 0.5 zoom 0.55
+    ypos 0.0
+    linear 0.07 ypos -0.05
+    linear 0.07 ypos 0.0
+with Pause(0.24)
+show A main:
+    pos (0.5, 0.0) 
+
 a "The card said a pinch."
+
+show M annoyed:
+    subpixel True xpos 0.35 zoom 0.35
+    ypos 1.0
+    linear 0.07 ypos 1.05
+    linear 0.07 ypos 1.0
+with Pause(0.24)
+show M annoyed:
+    pos (0.35, 1.0) 
+
 m "And… how much did you use?"
+
+show A main:
+    subpixel True xpos 0.5 zoom 0.55
+    ypos 0.0
+    linear 0.07 ypos -0.05
+    linear 0.07 ypos 0.0
+with Pause(0.24)
+show A main:
+    pos (0.5, 0.0) 
+
 a "A pinch. I don't know how much a pinch is. I used what I could pick up."
+
+show O main:
+    xpos 0.03 ypos 81 zoom 0.5
+
 "A long pause. I stare at her perfectly manicured hands."
+
+show M annoyed:
+    subpixel True xpos 0.35 zoom 0.35
+    ypos 1.0
+    linear 0.07 ypos 1.05
+    linear 0.07 ypos 1.0
+with Pause(0.24)
+show M annoyed:
+    pos (0.35, 1.0) 
+
 m "Have you tasted it?"
+
+show A main:
+    subpixel True xpos 0.5 zoom 0.55
+    ypos 0.0
+    linear 0.07 ypos -0.05
+    linear 0.07 ypos 0.0
+with Pause(0.24)
+show A main:
+    pos (0.5, 0.0) 
+
 a "I'm not feeling like drinking dairy."
+
 hide M annoyed
 hide A main
+hide O main
+
 "And then, from directly behind them, a voice speaks from the shadows at the end of the counter."
+
+
 o "She is right about the salt."
+with hpunch
+
+show M annoyed:
+    subpixel True ypos 0.18 xzoom 1.0 yzoom 1.0 zoom 0.35
+    parallel:
+        xpos 0.35 
+        linear 0.59 xpos 0.5 
+    parallel:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.21 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.38 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.69)
+show M annoyed:
+    pos (0.5, 0.18) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "I flinch and spin around."
+
 show O main:
-    xpos 0.6
-    yalign 1.0
+    xpos 0.03
+    ypos 81
     zoom 0.5
+
 "Another person has been standing there the entire scene. In the dark. Perfectly, impossibly still."
 "They are holding a broom in one hand, but they hold it gracefully like a butler rather than a cleaner."
 "They do not blink. They do not shift their weight as they address me."
 "They haven't moved a single muscle since before I walked in, and I am only now, startlingly, aware that they were there at all."
-hide O main
+
 show M annoyed:
-    xpos 0.0
-    yalign 1.0
-    zoom 0.35
-show O main:
-    xpos 0.6
-    yalign 1.0
-    zoom 0.5
+    subpixel True xpos 0.5 zoom 0.35
+    ypos 0.18
+    linear 0.07 ypos 0.13
+    linear 0.07 ypos 0.18
+with Pause(0.24)
+show M annoyed:
+    pos (0.5, 0.18) 
+
 m "How long have you been sta-"
+
+show O main:
+    subpixel True 
+    xpos 0.03 
+    linear 0.16 xpos 0.08 
+with Pause(0.26)
+show O main:
+    xpos 0.08 
+
 o "Yes."
+
+show M annoyed:
+    subpixel True xpos 0.5 zoom 0.35
+    ypos 0.18
+    linear 0.07 ypos 0.13
+    linear 0.07 ypos 0.18
+with Pause(0.24)
+show M annoyed:
+    pos (0.5, 0.18) 
+
 m "That's not... that isn't an answer to that question."
 "Ōe considers this. Seriously."
 "As though regular social interaction is a puzzle they haven't quite solved yet."
@@ -699,52 +1009,115 @@ menu:
         "How dare they disturb my peace and then serve such an unfortunate milkshake to me!"
         "I pay good money for this room, and as landlords they're certainly not delivering."
     "Ask what they were actually arguing about.":
+
+        show M annoyed:
+            subpixel True 
+            parallel:
+                xpos 0.5 
+                linear 0.22 xpos 0.35 
+            parallel:
+                matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+                linear 0.09 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+                linear 0.13 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        with Pause(0.32)
+        show M annoyed:
+            xpos 0.35 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
         "The frustration seeps out of me."
+
         show L sigh:
-            xpos 0.7
-            yalign 1.0
+            xpos 0.6 ypos 81
             zoom 0.5
+
         "I ask, and LeeRoy admits, deflated, that nobody has come in since they opened."
         l "Well, they did the first time, but for some reason customers are not returning."
+
         hide M annoyed
         show A main:
-            xpos -0.05
-            yalign 1.0
-            zoom 0.55
+            subpixel True xpos 0.2 zoom 0.55
+            ypos -0.02
+            linear 0.07 ypos -0.05
+            linear 0.07 ypos -0.02
+        with Pause(0.24)
+        show A main:
+            pos (0.2, -0.02)
+
         "Adelaide looks away and says, quietly,"
         a "He wanted tonight to go well."
         # [LISTEN +1]
 hide A main
 show M annoyed:
-    xpos 0.0
-    yalign 1.0
+    xpos 0.35
+    ypos 0.18
     zoom 0.35
+
 "Either way, I end up giving LeeRoy some practical advice—less syrup."
 "Chill the glasses first."
 "Under no circumstances let Adelaide near the salt shaker."
 "Perhaps she should be banned from using salt altogether."
-hide L sigh
+
+
 show L main:
-    xpos 0.55
-    yalign 1.0
+    xpos 0.45
+    ypos 0.07
     zoom 0.5
+
 "LeeRoy writes it all down."
 "He has no pen and thus resorts to scribbling ink on his hand."
 "I consider giving him one of my papers, but then—he should have enough money to afford his own writing supplies."
+
+show M annoyed:
+    subpixel True xpos 0.35 zoom 0.35
+    ypos 0.18
+    linear 0.07 ypos 0.16
+    linear 0.07 ypos 0.18
+with Pause(0.24)
+show M annoyed:
+    pos (0.35, 0.18) 
+
 m "Right. Wonderful. Delighted to help. Now if you'd be so kind, I'm intending to return to sleep."
 hide L main
+
+show M annoyed:
+    subpixel True 
+    xpos 0.5 ypos 0.18
+    linear 0.19 xpos 0.2
+with Pause(0.48)
+show M annoyed:
+    xpos 0.2
+
+camera:
+    subpixel True 
+    pos (475, 51) zoom 1.25 
+    linear 0.38 pos (1, 1) zoom 1.0 
+with Pause(0.48)
+camera:
+    pos (1, 1) zoom 1.0 
+
 "I stand up, pulling my coat tighter around my nightgown."
 "I am halfway out the door when the voice stops me."
+
 show O main:
-    xpos 0.6
+    xpos 0.47
     yalign 1.0
     zoom 0.5
+
 o "Miss Kessler."
 "I freeze. I slowly turn around."
 "I don't recall introducing myself to them."
 "Then again, if they're affiliated with the landlord, it makes sense they would know of me."
 o "Sleep well."
 "A quiet silence spreads between us."
+
+show M annoyed:
+    subpixel True xpos 0.2 ypos 0.18 zoom 0.35
+    ypos 0.18
+    linear 0.07 ypos 0.16
+    linear 0.07 ypos 0.18
+with Pause(0.24)
+show M annoyed:
+    pos (0.2, 0.18) 
+
 m "...thank you."
 hide O main
 "I push the door open and leave."
