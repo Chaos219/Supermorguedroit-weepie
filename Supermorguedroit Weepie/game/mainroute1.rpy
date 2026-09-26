@@ -52,11 +52,22 @@ label start:
     camera:
         perspective True
 
-"Monday, Special of the Day: Strawberry Milkshake"
 play music "intro.ogg"
 "The tape starts to play. A drum fill. Then brass."
-"TITLE CARD slashes across the screen in hot pink, cutting perfectly to the rhythm of the music."
-"Black-and-white stock footage flashes by: A lonely two-lane highway. A rusted water tower."
+image woman = Movie(size=(1920, 1080), channel="movie_dp", play="images/woman.webm")
+image house = Movie(size=(1920, 1080), channel="movie_dp", play="images/house.webm")
+
+window hide
+show house
+show M angry with easeinright
+pause 1.0
+hide M angry with easeoutleft
+pause 5.0
+hide house
+show woman
+pause 3.0
+hide woman
+window show
 "A stifling church social with kids in incredibly tacky frilly dresses."
 "A row of identical front porches with perfectly cut lawns."
 "A woman in a pressed apron, waving mindlessly at nothing."
