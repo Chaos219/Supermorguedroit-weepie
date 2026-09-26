@@ -151,6 +151,7 @@ style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
+    color "#290000ff"
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
@@ -247,7 +248,9 @@ screen quick_menu():
         transform:
 
             rotate 4
-
+            xpos 1720
+            ypos 1075
+            
             vbox:
                 style_prefix "quick"
                 style "quick_menu"
@@ -374,7 +377,7 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    add gui.main_menu_background size (1920, 1080)
 
     ## This empty frame darkens the main menu.
     frame:
@@ -442,9 +445,9 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
     style_prefix "game_menu"
 
     if main_menu:
-        add gui.main_menu_background
+        add gui.main_menu_background size (1920, 1080)
     else:
-        add gui.game_menu_background
+        add gui.game_menu_background size (1920, 1080)
 
     frame:
         style "game_menu_outer_frame"
@@ -525,7 +528,6 @@ style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
 
-    background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
     xsize 420
