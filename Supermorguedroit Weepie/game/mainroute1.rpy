@@ -12,13 +12,15 @@ init python:
 
 # Characters
 define m = Character("Dorothy", callback=boopy_voice)
-define a = Character("Adelaide")
-define l = Character("LeeRoy")
-define o = Character("Ōe")
-define b = Character("Mr. Hollis")
-define c = Character("Chet")
-define t1 = Character("Teenager1")
-define t2 = Character("Teenager2")
+define a = Character("Adelaide", callback=boopy_voice, cb_boopfile="bleep023.ogg")
+define l = Character("LeeRoy", callback=boopy_voice, cb_boopfile="bleep011.ogg")
+define o = Character("Ōe", callback=boopy_voice, cb_boopfile="bleep008.ogg")
+define b = Character("Mr. Hollis", callback=boopy_voice, cb_boopfile="bleep017.ogg")
+define c = Character("Chet", callback=boopy_voice, cb_boopfile="bleep014.ogg")
+define t1 = Character("Teenager1", callback=boopy_voice, cb_boopfile="bleep005.ogg")
+define t2 = Character("Teenager2", callback=boopy_voice, cb_boopfile="bleep026.ogg")
+define e = Character("Earl", callback=boopy_voice, cb_boopfile="bleep030.ogg")
+
 
 # Backgrounds
 image bg bedroom = im.Scale("images/bedroom_bg.png",1920,1080)
@@ -64,6 +66,7 @@ play music "intro.ogg"
 stop music
 play sound "phone.ogg"
 "A telephone rings. The shrill sound tears through the silence."
+play music "retro.ogg"
 scene bg bedroom
 show M annoyed:
     xpos 0.0
