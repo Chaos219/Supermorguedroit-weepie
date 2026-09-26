@@ -1,9 +1,19 @@
 # The script of the game goes in this file.
 
+init python:
+    def boopy_voice(event, interact=True, boopfile="bleep007.ogg", **kwargs):
+        if not interact:
+            return
+
+        if event == "show_done":
+            renpy.sound.play(boopfile)
+        elif event == "slow_done":
+            renpy.sound.stop()
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define m = Character("Dorothy")
+define m = Character("Dorothy", callback=boopy_voice)
 define a = Character("Adelaide")
 define l = Character("LeeRoy")
 define o = Character("Ōe")
@@ -15,6 +25,8 @@ image bg office = im.Scale("images/office_bg.png",1920,1080)
 # The game starts here.
 
 label start:
+    camera:
+        perspective True
 
 "Monday, Special of the Day: Strawberry Milkshake"
 "The tape starts to play. A drum fill. Then brass."
@@ -36,21 +48,146 @@ show mc_annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
+    
+
+window auto hide
+    
+camera:
+    subpixel True zoom 1.32 
+show bg bedroom:
+    subpixel True xzoom 1.0 
+    pos (0.5, 1.06) zoom 1.47 
+    linear 0.54 pos (0.5, 1.0) zoom 1.0 
+show mc_annoyed:
+    subpixel True 
+    parallel:
+        xpos 0.06 
+        linear 0.54 xpos 0.08 
+    parallel:
+        ypos 1.06 xzoom 1.0 zoom 0.45 
+        linear 0.17 ypos 1.11 xzoom 1.0 zoom 0.49 
+        linear 0.37 ypos 0.94 xzoom 1.0 zoom 0.38 
+    parallel:
+        zrotate 0.0 orientation (0.0, 0.0, 0.0) 
+        linear 0.17 zrotate 0.0 orientation (0.0, 0.0, 0.0) 
+    parallel:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.17 matrixtransform ScaleMatrix(1.04, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.37 matrixtransform ScaleMatrix(0.92, 1.03, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.08 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.72)
+    
+show bg bedroom:
+    pos (0.5, 1.0) zoom 1.0 
+show mc_annoyed:
+    pos (0.08, 0.94) zrotate 0.0 orientation (0.0, 0.0, 0.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 zoom 0.38 
+
+window auto show
+
+
 "I swing my legs out of bed and immediately trip."
+
+
+
+show mc_annoyed:
+    subpixel True xzoom 1.0 yzoom 1.0 zoom 0.38 alpha 1.0 blur 0.0 
+    pos (0.08, 0.94) 
+    linear 0.42 pos (0.2, 1.07) 
+with Pause(0.52)
+show mc_annoyed:
+    pos (0.2, 1.07) 
+
+
+
+
+camera:
+    subpixel True 
+    zoom 1.32 
+    linear 0.18 zoom 1.0 
+show mc_annoyed:
+    subpixel True 
+    pos (0.08, 0.94) 
+    linear 0.18 pos (0.16, 1.0) 
+with Pause(0.28)    
+camera:
+    zoom 1.0 
+show mc_annoyed:
+    pos (0.16, 1.0) 
 "My foot catches on a pile of thrifted clothes I tossed onto the scorch mark on the carpet."
+
+show mc_annoyed:
+    pos (0.16, 1.0) 
+
+show mc_annoyed:
+    subpixel True 
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.58 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.68)
+show mc_annoyed:
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
+show mc_annoyed:
+    subpixel True 
+    xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.44 xpos 0.32 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.54)
+show mc_annoyed:
+    xpos 0.32 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
+
+with hpunch
 "I stumble forward, barely catching my balance."
 "I weave through the room, passing a hissing radiator and orange crates stacked high with my prized rock-and-roll vinyls."
 "I pass the kitchen table, the current domain of my sewing machine."
+
+show mc_annoyed:
+    subpixel True 
+    parallel:
+        xpos 0.16 
+        linear 0.50 xpos 0.51 
+    parallel:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.23 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.60)
+show mc_annoyed:
+    xpos 0.51 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
+
+
 "There's a half-finished hem pinned down that I've been telling myself to stitch since last week."
 "On the windowsill, my secondhand Royal Quiet De Luxe typewriter sits poised with a blank page."
+show mc_melancholy:
+    subpixel True pos (0.38, -99) xzoom 1.0 zoom 0.8 
+show mc_melancholy:
+    subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with zoomin
+
 "Waiting for me to finish up my next grandiose story that will finally hit the mark. Surely."
 "A stray sock lies abandoned on the floorboards."
+
+show mc_melancholy:
+    subpixel True 
+    parallel:
+        pos (0.38, -99) 
+        linear 0.45 pos (0.12, 90) 
+    parallel:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.8 
+        linear 0.19 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.49 
+with Pause(0.55)
+show mc_melancholy:
+    pos (0.12, 90) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.49 
+
 "I snatch it up without breaking stride, tossing it aside as I lunge for the heavy rotary phone."
-hide mc_annoyed
+hide mc_melancholy
 show mc_main:
     xpos -0.05
     yalign 1.0
     zoom 0.455
+
+show mc_main:
+    subpixel True pos (0.01, 1.42) zoom 0.72 
+
+
 m "Courier, Kessler - ah, I mean. Hello, Dorothy speaking."
 b "Dorothy."
 "His voice is unhurried. Almost too calm. My jaw clenches tight."
@@ -59,6 +196,7 @@ show mc_annoyed:
     xpos 0.0
     yalign 1.0
     zoom 0.35
+with hpunch
 m "M-Mr. Hollis."
 b "I'm giving Chet the Glenn piece."
 m "T-The… I pitched that. Multiple times. A-And I already have the Mercury press packet, a source at Lewis-"
