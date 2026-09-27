@@ -1,5 +1,3 @@
-
-
 ## Say screen ##################################################################
 ##
 ## The say screen is used to display dialogue to the player. It takes two
@@ -13,7 +11,28 @@
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
+init python:
+    def say_arguments_callback(who, interact=True, ctc="ctc_anim"):
+        """
+        Gives EVERYONE a ctc so you dont have to manually define it. 
+        
+        ctc : the ctc image.
+        """
+        return (), { "interact" : interact, "ctc" : ctc, "ctc_position" : "screen-variable" }
+            
+    config.say_arguments_callback = say_arguments_callback
+
+image ctc_anim:
+    "gui/ctc_01.png"
+    0.3
+    "gui/ctc_02.png"
+    0.3
+    "gui/ctc_03.png"
+    1.0
+    repeat
+
 screen say(who, what):
+    default ctc = None
 
     window:
         id "window"
@@ -32,6 +51,10 @@ screen say(who, what):
     ## phone variant - there's no room.
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
+
+    showif ctc:
+        add ctc:
+            pos (1350, 995)
 
 
 ## Make the namebox available for styling through the Character object.
