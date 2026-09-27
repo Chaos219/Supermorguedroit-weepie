@@ -103,7 +103,7 @@ show M annoyed
 m "I… suppose I should answer it. What if it’s an emergency?."
 
 show M annoyed:
-        subpixel True zoom 0.35 
+    subpixel True zoom 0.35 
     parallel:
         xpos 0.5 
         linear 0.50 xpos 0.7 
