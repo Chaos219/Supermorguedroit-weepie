@@ -20,6 +20,9 @@ init python early:
 
     RED = "#D92E4A"
     GREEN = "#347E6F"
+    WHITE = "#fff"
+    BLACK = "#000"
+    GRAY = "#73848B"
 
 ################################################################################
 ## GUI Configuration Variables
