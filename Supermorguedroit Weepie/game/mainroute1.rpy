@@ -563,77 +563,135 @@ show M angry:
     xpos 0.16
     yalign 1.0
     zoom 0.35
+show cg
+camera:
+    subpixel True pos (1440, 351) zoom 1.88 
 with hpunch
 "I push through the heavy doors at a brisk pace, my winter coat thrown hastily over my nightgown."
+
+camera:
+    subpixel True 
+    parallel:
+        pos (1440, 351) 
+        linear 0.69 pos (1278, 297) 
+    parallel:
+        zoom 1.88 
+        linear 0.68 zoom 1.74 
+with Pause(0.79)
+camera:
+    pos (1278, 297) zoom 1.74 
+
 "I still have a steno pencil tucked in my hair."
+
+camera:
+    subpixel True 
+    pos (1278, 297) zoom 1.74 
+    linear 0.50 pos (1170, 279) zoom 1.67 
+with Pause(0.60)
+camera:
+    pos (1170, 279) zoom 1.67 
+
+
+
 "I am entirely, resolutely prepared to interrupt somebody's evening."
-"The diner is a pristine, bright shrine to chrome and checkerboard linoleum."
-"There are images hung on the back wall, paintings; someone also hung a katana there."
-"It's an assortment of varied art, featuring a surprising amount of cars."
-"'Cars are cool', reads one of the posters. How... interesting."
-"Eight booths line the walls in bright red vinyl. All of them empty."
-"In the corner sits a jukebox that nobody has bothered to plug in yet."
-"Behind the counter, the specials board proudly reads MONDAY: STRAWBERRY MILKSHAKE in an elegant, sweeping cursive that looks like it belongs on a 19th-century treaty, not a diner menu."
-"Two milkshakes sit on the counter like evidence at a high-stakes trial."
-"Standing over them is the duo responsible."
+camera:
+    subpixel True 
+    pos (1170, 279) zoom 1.67 
+    linear 0.57 pos (675, 243) zoom 1.56 
+with Pause(0.67)
+camera:
+    pos (675, 243) zoom 1.56 
+"There are two milkshakes on the counter."
+
+camera:
+    subpixel True 
+    pos (675, 243) zoom 1.56 
+    linear 0.41 pos (0, 0) zoom 1.0 
+with Pause(0.51)
+camera:
+    pos (0, 0) zoom 1.0 
+
+
+"Sitting next to them is the duo responsible."
 hide M angry
 
-show A main:
-    subpixel True xpos 0.22 zoom 0.55
-show L sigh:
-    subpixel True xpos 0.6 ypos 0.1 zoom 0.5
+#show A main:
+    #subpixel True xpos 0.22 zoom 0.55
+#show L sigh:
+    #subpixel True xpos 0.6 ypos 0.1 zoom 0.5
 
 "LEEROY looks to be in his early twenties."
-"He is African-American, wears a paper hat with dreads tucked underneath in a ponytail."
+
+camera:
+    subpixel True 
+    xpos 0 zoom 1.0 
+    linear 0.37 xpos 0 zoom 1.21 
+with Pause(0.47)
+camera:
+    xpos 0 zoom 1.21 
+    
+"He wears his locs in a ponytail and a bright shirt with flowers on it."
 "Before I have the chance to assess his appearance further, he gestures animatedly with a long metal spoon."
 "Beside him is ADELAIDE."
-"She looks late twenties, immaculate, and is wearing expensive, sharp-heeled shoes."
-"She also wears a diner apron, though her expression strongly suggests the apron was not her idea."
-"Her arms are tightly folded."
 
-show L sigh:
-    subpixel True xpos 0.6 
-    ypos 0.1 
-    linear 0.07 ypos 0.05 
-    linear 0.07 ypos 0.1 
-with Pause(0.24)
-show L sigh:
-    pos (0.6, 0.1) 
+camera:
+    subpixel True 
+    xpos 0 
+    linear 0.37 xpos 207 
+with Pause(0.47)
+camera:
+    xpos 207 
+
+
+"She looks late twenties, immaculate, and is wearing expensive, sharp-heeled shoes."
+"She was supposedly the waitress, but there wasn't an apron in sight."
+"Her lips are curled in a tight pout."
+
+#show L sigh:
+    #subpixel True xpos 0.6 
+    #ypos 0.1 
+    #linear 0.07 ypos 0.05 
+    #linear 0.07 ypos 0.1 
+#with Pause(0.24)
+#show L sigh:
+    #pos (0.6, 0.1) 
 
 l "- it's about balance, Adelaide. You can't just put cold things in a cup and call it a beverage-"
 
-show A main:
-    subpixel True xpos 0.22 
-    ypos 0.0 
-    linear 0.06 ypos -0.05 
-    linear 0.05 ypos 0.0 
-with Pause(0.21)
-show A main:
-    pos (0.22, 0.0) 
+#show A main:
+    #subpixel True xpos 0.22 
+    #ypos 0.0 
+    #linear 0.06 ypos -0.05 
+    #linear 0.05 ypos 0.0 
+#with Pause(0.21)
+#show A main:
+    #pos (0.22, 0.0) 
 
 a "I followed the card."
 
-show L sigh:
-    subpixel True xpos 0.6 
-    ypos 0.1 
-    linear 0.07 ypos 0.05 
-    linear 0.07 ypos 0.1 
-with Pause(0.24)
-show L sigh:
-    pos (0.6, 0.1) 
+#show L sigh:
+    #subpixel True xpos 0.6 
+    #ypos 0.1 
+    #linear 0.07 ypos 0.05 
+    #linear 0.07 ypos 0.1 
+#with Pause(0.24)
+#show L sigh:
+    #pos (0.6, 0.1) 
 
 l "Like a hostage."
 
+
 hide L sigh
 hide A main
+
+"I march right up to the chrome counter."
+hide cg
+with hpunch
 show M angry:
     xpos 0.16
     yalign 1.0
     zoom 0.35
-
-"I march right up to the chrome counter."
-with hpunch
-m "It is twenty past nine. I am trying to sleep and yet, and I can hear every single-"
+m "It is twenty past nine. I am trying to sleep and I can hear E V E R Y  S I N G L E-"
 
 hide M angry
 show A main:
@@ -718,7 +776,7 @@ with Pause(0.38)
 show L main:
     subpixel True ypos 81 zoom 0.5 
 
-"(already sliding both frosted glasses down the counter toward me)"
+"He's already sliding both glasses towards me."
 
 show L main:
     subpixel True xpos 0.25
@@ -786,6 +844,7 @@ camera:
 
 "I say, sitting on a stool."
 "I take LeeRoy's glass. I take a reluctant sip."
+show M melancholy
 "It is genuinely not bad. Not great either, but it's not like I'm an expert on the things I dislike."
 
 show M annoyed:
@@ -849,7 +908,7 @@ show A main:
 
 "I reach for Adelaide's glass. I take a sip."
 with hpunch
-"I freeze as my taste buds are deeply shocked—my entire face changes, scrunches."
+"I freeze as my taste buds are deeply shocked — my entire face scrunches up."
 "My soul takes a brief vacation."
 "I pull the glass away from my mouth and set it back on the counter very, very slowly as I struggle to keep a neutral face."
 
@@ -886,14 +945,9 @@ show M annoyed:
 
 m "There's something else."
 
-show A main:
-    subpixel True xpos 0.5 zoom 0.55
-    ypos 0.0
-    linear 0.07 ypos -0.05
-    linear 0.07 ypos 0.0
-with Pause(0.24)
-show A main:
-    pos (0.5, 0.0) 
+show A evil:
+    subpixel True pos (0.62, 0.05) zoom 0.39 
+with dissolve
 
 a "Salt."
 
@@ -943,6 +997,7 @@ a "A pinch. I don't know how much a pinch is. I used what I could pick up."
 
 show O main:
     xpos 0.03 ypos 81 zoom 0.5
+with easeinleft
 
 "A long pause. I stare at her perfectly manicured hands."
 
@@ -1034,6 +1089,7 @@ show M annoyed:
     pos (0.5, 0.18) 
 
 m "That's not... that isn't an answer to that question."
+show O solemn with dissolve
 "Ōe considers this. Seriously."
 "As though regular social interaction is a puzzle they haven't quite solved yet."
 "They do not produce a second answer."
@@ -1082,10 +1138,6 @@ menu:
         a "He wanted tonight to go well."
         # [LISTEN +1]
 hide A main
-show M annoyed:
-    xpos 0.35
-    ypos 0.18
-    zoom 0.35
 
 "Either way, I end up giving LeeRoy some practical advice—less syrup."
 "Chill the glasses first."
@@ -1098,9 +1150,18 @@ show L main:
     ypos 0.07
     zoom 0.5
 
+show M annoyed:
+    subpixel True 
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.50 xpos 0.37 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.60)
+show M annoyed:
+    xpos 0.37 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
+
 "LeeRoy writes it all down."
 "He has no pen and thus resorts to scribbling ink on his hand."
-"I consider giving him one of my papers, but then—he should have enough money to afford his own writing supplies."
+"I consider giving him one of my papers, but then again — he should have enough money to afford his own writing supplies."
 
 show M annoyed:
     subpixel True xpos 0.35 zoom 0.35
