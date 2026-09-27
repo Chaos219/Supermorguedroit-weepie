@@ -59,13 +59,28 @@ image house = Movie(size=(1920, 1080), channel="movie_dp", play="images/house.we
 
 window hide
 show house
-show M angry with easeinright
+show fairyfaybug with easeinright
 pause 1.0
-hide M angry with easeoutleft
-pause 5.0
+show game with easeinright
+pause 1.0
+show spooktober with easeinright
+pause 2.0
+hide game with easeoutright
+hide spooktober with easeoutleft
+hide fairyfaybug with easeoutleft
 hide house
 show woman
-pause 3.0
+pause 1.0
+show writers with easeinleft
+pause 1.0
+show jason with easeinleft
+show arvantus with easeinleft
+show endy with easeinleft
+pause 2.0
+hide jason with easeoutleft
+hide arvantus with easeoutleft
+hide endy with easeoutleft
+hide writers
 hide woman
 window show
 "A stifling church social with kids in incredibly tacky frilly dresses."
