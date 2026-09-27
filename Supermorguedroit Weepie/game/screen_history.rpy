@@ -11,6 +11,31 @@ transform ts_hist_fadein():
     ease 1.0 yoffset 0
 
 
+image hist_mc = Composite(
+    (216, 237),
+    (0, 0),Transform(Crop((447, 127, 693, 760), "mc_main.png"), xsize=216, fit="contain"),
+    (0, 0), "gui/log_speaker_foreground.png"
+)
+image hist_leeroy = Composite(
+    (216, 237),
+    (0, 0), Transform(Crop((722, 100, 693, 760), "LeeRoy_main.png"), xsize=216, fit="contain"),
+    (0, 0), "gui/log_speaker_foreground.png"
+)
+
+image hist_adelaide = Composite(
+    (216, 237),
+    (0, 0), Transform(Crop((417, 178, 693, 760), "adelaide_main.png"), xsize=216, fit="contain"),
+    (0, 0), "gui/log_speaker_foreground.png"
+)
+
+image hist_oe = Composite(
+    (216, 237),
+    (0, 0), Transform(Crop((417, 178, 693, 760), "oe_main.png"), xsize=216, fit="contain"),
+    (0, 0), "gui/log_speaker_foreground.png"
+)
+
+
+
 screen history():
 
     tag menu
@@ -51,7 +76,8 @@ screen history():
                 scrollbars None yinitial 1.0
 
                 ysize 750
-                xoffset 100
+                xoffset 25
+                
 
                 style_prefix "history"
 
@@ -62,7 +88,23 @@ screen history():
                 for h in _history_list:
                     if h.who:
                         hbox:
-                            add Transform(BROWN, xysize=(216, 237))
+                            if h.who == "Dorothy":
+                                add "hist_mc"
+                            elif h.who == "Adelaide":
+                                add "hist_adelaide"
+                            elif h.who == "LeeRoy":
+                                add "hist_leeroy"
+                            elif h.who == "Ōe":
+                                add "hist_oe"
+
+                            else:
+                                fixed:
+                                    xysize (216, 237)
+                                    add "gui/log_speaker_foreground.png"
+                                    if h.who == "Mr. Hollis":
+                                        text "H" align (0.5, 0.5) size 60 
+                                    else:
+                                        text h.who[0] align (0.5, 0.5) size 60 
 
                             null width 35
                             vbox:
@@ -73,14 +115,17 @@ screen history():
                                     substitute False
 
                     else:
-                        $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
-                        text what:
-                            xalign 0.5
-                            substitute False
+                        hbox:
+                            null width 216
+
+                            $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
+                            text what:
+                                xalign 0.5
+                                substitute False
 
                     null height 35
 
-                    add "gui/log_line_divider.png" xalign 0.5 xoffset 50
+                    add "gui/log_line_divider.png" xalign 0.5 xoffset 65
 
                     null height 35
                         
@@ -124,7 +169,7 @@ style history_text:
     size 25
 
     font LIBREREG
-    xsize 950
+    xsize 800
     
 
 
