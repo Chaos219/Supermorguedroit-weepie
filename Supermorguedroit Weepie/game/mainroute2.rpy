@@ -397,23 +397,58 @@ scene bg bedroom
 "The old shortbread tin sits open on the kitchen table, jammed up against the heavy black Singer just to make enough room to work."
 "Inside, a roll of crumpled bills sits pinched by a tired rubber band, barely thicker than a deck of cards."
 "Next to it, the Greyhound timetable, creased and worn soft from being folded to the same page over and over. CLEVELAND - NEW YORK CITY."
+
+show M main:
+    xpos 0.12 yalign 1.0 zoom 0.45
+
 "I count the money out on the Formica tabletop."
 "Then I count it again, slower this time, smoothing down the dog-eared corners as if giving the bills a little more care might miraculously make them multiply."
 m "Forty-one dollars."
 "I glance at the fare printed on the timetable. The math runs through my head."
+
+show M annoyed:
+    xpos 0.16 yalign 1.0 zoom 0.35
+with dissolve
+
 m "Eleven weeks. That's if I don't buy a single record, skip lunch on Tuesdays, and pray to God nothing in this room breaks."
 "I shove the tin aside. The rent book waits underneath."
 "I flip the cover back."
 "The monthly rate is written in that same old-fashioned, looping cursive as the specials board downstairs. The number is low. The kind of low that reads charity."
+
+show M melancholy
+with dissolve
+
 m "…well, at least the rent’s cheap."
 "It sounds even sadder when I say it out loud."
+
+show M melancholy:
+    subpixel True 
+    parallel:
+        xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.34 xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    parallel:
+        xpos 1.0 
+        linear 0.03 ypos 0.98 
+        linear 0.31 ypos 1.0 
+with Pause(0.44)
+show M melancholy:
+    pos (0.5, 1.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "I push my chair back and head to the window."
 "The neon sign buzzes below, throwing a harsh red glare. Beyond that, the parking lot, all cracked asphalt."
 "Empty. Not a single headlight out there. No surprise."
 "Maybe it's the name that goes on forever, maybe it's the lousy service, but whatever it is, it keeps folks away from this place like it's contagious."
 m "Nobody's eating there."
+
+show M annoyed 
+with dissolve 
+
 "I fold my arms tight against the cold seeping through the glass."
 m "But if this keeps up"
+
+show M melancholy
+with dissolve 
+
 "I glance back at the sad little tin on the table."
 m "then the diner goes under. And the building goes into foreclosure with it. And I lose the room."
 "I drop onto the narrow windowsill, right beside my typewriter. The keys press cold against my arm."
@@ -421,40 +456,70 @@ m "And then the saving stops. And then there's no Greyhound to New York."
 m "And then I'm stuck writing the women's page until I'm sixty, just like Hollis said... and mother asks me every single Christmas when I'm finally going to settle down."
 "I fish the crumpled newspaper clipping from my coat pocket and smooth it out beside the typewriter."
 m "…there are only so many excuses I can use."
+
+show M annoyed 
+with dissolve
+with hpunch 
+
 "Somewhere below my feet, a heavy plate crashes to the floor."
 "A second later, two voices drift up through the floorboards, laughing like it's nothing."
+
+show M annoyed:
+    subpixel True 
+    parallel:
+        xpos 0.5 
+        linear 0.18 xpos 0.5 
+        linear 0.19 xpos 0.16 
+    parallel:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        easein 0.18 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        easeout 0.19 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        easein 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.63)
+show M annoyed:
+    xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 m "I have to keep the milkshake people in business."
 
 menu:
     "Handle things your way":
+
         show M main:
-            xpos -0.05
+            xpos 0.12
             yalign 1.0
-            zoom 0.455
+            zoom 0.45
+        with dissolve
+
         "I drop into the chair at the Royal and hammer out three pages of notes before I budge."
         "Problems, root causes, fixes, all lined up by cost."
         "When I yank the last sheet from the carriage, I've got a battle plan."
         "Now to hit them with the facts and hope they take even a scrap of it seriously."
     "Ask what they are struggling with":
+
         show M main:
-            xpos -0.05
+            xpos 0.12
             yalign 1.0
-            zoom 0.455
+            zoom 0.45
+        with dissolve
+
         "I grab my steno pad and a pencil."
         "It'll be a whole lot easier to patch this sinking ship if I know where they think the leak is."
         "I've got my own ideas, but I don't have the full picture."
         # [LISTEN +1]
 
 "I slip my shoes back on, one after the other."
+
 show M annoyed:
-    xpos 0.0
+    xpos 0.16
     yalign 1.0
     zoom 0.35
+with dissolve
+
 "Deep breath. Out the door and down the stairs."
 # Scene 5: The Supermurgidroid Weepie - Day
 scene bg diner
 show M annoyed:
-    xpos 0.0
+    xpos 0.16
     yalign 1.0
     zoom 0.35
 "I take the narrow, creaking stairs down to the ground floor and push through the swinging door."
@@ -479,7 +544,7 @@ show L sigh:
 l "I know. I'm just apologising with it."
 "I drag the straw closer and take a sip."
 show M main:
-    xpos -0.05
+    xpos 0.12
     yalign 1.0
     zoom 0.455
 "My eyebrows go up, just a little. For me, that’s practically applause."
