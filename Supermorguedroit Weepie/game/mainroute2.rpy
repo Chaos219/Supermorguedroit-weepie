@@ -209,48 +209,166 @@ m "I am absolutely not getting involved."
 scene bg office
 "Tuesday, Special of the Day: Unknown"
 
+camera:
+    subpixel True 
+    pos (0, 0) zoom 1.0 
+    linear 1.20 pos (251, 103) zoom 1.27 
 show M main:
-    xpos 0.12 zoom 0.35
+    subpixel True zpos 0.0 zoom 0.45
+    parallel:
+        xpos 0.12 
+        linear 1.20 xpos 0.16 
+    parallel:
+        ypos 170 
+        linear 0.15 ypos 160 
+        linear 0.15 ypos 170 
+        linear 0.15 ypos 160 
+        linear 0.15 ypos 170 
+        linear 0.15 ypos 160 
+        linear 0.15 ypos 170 
+        linear 0.15 ypos 160 
+        linear 0.15 ypos 170 
+with Pause(1.30)
+camera:
+    pos (251, 103) zoom 1.27 
+show M main:
+    pos (0.16, 170) 
 
 "Click. Clack. My low heels echo on the scuffed linoleum as I cross the main room."
 "Just a handful of desks jammed together, radiator hissing slow and steady."
 "The Underwood in the corner clacks out a lazy rhythm, and the air is thick and yellow with old cigarette smoke."
+
+show M main:
+    subpixel True zpos 0.0 zoom 0.45
+    parallel:
+        ypos 170 
+        linear 0.15 ypos 160 
+        linear 0.15 ypos 170 
+        linear 0.15 ypos 160 
+        linear 0.15 ypos 170 
+        linear 0.15 ypos 160 
+        linear 0.15 ypos 170 
+        linear 0.15 ypos 160 
+        linear 0.15 ypos 170 
+
 "I shoulder through the frosted glass door into the editor’s office, coat slipping down my arms."
 "Three pitches rattle in my head, each one practiced on the walk over."
 "Chet’s already there, sprawled in the corner chair, wingtips kicked up on a side desk."
 "Cigarette hanging from his lip, ash dropping onto his wrinkled tie."
 m "Mr. Hollis, I’ve got a"
+
+hide M main
+
 b "Kessler. Good. Sit down."
+
+show M main:
+    subpixel True xpos 0.16 ypos 180 zoom 0.45
+
 "I drop into the stiff wooden chair across from him."
 "He doesn’t bother looking up from the galley proofs."
 "Just slides a ragged square of newsprint across the green desk blotter, eyes still down."
+
+hide M main
+
 b "I want it by Friday."
+
+show M main:
+    subpixel True xpos 0.16 ypos 180 zoom 0.45
+
 "I pick it up and skim the ink."
 "Tear-sheet from last night’s edition. A girl in a poodle skirt, roller skates, tray balanced outside a diner. Adelaide."
 m "Mr. Hollis, we already ran a photo spread on this joint yesterday. What exactly am I supposed to write about…"
+
+hide M main 
+
 b "It’s local color. Human interest."
 b "Get a quote from whoever runs the place, write something cute about the milkshakes, ask if they’re hiring. Keep it breezy."
 c "Focus on the roller skates, Anne. The readers eat that stuff up."
 
 show M annoyed:
-    xpos 0.16 zoom 0.35
-with dissolve 
+    xpos 0.2 yalign 1.0 zoom 0.35
 
 "That’s not my name?"
+
+show M angry:
+    subpixel True 
+    xpos 0.2 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    easeout 0.54 xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.55)
+show M angry:
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
+with hpunch
+
 "I whip around to face Chet, every muscle wound tight as a spring."
 "I open my mouth, ready to wipe that smug look off his face."
+
+hide M angry
+
 b "Two hundred words."
+
+show M angry:
+    xpos 0.5 zoom 0.35 yalign 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.4)
+show M annoyed:
+    xpos 0.5 zoom 0.35 yalign 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with dissolve
+
 "My jaw snaps shut. The fight drains out of me, puddling on the floor."
 m "…Yes, Chief."
 b "Good."
 "He keeps talking, something about the point spread for the pennant race, but it all turns to static."
+
+show M annoyed:
+    subpixel True 
+    parallel:
+        ypos 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 1.0 
+        linear 0.19 ypos 1.04 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(15.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 0.9 
+        linear 0.20 ypos 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 1.0 
+    parallel:
+        xzoom 1.0 
+        linear 0.19 xzoom 1.0 
+with Pause(0.49)
+show M annoyed:
+    ypos 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 yzoom 1.0 
+
 "I nod, stand up, and slip back to my cramped desk in the bullpen."
 "I trade a few empty words with the switchboard girl, shrug my coat back on."
+
+camera:
+    subpixel True 
+    pos (251, 103) zoom 1.27 
+    linear 0.38 pos (0, 0) zoom 1.0 
+show M annoyed:
+    subpixel True 
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.38 xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.48)
+camera:
+    pos (0, 0) zoom 1.0 
+show M annoyed:
+    xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "Before anyone can toss me another fluff piece, I slip out the glass doors, quiet as a ghost."
 
 # Scene 3: Courier - Stairwell - Continuous
 
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.15 ypos 0.98 
+    linear 0.15 ypos 1.0 
+    linear 0.15 ypos 0.98 
+    linear 0.15 ypos 1.0 
+with Pause(0.70)
+show M annoyed:
+    ypos 1.0 
+
 "I barely make it to the landing before my feet lock up."
+
+show M angry
+with dissolve 
+
 "My fist is so tight, my nails carve little half-moons into my palm."
 "I glance down and pry my fingers open."
 "The newspaper clipping is mashed into a damp wad, stuck to my sweaty hand."
@@ -259,9 +377,22 @@ m "Absolute garbage."
 "I scrub at the cheap newsprint with my thumb, trying to smooth out the mess I made."
 "The girl in the poodle skirt grins at me through the smeared ink, all teeth and empty eyes, like some cheerleader who got her brains scooped out and replaced with whipped cream."
 "I stare her down for a beat."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.15 ypos 0.98 
+    linear 0.15 ypos 1.0 
+    linear 0.15 ypos 0.98 
+    linear 0.15 ypos 1.0 
+with Pause(0.70)
+show M annoyed:
+    ypos 1.0 
+
 "Then I fold the clipping in half, neat as I can, tuck it deep in my coat pocket, and head back toward the diner."
 
 # Scene 4: Dorothy's Apartment - Day
+scene bg bedroom
 
 "The old shortbread tin sits open on the kitchen table, jammed up against the heavy black Singer just to make enough room to work."
 "Inside, a roll of crumpled bills sits pinched by a tired rubber band, barely thicker than a deck of cards."
