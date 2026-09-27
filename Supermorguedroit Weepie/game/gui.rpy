@@ -17,7 +17,11 @@ define config.check_conflicting_properties = True
 init python early:
     LOBSTER = "gui/Lobster-Regular.ttf"
     VASTSHAD = "gui/VastShadow-Regular.ttf"
-    BADSCREIPT = "gui/BadScript-Regular.ttf"
+    BADSCRIPT = "gui/BadScript-Regular.ttf"
+
+    LIBREREG = "gui/LibreBaskerville-Regular.ttf"
+    LIBREBOLD = "gui/LibreBaskerville-Bold.ttf"
+    LIBREITA = "gui/LibreBaskerville-Italic.ttf"
 
     RED = "#D92E4A"
     GREEN = "#347E6F"
