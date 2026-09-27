@@ -45,7 +45,7 @@ with hpunch
 
 show A evil:
     subpixel True zoom 0.4 
-    ypos 1.0 
+    yalign 1.0 
     linear 0.05 ypos 0.95 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
