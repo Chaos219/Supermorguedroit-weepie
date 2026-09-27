@@ -52,12 +52,17 @@ label start:
     camera:
         perspective True
 
+window hide
+$ quick_menu = False
+
 play music "intro.ogg"
-"The tape starts to play. A drum fill. Then brass."
 image woman = Movie(size=(1920, 1080), channel="movie_dp", play="images/woman.webm")
 image house = Movie(size=(1920, 1080), channel="movie_dp", play="images/house.webm")
+image street = Movie(size=(1920, 1080), channel="movie_dp", play="images/street.webm")
+image horse = Movie(size=(1920, 1080), channel="movie_dp", play="horse/street.webm")
 
 window hide
+$ quick_menu = False
 show house
 show fairyfaybug with easeinright
 pause 1.0
@@ -82,12 +87,27 @@ hide arvantus with easeoutleft
 hide endy with easeoutleft
 hide writers
 hide woman
+show street
+pause 1.0
+show artists with easeintop
+show art_names with easeinbottom
+pause 1.0
+hide art_names with easeoutbottom
+hide artists with easeouttop
+hide street
+show horse 
+show programmers with easeinleft
+show music with easeinright
+show pro_names with easeinleft
+show dael with easeinright
+pause 1.0
+hide programmers
+hide music
+hide pro_names
+hide dael
+hide horse
 window show
-"A stifling church social with kids in incredibly tacky frilly dresses."
-"A row of identical front porches with perfectly cut lawns."
-"A woman in a pressed apron, waving mindlessly at nothing."
-"The footage is beautiful, but lacks substance. A soul. It's just so… ordinary. Mundane."
-"A postcard is shown on the screen."
+$ quick_menu = True
 "VESPER FALLS, OHIO - SEPTEMBER 1962"
 stop music
 play sound "phone.ogg"
