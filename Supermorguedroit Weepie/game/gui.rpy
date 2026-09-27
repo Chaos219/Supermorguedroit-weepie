@@ -19,6 +19,7 @@ init python early:
     VASTSHAD = "gui/VastShadow-Regular.ttf"
 
     RED = "#D92E4A"
+    GREEN = "#347E6F"
 
 ################################################################################
 ## GUI Configuration Variables

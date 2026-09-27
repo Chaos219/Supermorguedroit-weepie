@@ -4,9 +4,33 @@
 ## Used to display the main menu when Ren'Py starts.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
+init python:
+    class Credit:
+        def __init__(self, name, roles, links=None):
+            self.name = name
+            self.roles = roles
+            self.links = links
+
+
 transform ts_main_menu():
     yoffset 500
     ease 1.0 yoffset 0
+
+
+define CREDITS_LIST = [
+    Credit("Fairyfaybug", "Writer, BG Artist", ["https://fairyfaybug.itch.io/"]),
+    Credit("Dael Kurusu", "Music", ["https://regulardael.itch.io/", "https://www.youtube.com/@JimMegamiTensei"]),
+    Credit("Jason Corley", "Write", ["http://jdcorley.itch.io/"]),
+    Credit("Endy", "Writer", None),
+    Credit("Inseu", "Programmer", ["https://inesu-11.itch.io/"]),
+    Credit("Arvantus", "Programmer", ["https://codexpedia.sk"]),
+    Credit("Chaos", "Programmer", None),
+    Credit("Rythen", "Programmer", ["https://rythen-winds.itch.io/"]),
+    Credit("Otoke Neko", "UI Designer & Programmer", ["https://otokeneko.carrd.co/"]),
+    Credit("Crowlee", "Artist", ["https://linktr.ee/crowlee"]),
+    Credit("Graphi", "Artist", ["https://connil-de-la-mienuit.itch.io/", "https://vgen.co/graphi"]),
+    Credit("MaroonDrops", "Artist", None),
+]
 
 screen main_menu():
     default credits_page = False
@@ -36,12 +60,43 @@ screen main_menu():
         if credits_page:
             add "gui/title_card_back.png"
             label _("Meet the Staff!")
+            
+            viewport id "credvp":
+                draggable True mousewheel True pagekeys True
+                scrollbars None 
+                xysize (825, 390)
+                xalign 0.5 xoffset 50
+                ypos 280
+                    
+                grid 2 6:
+                    xfill True
+                    yspacing 25
+
+                    for credit in CREDITS_LIST:
+                        $ name = credit.name
+                        $ roles = credit.roles
+                        $ links = credit.links
+
+                        vbox:
+                            style_prefix "credit"
+                            spacing 0
+                            text "{} - {}".format(name, roles)
+                            if links is not None:
+                                hbox:
+                                    spacing 10
+                                    for num, link in enumerate(links, start=1):
+                                        textbutton _("Link {}".format(num)) action OpenURL(link)
+            ## SCROLLBAR
+            vbar value YScrollValue("credvp"):
+                ysize 390
+                xpos 830
+                ypos 280
 
             button:
                 xalign 0.5
                 ypos 700
                 style_prefix "mmbtn"
-                # TODO: Remember to update with link
+                
                 
                 text _("FLIP\nBACK")
 
@@ -58,7 +113,7 @@ screen main_menu():
 
 
                 textbutton ("Start Game . . . . . . . . . . .1.50") action Start()  #xpos 1000 ypos 400 action Start()
-                textbutton ("Load Game . . . . . . . . . . . 1.50") action NullAction()#xpos 1000 ypos 450 action Jump("load")
+                textbutton ("Load Game . . . . . . . . . . . 1.50") action ShowMenu("load")#xpos 1000 ypos 450 action Jump("load")
                 textbutton ("Settings . . . . . . . . . . . .1.50") action ShowMenu("preferences")#xpos 1000 ypos 500 action Jump("preferences")
                 textbutton ("Credits . . . . . . . . . . . . 1.50") action SetScreenVariable("credits_page", True)#xpos 1000 ypos 550 action Jump("help")
                 textbutton ("Quit . . . . . . . . . . . . . .1.50") action Quit()#xpos 1000 ypos 600 action Quit(confirm=not main_menu)
@@ -116,6 +171,29 @@ style main_menu_version:
     xalign 0.5
     size 25
     font "gui/CourierPrime-Regular.ttf"
+
+
+
+style credit_text:
+    size 25
+    font "gui/CourierPrime-Regular.ttf"
+    color GREEN
+    xsize 350
+    
+
+style credit_button_text:
+    size 20
+    font "gui/CourierPrime-Regular.ttf"
+    hover_font "gui/CourierPrime-Italic.ttf"
+
+    color GREEN
+    hover_color RED
+    underline True
+    
+
+    
+
+
 
 #     ## This empty frame darkens the main menu.
 #     frame:
