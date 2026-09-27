@@ -224,7 +224,7 @@ b "Don’t bark at me, Dorothy. I don’t run the presses. Word on the street is
 
 show M annoyed:
     subpixel True 
-    yalign 1.0 
+    yalign 1.0 zoom 0.4
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -239,7 +239,7 @@ b "That sounds like a ‘you’ problem, Sweetheart. If you don’t have a knock
 
 show M annoyed:
     subpixel True 
-    yalign 1.0 
+    yalign 1.0 zoom 0.4
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -254,7 +254,7 @@ b "Now, I realize working under a real time-crunch is a tough beat…,"
 
 show M annoyed:
     subpixel True 
-    yalign 1.0 
+    yalign 1.0 zoom 0.4
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -269,7 +269,7 @@ b "...and a bit of a raw deal…"
 
 show M annoyed:
     subpixel True 
-    yalign 1.0 
+    yalign 1.0 zoom 0.4
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -284,7 +284,7 @@ b "...and perhaps even agonizingly stressful.."
 
 show M annoyed:
     subpixel True 
-    yalign 1.0 
+    yalign 1.0 zoom 0.4
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -300,8 +300,19 @@ b "But this is the newspaper business, darling. If you want to be a top-flight r
 "Click."
 "He hangs up."
 
+camera:
+    subpixel True 
+    zoom 1.25 
+    linear 0.30 zoom 1.0 
 show M annoyed:
-    xpos 0.4 zoom 0.4 yalign 1.0 
+    subpixel True 
+    xpos 0.4 zoom 0.4 
+    linear 0.30 xpos 0.6 zoom 0.35 
+with Pause(0.40)
+camera:
+    zoom 1.0 
+show M annoyed:
+    xpos 0.6 zoom 0.35 
     
 m "……………………………………."
 "I stand there dumbfounded. Half as much time??"
