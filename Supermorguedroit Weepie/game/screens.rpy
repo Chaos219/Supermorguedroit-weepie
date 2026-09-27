@@ -701,8 +701,26 @@ screen preferences():
                     vbox:
                         style_prefix "radio"
                         label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                        hbox:
+                            if preferences.fullscreen:
+                                text("window") ypos 5 
+                            else:
+                                text("window") color "#ff0000" ypos 5 
+
+                            imagebutton:
+                                idle "gui/button/switch_left.png"
+                                hover "gui/button/switch_left.png"
+                                selected_idle "gui/button/switch_right.png"
+                                selected_hover "gui/button/switch_right.png"
+                                padding 25,0,25,0
+                                action Preference("display", "toggle")
+
+                            if preferences.fullscreen:
+                                text("Fullscreen") color "#ff0000" ypos 5 
+                            else:
+                                text("Fullscreen") ypos 5 
+                            # textbutton _("Window") action Preference("display", "window")
+                            # textbutton _("Fullscreen") action Preference("display", "fullscreen")
 
                 vbox:
                     style_prefix "check"
