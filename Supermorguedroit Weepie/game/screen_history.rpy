@@ -18,12 +18,114 @@ screen history():
     ## Avoid predicting this screen, as it can be very large.
     predict False
 
+    
+
+    add OVERLAY
+
     fixed:
         at ts_hist_fadein()
         xysize (1345, 1044)
+        align (0.5, 1.0)
         add "gui/log_background.png"
 
+        ## RETURN BUTTON ##
+        imagebutton auto "gui/button/return1_%s_background.png":
+            action Return()
+            align (1.0, 0.0) offset (-20,15)
 
+        vbox:
+            xsize 1200
+            pos (80, 30)
+            spacing 15
+
+            label _("DAILY READER") style "hist_title"
+
+
+            text _("Reread today's conversation.") style "hist_subtitle"
+
+            null height 25
+
+            ## THE LOG ##
+            viewport id "histvp":
+                draggable True mousewheel True pagekeys True
+                scrollbars None yinitial 1.0
+
+                ysize 750
+                xoffset 100
+
+                style_prefix "history"
+
+                has vbox:
+                    spacing 15
+                    
+
+                for h in _history_list:
+                    if h.who:
+                        hbox:
+                            add Transform(BROWN, xysize=(216, 237))
+
+                            null width 35
+                            vbox:
+                                spacing 10
+                                label h.who
+                                $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
+                                text what:
+                                    substitute False
+
+                    else:
+                        $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
+                        text what:
+                            xalign 0.5
+                            substitute False
+
+                    null height 35
+
+                    add "gui/log_line_divider.png" xalign 0.5 xoffset 50
+
+                    null height 35
+                        
+
+                
+
+    ## SCROLLBAR ##
+    vbar value YScrollValue("histvp"):
+        ysize 735
+        yalign 0.5
+        xpos 1685
+
+    
+
+
+        
+
+
+
+style hist_title:
+    xalign 0.5
+
+style hist_title_text:
+    color BROWN
+    font LIBREBOLD
+    size 90
+
+style hist_subtitle:
+    xalign 0.5
+    size 25
+    font LIBREREG
+    color BROWN
+
+style history_label_text:
+    color BROWN
+    font LIBREREG
+    size 45
+
+style history_text:
+    color BROWN
+    size 25
+
+    font LIBREREG
+    xsize 950
+    
 
 
     # use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
@@ -62,41 +164,41 @@ screen history():
 define gui.history_allow_tags = { "alt", "noalt", "rt", "rb", "art" }
 
 
-style history_window is empty
+# style history_window is empty
 
-style history_name is gui_label
-style history_name_text is gui_label_text
-style history_text is gui_text
+# style history_name is gui_label
+# style history_name_text is gui_label_text
+# style history_text is gui_text
 
-style history_label is gui_label
-style history_label_text is gui_label_text
+# style history_label is gui_label
+# style history_label_text is gui_label_text
 
-style history_window:
-    xfill True
-    ysize gui.history_height
+# style history_window:
+#     xfill True
+#     ysize gui.history_height
 
-style history_name:
-    xpos gui.history_name_xpos
-    xanchor gui.history_name_xalign
-    ypos gui.history_name_ypos
-    xsize gui.history_name_width
+# style history_name:
+#     xpos gui.history_name_xpos
+#     xanchor gui.history_name_xalign
+#     ypos gui.history_name_ypos
+#     xsize gui.history_name_width
 
-style history_name_text:
-    min_width gui.history_name_width
-    textalign gui.history_name_xalign
+# style history_name_text:
+#     min_width gui.history_name_width
+#     textalign gui.history_name_xalign
 
-style history_text:
-    xpos gui.history_text_xpos
-    ypos gui.history_text_ypos
-    xanchor gui.history_text_xalign
-    xsize gui.history_text_width
-    min_width gui.history_text_width
-    textalign gui.history_text_xalign
-    layout ("subtitle" if gui.history_text_xalign else "tex")
+# style history_text:
+#     xpos gui.history_text_xpos
+#     ypos gui.history_text_ypos
+#     xanchor gui.history_text_xalign
+#     xsize gui.history_text_width
+#     min_width gui.history_text_width
+#     textalign gui.history_text_xalign
+#     layout ("subtitle" if gui.history_text_xalign else "tex")
 
-style history_label:
-    xfill True
+# style history_label:
+#     xfill True
 
-style history_label_text:
-    xalign 0.5
+# style history_label_text:
+#     xalign 0.5
 
