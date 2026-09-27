@@ -17,11 +17,6 @@ screen main_menu():
     # label("The Supermorguedroit Weepie") align (0.8, 0.2)
 
     
-    # textbutton ("Start Game . . . . . . . . . . . . . . . . . . . . .1.50") xpos 1000 ypos 400 action Start()
-    # textbutton ("Load Game . . . . . . . . . . . . . . . . . . . . . 1.50") xpos 1000 ypos 450 action Jump("load")
-    # textbutton ("Settings . . . . . . . . . . . . . . . . . . . . . .1.50") xpos 1000 ypos 500 action Jump("preferences")
-    # textbutton ("Credits . . . . . . . . . . . . . . . . . . . . . . 1.50") xpos 1000 ypos 550 action Jump("help")
-    # textbutton ("Quit . . . . . . . . . . . . . . . . . . . . . . . .1.50") xpos 1000 ypos 600 action Quit(confirm=not main_menu)
 
 
     ## This ensures that any other menu screen is replaced.
@@ -41,10 +36,47 @@ screen main_menu():
         if credits_page:
             add "gui/title_card_back.png"
             label _("Meet the Staff!")
+
+            button:
+                xalign 0.5
+                ypos 700
+                style_prefix "mmbtn"
+                # TODO: Remember to update with link
+                
+                text _("FLIP\nBACK")
+
+                action Return()
         else:
             add "gui/title_card_front.png"
 
             label _("The Supermorguedroit Weepie")
+
+            vbox:
+                xalign 0.5
+                ypos 300
+                spacing 25
+
+
+                textbutton ("Start Game . . . . . . . . . . .1.50") action Start()  #xpos 1000 ypos 400 action Start()
+                textbutton ("Load Game . . . . . . . . . . . 1.50") action NullAction()#xpos 1000 ypos 450 action Jump("load")
+                textbutton ("Settings . . . . . . . . . . . .1.50") action ShowMenu("preferences")#xpos 1000 ypos 500 action Jump("preferences")
+                textbutton ("Credits . . . . . . . . . . . . 1.50") action SetScreenVariable("credits_page", True)#xpos 1000 ypos 550 action Jump("help")
+                textbutton ("Quit . . . . . . . . . . . . . .1.50") action Quit()#xpos 1000 ypos 600 action Quit(confirm=not main_menu)
+
+            button:
+                xalign 0.5
+                ypos 700
+                style_prefix "mmbtn"
+                # TODO: Remember to update with link
+                
+                text _("RATE OUR GAME")
+
+                action NullAction()
+
+        text "VESION [config.version]":
+            style "main_menu_version"
+            xalign 0.5
+            yalign 1.0 yoffset -25
 
 
 style main_menu_label:
@@ -55,6 +87,35 @@ style main_menu_label_text:
     color RED
     size 60
     font LOBSTER
+
+style main_menu_button_text:
+    font "gui/CourierPrime-Regular.ttf"
+    hover_font "gui/CourierPrime-Italic.ttf"
+
+    color "#000000"
+    hover_color RED
+
+
+style mmbtn_button:
+    xysize (517, 195)
+    background "gui/title_rate_flip_btn_background.png"
+    hover_background Transform("gui/title_rate_flip_btn_background.png", matrixcolor=ColorizeMatrix(RED, RED))
+
+style mmbtn_text:
+    align (0.5, 0.5)
+    size 65
+    font VASTSHAD
+
+    text_align 0.5
+
+    color "#000"
+    hover_color RED
+
+
+style main_menu_version:
+    xalign 0.5
+    size 25
+    font "gui/CourierPrime-Regular.ttf"
 
 #     ## This empty frame darkens the main menu.
 #     frame:
