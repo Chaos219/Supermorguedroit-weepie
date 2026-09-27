@@ -67,6 +67,9 @@ screen main_menu():
                 xysize (825, 390)
                 xalign 0.5 xoffset 50
                 ypos 280
+
+                has vbox:
+                    spacing 15
                     
                 grid 2 6:
                     xfill True
@@ -86,6 +89,13 @@ screen main_menu():
                                     spacing 10
                                     for num, link in enumerate(links, start=1):
                                         textbutton _("Link {}".format(num)) action OpenURL(link)
+
+
+                text "[gui.about!t]\n" size 25 color GREEN
+
+                text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")  size 25 color GREEN xsize 700
+
+
             ## SCROLLBAR
             vbar value YScrollValue("credvp"):
                 ysize 390
