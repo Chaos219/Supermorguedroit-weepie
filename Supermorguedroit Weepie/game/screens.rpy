@@ -1314,12 +1314,15 @@ style skip_text is gui_text
 style skip_triangle is skip_text
 
 style skip_frame:
-    ypos gui.skip_ypos
-    background Frame("gui/skip.png", gui.skip_frame_borders, tile=gui.frame_tile)
-    padding gui.skip_frame_borders.padding
+    xalign 0.5
+    ypos 15
+    ysize 77
+    background Frame("gui/skip.png", 80, 5, 15, 5)
+    padding (150, 30)
 
 style skip_text:
-    size gui.notify_text_size
+    size 18
+    align (0.5, 0.5)
 
 style skip_triangle:
     ## We have to use a font that has the BLACK RIGHT-POINTING SMALL TRIANGLE
@@ -1357,13 +1360,15 @@ style notify_frame is empty
 style notify_text is gui_text
 
 style notify_frame:
-    ypos gui.notify_ypos
+    is skip_frame
+    # ypos gui.notify_ypos
 
-    background Frame("gui/notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
-    padding gui.notify_frame_borders.padding
+    # background Frame("gui/notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
+    # padding gui.notify_frame_borders.padding
 
 style notify_text:
-    properties gui.text_properties("notify")
+    is skip_text
+    # properties gui.text_properties("notify")
 
 
 ## NVL screen ##################################################################
