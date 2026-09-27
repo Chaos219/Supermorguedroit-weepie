@@ -1342,63 +1342,210 @@ hide O solemn
 
 "I look down at my open spiral steno pad."
 "I tap the tip of my pencil against the paper for a second before I start writing."
+<<<<<<< Updated upstream
 "Among the scribbled drafts and interview notes, I write the word 'morgue' and underline it twice, hard and deep into the page."
+=======
+
+camera:
+    subpixel True 
+    zoom 1.25 
+    linear 0.29 zoom 1.0 
+show M main:
+    subpixel True 
+    pos (0.06, 0.14) 
+    linear 0.29 pos (0.12, 0.18) 
+with Pause(0.39)
+camera:
+    zoom 1.0 
+show M main:
+    pos (0.12, 0.18) 
+
+"Among the scribbled drafts and interview notes, I write the word “morgue” and underline it twice, hard and deep into the page."
+>>>>>>> Stashed changes
 "I’ve got an idea."
 
 # Scene 6: Dorothy's Apartment - Wednesday Evening
 scene bg bedroom
+
+"Wednesday, Special of the Day: Cheesy Fries"
+
 show M main:
     xpos 0.12
     yalign 1.0
     zoom 0.45
 
-"Wednesday, Special of the Day: Cheesy Fries"
 "Almost a whole day passed."
 "I’m still in my good wool dress."
 "I put it on this morning to chase a lead at the municipal records office, which turned out to be a whole lot of nothing."
 "If I unzip it now, that’s me surrendering to the day."
 "I’m sprawled sideways in the lumpy armchair, paperback balanced on my knee."
 "In the corner, a jazz record spins, low and steady."
+
 with hpunch
+show bg bedroom:
+    subpixel True 
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+    linear 0.27 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0) 
+show M main:
+    subpixel True 
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+    linear 0.27 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0) 
+with Pause(0.37)
+show bg bedroom:
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0) 
+show M main:
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0) 
+
 "Suddenly, the brass section warps."
 "The pitch slurs down in a long, sick groan, and then the turntable gives up."
 "The reading lamp flickers out."
 "Outside the window, the harsh red glare blinks out."
 "Now the room is swallowed by real, honest darkness."
+
 show M annoyed:
-    xpos 0.0
+    xpos 0.16
     yalign 1.0
     zoom 0.35
+with dissolve 
+
 m "Oh, come on."
 "I sit in the dark for a second, waiting for the grid to come back. It doesn’t."
 "Then there’s a knock at my door. Three taps. Precise, sharp, spaced out just so."
 "I blindly feel my way across the room, bump my hip against the edge of the desk, and pull the door open."
+
 show O main:
-    xpos 0.6
+    xpos 0.5
     yalign 1.0
     zoom 0.5
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0)
+with dissolve 
+
 "Ōe stand in the drafty hallway, holding a thick wax candle."
 "It isn’t lit."
 "They look at me. They just keep looking at me."
 "The silence stretches out."
 "It passes comfortably, sails right past awkward, and settles somewhere on the far side into a stillness that Ōe appears to find perfectly pleasant."
+
+show O smile:
+    subpixel True 
+    ypos 1.0 xpos 0.44 zoom 0.53
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0)
+with Pause(0.26)
+show O smile:
+    ypos 1.0 xpos 0.44 zoom 0.53
+with dissolve
+
 o "Your dress is nice, Miss."
 "I stare at the unlit wick in their hand, then up at their unblinking face, lit by the thin light from the hall window."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "…Is this all you came up here for?"
+
+show O smile:
+    subpixel True 
+    ypos 1.0 xpos 0.44 zoom 0.53
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0)
+with Pause(0.26)
+show O smile:
+    ypos 1.0 xpos 0.44 zoom 0.53
+
 o "I thought you liked engaging in small talk."
 m "…"
+
+show O solemn:
+    subpixel True 
+    ypos 1.0 xpos 0.44 zoom 0.53
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0)
+with Pause(0.26)
+show O solemn:
+    ypos 1.0 xpos 0.44 zoom 0.53
+
 o "The power is out."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "Yes. I noticed. It’s your building, isn’t it?"
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "You should just go downstairs and flip the breaker switches back on."
+
+show O main:
+    subpixel True 
+    ypos 1.0 zoom 0.5 xpos 0.5
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0)
+with Pause(0.26)
+show O main:
+    ypos 1.0 xpos 0.5 zoom 0.5
+
 o "I do not know how."
+
+scene black 
+hide M annoyed
+hide O main
+
 "I close my eyes and let out a slow breath."
 "My father was always too busy for housework, and my mother wouldn’t touch anything with a wire for fear it might hurt."
 "So, the job of handyman landed on me. I know a thing or two about power outages."
+
+show bg bedroom:
+    subpixel True 
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+show M annoyed:
+    xpos 0.16 ypos 1.0 zoom 0.35
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+show O main:
+    ypos 1.0 xpos 0.5 zoom 0.5
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+
 "I open my eyes."
 "Ōe is still standing there in the dark, looking at me with the calm patience of a house cat waiting for a door to open."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 
+
 m "Lead the way."
 # Scene 7: Basement - Continuous
-scene bg diner
+show bg diner:
+    subpixel True 
+    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 show M annoyed:
     xpos 0.0
     yalign 1.0
