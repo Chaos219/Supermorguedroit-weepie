@@ -1001,12 +1001,12 @@ m "And… how much did you use?"
 
 show A main:
     subpixel True xpos 0.5 zoom 0.55
-    ypos 0.0
-    linear 0.07 ypos -0.05
-    linear 0.07 ypos 0.0
+    yalign 1.0
+    linear 0.07 ypos 0.98
+    linear 0.07 ypos 1.0
 with Pause(0.24)
 show A main:
-    pos (0.5, 0.0) 
+    pos (0.5, 1.0) 
 
 a "A pinch. I don't know how much a pinch is. I used what I could pick up."
 
@@ -1166,7 +1166,7 @@ show L main:
     zoom 0.5
 
 show M annoyed:
-    subpixel True yalign 1.0
+    subpixel True yalign 1.0 zoom 0.35
     xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     linear 0.50 xpos 0.35 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.60)

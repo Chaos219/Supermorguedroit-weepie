@@ -45,23 +45,25 @@ with hpunch
 
 show A evil:
     subpixel True zoom 0.4 
+    xpos 702 
     yalign 1.0 
     linear 0.05 ypos 0.95 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show A evil:
-    ypos 1.0 
+    yalign 1.0 
 
 a "That blockhead LeeRoy and his creepy little shadow! They completely trash the kitchen, then simply WALTZ out to ‘find inspiration’, leaving me to wrestle with this… UGH!"
 
 show A evil:
     subpixel True zoom 0.4 
-    ypos 1.0 
+    xpos 702 
+    yalign 1.0 
     linear 0.05 ypos 0.95 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show A evil:
-    ypos 1.0 
+    yalign 1.0 
 
 a "Mon Dieu, just look at this— when I get my hands on those two peasants, the things I’ll—"
 
@@ -70,19 +72,20 @@ hide A evil
 "The company phone starts to ring."
 
 show M annoyed:
-    xpos 0.5 yalign 1.0 zoom 0.35 
+    xpos 0.35 yalign 1.0 zoom 0.35 
 
 m "(Who in the world is calling this place at this hour?)"
 
 hide M annoyed 
 show A evil:
     subpixel True zoom 0.4 
-    ypos 1.0 
+    xpos 702 
+    yalign 1.0 
     linear 0.05 ypos 0.95 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show A evil:
-    ypos 1.0 
+    yalign 1.0 
 
 a "Let it ring. I am already drowning in servitude; I refuse to play the receptionist on top of it!"
 
@@ -98,15 +101,23 @@ show A evil:
 "I watch Adelaide furiously dunk the mop back into the, now, empty bucket. She clearly isn’t going to touch that receiver, and the ringing is starting to grate on my nerves."
 
 hide A evil
-show M annoyed 
+show M annoyed:
+    subpixel True xpos 0.35 yalign 1.0 zoom 0.35 
+    parallel:
+        ypos 1.0 
+        linear 0.08 ypos 0.98 
+        linear 0.08 ypos 1.0 
+with Pause(0.26)
+show M annoyed:
+    yalign 1.0 xpos 0.35 zoom 0.35
 
 m "I… suppose I should answer it. What if it’s an emergency?."
 
 show M annoyed:
     subpixel True zoom 0.35 
     parallel:
-        xpos 0.5 
-        linear 0.50 xpos 0.7 
+        xpos 0.35
+        linear 0.50 xpos 0.6
     parallel:
         ypos 1.0 
         linear 0.10 ypos 0.98 
@@ -115,7 +126,7 @@ show M annoyed:
         linear 0.10 ypos 1.0 
 with Pause(0.60)
 show M annoyed:
-    pos (0.7, 1.0) 
+    pos (0.6, 1.0) 
 
 "I walk over to the counter and pick up the heavy receiver.."
 m "Hello, dinner?"
@@ -126,7 +137,7 @@ with hpunch
 b "Dolly!"
 
 show M annoyed:
-    subpixel True zoom 0.35 
+    subpixel True zoom 0.35 xpos 0.6 yalign 1.0
     xzoom 1.0 yzoom 1.0 
     linear 0.08 xzoom 0.56 yzoom 1.21 
     linear 0.08 xzoom 1.0 yzoom 1.0 
@@ -138,12 +149,12 @@ m "Ahh! B-boss? Why are you calling the dinner?"
 
 show M annoyed:
     subpixel True zoom 0.35 
-    ypos 1.0 
+    yalign 1.0 xpos 0.6
     linear 0.08 ypos 0.98 
     linear 0.08 ypos 1.0 
 with Pause(0.26)
 show M annoyed:
-    ypos 1.0 
+    yalign 1.0 xpos 0.6
 
 m "I mean, afternoon, Chief! What's uh, what's going on?"
 
@@ -153,12 +164,12 @@ b " I rang your room upstairs, but there was no answer. Since you are living abo
 
 show M annoyed:
     subpixel True zoom 0.35 
-    ypos 1.0 
+    yalign 1.0 xpos 0.6
     linear 0.08 ypos 0.98 
     linear 0.08 ypos 1.0 
 with Pause(0.26)
 show M annoyed:
-    ypos 1.0 
+    yalign 1.0 xpos 0.6
 
 m "Oh, uhhh, right. (How embarassing!)"
 
@@ -167,9 +178,9 @@ hide M annoyed
 b "Listen, kid, I’m calling to give you the skinny on the Sunday edition. The publisher just moved the goalpost."
 
 show M annoyed:
-    subpixel True zoom 0.35 
+    subpixel True zoom 0.35 xpos 0.6
     parallel:
-        ypos 1.0 
+        yalign 1.0 
         linear 0.08 ypos 0.98 
         linear 0.08 ypos 1.0 
     parallel:
@@ -177,7 +188,7 @@ show M annoyed:
         linear 0.08 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 5.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.26)
 show M annoyed:
-    ypos 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 5.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    yalign 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 5.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
 m "Oh?"
 
@@ -192,10 +203,10 @@ camera:
 show M annoyed:
     subpixel True 
     parallel:
-        xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.35 
+        xpos 0.6 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.35 
         linear 0.08 xpos 0.4 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.4 
     parallel:
-        ypos 1.0 
+        yalign 1.0 
         linear 0.08 ypos 0.98 
         linear 0.08 ypos 1.0 
 with Pause(0.26)
@@ -211,21 +222,87 @@ hide M annoyed
 
 b "Don’t bark at me, Dorothy. I don’t run the presses. Word on the street is the Chronicle is dropping a massive spread on the auction scandal. The publisher wants to beat them to the punch, which means the layout has to be finalized earlier."
 
-show M annoyed
+show M annoyed:
+    subpixel True 
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0 
 
 m "But you can’t just cut my time in half! We had a deal! I don’t- I don’t even have a solid lead yet!"
+
+hide M annoyed 
+
 b "That sounds like a ‘you’ problem, Sweetheart. If you don’t have a knockout story by the new deadline, you will have to make-do and write for the woman's pages."
+
+show M annoyed:
+    subpixel True 
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0 
+
 m "Chief! I…"
+
+hide M annoyed 
+
 b "Now, I realize working under a real time-crunch is a tough beat…,"
+
+show M annoyed:
+    subpixel True 
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0 
+
 m "Yeah."
+
+hide M annoyed 
+
 b "...and a bit of a raw deal…"
+
+show M annoyed:
+    subpixel True 
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0 
+
 m "Mmmm."
+
+hide M annoyed 
+
 b "...and perhaps even agonizingly stressful.."
+
+show M annoyed:
+    subpixel True 
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0 
+
 m "(Can he just stop it already?!)"
+
+hide M annoyed 
+
 b "But this is the newspaper business, darling. If you want to be a top-flight reporter, you have to be able to handle the heat. Have it on my desk by the end of the month. Don’t let me down."
 
 "Click."
 "He hangs up."
+
+show M annoyed:
+    xpos 0.4 zoom 0.4 yalign 1.0 
+    
 m "……………………………………."
 "I stand there dumbfounded. Half as much time??"
 m "Okay, stay calm. I just need to take a deep breath, and focus. And… breathe in. Breathe out…"
