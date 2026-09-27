@@ -525,86 +525,411 @@ show M annoyed:
 "I take the narrow, creaking stairs down to the ground floor and push through the swinging door."
 "The diner is completely dead."
 "The buzzing neon sign outside bleeds a harsh red light across the black-and-white checkered linoleum."
+
+camera:
+    subpixel True 
+    zoom 1.0 
+    linear 0.31 zoom 1.25 
+show M annoyed:
+    subpixel True 
+    pos (0.16, 1.0) zpos 0.0 
+    linear 0.31 pos (0.12, 0.98) zpos 0.0 
+with Pause(0.41)
+camera:
+    zoom 1.25 
+show M annoyed:
+    pos (0.12, 0.98) zpos 0.0 
+
 "I slide into the nearest booth and let my steno pad land on the Formica with a sigh that rattles the sugar packets."
-"I barely have time to reach for my pen before LeeRoy materialises at my elbow, clutching a tall, frosted glass in both hands like he’s guarding a sacred relic."
+
 show L shrug:
-    xpos 0.7
-    yalign 1.0
-    zoom 0.49
+    subpixel True 
+    xpos 1.0 zoom 0.5 ypos 60
+    linear 0.35 xpos 0.45
+with Pause(0.35)
+show L shrug:
+    xpos 0.45 ypos 60 zoom 0.5
+
+"I barely have time to reach for my pen before LeeRoy materialises at my elbow, clutching a tall, frosted glass in both hands like he’s guarding a sacred relic."
+
+show L shrug:
+    subpixel True xpos 0.45 zoom 0.5 
+    ypos 60
+    linear 0.08 ypos 55
+    linear 0.06 ypos 60
+with Pause(0.20)
+show L shrug:
+    pos (0.45, 60) 
+
 l "On the house."
+
+show M annoyed:
+    subpixel True 
+    ypos 0.98 
+    linear 0.08 ypos 0.93 
+    linear 0.06 ypos 0.98 
+with Pause(0.24)
+show M annoyed:
+    ypos 0.98 
+
 m "I didn’t order yet."
+
+show L shrug:
+    subpixel True xpos 0.45 zoom 0.5 
+    ypos 60
+    linear 0.08 ypos 55
+    linear 0.06 ypos 60
+with Pause(0.20)
+show L shrug:
+    pos (0.45, 60) 
+
 l "It’s an apology. For the racket."
 "I eye the milkshake. If I were a real journalist, I’d probably turn it down."
+
+show M annoyed:
+    subpixel True 
+    ypos 0.98 
+    linear 0.08 ypos 0.93 
+    linear 0.06 ypos 0.98 
+with Pause(0.24)
+show M annoyed:
+    ypos 0.98 
+
 m "You can’t bribe me with food, LeeRoy."
-show L sigh:
-    xpos 0.7
-    yalign 1.0
-    zoom 0.49
+
+show L sigh
+with dissolve
+
 "He sets it down anyway."
+
+show L sigh:
+    subpixel True xpos 0.45 zoom 0.5 
+    ypos 60
+    linear 0.08 ypos 55
+    linear 0.06 ypos 60
+with Pause(0.20)
+show L sigh:
+    pos (0.45, 60) 
+
 l "I know. I'm just apologising with it."
 "I drag the straw closer and take a sip."
+
 show M main:
-    xpos 0.12
-    yalign 1.0
-    zoom 0.455
+    xpos 0.06
+    zoom 0.45
+with dissolve 
+
 "My eyebrows go up, just a little. For me, that’s practically applause."
+
+show M main:
+    subpixel True 
+    ypos 0.98 
+    linear 0.05 ypos 0.95 
+    linear 0.05 ypos 0.98 
+with Pause(0.20)
+show M main:
+    ypos 0.98 
+
 m "Seems like you took my tips seriously."
+
+show L sigh:
+    subpixel True xpos 0.45 zoom 0.5 
+    ypos 60
+    linear 0.08 ypos 55
+    linear 0.06 ypos 60
+with Pause(0.20)
+show L sigh:
+    pos (0.45, 60) 
+
 l "Sure did. I put the glasses in the freezer."
+
+show M main:
+    subpixel True 
+    ypos 0.98 
+    linear 0.05 ypos 0.95 
+    linear 0.05 ypos 0.98 
+with Pause(0.20)
+show M main:
+    ypos 0.98
+
 m "And used less syrup."
+
+show L sigh:
+    subpixel True xpos 0.45 zoom 0.5 
+    ypos 60
+    linear 0.08 ypos 55
+    linear 0.06 ypos 60
+with Pause(0.20)
+show L sigh:
+    pos (0.45, 60) 
+
 l "Four to one ratio."
+
+show M main:
+    subpixel True 
+    ypos 0.98 
+    linear 0.05 ypos 0.95 
+    linear 0.05 ypos 0.98 
+with Pause(0.20)
+show M main:
+    ypos 0.98
+
 m "…This is a genuinely good milkshake, LeeRoy. Thank you."
-hide L sigh
+
 show L main:
-    xpos 0.55
-    yalign 1.0
+    xpos 0.28
+    ypos 0.05
     zoom 0.5
+with dissolve 
+
 "He slides into the booth across from me, uninvited, grinning so wide I’m surprised his face doesn’t crack."
 "I look past him at the back wall."
 "It’s covered in framed paintings - cars, mostly."
 "Rows and rows of cars, painted with the kind of grim devotion you’d expect from a monk."
+
+show M main:
+    subpixel True 
+    ypos 0.98 
+    linear 0.05 ypos 0.95 
+    linear 0.05 ypos 0.98 
+with Pause(0.20)
+show M main:
+    ypos 0.98
+
 m "I meant to ask, who did the-"
-hide L main
-show L shrug:
-    xpos 0.7
-    yalign 1.0
-    zoom 0.49
+
+show L confused:
+    xpos 0.42 ypos 0.05
+    zoom 0.5
+with dissolve
+
 "And then LeeRoy’s face falls, all at once, the way a child’s does when a balloon pops."
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05) 
+
 l "We had no customers today."
+
+show M main:
+    subpixel True 
+    ypos 0.98 
+    linear 0.05 ypos 0.95 
+    linear 0.05 ypos 0.98 
+with Pause(0.20)
+show M main:
+    ypos 0.98
+
 m "…Mm."
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "Eleven days our doors have been open, and I’ve had a fella ask to use the payphone, and an old lady who thought we were the First Methodist Church."
 "I look at him over the rim of my glass. Then at the eight empty booths lined up behind him."
 "For a second, I think about going easy. I don’t."
-hide M main
+
 show M annoyed:
-    xpos 0.0
-    yalign 1.0
-    zoom 0.35
+    subpixel True xpos 0.12 zoom 0.35
+    ypos 0.98 
+    linear 0.08 ypos 0.93 
+    linear 0.06 ypos 0.98 
+with Pause(0.24)
+show M annoyed:
+    xpos 0.12 ypos 0.98 zpos 0.35
+
 m "Well. It’s the name."
 "(Blankly)"
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "What about it?"
+
+show M annoyed:
+    subpixel True xpos 0.12 zoom 0.35
+    ypos 0.98 
+    linear 0.08 ypos 0.93 
+    linear 0.06 ypos 0.98 
+with Pause(0.24)
+show M annoyed:
+    xpos 0.12 ypos 0.98 zpos 0.35
+
 m "LeeRoy."
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "It’s a great name!"
+
+show M annoyed:
+    subpixel True xpos 0.12 zoom 0.35
+    ypos 0.98 
+    linear 0.08 ypos 0.93 
+    linear 0.06 ypos 0.98 
+with Pause(0.24)
+show M annoyed:
+    xpos 0.12 ypos 0.98 zpos 0.35
+
 m "It is absolutely not a great name."
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "Supermorgiedroit! Like-super. Super cool."
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "The Supermurgitroid Weepie. The coolest dinner around."
 "I put my glass down on the table."
+
+show M annoyed:
+    subpixel True xpos 0.12 zoom 0.35
+    ypos 0.98 
+    linear 0.08 ypos 0.93 
+    linear 0.06 ypos 0.98 
+with Pause(0.24)
+show M annoyed:
+    xpos 0.12 ypos 0.98 zpos 0.35
+
 m "Say it slowly."
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "Super. Murgit. Droit."
+
+show M annoyed:
+    subpixel True xpos 0.12 zoom 0.35
+    ypos 0.98 
+    linear 0.08 ypos 0.93 
+    linear 0.06 ypos 0.98 
+with Pause(0.24)
+show M annoyed:
+    xpos 0.12 ypos 0.98 zpos 0.35
+
 m "Could you read it off the sign outside?"
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "It’s reversed, let me- Super. Morgue-"
 "I watch the realisation land."
+
 with hpunch
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "…Morgue."
+
+show M annoyed:
+    subpixel True xpos 0.12 zoom 0.35
+    ypos 0.98 
+    linear 0.08 ypos 0.93 
+    linear 0.06 ypos 0.98 
+with Pause(0.24)
+show M annoyed:
+    xpos 0.12 ypos 0.98 zpos 0.35
+
 m "Morgue."
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "Super. Morgue."
+
+show M annoyed:
+    subpixel True xpos 0.12 zoom 0.35
+    ypos 0.98 
+    linear 0.08 ypos 0.93 
+    linear 0.06 ypos 0.98 
+with Pause(0.24)
+show M annoyed:
+    xpos 0.12 ypos 0.98 zpos 0.35
+    
 m "Super Morgue. There is a spelling mistake."
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "But-"
-hide L shrug
-show L sigh:
-    xpos 0.7
-    yalign 1.0
-    zoom 0.5
 "LeeRoy stares past me at his own sign, glowing red through the window."
+
+show L sigh:
+    subpixel True xpos 0.45 zoom 0.5 
+    ypos 60
+    linear 0.08 ypos 55
+    linear 0.06 ypos 60
+with Pause(0.20)
+show L sigh:
+    pos (0.45, 60) 
+
 l "…so that’s why the Methodist lady gave me an odd look."
 "The brass bell over the front door chimes."
 "Four teenagers spill inside. Heavy wool letterman jackets, saddle shoes, chewing gum."
@@ -613,134 +938,408 @@ l "…so that’s why the Methodist lady gave me an odd look."
 t1 "-no, look at it, I told you, it literally says morgue"
 t2 "Take one of me under the sign. Take one of me playing dead under the sign."
 "They cram into a corner booth, buzzing with the kind of excitement that spells trouble."
+
 hide M annoyed
-hide L sigh
 show L main:
-    xpos 0.55
-    yalign 1.0
+    xpos 0.28
+    ypos 0.05
     zoom 0.5
+with dissolve 
 with hpunch
+
 "LeeRoy is on his feet."
+
+show L main:
+    subpixel True xpos 0.28 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.08
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L main:
+    pos (0.28, 0.05) 
+
 l "Customers."
 "(Calling out)"
+
+show L main:
+    subpixel True xpos 0.28 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.08
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L main:
+    pos (0.28, 0.05) 
+
 l "Adelaide! Adelaide, customers!"
+
 show A main:
-    xpos -0.05
-    yalign 1.0
-    zoom 0.55
+    subpixel True 
+    xpos -0.5 zoom 0.5
+    linear 0.31 xpos 0.0 
+with Pause(0.41)
+show A main:
+    xpos 0.0 zoom 0.5
+
 "Adelaide comes out of the kitchen with the exact look of someone who’d rather be anywhere else."
 "She ties on a stained canvas apron anyway. She glares at LeeRoy."
+
+show A main:
+    subpixel True xpos 0.0 zoom 0.5
+    ypos 0 
+    linear 0.05 ypos -10 
+    linear 0.05 ypos 0 
+with Pause(0.20)
+show A main:
+    pos (0.0, 0) 
+
 a "I was doing the books."
+
+show L main:
+    subpixel True xpos 0.28 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.08
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L main:
+    pos (0.28, 0.05) 
+
 l "Ōe! Ōe, could you come here for a moment!"
-hide A main
+
+hide A main with dissolve 
 show O main:
-    xpos -0.08
+    xpos 0.0
     yalign 1.0
     zoom 0.5
+
 "Ōe appears in the doorway so fast it’s like they stepped out of thin air."
+
+show O solemn:
+    subpixel True 
+    ypos 0.98 
+    linear 0.08 ypos 0.97 
+    linear 0.08 ypos 0.98
+with Pause(0.26)
+show O solemn:
+    ypos 0.98
+with dissolve 
+
 o "I swept the floor earlier."
-hide L main
+
 show L sigh:
-    xpos 0.7
+    subpixel True xpos 0.45 zoom 0.5 
+    ypos 60
+    linear 0.08 ypos 55
+    linear 0.06 ypos 60
+with Pause(0.20)
+show L sigh:
+    pos (0.45, 60) 
+with dissolve
+
+l "The name! You were in charge of making the sign."
+
+show O solemn:
+    subpixel True 
+    ypos 0.98 
+    linear 0.08 ypos 0.97 
+    linear 0.08 ypos 0.98
+with Pause(0.26)
+show O solemn:
+    ypos 0.98
+
+o "Yes."
+
+show L sigh:
+    subpixel True xpos 0.45 zoom 0.5 
+    ypos 60
+    linear 0.08 ypos 55
+    linear 0.06 ypos 60
+with Pause(0.20)
+show L sigh:
+    pos (0.45, 60)
+
+l "It says morgue."
+
+show O main:
+    xpos 0.0
     yalign 1.0
     zoom 0.5
-l "The name! You were in charge of making the sign."
-o "Yes."
-l "It says morgue."
+with dissolve 
+
 "(After a long moment of calm consideration)"
+
+show O solemn:
+    subpixel True 
+    ypos 0.98 
+    linear 0.08 ypos 0.97 
+    linear 0.08 ypos 0.98
+with Pause(0.26)
+show O solemn:
+    ypos 0.98
+with dissolve 
+
 o "You said it out loud, and I worked with what I heard."
+
+show O solemn:
+    subpixel True 
+    ypos 0.98 
+    linear 0.08 ypos 0.97 
+    linear 0.08 ypos 0.98
+with Pause(0.26)
+show O solemn:
+    ypos 0.98
+with dissolve 
+
 o "I do not always know which letters your language is going to demand."
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+with dissolve 
+
 l "My- your language-"
 "(Already turning back toward the kitchen)"
-o "I have work to do. Goodbye."
-hide O main
-hide L sigh
-show M main:
-    xpos -0.05
+
+show O main:
+    xpos 0.0
     yalign 1.0
-    zoom 0.455
+    zoom 0.5
+with dissolve 
+
+o "I have work to do. Goodbye."
+
+hide O main
+show M main:
+    xpos 0.06
+    ypos 0.14
+    zoom 0.45
+
 "I reach into my coat pocket, pull out the crumpled newspaper clipping, and slide it across the table toward LeeRoy."
+
+show M main:
+    subpixel True 
+    ypos 0.14 xpos 0.06 zoom 0.45
+    linear 0.05 ypos 0.12
+    linear 0.05 ypos 0.14
+with Pause(0.20)
+show M main:
+    ypos 0.14 xpos 0.06 zoom 0.45
+
 m "That’s the name used in the paper, too."
+
+show L confused:
+    subpixel True xpos 0.42 zoom 0.5 
+    ypos 0.05
+    linear 0.08 ypos 0.02
+    linear 0.06 ypos 0.05
+with Pause(0.20)
+show L confused:
+    pos (0.42, 0.05)
+
 l "What?"
+
+show M main:
+    subpixel True 
+    ypos 0.14 xpos 0.06 zoom 0.45
+    linear 0.05 ypos 0.12
+    linear 0.05 ypos 0.14
+with Pause(0.20)
+show M main:
+    ypos 0.14 xpos 0.06 zoom 0.45
+
 m "It ran in yesterday’s edition. Front page of the local section, with a photograph of the sign included."
+
+show M main:
+    subpixel True 
+    ypos 0.14 xpos 0.06 zoom 0.45
+    linear 0.05 ypos 0.12
+    linear 0.05 ypos 0.14
+with Pause(0.20)
+show M main:
+    ypos 0.14 xpos 0.06 zoom 0.45
+
 m "Even if you changed the sign, people will probably stick with the 'first' version."
 "I tip my glass toward the booth where the teenagers are busy arranging themselves on the floor to look like corpses for the camera."
+
+show M main:
+    subpixel True 
+    ypos 0.14 xpos 0.06 zoom 0.45
+    linear 0.05 ypos 0.12
+    linear 0.05 ypos 0.14
+with Pause(0.20)
+show M main:
+    ypos 0.14 xpos 0.06 zoom 0.45
+
 m "And frankly? It seems to resonate with the youth."
-show A main:
-    xpos 0.6
-    yalign 1.0
-    zoom 0.55
-"Adelaide walks briskly past us on her way back from taking their order, sliding the handwritten ticket onto the kitchen pass without breaking her stride."
-a "It isn’t the worst name he’s had."
+
 hide M main
+show A main:
+    xpos 0.0
+    ypos 0.0
+    zoom 0.5
+
+"Adelaide walks briskly past us on her way back from taking their order, sliding the handwritten ticket onto the kitchen pass without breaking her stride."
+
+show A main:
+    subpixel True xpos 0.0 zoom 0.5
+    ypos 0 
+    linear 0.05 ypos -10 
+    linear 0.05 ypos 0 
+with Pause(0.20)
+show A main:
+    pos (0.0, 0) 
+
+a "It isn’t the worst name he’s had."
+
 show L sigh:
-    xpos 0.05
-    yalign 1.0
-    zoom 0.49
+    xpos 0.45
+    ypos 60 zoom 0.5
+
 "(Instantly)"
+
+show L sigh:
+    subpixel True xpos 0.45 zoom 0.5 
+    ypos 60
+    linear 0.08 ypos 55
+    linear 0.06 ypos 60
+with Pause(0.20)
+show L sigh:
+    pos (0.45, 60) 
+
 l "We’re not talking about that."
+
+show A main:
+    subpixel True xpos 0.0 zoom 0.5
+    ypos 0 
+    linear 0.05 ypos -10 
+    linear 0.05 ypos 0 
+with Pause(0.20)
+show A main:
+    pos (0.0, 0) 
+
 a "I didn’t say which one."
+
+show L sigh:
+    subpixel True xpos 0.45 zoom 0.5 
+    ypos 60
+    linear 0.08 ypos 55
+    linear 0.06 ypos 60
+with Pause(0.20)
+show L sigh:
+    pos (0.45, 60) 
+
 l "We’re not talking about it."
+
 hide L sigh
 hide A main
 show M main:
-    xpos -0.05
-    yalign 1.0
-    zoom 0.455
+    ypos 0.14 xpos 0.06 zoom 0.45
+
 "They scatter back to work. I watch them serve customers and feel a flicker of satisfaction. There’s potential here."
 menu:
     "Ask Adelaide what the other name was.":
+
         show A main:
-            xpos 0.6
+            xpos 0.3
             yalign 1.0
             zoom 0.55
+
         "I decide to push my luck and ask her."
         "She claims she swore a solemn oath never to say it out loud."
+
         hide A main
         show L blush:
-            xpos 0.7
+            xpos 0.42
             yalign 1.0
             zoom 0.5
+
         "LeeRoy turns a shade of red I didn’t know the human body was capable of and suddenly finds something incredibly urgent to scrub at the far end of the counter."
     "Ask LeeRoy what the diner is struggling with.":
+
         show L sigh:
-            xpos 0.7
+            xpos 0.42
             yalign 1.0
             zoom 0.5
+
         "He rattles off a list-some things I’d already scribbled in my notepad, others I hadn’t even thought of."
         "Turns out running a diner is a messier business than I figured."
+
         hide L sigh
         show L main:
-            xpos 0.55
+            xpos 0.3
             yalign 1.0
             zoom 0.5
+
         "I jot down a few ideas to help and slide the note across to LeeRoy. He gives me a grateful look."
         hide L main
         # [LISTEN +1]
 
 show L main:
-    xpos 0.55
+    xpos 0.3
     yalign 1.0
     zoom 0.5
+
 "The teenagers finally clear out, leaving sticky coin trays and a tip big enough for LeeRoy to gawk at like it belongs in a museum."
+
 hide L main
+
 "One of the boys grabs a napkin with the diner’s logo and stuffs it into his letterman jacket, like a badge of honour."
 "The girl with the camera hangs back outside, standing on the cracked parking lot."
 "She holds the Kodak Brownie up to her eye, squinting through the viewfinder, and photographs the buzzing red neon sign over and over from different angles until the novelty finally wears off and she jogs to catch up with her friends."
 "I watch them go from my spot in the vinyl booth, chin in my hand."
+
 show O main:
-    xpos 0.6
+    xpos 0.35
     yalign 1.0
     zoom 0.5
+
 "A few feet away, Ōe stands at the far end of the counter, where the neon can’t quite reach."
 "They’re still as a statue, watching them too."
+
+show O solemn:
+    subpixel True 
+    ypos 0.98 
+    linear 0.08 ypos 0.97 
+    linear 0.08 ypos 0.98
+with Pause(0.26)
+show O solemn:
+    ypos 0.98
+with dissolve
+
 o "More will come now."
 "They keep staring out the window."
+
+show M main:
+    subpixel True 
+    ypos 0.14 xpos 0.06 zoom 0.45
+    linear 0.05 ypos 0.12
+    linear 0.05 ypos 0.14
+with Pause(0.20)
+show M main:
+    ypos 0.14 xpos 0.06 zoom 0.45
+
 m "That's the idea, isn't it?"
 "The silence between us feels heavy."
+
+show O solemn:
+    subpixel True 
+    ypos 0.98 xpos 0.35
+    linear 0.08 ypos 0.97 
+    linear 0.08 ypos 0.98
+with Pause(0.26)
+show O solemn:
+    ypos 0.98 xpos 0.35
+with dissolve
+
 o "Yes. That is the idea."
 "They turn back to the dark corner and start sweeping again, every movement slow and careful."
-hide O main
+
+hide O solemn
+
 "I look down at my open spiral steno pad."
 "I tap the tip of my pencil against the paper for a second before I start writing."
 "Among the scribbled drafts and interview notes, I write the word “morgue” and underline it twice, hard and deep into the page."
@@ -749,9 +1348,10 @@ hide O main
 # Scene 6: Dorothy's Apartment - Wednesday Evening
 scene bg bedroom
 show M main:
-    xpos -0.05
+    xpos 0.12
     yalign 1.0
-    zoom 0.455
+    zoom 0.45
+
 "Wednesday, Special of the Day: Cheesy Fries"
 "Almost a whole day passed."
 "I’m still in my good wool dress."
