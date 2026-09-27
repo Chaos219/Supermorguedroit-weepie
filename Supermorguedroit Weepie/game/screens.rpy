@@ -446,6 +446,9 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     if main_menu:
         add gui.main_menu_background size (1920, 1080)
+    elif renpy.get_screen("history"):
+        add gui.main_menu_background size (1920, 1080)
+        add gui.log_background xpos 570 ypos 40
     else:
         add gui.game_menu_background size (1920, 1080)
 
@@ -488,7 +491,10 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
                         draggable True
                         pagekeys True
 
-                        side_yfill True
+                        ypos 80
+                        ysize 770
+
+                        # side_yfill True
 
                         spacing spacing
 
