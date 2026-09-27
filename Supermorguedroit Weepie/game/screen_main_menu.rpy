@@ -22,7 +22,7 @@ define CREDITS_LIST = [
     Credit("Dael Kurusu", "Music", ["https://regulardael.itch.io/", "https://www.youtube.com/@JimMegamiTensei"]),
     Credit("Jason Corley", "Write", ["http://jdcorley.itch.io/"]),
     Credit("Endy", "Writer", None),
-    Credit("Inseu", "Programmer", ["https://inesu-11.itch.io/"]),
+    Credit("Inesu", "Programmer", ["https://inesu-11.itch.io/"]),
     Credit("Arvantus", "Programmer", ["https://codexpedia.sk"]),
     Credit("Chaos", "Programmer", None),
     Credit("Rythen", "Programmer", ["https://rythen-winds.itch.io/"]),
