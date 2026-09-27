@@ -449,6 +449,40 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
     elif renpy.get_screen("history"):
         add gui.main_menu_background size (1920, 1080)
         add gui.log_background xpos 570 ypos 40
+    elif renpy.get_screen("save"):
+        add gui.main_menu_background size (1920, 1080)
+    elif renpy.get_screen("load"):
+        add gui.main_menu_background size (1920, 1080)
+    elif renpy.get_screen("preferences"):
+        add gui.main_menu_background size (1920, 1080)
+        add "gui/overlay/notepad_background.png" align (0.5, 0.5)
+        
+        add "gui/overlay/tab_idle_background.png" align (0.34, 0.2)
+
+        imagebutton:
+            idle "gui/overlay/save_idle_icon.png"
+            hover "gui/overlay/save_hover_icon.png"
+            align (0.29, 0.2)
+            action ShowMenu("save")
+
+        add "gui/overlay/tab_selected_background.png" align (0.3, 0.3)
+        add "gui/overlay/settings_selected_icon.png" align (0.27, 0.3)
+        add "gui/overlay/tab_idle_background.png" align (0.34, 0.4)
+
+        imagebutton:
+            idle "gui/overlay/controls_idle_icon.png"
+            hover "gui/overlay/controls_hover_icon.png"
+            align (0.29, 0.4)
+            action ShowMenu("help")
+
+        add "gui/overlay/top_page.png" align (0.5, 0.5)
+
+
+    elif renpy.get_screen("about"):
+        add gui.main_menu_background size (1920, 1080)
+    elif renpy.get_screen("help"):
+        add gui.main_menu_background size (1920, 1080)
+
     else:
         add gui.game_menu_background size (1920, 1080)
 
@@ -764,11 +798,11 @@ screen preferences():
     
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Preferences"), scroll="vpgrid"):
 
         vbox:
 
-            hbox:
+            vbox:
                 box_wrap True
 
                 if renpy.variant("pc") or renpy.variant("web"):
@@ -791,7 +825,7 @@ screen preferences():
 
             null height (4 * gui.pref_spacing)
 
-            hbox:
+            vbox:
                 style_prefix "slider"
                 box_wrap True
 
