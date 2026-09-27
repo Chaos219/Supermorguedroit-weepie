@@ -1342,9 +1342,7 @@ hide O solemn
 
 "I look down at my open spiral steno pad."
 "I tap the tip of my pencil against the paper for a second before I start writing."
-<<<<<<< Updated upstream
 "Among the scribbled drafts and interview notes, I write the word 'morgue' and underline it twice, hard and deep into the page."
-=======
 
 camera:
     subpixel True 
@@ -1361,9 +1359,7 @@ show M main:
     pos (0.12, 0.18) 
 
 "Among the scribbled drafts and interview notes, I write the word “morgue” and underline it twice, hard and deep into the page."
->>>>>>> Stashed changes
 "I’ve got an idea."
-
 # Scene 6: Dorothy's Apartment - Wednesday Evening
 scene bg bedroom
 
@@ -1510,7 +1506,7 @@ show O main:
 
 o "I do not know how."
 
-scene black 
+show black 
 hide M annoyed
 hide O main
 
@@ -1518,14 +1514,15 @@ hide O main
 "My father was always too busy for housework, and my mother wouldn’t touch anything with a wire for fear it might hurt."
 "So, the job of handyman landed on me. I know a thing or two about power outages."
 
-show bg bedroom:
-    subpixel True 
-    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+hide black
+scene bg bedroom
+camera:
+    subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0) 
 show M annoyed:
-    xpos 0.16 ypos 1.0 zoom 0.35
+    xpos 0.16 yalign 1.0 zoom 0.35
     matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 show O main:
-    ypos 1.0 xpos 0.5 zoom 0.5
+    xpos 0.5 yalign 1.0 zoom 0.5
     matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 
 "I open my eyes."
@@ -1533,27 +1530,25 @@ show O main:
 
 show M annoyed:
     subpixel True 
-    ypos 1.0 
+    ypos 1.0 xpos 0.16 zoom 0.35
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
-    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 with Pause(0.20)
 show M annoyed:
-    ypos 1.0 
+    ypos 1.0  xpos 0.16 zoom 0.35
 
 m "Lead the way."
 # Scene 7: Basement - Continuous
-show bg diner:
-    subpixel True 
-    matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+scene bg diner
 show M annoyed:
-    xpos 0.0
+    xpos 0.16
     yalign 1.0
     zoom 0.35
 show O main:
-    xpos 0.6
+    xpos 0.5
     yalign 1.0
     zoom 0.5
+
 "I have to really lean into it to get the basement fuse box open."
 "The metal door groans, rust flaking off under my hands."
 "I strike a match against the wall-Oe just stands there, holding the candle."
@@ -1561,35 +1556,189 @@ show O main:
 "My sleeves go up past my elbows. No sense getting them dirtier than they already are."
 "Ōe’s eyes are glued to my hands. I can feel it, pressing down on my skin."
 "If I looked up and met their stare, I’d probably lose my nerve, so I keep my eyes locked on the fuses and pretend I don’t notice."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "It’s the back circuit. Look at this wiring. The casing is practically scorched."
+
+show O main:
+    subpixel True 
+    ypos 1.0 zoom 0.5 xpos 0.5
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+with Pause(0.26)
+show O main:
+    ypos 1.0 xpos 0.5 zoom 0.5
+
 o "The freezer."
 m "You put the freezer on its own dedicated line?"
+
+show O main:
+    subpixel True 
+    ypos 1.0 zoom 0.5 xpos 0.5
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+with Pause(0.26)
+show O main:
+    ypos 1.0 xpos 0.5 zoom 0.5
+
 o "It has to stay very cold."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "Well, yeah. That’s the general idea of a freezer."
 "The silence stretches."
+
+show O main:
+    subpixel True 
+    ypos 1.0 zoom 0.5 xpos 0.5
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+with Pause(0.26)
+show O main:
+    ypos 1.0 xpos 0.5 zoom 0.5
+
 o "Yes."
 "I grab the heavy metal lever and throw the main."
 "Somewhere deep in the back of the kitchen, a massive compressor violently coughs awake, and the overhead bulbs in the hall flicker to life, buzzing with a yellowish glow."
 "Ōe blinks at the glare, but it’s a second too late-like he forgot how. It makes my skin crawl."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "There. But you need to call an electrician to rewire this panel before this whole building goes up in smoke."
 "I wipe my hands on a rag, grime smearing across the fabric."
 "I peek through the doorway. The diner’s empty. Are they even open?"
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "Where is everybody, anyway? It’s Wednesday night."
+
+show O solemn:
+    subpixel True 
+    ypos 1.0 xpos 0.44 zoom 0.53
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+with Pause(0.26)
+show O solemn:
+    ypos 1.0 xpos 0.44 zoom 0.53
+with dissolve
+
 o "LeeRoy is out. He drives at night."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "Drives where?"
+
+show O solemn:
+    subpixel True 
+    ypos 1.0 xpos 0.44 zoom 0.53
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+with Pause(0.26)
+show O solemn:
+    ypos 1.0 xpos 0.44 zoom 0.53
+with dissolve
+
 o "Around."
-m "And Adelaide?"
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
+show O solemn:
+    subpixel True 
+    ypos 1.0 xpos 0.44 zoom 0.53
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+with Pause(0.26)
+show O solemn:
+    ypos 1.0 xpos 0.44 zoom 0.53
+with dissolve
+
 o "Out on business."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "I don’t follow."
+
+show O main:
+    subpixel True 
+    ypos 1.0 zoom 0.5 xpos 0.5
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+with Pause(0.26)
+show O main:
+    ypos 1.0 xpos 0.5 zoom 0.5
+
 o "Please do not concern yourself with it, Miss."
 menu:
     "Push it.":
+
+        show M annoyed:
+            subpixel True 
+            ypos 1.0 
+            linear 0.05 ypos 0.98 
+            linear 0.05 ypos 1.0 
+        with Pause(0.20)
+        show M annoyed:
+            ypos 1.0 xpos 0.16 zoom 0.35
+
         m "Shouldn’t concern myself with what?"
         "Ōe don’t answer."
+
         show O smile:
-            xpos 0.55
+            xpos 0.44
             yalign 1.0
-            zoom 0.52
+            zoom 0.53
+        with dissolve 
+
         "They just keep smiling at me-a thin, polite, utterly dead smile."
         "I wait for them to elaborate, but they don’t blink, don’t shift their weight."
         "Are they even breathing?"
@@ -1598,18 +1747,69 @@ menu:
         "I snap my mouth shut and let the silence hang, deciding to match his rigid energy."
         "We stand there in the buzzing hallway, locked in an excruciating standoff."
         "Finally, Ōe tilts his head a fraction of an inch."
+
+        show O main:
+            subpixel True 
+            ypos 1.0 zoom 0.5 xpos 0.5
+            linear 0.08 ypos 0.99 
+            linear 0.08 ypos 1.0 
+        with Pause(0.26)
+        show O main:
+            ypos 1.0 xpos 0.5 zoom 0.5
+
         o "Thank you for fixing the lights, Miss."
         "I give a curt nod."
         # [LISTEN +1]
 
 show O main:
-    xpos 0.6
+    xpos 0.5
     yalign 1.0
     zoom 0.5
+
 "I turn for the stairs, hand landing on the bannister, but I stop short."
+
+show O main:
+    subpixel True 
+    ypos 1.0 zoom 0.5 xpos 0.5
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+with Pause(0.26)
+show O main:
+    ypos 1.0 xpos 0.5 zoom 0.5
+
 o "We will let LeeRoy know about the electrical issue. Would a free meal tomorrow be sufficient payment for your labour?"
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "That would be lovely. Does that include coffee?"
+
+show O main:
+    subpixel True 
+    ypos 1.0 zoom 0.5 xpos 0.5
+    linear 0.08 ypos 0.99 
+    linear 0.08 ypos 1.0 
+with Pause(0.26)
+show O main:
+    ypos 1.0 xpos 0.5 zoom 0.5
+
 o "Yes."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "…Right. Good. Good night."
 "I tug my dress close and head up the stairs."
 hide O main
@@ -1617,9 +1817,10 @@ hide M annoyed
 # Scene 8: The Supermurgidroid Weepie - Thursday
 scene bg diner
 show M main:
-    xpos -0.05
+    xpos 0.16
     yalign 1.0
-    zoom 0.455
+    zoom 0.45
+
 "Thursday, Special of the Day: Onion rings"
 "I slide into my usual booth."
 "True to Ōe’s word, a heavy porcelain plate with a cheeseburger and a thick mug of black coffee is already waiting on the Formica tabletop."
