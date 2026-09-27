@@ -34,6 +34,10 @@ camera:
     subpixel True 
     pos (1, 1) zoom 1.0 
     linear 0.30 pos (83, 71) zoom 1.25 
+
+camera:
+    subpixel True alpha 1.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0) perspective True 
+
 show M annoyed:
     subpixel True 
     parallel:
@@ -207,6 +211,9 @@ m "I am absolutely not getting involved."
 
 # Scene 2: Vesper Falls Courier - Newsroom - Day
 scene bg office
+camera:
+    subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
+
 "Tuesday, Special of the Day: Unknown"
 
 camera:
@@ -1816,12 +1823,25 @@ hide O main
 hide M annoyed
 # Scene 8: The Supermurgidroid Weepie - Thursday
 scene bg diner
-show M main:
-    xpos 0.16
-    yalign 1.0
-    zoom 0.45
+camera:
+    subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 
 "Thursday, Special of the Day: Onion rings"
+
+camera:
+    subpixel True 
+    pos (0, 0) zoom 1.0 
+    linear 0.52 pos (0, 0) zoom 1.25 
+show M main:
+    subpixel True zoom 0.45 yalign 1.0
+    pos (0.12, 1.0) 
+    linear 0.52 pos (0.06, 0.98) 
+with Pause(0.62)
+camera:
+    pos (0, 0) zoom 1.25 
+show M main:
+    pos (0.06, 0.98)
+
 "I slide into my usual booth."
 "True to Ōe’s word, a heavy porcelain plate with a cheeseburger and a thick mug of black coffee is already waiting on the Formica tabletop."
 "I stare at the plate. Something about it is just wrong. Deeply, fundamentally wrong."
@@ -1829,97 +1849,328 @@ show M main:
 "The patty is a sickly, uniform grey."
 "Not browned, not seared, just wet and pale, like it was boiled by mistake."
 "There’s a single limp leaf of iceberg lettuce sitting right in the middle. A tragic little hat."
+
 show L shrug:
-    xpos 0.7
+    xpos 0.45
     yalign 1.0
     zoom 0.5
+
 "LeeRoy is on the other side of the counter, hands behind his back, rocking on his heels."
 "He looks like he might vibrate right out of his shoes."
+
+show L shrug:
+    subpixel True 
+    ypos 1.0 xpos 0.45 zoom 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L shrug:
+    ypos 1.0 xpos 0.45 zoom 0.5
+
 l "Well? What do you think? On the house, just like promised."
 "I pick up the burger. The bottom bun is damp. I take a bite. Chew."
-hide M main
+
 show M annoyed:
-    xpos 0.0
+    xpos 0.08
     yalign 1.0
     zoom 0.35
+with dissolve 
+
 "It’s like biting into a wet kitchen sponge."
+with hpunch
 "My face twists through a whole routine before landing on a scowl. I spit it out on the plate. Are they trying to poison me?!"
+
+show L shrug:
+    subpixel True xpos 0.45 
+show M annoyed:
+    subpixel True xpos 0.08 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    pos (0.08, 1.0) 
+
 m "LeeRoy. Who made this?"
-hide L shrug
+
 show L main:
-    xpos 0.55
+    xpos 0.3
     yalign 1.0
     zoom 0.5
+    
 "(Beaming proudly)"
+
+show L main:
+    subpixel True xpos 0.3 
+    ypos 1.0 zoom 0.5
+    linear 0.05 ypos 0.96 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L main:
+    pos (0.3, 1.0) 
+
 l "I did!"
+
+show M annoyed:
+    subpixel True xpos 0.08 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    pos (0.08, 1.0) 
+
 m "What in God's name have you done to it?"
-hide L main
-show L sigh:
-    xpos 0.7
+
+show L confused:
+    xpos 0.45
     yalign 1.0
     zoom 0.5
+with dissolve 
+
 "(His smile faltering slightly)"
+
+show L confused:
+    subpixel True 
+    ypos 1.0 xpos 0.45 zoom 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    ypos 1.0 xpos 0.45 zoom 0.5
+
 l "Just the usual. I cooked the meat until it was done."
+
+show M annoyed:
+    subpixel True xpos 0.08 
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    pos (0.08, 1.0)
+
 m "And how exactly do you know when ground beef is done, LeeRoy?"
 "A long, terrible pause stretches across the empty diner. He just blinks at me."
+
+show L confused:
+    subpixel True 
+    ypos 1.0 xpos 0.45 zoom 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    ypos 1.0 xpos 0.45 zoom 0.5
+
 l "…Well. I. Uh. When it stops being red?"
 "I drop the rest of the burger onto the plate. It lands with a wet, sad thud."
+
+camera:
+    subpixel True 
+    zoom 1.25 
+    linear 0.50 zoom 1.0 
+show M annoyed:
+    subpixel True 
+    xpos 0.08 
+    linear 0.60 xpos 0.16 
+show L confused:
+    subpixel True 
+    xpos 0.45 
+    linear 0.60 xpos 0.55 
+with Pause(0.70)
+show M annoyed:
+    xpos 0.16 
+show L confused:
+    xpos 0.55 
+with Pause(0.60)
+camera:
+    zoom 1.0 
+
 "I slide out of the booth and stand, smoothing my skirt."
+
+show M annoyed:
+    subpixel True xpos 0.16
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    pos (0.16, 1.0)
+
 m "Right. That's it. This is a culinary felony."
+
+show L confused:
+    subpixel True 
+    ypos 1.0 xpos 0.55 zoom 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    ypos 1.0 xpos 0.55 zoom 0.5
+
 l "Where are you going?"
+
+show M annoyed:
+    subpixel True xpos 0.16
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    pos (0.16, 1.0)
+
 m "Behind the counter."
+
+show L confused:
+    subpixel True 
+    ypos 1.0 xpos 0.55 zoom 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    ypos 1.0 xpos 0.55 zoom 0.5
+
 l "Wait, Miss Kessler, you can't go behind the-"
+
+show M annoyed:
+    subpixel True zpos 1.0 
+    xpos 0.16 
+    linear 0.30 xpos 1.0 
+show L confused:
+    subpixel True zpos 0.0 
+with Pause(0.40)
+show M annoyed:
+    xpos 1.0 
+
 "I shove through the swinging wooden gate before he can finish, march right past him, and head for the kitchen."
 hide L sigh
 hide M annoyed
 # Scene 9: Diner Kitchen - Continuous
 scene bg diner
-show M main:
-    xpos -0.05
+show M annoyed:
+    xpos 0.16
     yalign 1.0
-    zoom 0.455
+    zoom 0.35
+
 "I know my way around a kitchen."
 "I move through the cramped kitchen fast."
 "I yank open the under-counter icebox, pop the lids off stainless steel prep pans, and make noises of genuine, unfiltered disgust."
-show L sigh:
-    xpos 0.7
+
+show L confused:
+    xpos 0.55
     yalign 1.0
     zoom 0.5
+
 "LeeRoy trails closely behind me, hovering over my shoulder like an anxious duckling."
-hide L sigh
+
+hide L confused
 show A main:
-    xpos 0.6
+    xpos 0.45
     yalign 1.0
     zoom 0.55
+
 "Adelaide appears in the doorway, leaning against the frame with her arms folded, watching the show with detached interest."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 xpos 0.16 zoom 0.35
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "The griddle is ice cold."
+
 hide A main
+
+with hpunch
 "I slam the drawer shut and snatch up the red plastic squeeze bottle."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 xpos 0.16 zoom 0.35
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "Why is the ketchup warm? Why is it sitting next to the radiator? And what-"
 "I grab the glass percolator off the back burner and give it a cautious sniff."
 "Instantly, I regret it. It smells like burnt tyres."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 xpos 0.16 zoom 0.35
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "-is this Monday's coffee?"
-show L sigh:
-    xpos 0.7
-    yalign 1.0
-    zoom 0.5
+
+show L confused:
+    subpixel True yalign 1.0
+    ypos 1.0 xpos 0.55 zoom 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    ypos 1.0 xpos 0.55 zoom 0.5
+
 l "We keep it on a low simmer. Just in case somebody comes in."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 xpos 0.16 zoom 0.35
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "If they did, you’d put them in the hospital."
 "I wheel on him, pointing a grease-stained spatula directly at his chest."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 xpos 0.16 zoom 0.35
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "Have any of you ever actually worked in a kitchen? Any of you?"
 "Silence drops over the room."
-hide L sigh
+
+hide L confused
 show A main:
-    xpos 0.6
+    xpos 0.45
     yalign 1.0
     zoom 0.55
+
 "Adelaide suddenly finds a water stain on the ceiling absolutely fascinating."
+
 hide A main
 show L sigh:
-    xpos 0.7
+    xpos 0.55
     yalign 1.0
     zoom 0.5
+
 "LeeRoy studies the scuff marks on his saddle shoes."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 xpos 0.16 zoom 0.35
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "Right. Grab an apron. Watch me."
 hide L sigh
 # MONTAGE
@@ -1927,26 +2178,42 @@ hide L sigh
 "I march out to the dining room with a stick of white chalk."
 "Ōe’s beautiful, antique cursive gets wiped away, replaced by my own ugly scrawl."
 "At least you can read it from the street."
+
 show O main:
     xpos 0.6
     yalign 1.0
     zoom 0.5
+
 "Ōe stands by the jukebox, staring at the board with a look I can't decipher."
 "Back in the kitchen, I crank the griddle up to three-hundred-and-fifty degrees."
+
 hide O main
 show L main:
-    xpos 0.55
+    xpos 0.45
     yalign 1.0
     zoom 0.5
+
 "I teach LeeRoy how to season a patty."
 "He tries his earnest best to follow my lead, but he's shaping the raw ground beef far too gently."
+
+show M annoyed:
+    subpixel True 
+    ypos 1.0 xpos 0.16 zoom 0.35
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 xpos 0.16 zoom 0.35
+
 m "LeeRoy, it's not the Queen of England. Smash it flat."
-hide M main
+
+hide M annoyed
 show A main:
-    xpos 0.6
+    xpos 0.0
     yalign 1.0
     zoom 0.55
 hide L main
+
 "Adelaide drifts in, grabs the Morton salt, and heads for the boiling potatoes."
 "I snap my fingers-last week's salt disaster still fresh in my mind."
 "She freezes, rolls her eyes, sets the salt down with a sharp click, and waits, arms crossed, for my demonstration."
@@ -1965,44 +2232,131 @@ hide A main
 "He says it all so earnestly, I can't even argue. I just shake my head and keep cooking."
 # Scene 10: The Supermurgidroid Weepie - Evening
 scene bg diner
+camera:
+    subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.15)*HueMatrix(0.0) 
+
 "The specials board finally makes sense through the window, bold chalk letters lit up by the streetlights."
 "The counter shines."
 "Under the heat lamp, there’s a cheeseburger, fresh off the griddle."
 "The bun is golden."
 "The American cheese has melted just right, dripping over the patty’s edge."
 "For once, it looks like food. Better yet, it smells like food too."
+
 show M main:
-    xpos -0.05
+    xpos 0.12
     yalign 1.0
-    zoom 0.455
+    zoom 0.45
+
 "I step back from the pass and wipe grease from my forehead with my wrist."
 "I’m out of breath, cheeks burning from the griddle’s heat, and I can’t help grinning."
 "I cross my arms tight, trying not to let it show."
+
 show L main:
-    xpos 0.55
+    xpos 0.45
     yalign 1.0
     zoom 0.5
+
 "LeeRoy leans over the counter, staring at the burger like it’s the Crown Jewels."
+
+show L main:
+    subpixel True xpos 0.45
+    ypos 1.0 zoom 0.5
+    linear 0.05 ypos 0.96 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L main:
+    pos (0.45, 1.0) 
+
 l "It looks... it looks exactly like the magazine advertisements."
+
+show M main:
+    subpixel True 
+    ypos 1.0 xpos 0.12 zoom 0.45
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M main:
+    ypos 1.0 xpos 0.12 zoom 0.45
+
 m "That's because that is what a hamburger is actually supposed to look like, LeeRoy."
 "He pulls his eyes away from the plate and turns to me."
+
+show L main:
+    subpixel True xpos 0.45
+    ypos 1.0 zoom 0.5
+    linear 0.05 ypos 0.96 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L main:
+    pos (0.45, 1.0) 
+
 l "Where did you learn to cook like that?"
 "The question hits me right under the ribs. I stare hard at the chrome napkin dispensers."
+
+show M main:
+    subpixel True 
+    ypos 1.0 xpos 0.12 zoom 0.45
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M main:
+    ypos 1.0 xpos 0.12 zoom 0.45
+
 m "Reading. I, uh... I used to read a lot of Betty Crocker cookbooks growing up."
 "A flimsy half-truth."
+
+show M main:
+    subpixel True 
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.30 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.40)
+show M main:
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "I spin on my heel, yank off the stained apron, and toss it onto a stool."
+
+show M main:
+    subpixel True 
+    ypos 1.0 xpos 0.12 zoom 0.45
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M main:
+    ypos 1.0 xpos 0.12 zoom 0.45
+
 m "Look, I have to write some hundred words about this diner by Friday."
+
+show M main:
+    subpixel True 
+    ypos 1.0 xpos 0.12 zoom 0.45
+    linear 0.05 ypos 0.98
+    linear 0.05 ypos 1.0
+with Pause(0.20)
+show M main:
+    ypos 1.0 xpos 0.12 zoom 0.45
+
 m "I’d rather not have to write a piece about a tragic municipal foreclosure. That's all."
+
 hide L main
 show A main:
-    xpos 0.6
+    xpos 0.45
     yalign 1.0
     zoom 0.55
+
 "Adelaide sits in the corner booth, eyes glued to her ledger."
 "She doesn’t even look up, just turns a page."
 a "Mm."
 "I don’t stick around to defend myself."
+
 hide A main
+show M main:
+    subpixel True 
+    xpos 0.12 
+    linear 0.20 xpos -0.35 
+with Pause(0.30)
+show M main:
+    xpos -0.35 
+
 "I shove through the swinging gate and head up the narrow stairs to my room."
 
 jump mainroute3

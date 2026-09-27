@@ -87,8 +87,9 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "images/Diner_Background.png"
-define gui.game_menu_background = "images/Diner_Background.png"
+define gui.main_menu_background = "images/diner_bg.png"
+define gui.game_menu_background = "images/diner_bg.png"
+define gui.log_background = "gui/log_background.png"
 
 
 ## Dialogue ####################################################################
@@ -348,14 +349,14 @@ define gui.history_spacing = 0
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
-define gui.history_name_xpos = 233
-define gui.history_name_ypos = 0
+define gui.history_name_xpos = 400
+define gui.history_name_ypos = 50
 define gui.history_name_width = 233
 define gui.history_name_xalign = 1.0
 
 ## The position, width, and alignment of the dialogue text.
 define gui.history_text_xpos = 255
-define gui.history_text_ypos = 3
+define gui.history_text_ypos = 100
 define gui.history_text_width = 1110
 define gui.history_text_xalign = 0.0
 

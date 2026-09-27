@@ -353,81 +353,6 @@ style navigation_button_text:
     properties gui.text_properties("navigation_button")
 
 
-## Main Menu screen ############################################################
-##
-## Used to display the main menu when Ren'Py starts.
-##
-## https://www.renpy.org/doc/html/screen_special.html#main-menu
-
-screen main_menu():
-
-    # add "Diner_Background.png" zoom 0.5
-    # add "gui/title_card_front.png" align (0.9, 1.0)
-
-    # label("The Supermorguedroit Weepie") align (0.8, 0.2)
-
-    
-    # textbutton ("Start Game . . . . . . . . . . . . . . . . . . . . .1.50") xpos 1000 ypos 400 action Start()
-    # textbutton ("Load Game . . . . . . . . . . . . . . . . . . . . . 1.50") xpos 1000 ypos 450 action Jump("load")
-    # textbutton ("Settings . . . . . . . . . . . . . . . . . . . . . .1.50") xpos 1000 ypos 500 action Jump("preferences")
-    # textbutton ("Credits . . . . . . . . . . . . . . . . . . . . . . 1.50") xpos 1000 ypos 550 action Jump("help")
-    # textbutton ("Quit . . . . . . . . . . . . . . . . . . . . . . . .1.50") xpos 1000 ypos 600 action Quit(confirm=not main_menu)
-
-
-    ## This ensures that any other menu screen is replaced.
-    tag menu
-
-    add gui.main_menu_background size (1920, 1080)
-
-    ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
-
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
-
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
-
-style main_menu_frame is empty
-style main_menu_vbox is vbox
-style main_menu_text is gui_text
-style main_menu_title is main_menu_text
-style main_menu_version is main_menu_text
-
-style main_menu_frame:
-    xsize 420
-    yfill True
-
-    background "gui/overlay/main_menu.png"
-
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
-
-style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
-
-style main_menu_title:
-    properties gui.text_properties("title")
-
-style main_menu_version:
-    properties gui.text_properties("version")
-
-    
 
 
 
@@ -446,6 +371,43 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     if main_menu:
         add gui.main_menu_background size (1920, 1080)
+    elif renpy.get_screen("history"):
+        add gui.main_menu_background size (1920, 1080)
+        add gui.log_background xpos 570 ypos 40
+    elif renpy.get_screen("save"):
+        add gui.main_menu_background size (1920, 1080)
+    elif renpy.get_screen("load"):
+        add gui.main_menu_background size (1920, 1080)
+    elif renpy.get_screen("preferences"):
+        add gui.main_menu_background size (1920, 1080)
+        add "gui/overlay/notepad_background.png" align (0.5, 0.5)
+        
+        add "gui/overlay/tab_idle_background.png" align (0.34, 0.2)
+
+        imagebutton:
+            idle "gui/overlay/save_idle_icon.png"
+            hover "gui/overlay/save_hover_icon.png"
+            align (0.29, 0.2)
+            action ShowMenu("save")
+
+        add "gui/overlay/tab_selected_background.png" align (0.3, 0.3)
+        add "gui/overlay/settings_selected_icon.png" align (0.27, 0.3)
+        add "gui/overlay/tab_idle_background.png" align (0.34, 0.4)
+
+        imagebutton:
+            idle "gui/overlay/controls_idle_icon.png"
+            hover "gui/overlay/controls_hover_icon.png"
+            align (0.29, 0.4)
+            action ShowMenu("help")
+
+        add "gui/overlay/top_page.png" align (0.5, 0.5)
+
+
+    elif renpy.get_screen("about"):
+        add gui.main_menu_background size (1920, 1080)
+    elif renpy.get_screen("help"):
+        add gui.main_menu_background size (1920, 1080)
+
     else:
         add gui.game_menu_background size (1920, 1080)
 
@@ -488,7 +450,10 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
                         draggable True
                         pagekeys True
 
-                        side_yfill True
+                        ypos 80
+                        ysize 770
+
+                        # side_yfill True
 
                         spacing spacing
 
@@ -758,11 +723,11 @@ screen preferences():
     
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Preferences"), scroll="vpgrid"):
 
         vbox:
 
-            hbox:
+            vbox:
                 box_wrap True
 
                 if renpy.variant("pc") or renpy.variant("web"):
@@ -785,7 +750,7 @@ screen preferences():
 
             null height (4 * gui.pref_spacing)
 
-            hbox:
+            vbox:
                 style_prefix "slider"
                 box_wrap True
 
