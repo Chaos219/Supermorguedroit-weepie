@@ -30,6 +30,25 @@
 label mainroute2:
 # Scene 1: Dorothy's Apartment - Night
 
+camera:
+    subpixel True 
+    pos (1, 1) zoom 1.0 
+    linear 0.30 pos (83, 71) zoom 1.25 
+show M annoyed:
+    subpixel True 
+    parallel:
+        pos (0.16, 0.18) xzoom 1.0 yzoom 1.0 
+        linear 0.1 pos (0.25, 0.0) xzoom 0.55 yzoom 1.55 
+        linear 0.16 pos (0.16, 0.18) xzoom 1.0 yzoom 1.0 
+    parallel:
+        zoom 0.35 
+        linear 0.3 zoom 0.4 
+with Pause(0.55)
+camera:
+    pos (83, 71) zoom 1.25 
+show M annoyed:
+    pos (0.16, 0.18) xzoom 1.0 yzoom 1.0 zoom 0.4 
+
 "I drop onto the sagging edge of the mattress, night robe still wrapped around my chin, trapping in the October chill."
 "The fabric reeks of dust and cigarettes."
 "No matter how many times I wash my hair, that smell clings to me like a bad habit."
@@ -43,6 +62,26 @@ m "Who the hell writes notes on their hand?"
 m "…like some schoolkid trying to cheat on a spelling test. Tsk."
 "I finally peel off the gown and let it fall in a wrinkled heap on the floor."
 "I’ll curse the creases tomorrow, but tonight, it’s the least of my worries."
+
+camera:
+    subpixel True 
+    pos (83, 71) zoom 1.25 
+    linear 0.45 pos (0, 0) zoom 1.0 
+show M annoyed:
+    subpixel True 
+    parallel:
+        xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        easein 0.20 xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        easeout 0.3 xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    parallel:
+        zoom 0.4 
+        linear 0.45 zoom 0.35 
+with Pause(0.55)
+camera:
+    pos (0, 0) zoom 1.0 
+show M annoyed:
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.35 
+
 "I cross the cramped room to the orange crates stacked in the corner my so-called record cabinet."
 "I flip through the sleeves, pretending I’m picking at random. I’m not."
 "My fingers land on a battered label, edges frayed and soft."
@@ -55,21 +94,109 @@ m "…like some schoolkid trying to cheat on a spelling test. Tsk."
 "Just the diner downstairs, and they already ruined my day."
 "It’s not like they’ve got customers. The place is a ghost town."
 m "Twenty-nine days. Twenty-nine days, and then I’m on a Greyhound out of here, and I am never looking back."
+
+show M annoyed:
+    subpixel True 
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.54 xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.64)
+show M annoyed:
+    xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "I start pacing the threadbare strip of rug between the bed and the desk."
+
+show M annoyed:
+    subpixel True 
+    xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.54 xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.64)
+show M annoyed:
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "Three steps, turn, three steps back."
 "The typewriter waits in the shadows, a new blank page loaded, just daring me to try something."
+
+camera:
+    subpixel True 
+    pos (0, 0) zoom 1.0 
+    linear 0.50 pos (263, 81) zoom 1.25 
+show M melancholy:
+    subpixel True 
+    ypos 0.18 zoom 0.35 
+    linear 0.50 ypos 0.1 zoom 0.46 
+with Pause(0.60)
+camera:
+    pos (263, 81) zoom 1.25 
+show M melancholy:
+    ypos 0.1 zoom 0.46
+
 m "I just don’t get it. Why open a restaurant if you don’t know how to run one?"
 m "Why hire counter staff who can’t even mix a basic fountain drink?"
+
+show M annoyed 
+with dissolve
+
 "I freeze, one foot hovering above the rug."
 m "Why am I letting this get under my skin? It’s not my racket."
+
+camera:
+    subpixel True 
+    pos (263, 81) zoom 1.25 
+    linear 0.51 pos (0, 0) zoom 1.0 
+show M annoyed:
+    subpixel True 
+    pos (0.5, 0.1) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.46 
+    linear 0.51 pos (0.16, 0.18) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.35 
+with Pause(0.61)
+camera:
+    pos (0, 0) zoom 1.0 
+show M annoyed:
+    pos (0.16, 0.18) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.35 
+
 "I start pacing again, faster now, grinding a deeper groove into the rug."
 "The slow blues on the hi-fi does nothing to ease my unrest."
+
+camera:
+    subpixel True 
+    pos (0, 0) zoom 1.0 
+    linear 0.50 pos (5, 71) zoom 1.25 
+show M melancholy:
+    subpixel True 
+    ypos 0.18 zoom 0.35 
+    linear 0.50 ypos 0.1 zoom 0.46 
+with Pause(0.60)
+camera:
+    pos (5, 71) zoom 1.25 
+show M melancholy:
+    ypos 0.1 zoom 0.46 
+
 m "I have less than a month to break the biggest story in this county."
 m "I have the chief breathing down my neck, ready to banish me to the society pages… and here I am, stewing over the proper syrup-to-soda ratio."
 "My hand’s already on the cold window frame before I realize I’ve stopped."
+
+show M annoyed
+with dissolve 
+
 "I’m staring down at the neon sign buzzing against the brick outside."
 "Red. Off. Red. Off."
 "The letters bleed through the thin curtains and crawl across my ceiling."
+
+camera:
+    subpixel True 
+    pos (5, 71) zoom 1.25 
+    linear 0.51 pos (0, 0) zoom 1.0 
+show M annoyed:
+    subpixel True 
+    ypos 0.1 zoom 0.46 
+    linear 0.51 ypos 0.18 zoom 0.35 
+with Pause(0.61)
+camera:
+    pos (0, 0) zoom 1.0 
+show M annoyed:
+    ypos 0.18 zoom 0.35 
+
+with hpunch
+
 "I yank the curtain shut, hard. The brass rings screech against the rod."
 "I flop back onto the bed, sinking into the lumpy springs, staring up at the ceiling."
 "The red light still sneaks through the gap in the curtain, painting long, bloody shadows across the room."
@@ -79,8 +206,11 @@ m "I am absolutely not getting involved."
 "Then the scrape starts up again. Scuff-drag. Scuff-drag."
 
 # Scene 2: Vesper Falls Courier - Newsroom - Day
-
+scene bg office
 "Tuesday, Special of the Day: Unknown"
+
+show M main:
+    xpos 0.12 zoom 0.35
 
 "Click. Clack. My low heels echo on the scuffed linoleum as I cross the main room."
 "Just a handful of desks jammed together, radiator hissing slow and steady."
@@ -101,6 +231,11 @@ m "Mr. Hollis, we already ran a photo spread on this joint yesterday. What exact
 b "It’s local color. Human interest."
 b "Get a quote from whoever runs the place, write something cute about the milkshakes, ask if they’re hiring. Keep it breezy."
 c "Focus on the roller skates, Anne. The readers eat that stuff up."
+
+show M annoyed:
+    xpos 0.16 zoom 0.35
+with dissolve 
+
 "That’s not my name?"
 "I whip around to face Chet, every muscle wound tight as a spring."
 "I open my mouth, ready to wipe that smug look off his face."
