@@ -1342,7 +1342,7 @@ hide O solemn
 
 "I look down at my open spiral steno pad."
 "I tap the tip of my pencil against the paper for a second before I start writing."
-"Among the scribbled drafts and interview notes, I write the word “morgue” and underline it twice, hard and deep into the page."
+"Among the scribbled drafts and interview notes, I write the word 'morgue' and underline it twice, hard and deep into the page."
 "I’ve got an idea."
 
 # Scene 6: Dorothy's Apartment - Wednesday Evening
