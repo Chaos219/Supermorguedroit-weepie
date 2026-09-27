@@ -14,6 +14,20 @@ init python:
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
 
+init python early:
+    LOBSTER = "gui/Lobster-Regular.ttf"
+    VASTSHAD = "gui/VastShadow-Regular.ttf"
+    BADSCRIPT = "gui/BadScript-Regular.ttf"
+
+    LIBREREG = "gui/LibreBaskerville-Regular.ttf"
+    LIBREBOLD = "gui/LibreBaskerville-Bold.ttf"
+    LIBREITA = "gui/LibreBaskerville-Italic.ttf"
+
+    RED = "#D92E4A"
+    GREEN = "#347E6F"
+    WHITE = "#fff"
+    BLACK = "#000"
+    GRAY = "#73848B"
 
 ################################################################################
 ## GUI Configuration Variables

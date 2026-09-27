@@ -1021,12 +1021,12 @@ m "And… how much did you use?"
 
 show A main:
     subpixel True xpos 0.5 zoom 0.55
-    ypos 0.0
-    linear 0.07 ypos -0.05
-    linear 0.07 ypos 0.0
+    yalign 1.0
+    linear 0.07 ypos 0.98
+    linear 0.07 ypos 1.0
 with Pause(0.24)
 show A main:
-    pos (0.5, 0.0) 
+    pos (0.5, 1.0) 
 
 a "A pinch. I don't know how much a pinch is. I used what I could pick up."
 
@@ -1186,12 +1186,12 @@ show L main:
     zoom 0.5
 
 show M annoyed:
-    subpixel True 
+    subpixel True yalign 1.0 zoom 0.35
     xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-    linear 0.50 xpos 0.37 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.50 xpos 0.35 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.60)
 show M annoyed:
-    xpos 0.37 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    xpos 0.35 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
 
 "LeeRoy writes it all down."
@@ -1200,19 +1200,19 @@ show M annoyed:
 
 show M annoyed:
     subpixel True xpos 0.35 zoom 0.35
-    ypos 0.18
-    linear 0.07 ypos 0.16
-    linear 0.07 ypos 0.18
+    yalign 1.0
+    linear 0.07 ypos 0.98
+    linear 0.07 ypos 1.0
 with Pause(0.24)
 show M annoyed:
-    pos (0.35, 0.18) 
+    pos (0.35, 1.0) 
 
 m "Right. Wonderful. Delighted to help. Now if you'd be so kind, I'm intending to return to sleep."
 hide L main
 
 show M annoyed:
     subpixel True 
-    xpos 0.5 ypos 0.18
+    xpos 0.5 yalign 1.0
     linear 0.19 xpos 0.2
 with Pause(0.48)
 show M annoyed:
@@ -1242,13 +1242,13 @@ o "Sleep well."
 "A quiet silence spreads between us."
 
 show M annoyed:
-    subpixel True xpos 0.2 ypos 0.18 zoom 0.35
-    ypos 0.18
-    linear 0.07 ypos 0.16
-    linear 0.07 ypos 0.18
+    subpixel True xpos 0.2 yalign 1.0 zoom 0.35
+    yalign 1.0
+    linear 0.07 ypos 0.98
+    linear 0.07 ypos 1.0
 with Pause(0.24)
 show M annoyed:
-    pos (0.2, 0.18) 
+    pos (0.2, 1.0) 
 
 m "...thank you."
 hide O main
