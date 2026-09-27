@@ -14,6 +14,10 @@ init python:
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
 
+init python early:
+    LOBSTER = "gui/Lobster-Regular.ttf"
+
+    RED = "#D92E4A"
 
 ################################################################################
 ## GUI Configuration Variables
