@@ -761,34 +761,117 @@ screen dessert:
         align (0.7, 0.5)
         action Confirm("Choose the Dark Chocolate Cherry cake?", Jump("dessert_oe"))
 
-label dessert_oe:
+label oe:
     "LeeRoy takes the menu back with a smile." 
+
+    show L main:
+        subpixel True 
+        xpos 0.45 yalign 1.0 zoom 0.5
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show L main:
+        xpos 0.45 yalign 1.0 zoom 0.5
     
     l "I'll bring it in a moment."
 
+    hide L main
+
     "He then makes a beeline straight for the kitchen. I find myself staring at the drawings across the room, oblivious to my surroundings. Ōe slides a heavy white saucer across the counter. Resting on it is a single, perfect persimmon—a fruit entirely out of season and nowhere near native to this county. They have cut it into exactly eight identical wedges. The skin is peeled back. It is an arrangement that requires a level of obsessive attention wildly out of proportion for the establishment I am in."
 
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        ypos 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+        pos (0.12, 1.0) 
+
     m "Where… did you even get this?"
+
+    show O smile:
+        subpixel True 
+        yalign 1.0 zoom 0.53 xpos 0.5
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show O smile:
+        yalign 1.0
 
     o "Persistance."
 
     "I pick up one of the wedges and take a bite. The flavor is incredibly sweet. I stop chewing, my journalistic brain catching up with the sentence."
 
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        ypos 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+        pos (0.12, 1.0) 
+
     m "Persistence? This diner's only been open a month. Where would you even—"
 
     "Oe does not explain themselves, instead they hint toward the plate."
 
+    show O smile:
+        subpixel True 
+        yalign 1.0 zoom 0.53 xpos 0.5
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show O smile:
+        yalign 1.0
+
     o "Is it good?"
+
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        ypos 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+        pos (0.12, 1.0) 
 
     m "…I— yes. It's actually very good."
 
     "I finish the slice. Ōe sits perfectly still on the other side of the counter, watching me eat. Their expression is hard to read, it isn't hunger, not exactly. More of an.. interest?"
 
+    show O main:
+        subpixel True 
+        yalign 1.0 zoom 0.5 xpos 0.5
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show O main:
+        yalign 1.0
+
     o "You changed the menu."
 
     "My spine instantly goes rigid. I set the fruit down on the saucer, the defensive armor snapping right back into place."
 
+    show M annoyed:
+        subpixel True xpos 0.16 zoom 0.35
+        yalign 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+        pos (0.16, 1.0)
+
     m "Look, no offence but… it was difficult to read. The penmanship was beautiful, sure, but it was completely illegible. In the restaurant racket, that’s—"
+
+    show O main:
+        subpixel True 
+        yalign 1.0 zoom 0.5 xpos 0.5
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show O main:
+        yalign 1.0
 
     o "I am not complaining."
 
@@ -796,37 +879,89 @@ label dessert_oe:
 
     "They tilt their head, just a fraction of an inch, studying me."
 
+    show O solemn:
+        subpixel True 
+        yalign 1.0 zoom 0.53 xpos 0.5
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show O solemn:
+        yalign 1.0
+
     o "I have been thinking about it since Thursday."
 
     "I don't know what to do with that information. It is unnerving to be perceived this closely."
 
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        ypos 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+        pos (0.12, 1.0) 
+
     m "…it's just a board, Ōe."
+
+    show O solemn:
+        subpixel True 
+        yalign 1.0 zoom 0.53 xpos 0.5
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show O solemn:
+        yalign 1.0
 
     o "Yes."
 
     "I glance past their shoulder, looking out toward the dining room. My eyes drift up to the back wall. Dozens of framed oil paintings of cars hang there, each one rendered with what I can only call various degrees of obsessive precision."
 
-
     menu:
         "Ask them about the paintings.":
+            show M main:
+                subpixel True xpos 0.12 zoom 0.45
+                ypos 1.0 
+                linear 0.05 ypos 0.98 
+                linear 0.05 ypos 1.0 
+            with Pause(0.20)
+            show M main:
+                pos (0.12, 1.0) 
 
-            "Were the wall paintings your idea?"
+            m "Were the wall paintings your idea?"
 
             "I ask, keeping my voice low. Ōe does not answer. They just looks at me, the silence stretching out until the Wurlitzer clicks in the corner." #[LISTEN +1]
-
 
         "Change the subject.":
 
             "I clear my throat, actively ignoring the sudden tightness in my chest, and point to the rest of the fruit."
 
-            "Are you going to eat any of this, or did you just slice it up for your own entertainment?"
+            show M main:
+                subpixel True xpos 0.12 zoom 0.45
+                ypos 1.0 
+                linear 0.05 ypos 0.98 
+                linear 0.05 ypos 1.0 
+            with Pause(0.20)
+            show M main:
+                pos (0.12, 1.0) 
+
+            m "Are you going to eat any of this, or did you just slice it up for your own entertainment?"
 
             "Ōe simply pushes the saucer an inch closer to me. "
 
-            "It is for you, Miss Kessler."
+            show O main:
+                subpixel True 
+                yalign 1.0 zoom 0.5 xpos 0.5
+                linear 0.05 ypos 0.98 
+                linear 0.05 ypos 1.0 
+            with Pause(0.20)
+            show O main:
+                yalign 1.0
+
+            o "It is for you, Miss Kessler."
 
             "I eat the rest in silence."
-    
+
+    hide O main
     jump next
 
 label dessert_adelaide:
