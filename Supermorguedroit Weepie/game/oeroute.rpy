@@ -1,184 +1,184 @@
 # MC is fuming/annoyed
 # If Marcia isn't a character drawing or sketch then a silhouette is fine
 
-m "And then…! And then…! He said if I didn't get a real story soon, I'd be in the women's section!”
+m "And then…! And then…! He said if I didn't get a real story soon, I'd be in the women's section!"
 
 # I forget if we named the MC or not…edit this if we didn't…
 
-mar "Gee, I mean, there's nothing wrong with the women's section, Dolly…”
+mar "Gee, I mean, there's nothing wrong with the women's section, Dolly…"
 
-“Marcia wrote the household tips column and answered letters from housewives about etiquette and recipes.”
+"Marcia wrote the household tips column and answered letters from housewives about etiquette and recipes."
 
-“She had been sweet to me ever since I was hired - she was always sweet to everyone.”
+"She had been sweet to me ever since I was hired - she was always sweet to everyone."
 
-“It drove me nuts that she didn't see how limiting it was compared to being a real reporter.”
+"It drove me nuts that she didn't see how limiting it was compared to being a real reporter."
 
-m "You're so friendly, I can't even yell at you about it.”
+m "You're so friendly, I can't even yell at you about it."
 
-“Marcia laughed. Her face took on a concerned look.”
+"Marcia laughed. Her face took on a concerned look."
 
-mar "Okay, but you're all right? When you left work I thought you were going to blow your top.”
+mar "Okay, but you're all right? When you left work I thought you were going to blow your top."
 
-m "Yes, I'm all right.”
+m "Yes, I'm all right."
 
-mar "Your face was so red…”
+mar "Your face was so red…"
 
-m "Yes, I'm fine now…”
+m "Yes, I'm fine now…"
 
-mar "You were muttering something under your breath…”
+mar "You were muttering something under your breath…"
 
-m "I'm…”
+m "I'm…"
 
-mar "It was something about his eyeballs…”
+mar "It was something about his eyeballs…"
 
 # M flustered and shouting
 
-m "Marcia! I'm fine!”
+m "Marcia! I'm fine!"
 
-“Marcia's face slipped into a sly smile and she started giggling. She had successfully wound me up.”
+"Marcia's face slipped into a sly smile and she started giggling. She had successfully wound me up."
 
-“I started laughing too.”
+"I started laughing too."
 
-“Marcia touched my arm in a sisterly way.”
+"Marcia touched my arm in a sisterly way."
 
-mar "I'm sorry you're having such a tough time…”
+mar "I'm sorry you're having such a tough time…"
 
 # MC is smiling
 
-m "Thanks, Marcia.”
+m "Thanks, Marcia."
 
-mar "””Oh! You know what? One of my favorite bands is coming to town. You should come with me!
+mar """Oh! You know what? One of my favorite bands is coming to town. You should come with me!
 
-It's The Rip-Chords, you've heard of them, right?”””
+It's The Rip-Chords, you've heard of them, right?"""
 
-“I was befuddled. Not because Marcia was asking me to go to a concert with her, but because she didn't strike me as the type to like a rock band like The Rip-Chords.”
+"I was befuddled. Not because Marcia was asking me to go to a concert with her, but because she didn't strike me as the type to like a rock band like The Rip-Chords."
 
-m "The Rip-Chords are coming here?”
+m "The Rip-Chords are coming here?"
 
-mar "I know, isn't it ginchy! This little town never has anything happen and my favorite band is going to have a concert.”
+mar "I know, isn't it ginchy! This little town never has anything happen and my favorite band is going to have a concert."
 
-“I hadn't thought of Marcia as being a fan of rock music. She seemed more like the light jazz type.”
+"I hadn't thought of Marcia as being a fan of rock music. She seemed more like the light jazz type."
 
-“Something involving a white guy with an accordion.”
+"Something involving a white guy with an accordion."
 
 # MC curious or thoughtful.
 
-m "Do you listen to a lot of rock records?”
+m "Do you listen to a lot of rock records?"
 
-mar "All that I can get my hands on. The Mucky Mucks, Salt River Navy Band, The Herdsmen, Hub Kapp and the Wheels, …”
+mar "All that I can get my hands on. The Mucky Mucks, Salt River Navy Band, The Herdsmen, Hub Kapp and the Wheels, …"
 
-“I teased her.”
+"I teased her."
 
 # MC playful or happy
 
-m "Marcia, I thought you were a square! Just look at that sweater you're wearing…”
+m "Marcia, I thought you were a square! Just look at that sweater you're wearing…"
 
-mar "I am, I wouldn't dare go to a concert by myself…but I'll go with a friend! Please say you'll come…”
+mar "I am, I wouldn't dare go to a concert by myself…but I'll go with a friend! Please say you'll come…"
 
 # MC agreeable or happy
 
-m "Sure, okay. How can I say no?”
+m "Sure, okay. How can I say no?"
 
-“Marcia was the most normal friend I'd made since moving here.”
+"Marcia was the most normal friend I'd made since moving here."
 
-“And I truly couldn't wait to see the Rip-chords!”
+"And I truly couldn't wait to see the Rip-chords!"
 
 # black screen or background transition of some kind here
 
-“The days flew by until the day of the concert.”
+"The days flew by until the day of the concert."
 
 # Scene OE.02  - Marcia can't come!
 
 # bg newsroom
 # fx - newsroom ambience or theme
 
-“I was handing in my story about the road widening project to the boss.”
+"I was handing in my story about the road widening project to the boss."
 
 # boss - impassive, bored, neutral
 # MC - thoughtful
 
-b "Great. I guess we need the filler on page four. You know this won't…”
+b "Great. I guess we need the filler on page four. You know this won't…"
 
-m "I know, I know. I'm working on something. Say, is Marcia around?”
+m "I know, I know. I'm working on something. Say, is Marcia around?"
 
-# Not sure if we named the boss or not, just say “the boss” if we didn't
+# Not sure if we named the boss or not, just say "the boss" if we didn't
 
-“I knew (THE BOSS'S NAME) always kept an eye out for Marcia just because of her legs.”
+"I knew (THE BOSS'S NAME) always kept an eye out for Marcia just because of her legs."
 
-“She actually worked hard on her little part of the paper but all he cared about was how tight her skirts were.”
+"She actually worked hard on her little part of the paper but all he cared about was how tight her skirts were."
 
-b "She called in sick today. Some kind of flu.”
+b "She called in sick today. Some kind of flu."
 
-“He sounded less concerned than disappointed that he didn't get to leer at her.”
+"He sounded less concerned than disappointed that he didn't get to leer at her."
 
-b "Say, could you do her household hints column? Something about keeping the china closet dusted or whatever?”
+b "Say, could you do her household hints column? Something about keeping the china closet dusted or whatever?"
 
 # exit boss
 
-“I was already on my way out of his office, so I was able to pretend I didn't hear him.”
+"I was already on my way out of his office, so I was able to pretend I didn't hear him."
 
-“Back at my desk I thought for a second, then grabbed the phone.”
+"Back at my desk I thought for a second, then grabbed the phone."
 
 # MC is determined or concerned
 # image of rotary phone
 
-“Maybe she was actually sick, or maybe…”
+"Maybe she was actually sick, or maybe…"
 
-mar "H…hello?”
+mar "H…hello?"
 
-m "Marcia…it's (MC NAME).  I heard you were sick…”
+m "Marcia…it's (MC NAME).  I heard you were sick…"
 
-“Or was she just playing hooky from work..”
+"Or was she just playing hooky from work.."
 
-m "There's nobody at my desk to hear…are you sick?”
+m "There's nobody at my desk to hear…are you sick?"
 
-mar "””Oh…gosh yes (MC NAME)...I'm fit to be tied… Or…
+mar """Oh…gosh yes (MC NAME)...I'm fit to be tied… Or…
 
-I guess I would be fit to be tied if I was feeling fit for anything.”””
+I guess I would be fit to be tied if I was feeling fit for anything."""
 
 # MC looks concerned/sad
 
-mar "””I have the flu and it's just awful!
+mar """I have the flu and it's just awful!
 
-On the day the Rip-Chords are here…”””
+On the day the Rip-Chords are here…"""
 
-m “It's okay, you just rest up. Do you have everything you need? Do you need me to bring some soup over or…”
+m "It's okay, you just rest up. Do you have everything you need? Do you need me to bring some soup over or…"
 
-“She answered much too quickly.”
+"She answered much too quickly."
 
-mar "No no! Don't bring me any food. I've got plenty of groceries..”
+mar "No no! Don't bring me any food. I've got plenty of groceries.."
 
-# Not sure if we have a  “thought balloon” font like italics or something? Rewrite the next line if we don't use that into more of a narration joke.
+# Not sure if we have a  "thought balloon" font like italics or something? Rewrite the next line if we don't use that into more of a narration joke.
 
-“Apparently even free food isn't welcome if it's from the Weepie…”
+"Apparently even free food isn't welcome if it's from the Weepie…"
 
-mar "it just burns me up that I won't get to go to the concert…”
+mar "it just burns me up that I won't get to go to the concert…"
 
-m “We'll go another time…”
+m "We'll go another time…"
 
-mar "What?! No, you have to go. Don't let my flu stop you…”
+mar "What?! No, you have to go. Don't let my flu stop you…"
 
-m “Marcia…”
+m "Marcia…"
 
-mar "The tickets are in my desk drawer, grab them and go have a good time.”
+mar "The tickets are in my desk drawer, grab them and go have a good time."
 
 # MC is uncertain, questioning
 
-m “I don't know…”
+m "I don't know…"
 
-mar "I insist. Don't make me argue with you, I…ohh…I have to go…right now!…sorry!”
+mar "I insist. Don't make me argue with you, I…ohh…I have to go…right now!…sorry!"
 
 # fade phone
 
-“She hung up.”
+"She hung up."
 
-“I thought about it for a moment, then went and got the tickets from her desk.”
+"I thought about it for a moment, then went and got the tickets from her desk."
 
 # picture of the tickets
 
 # Cut to black or other transition
 
-“Maybe I would ask LeeRoy. It seemed like his kind of concert.”
+"Maybe I would ask LeeRoy. It seemed like his kind of concert."
 
 # Scene OE.03 - Marcia meets Oe and asks them instead
 
@@ -449,7 +449,7 @@ rip "You're a lovely crowd, we're going to take a little intermission and be bac
 
 "Their cold hand had me by the elbow and we went out into a dingy alleyway."
 
-fx: city ambience
+#fx: city ambience
 
 "A few scattered knots of concertgoers were smoking. Oe produced their pipe and lit it."
 
@@ -702,19 +702,19 @@ m "Oe?"
 
 # Not sure if we want to do a leaflet font, box, or other delineation here.
 
-“leaf The Art of the American Expedition!”
+"leaf The Art of the American Expedition!"
 
-“An exhibition at the Sullivan Gallery”
+"An exhibition at the Sullivan Gallery"
 
-“A hundred years ago, American ships visited Japan for the first time.”
+"A hundred years ago, American ships visited Japan for the first time."
 
-“What many don't know is that they returned with many priceless works of ancient Japanese art.”
+"What many don't know is that they returned with many priceless works of ancient Japanese art."
 
-“From bronze mirrors to woodblock prints…”
+"From bronze mirrors to woodblock prints…"
 
-“…from silk hanging scrolls to religious statues…”
+"…from silk hanging scrolls to religious statues…"
 
-“These treasures are now on display for the first time in this traveling exhibition."
+"These treasures are now on display for the first time in this traveling exhibition."
 
 "There was a picture of the First Lady, wearing her classic pillbox hat, shaking hands with an old man at the bottom of the flyer."
 
