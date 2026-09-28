@@ -1781,12 +1781,6 @@ lib "Thanks. They're downstairs in the basement stacks."
 show O solemn:
     subpixel True 
     yalign 1.0 zoom 0.53 xpos 0.5
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0
-    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-with Pause(0.20)
-show O solemn:
-    yalign 1.0
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
 "Oe was sitting alone at a table in the middle of the room."
@@ -1855,15 +1849,15 @@ show M main:
 
 "Oe was staring at the flyer blankly."
 
-"I looked up at them and they finally spoke."
-
 show O main:
-    subpixel True 
+    subpixel True yalign 1.0 zoom 0.5 xpos 0.5
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     linear 0.20 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 360.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.30)
 show O main:
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 360.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
+"I looked up at them and they finally spoke."
 
 show O main:
     subpixel True 
@@ -1880,7 +1874,7 @@ o "I shouldn't grieve…I shouldn't grieve…or else what else will I spend my c
 
 show M melancholy:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.36 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -1906,8 +1900,6 @@ show O main:
 
 o "I knew the artist… I…"
 
-"Their voice gave out."
-
 show O solemn:
     subpixel True 
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
@@ -1915,6 +1907,8 @@ show O solemn:
 with Pause(0.30)
 show O solemn:
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
+"Their voice gave out."
 
 show O solemn:
     subpixel True 
@@ -1930,7 +1924,7 @@ o "He was my father. He gave it to me."
 
 show M melancholy:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.36 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2021,7 +2015,7 @@ o "Now to find out that someone just gave it to the Americans as a bribe…or it
 
 show M melancholy:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.36 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2045,7 +2039,7 @@ o "I hate grieving. I hate it! But I see this and I grieve my father, my home in
 
 show M melancholy:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.36 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2108,7 +2102,7 @@ o "And I'm still the same as the night I left it behind me!"
 
 show M melancholy:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.36 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2119,7 +2113,7 @@ m "Oe…it's not wrong to want something that belongs to you…something that me
 
 show M melancholy:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.36 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2130,7 +2124,7 @@ m "You can't just sit down here in the basement of the library staring at it, ho
 
 show M melancholy:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.36 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2143,7 +2137,7 @@ m "Even if they hurt, they're your feelings."
 
 show M melancholy:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.36 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2183,14 +2177,15 @@ o "No! I don't want to see it, I want to have it! I want to see it when I lay do
 
 o "I want to have it, I was ungrateful when my father gave it to me but he's dust and my home is dust and everyone I knew was dust but it's here and I want it!"
 
-show M main
+show M main:
+    xpos 0.34 yalign 1.0 zoom 0.45
 with dissolve 
 
 "I felt for Oe in that moment…everything taken from them so long ago and now, just out of their reach, something that they wanted more than anything else."
 
 show M main:
     subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
+    xpos 0.34 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2467,9 +2462,14 @@ m "Someone like you…"
 
 "The lights began to flicker, to dim."
 
+hide M main
+
 guy "What's that sound?"
 
 lady "It sounds like…I don't know what it sounds like…"
+
+show M main:
+    xpos 0.12 zoom 0.45 yalign 1.0
 
 "I was looking up so I saw it immediately. A bat came in through the skylight, then another…"
 
@@ -2485,7 +2485,7 @@ lady "It sounds like…I don't know what it sounds like…"
 
 show M annoyed:
     subpixel True 
-    xpos 0.16 zoom 0.45 yalign 1.0
+    xpos 0.16 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2540,7 +2540,7 @@ m "You're so brave!!"
 
 show M annoyed:
     subpixel True 
-    xpos 0.16 zoom 0.45 yalign 1.0
+    xpos 0.16 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2553,7 +2553,7 @@ m "Mr. Burwell! Don't be a hero, run!"
 
 show M annoyed:
     subpixel True 
-    xpos 0.16 zoom 0.45 yalign 1.0
+    xpos 0.16 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2564,7 +2564,7 @@ m "Run, save yourself!"
 
 show M annoyed:
     subpixel True 
-    xpos 0.16 zoom 0.45 yalign 1.0
+    xpos 0.16 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2581,7 +2581,7 @@ with hpunch
 
 show M annoyed:
     subpixel True 
-    xpos 0.16 zoom 0.45 yalign 1.0
+    xpos 0.16 zoom 0.35 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2632,6 +2632,9 @@ show M main:
 m "Stop the presses! I got a big story!"
 
 # black or transition
+
+camera:
+    reset
 scene black
 with fade 
 
@@ -2685,6 +2688,15 @@ show O excited:
     yalign 1.0
 
 o "Yes…yes, it's wonderful. It hurts so badly to look at it.  But it is wonderful to see it."
+
+show M main:
+    subpixel True 
+    xpos 0.12 
+    linear 0.20 xpos 0.43 
+with Pause(0.30)
+show M main:
+    xpos 0.43 
+with easeinleft 
 
 "I impulsively hugged them` from behind."
 
