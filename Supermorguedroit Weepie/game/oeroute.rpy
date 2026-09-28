@@ -3,20 +3,46 @@
 
 
 label oe:
+scene bg office
 # MC is fuming/annoyed
 # If Marcia isn't a character drawing or sketch then a silhouette is fine
 
+show M annoyed:
+    subpixel True 
+    yalign 1.0 zoom 0.35 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 
+
 m "And then…! And then…! He said if I didn't get a real story soon, I'd be in the women's section!"
 
-# I forget if we named the MC or not…edit this if we didn't…
+show M main:
+    subpixel True 
+    yalign 1.0 zoom 0.45 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    ypos 1.0 
 
-mar "Gee, I mean, there's nothing wrong with the women's section, Dolly…"
+mar "Gee, I mean, there's nothing wrong with the women's section, Dorothy…"
 
 "Marcia wrote the household tips column and answered letters from housewives about etiquette and recipes."
 
 "She had been sweet to me ever since I was hired - she was always sweet to everyone."
 
 "It drove me nuts that she didn't see how limiting it was compared to being a real reporter."
+
+show M annoyed:
+    subpixel True 
+    yalign 1.0 zoom 0.35 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 
 
 m "You're so friendly, I can't even yell at you about it."
 
@@ -94,7 +120,7 @@ m "Sure, okay. How can I say no?"
 
 # Scene OE.02  - Marcia can't come!
 
-# bg newsroom
+scene bg office 
 # fx - newsroom ambience or theme
 
 "I was handing in my story about the road widening project to the boss."
@@ -187,6 +213,8 @@ mar "I insist. Don't make me argue with you, I…ohh…I have to go…right now!
 
 # Scene OE.03 - Marcia meets Oe and asks them instead
 
+scene bg diner 
+
 # bg diner - dimly lit or shady perhaps?
 # MC enters, enthused
 
@@ -195,7 +223,7 @@ m "LeeRoy, hey!"
 # MC looks shocked.
 # Oe is there, neutral
 
-oe "He isn't here."
+o "He isn't here."
 
 "I was used to the diner being empty of customers but somehow when Oe was the only one there, it seemed even emptier somehow."
 
@@ -207,13 +235,13 @@ oe "He isn't here."
 
 m "I…uh…do you know where he is?"
 
-oe "No."
+o "No."
 
 "Their voice was so flat, so neutral…"
 
 "Then they turned their eyes on me - still empty, still expressionless."
 
-oe "What do you have there?"
+o "What do you have there?"
 
 "I had forgotten I had entered waving the tickets."
 
@@ -223,7 +251,7 @@ oe "What do you have there?"
 
 m "Er, tickets…"
 
-oe "To what?"
+o "To what?"
 
 m "To…to a rock and roll show…the Rip-Chords…"
 
@@ -231,11 +259,11 @@ m "To…to a rock and roll show…the Rip-Chords…"
 
 m "I was going to, ah, go with a friend, but she got sick, and then I thought LeeRoy might…"
 
-oe "You thought LeeRoy might what?"
+o "You thought LeeRoy might what?"
 
 m "I thought he might want to go with me…"
 
-oe "You will not find LeeRoy tonight."
+o "You will not find LeeRoy tonight."
 
 "They intoned this with the flat certainty of a math teacher correcting a student."
 
@@ -263,13 +291,13 @@ m "Do…do YOU want to go?"
 
 "I immediately regretted it. Their answer came back as quick as a mousetrap snapping, and just as final."
 
-oe "I will accompany you."
+o "I will accompany you."
 
 m "O…okay. That's…that's…"
 
 # back to normal for Oe. still flat expression
 
-oe "That's 'cool'?"
+o "That's 'cool'?"
 
 "I couldn't tell if they were being sarcastic or not. Their voice hadn't changed at all."
 
@@ -295,6 +323,7 @@ m "I'll meet you down here….in half an hour?"
 
 # Scene OE.04 - The Concert
 
+scene bg office 
 # background - outside of a theater or other building
 
 "They didn't change their clothes; I don't think I'd ever seen them in anything else."
@@ -305,7 +334,7 @@ m "I'll meet you down here….in half an hour?"
 
 "As if the moment they got on, everyone else knew to get off."
 
-oe "The Rip-Chords?"
+o "The Rip-Chords?"
 
 m "It's a pun on 'ripcord'. The thing you pull to open a parachute."
 
@@ -341,7 +370,7 @@ m "Oh! Oh, hehe…yea…you got me."
 
 m "Er… It's gonna be loud…"
 
-oe "I believe rock and roll music is meant to be performed loudly?"
+o "I believe rock and roll music is meant to be performed loudly?"
 
 "A strange question - I didn't know how to answer so I just shrugged helplessly."
 
@@ -468,7 +497,7 @@ rip "You're a lovely crowd, we're going to take a little intermission and be bac
 
 m "Oe, you're an amazing dancer! You picked it up perfectly!"
 
-oe "Gratifying of you to say so. The pleasure is mine, to find so many new steps."
+o "Gratifying of you to say so. The pleasure is mine, to find so many new steps."
 
 m "You don't…you don't seem like the kind of person who keeps up with new things…"
 
@@ -478,7 +507,7 @@ m "You don't…you don't seem like the kind of person who keeps up with new thin
 
 # In this monologue, we might change MC's attitude to thoughtful, maybe even sad. same for Oe, though They can also still appear static. This might be a good place for some warm or spooky music too. Also might be a good idea to have a few images vaguely referring to Oe's comments here. 
 
-oe """Most things - new or old - pass. You buy a blouse, it lasts a decade, perhaps two at most.
+o """Most things - new or old - pass. You buy a blouse, it lasts a decade, perhaps two at most.
 
 A pipe can last a hundred years if you care for it properly.
 
@@ -551,7 +580,7 @@ There is so much to experience here."""
 
 "Oe's face lit up again."
 
-oe "Time for more? You aren't too tired…"
+o "Time for more? You aren't too tired…"
 
 # MC happy/determined
 
@@ -573,13 +602,15 @@ m "N…no! I'm ready for more!"
 
 "We arrived home."
 
+scene bg diner 
+
 # Bg diner
 
 "We stopped outside the diner. Through the window we could see LeeRoy and Adelaide bickering over something."
 
 # oe is blank faced
 
-oe "Thank you for inviting me. I hope you will think of me again if you have the opportunity."
+o "Thank you for inviting me. I hope you will think of me again if you have the opportunity."
 
 # mc is happy
 
@@ -630,6 +661,8 @@ m "I think they were headed to the library. I'll go check it out."
 l "Thanks. Books make me fall asleep just thinking about them. Honk shoo!"
 
 "I rolled my eyes at him and headed out."
+
+scene bg office 
 
 # bg exterior library at night. kinda "any building at night" works here
 
@@ -727,7 +760,7 @@ m "Oe?"
 
 "I looked up at them and they finally spoke."
 
-oe "I shouldn't grieve…I shouldn't grieve…or else what else will I spend my centuries doing but grieving?"
+o "I shouldn't grieve…I shouldn't grieve…or else what else will I spend my centuries doing but grieving?"
 
 # MC concerned
 
@@ -739,28 +772,28 @@ m "Oe…"
 
 "Handscroll depicting aftermath of the siege of Shirakawa-den, July 1156. Artist unknown."
 
-oe "I knew the artist… I…"
+o "I knew the artist… I…"
 
 "Their voice gave out."
 
-oe "He was my father. He gave it to me."
+o "He was my father. He gave it to me."
 # MC is shocked
 
 m "Your father!"
 
-oe "When he came home from the siege I bothered him to paint me the battle."
+o "When he came home from the siege I bothered him to paint me the battle."
 
-oe "I was just a little child, I couldn't have known what he'd seen."
+o "I was just a little child, I couldn't have known what he'd seen."
 
-oe "Finally he gave in, and just painted this empty field."
+o "Finally he gave in, and just painted this empty field."
 
-oe "At the time I hated it, but ever since then I've remembered this field of flowers…"
+o "At the time I hated it, but ever since then I've remembered this field of flowers…"
 
-oe "After I was turned, I never saw anyone in my family again."
+o "After I was turned, I never saw anyone in my family again."
 
-oe "But I saw this field of peaceful flowers in my mind so many times…"
+o "But I saw this field of peaceful flowers in my mind so many times…"
 
-oe "Now to find out that someone just gave it to the Americans as a bribe…or it was taken as theft…"
+o "Now to find out that someone just gave it to the Americans as a bribe…or it was taken as theft…"
 
 # M is shocked
 # Oe is bitter/sad
@@ -769,7 +802,7 @@ m "Oe…"
 
 # Oe angry/upset
 
-oe "I hate grieving. I hate it! But I see this and I grieve my father, my home in the hills! I grieve the sun on the flowers! The sun anywhere!"
+o "I hate grieving. I hate it! But I see this and I grieve my father, my home in the hills! I grieve the sun on the flowers! The sun anywhere!"
 
 m "Oh Oe…"
 
@@ -781,13 +814,15 @@ m "Oh Oe…"
 
 # Oe back to normal
 
+show O main
+
 "They didn't pull away. They still hadn't really moved at all since I came into the basement."
 
-oe "It belongs to me, it's mine. But I can't have it, I can't have it! It has lasted this long, eight hundred years, as long as I have, but how much longer?"
+o "It belongs to me, it's mine. But I can't have it, I can't have it! It has lasted this long, eight hundred years, as long as I have, but how much longer?"
 
-oe "Look how frayed it is, look how it's almost pulling apart."
+o "Look how frayed it is, look how it's almost pulling apart."
 
-oe "And I'm still the same as the night I left it behind me!"
+o "And I'm still the same as the night I left it behind me!"
 
 m "Oe…it's not wrong to want something that belongs to you…something that means something to you."
 
@@ -803,9 +838,11 @@ m "The exhibition is tomorrow night, do you want to… go see it?"
 
 # Oe angry
 
-oe "No! I don't want to see it, I want to have it! I want to see it when I lay down to sleep at dawn! I want to see it when I wake up every dusk!"
+show O solemn
 
-oe "I want to have it, I was ungrateful when my father gave it to me but he's dust and my home is dust and everyone I knew was dust but it's here and I want it!"
+o "No! I don't want to see it, I want to have it! I want to see it when I lay down to sleep at dawn! I want to see it when I wake up every dusk!"
+
+o "I want to have it, I was ungrateful when my father gave it to me but he's dust and my home is dust and everyone I knew was dust but it's here and I want it!"
 
 # MC determined
 
@@ -814,6 +851,8 @@ oe "I want to have it, I was ungrateful when my father gave it to me but he's du
 m "Let's walk home, Oe.  I think we may be able to help each other…"
 
 # Oe hopeful/warm
+
+show O smile
 
 # black/transition here
 
@@ -833,6 +872,8 @@ m "Let's walk home, Oe.  I think we may be able to help each other…"
 # Matheson can be a silhouette I think
 
 # MC is normal/upbeat
+
+show M main
 
 mat "I don't see why your paper needs another set of pictures. They sent a man out yesterday."
 
@@ -893,15 +934,15 @@ m "I won't be a minute."
 
 # Thinking/flashback here maybe? I leave to you how to show this. We could even fully flash back to the diner or MC's apartment in a new scene here
 
-oe "You haven't seen the full power of the blood."
+o "You haven't seen the full power of the blood."
 
-oe "Few living have.  LeeRoy and Adelaide barely have a fraction of the knowledge that I do."
+o "Few living have.  LeeRoy and Adelaide barely have a fraction of the knowledge that I do."
 
-oe "They're like children running around a field waving paper swords."
+o "They're like children running around a field waving paper swords."
 
-oe "It can be very difficult for a human to look at it directly.  It affects the mind."
+o "It can be very difficult for a human to look at it directly.  It affects the mind."
 
-oe "You have to be focused and practiced. So let's go over it again."
+o "You have to be focused and practiced. So let's go over it again."
 
 # Back to the gallery, the MC
 
@@ -1031,6 +1072,8 @@ m "Stop the presses! I got a big story!"
 
 # black or transition
 
+scene bg bedroom 
+
 # bg MC's apartment
 
 # MC enters, happy
@@ -1047,7 +1090,9 @@ m "Is it…is it what you wanted?"
 
 # Oe happy
 
-oe "Yes…yes, it's wonderful. It hurts so badly to look at it.  But it is wonderful to see it."
+show O excited
+
+o "Yes…yes, it's wonderful. It hurts so badly to look at it.  But it is wonderful to see it."
 
 "I impulsively hugged them` from behind."
 
@@ -1057,15 +1102,15 @@ m "You know…even if you hadn't become a vampire…you would have outlived your
 
 m "He must have hoped that you would look at it after he was gone."
 
-oe "Yes. It made him immortal, just a little bit."
+o "Yes. It made him immortal, just a little bit."
 
 "They turned to face me. Although they were cold to the touch, their expression at last was warm."
 
-oe "Congratulations on the front page story. I look forward to reading it tomorrow."
+o "Congratulations on the front page story. I look forward to reading it tomorrow."
 
 m "I couldn't have done it without you."
 
-oe "The kindness was all yours."
+o "The kindness was all yours."
 
 "Their fingers gently wrapped the scroll and slid it back into the case." 
 

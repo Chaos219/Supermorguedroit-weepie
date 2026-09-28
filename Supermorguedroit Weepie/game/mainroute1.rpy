@@ -20,7 +20,13 @@ define c = Character("Chet", callback=boopy_voice, cb_boopfile="bleep014.ogg")
 define t1 = Character("Teenager1", callback=boopy_voice, cb_boopfile="bleep005.ogg")
 define t2 = Character("Teenager2", callback=boopy_voice, cb_boopfile="bleep026.ogg")
 define e = Character("Earl", callback=boopy_voice, cb_boopfile="bleep030.ogg")
-
+define mar = Character("Marcia")
+define rips = Character("Johnny 'Rips' Goldman")
+define guard = Character("Guard")
+define guy = Character("Guy")
+define lady = Character("Lady")
+define mat = Character("Matheson")
+define lib = Character("Librarian")
 
 # Backgrounds
 image bg bedroom = im.Scale("images/bedroom_bg.png",1920,1080)
