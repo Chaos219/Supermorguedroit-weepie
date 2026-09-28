@@ -59,7 +59,7 @@ play music "intro.ogg"
 image woman = Movie(size=(1920, 1080), channel="movie_dp", play="images/woman.webm")
 image house = Movie(size=(1920, 1080), channel="movie_dp", play="images/house.webm")
 image street = Movie(size=(1920, 1080), channel="movie_dp", play="images/street.webm")
-image horse = Movie(size=(1920, 1080), channel="movie_dp", play="horse/street.webm")
+image horse = Movie(size=(1920, 1080), channel="movie_dp", play="images/horse.webm")
 
 window hide
 $ quick_menu = False
@@ -95,7 +95,8 @@ pause 1.0
 hide art_names with easeoutbottom
 hide artists with easeouttop
 hide street
-show horse 
+show horse
+pause 1.0
 show programmers with easeinleft
 show music with easeinright
 show pro_names with easeinleft
