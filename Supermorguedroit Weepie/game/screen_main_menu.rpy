@@ -138,7 +138,7 @@ screen main_menu():
 
                 action NullAction()
 
-        text "VESION [config.version]":
+        text "VERSION [config.version]":
             style "main_menu_version"
             xalign 0.5
             yalign 1.0 yoffset -25

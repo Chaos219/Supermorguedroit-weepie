@@ -30,6 +30,7 @@
 label adelaide:
 
 #int. Diner - Afternoon
+hide black
 scene bg diner 
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
@@ -1029,7 +1030,10 @@ show A evil:
 
 a "Your loss, but don’t forget the offer stands."
 
+show black
+
 #New Day
+hide black
 scene bg bedroom
 camera:
     subpixel True 
@@ -1289,7 +1293,10 @@ show A happy:
     yalign 1.0 
 
 a "You deserve better than this. So come on. Let’s go!"
+
+show black
 #Office Outside
+hide black
 scene bg office 
 
 "We rushed to the Office to catch the Boss before he left the building."
@@ -1403,7 +1410,10 @@ show A evil:
     
 a "We should leave. People are gonna be here soon."
 "She grabs my hand and practically pulls me back to the diner. I just stare at the floor as I follow her. My hands are full of his blood."
+
+show black
 #Diner
+hide black
 scene bg diner
 camera:
     subpixel True pos (0, 0) zoom 1.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.15)*HueMatrix(0.0) 

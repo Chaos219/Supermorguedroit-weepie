@@ -21,7 +21,7 @@ define t1 = Character("Teenager1", callback=boopy_voice, cb_boopfile="bleep005.o
 define t2 = Character("Teenager2", callback=boopy_voice, cb_boopfile="bleep026.ogg")
 define e = Character("Earl", callback=boopy_voice, cb_boopfile="bleep030.ogg")
 define mar = Character("Marcia")
-define rips = Character("Johnny 'Rips' Goldman")
+define rip = Character("'Rips' Goldman")
 define guard = Character("Guard")
 define guy = Character("Guy")
 define lady = Character("Lady")
