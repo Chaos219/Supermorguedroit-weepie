@@ -107,6 +107,8 @@ define gui.title_text_size = 75
 define gui.main_menu_background = "images/diner_bg.png"
 define gui.game_menu_background = "images/diner_bg.png"
 define gui.log_background = "gui/log_background.png"
+define dessert_adelaide = "images/dessert_adelaide.png"
+define dessert_oe = "images/dessert_oe.png"
 
 
 ## Dialogue ####################################################################

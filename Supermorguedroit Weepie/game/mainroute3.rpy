@@ -742,6 +742,27 @@ l "I would consider it a personal favour if you would be the very first to sampl
 #[CHOICE ROUTES GO HERE]
 #[Whatever happens, happens]
 #"[Name] gives me a lingering look, excuses [herself/himself/themselves], and slips back behind the counter to get back on the clock."
+hide L main
+hide M main
+window hide
+call screen dessert
+
+screen dessert:
+
+    imagebutton:
+        idle Transform(dessert_adelaide, zoom=0.5, matrixcolor=BrightnessMatrix(-0.1))
+        hover Transform(dessert_adelaide, zoom=0.5, matrixcolor=BrightnessMatrix(+0.1))
+        align (0.3, 0.5)
+        action Confirm("Choose the Pear pie?",Jump("next"))
+
+    imagebutton:
+        idle Transform(dessert_oe, zoom=0.5, matrixcolor=BrightnessMatrix(-0.1))
+        hover Transform(dessert_oe, zoom=0.5, matrixcolor=BrightnessMatrix(+0.1))
+        align (0.7, 0.5)
+        action Confirm("Choose the Dark Chocolate Cherry cake?", Jump("next"))
+
+label next:
+
 
 show L main:
     subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
