@@ -11,13 +11,17 @@ transform ts_gmnavbtn():
         linear 0.5 xoffset -100
     on idle:
         linear 0.5 xoffset 0
+    on selected_hover:
+        xoffset 0
 
 
-screen game_menu(title=None):
+screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
+    add gui.main_menu_background size (1920, 1080)
     add OVERLAY
 
     fixed:
         xysize (782, 965)
+        align (0.5, 0.5) xoffset 70
         at ts_main_menu()
 
         # Back
@@ -26,31 +30,36 @@ screen game_menu(title=None):
 
         ## TABS ##
         vbox:
-            xanchor 1.0
+            xanchor 1.0 xpos 100
             yalign 0.5
+            spacing 15
 
             style_prefix "gmnav"
 
             button:
                 at ts_gmnavbtn()
                 if renpy.get_screen("load"):
-                    foreground "gui/overlay/load_[prefix_]icon.png"
+                    foreground Transform("gui/overlay/load_[prefix_]icon.png", yalign=0.5, xpos=50)
+                    selected_foreground Transform("gui/overlay/load_selected_icon.png", yalign=0.5, xpos=50)
                     selected renpy.get_screen("load")
-                    action ShowScreen("load")
+                    action ShowMenu("load")
                 else:
-                    foreground "gui/overlay/save_[prefix_]icon.png"
+                    foreground Transform("gui/overlay/save_[prefix_]icon.png", yalign=0.5, xpos=50)
+                    selected_foreground Transform("gui/overlay/save_selected_icon.png", yalign=0.5, xpos=50)
                     selected renpy.get_screen("save")
-                    action ShowScreen("save")
+                    action ShowMenu("save")
 
             button:
                 at ts_gmnavbtn()
-                foreground "gui/overlay/settings_[prefix_]icon.png"
+                foreground Transform("gui/overlay/settings_[prefix_]icon.png", yalign=0.5, xpos=50)
+                selected_foreground Transform("gui/overlay/settings_selected_icon.png", yalign=0.5, xpos=50)
                 selected renpy.get_screen("preferences")
                 action ShowMenu("preferences")
 
             button:
                 at ts_gmnavbtn()
-                foreground "gui/overlay/controls_[prefix_]icon.png"
+                foreground Transform("gui/overlay/controls_[prefix_]icon.png", yalign=0.5, xpos=50)
+                selected_foreground Transform("gui/overlay/controls_selected_icon.png", yalign=0.5, xpos=50)
                 selected renpy.get_screen("help")
                 action ShowMenu("help")
 
@@ -59,13 +68,34 @@ screen game_menu(title=None):
         add "gui/overlay/top_page.png"
 
 
+        ## STUFF ##
+        
+
+        label title style "gmnav_title" ypos 90
+
+        transclude
+
+
+        ## RETURN ##
+        imagebutton auto "gui/button/return2_%s_background.png":
+            xalign 1.0 xoffset -25
+            ypos 120
+            action Return()
+
+
 style gmnav_button:
-    xysize (497, 95)
+    xysize (200, 95)
     background "gui/overlay/tab_idle_background.png"
     selected_background "gui/overlay/tab_selected_background.png"
 
-    padding (75, 25, 75, 25)
+    
+style gmnav_title:
+    xalign 0.5
 
+style gmnav_title_text:
+    font BADSCRIPT
+    size 65
+    color BLACK
 
 
 
