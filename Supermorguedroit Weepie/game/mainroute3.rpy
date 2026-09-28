@@ -753,15 +753,15 @@ screen dessert:
         idle Transform(dessert_adelaide, zoom=0.5, matrixcolor=BrightnessMatrix(-0.1))
         hover Transform(dessert_adelaide, zoom=0.5, matrixcolor=BrightnessMatrix(+0.1))
         align (0.3, 0.5)
-        action Confirm("Choose the Pear pie?",Jump("next"))
+        action Confirm("Choose the Pear pie?",Jump("dessert_adelaide"))
 
     imagebutton:
         idle Transform(dessert_oe, zoom=0.5, matrixcolor=BrightnessMatrix(-0.1))
         hover Transform(dessert_oe, zoom=0.5, matrixcolor=BrightnessMatrix(+0.1))
         align (0.7, 0.5)
-        action Confirm("Choose the Dark Chocolate Cherry cake?", Jump("oe"))
+        action Confirm("Choose the Dark Chocolate Cherry cake?", Jump("dessert_oe"))
 
-label oe:
+label dessert_oe:
     "LeeRoy takes the menu back with a smile." 
     
     l "I'll bring it in a moment."
@@ -806,16 +806,60 @@ label oe:
 
     "I glance past their shoulder, looking out toward the dining room. My eyes drift up to the back wall. Dozens of framed oil paintings of cars hang there, each one rendered with what I can only call various degrees of obsessive precision."
 
-    ◆ CHOICE(s)
 
-    "Ask them about the paintings." → "Were the wall paintings your idea?" I ask, keeping my voice low. Ōe does not answer. They just looks at me, the silence stretching out until the Wurlitzer clicks in the corner. [LISTEN +1]
+    menu:
+        "Ask them about the paintings.":
 
-    "Change the subject." → 
-    "I clear my throat, actively ignoring the sudden tightness in my chest, and point to the rest of the fruit."
-    "Are you going to eat any of this, or did you just slice it up for your own entertainment?"
-    "Ōe simply pushes the saucer an inch closer to me. "
-    "It is for you, Miss Kessler."
-    "I eat the rest in silence."
+            "Were the wall paintings your idea?"
+
+            "I ask, keeping my voice low. Ōe does not answer. They just looks at me, the silence stretching out until the Wurlitzer clicks in the corner." #[LISTEN +1]
+
+
+        "Change the subject.":
+
+            "I clear my throat, actively ignoring the sudden tightness in my chest, and point to the rest of the fruit."
+
+            "Are you going to eat any of this, or did you just slice it up for your own entertainment?"
+
+            "Ōe simply pushes the saucer an inch closer to me. "
+
+            "It is for you, Miss Kessler."
+
+            "I eat the rest in silence."
+    
+    jump next
+
+label dessert_adelaide:
+    "Once I’ve made my choice, Leeroy disappears into the kitchen to go fetch me my dessert."
+    "I go and sink into the seats of a free booth, and cross my arms over my chest. The view outside is… less dull, I suppose, with all the people. I let myself stare. Who knows, I might catch sight of something interesting."
+    "This is a decent spot for people-watching, but the diner’s brand spanking new clients seem to actually be here for food, rather than to offer me scoops on a silver platter."
+    a "This seat taken, Dolly?"
+    "I raise my head to meet Adelaide’s gaze. Her smile doesn’t quite reach her eyes."
+    "Straightening up just a smidge, I gesture for her to sit opposite me."
+    m "Tired of the kitchen already?"
+    a "Oh, please. It’s Leeroy’s territory right now. You’re less grating to speak to."
+    "I raise an eyebrow. Was that an actual compliment?"
+    m "Still mad at him?"
+    a "Ah… I’m giving a strategic cold shoulder. Wouldn’t want you to have to give him a piece of your brilliant mind once again."
+    m "What can I say, I know a thing or two about overbearing men."
+    a "Mh. Your boss at that journalist gig of yours, is it? That’s where you get your experience? Your… pent-up rage?"
+    "I scoff. She’s not wrong, in a sense."
+    m "Maybe."
+    a "Perhaps we ought to thank him."
+    "I grimace, and search for the point of the joke. She’s leaning closer to me on the table, hands obscuring her mouth."
+    m "For…?"
+    a "Had you not been mad at him already, perhaps you wouldn’t have barged in here at all."
+    m "So, you’re glad that I insulted your milkshake?"
+    a "You have sensitive tastebuds, which I can recognize. That is all I’ll admit."
+    "I huff. It is not a laugh. It is a slightly amused exhale."
+    m "I’m not actually that picky. I don’t like milkshakes, and I still tried it. And honestly, I think that if I had actually been looking forward to it, I would’ve thrown up from the sheer disappointment."
+    a "That’s disgusting, darling. If you do that, I’m banishing you from this establishment."
+    m "What will you do when a kid gets sick, or someone trashes the bathroom?"
+    a "I’ll make Oe clean it up, and let you write an article about the great diner disaster of the day. Got to keep our name out there if Leeroy wants this place to have any chance of success."
+    "I hum as both our gazes fall onto the actually edible milkshake a couple is sharing. I see Adelaide shudder in disgust at the sight."
+    m "What, not a romantic?"
+    a "It’s just… A very unrefined idea of romance."
+    "I wonder what her refined version is. Well, no, actually, I don’t wonder. She’s probably just… pretentious about it. High standards, and all."
     jump next
 
 label next:
