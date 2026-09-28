@@ -134,10 +134,10 @@ screen quick_menu():
         transform:
 
             rotate 4
-            xpos 1720
-            ypos 1075
+            xpos 1725
+            ypos 1095
             
-            vbox:
+            grid 2 4:
                 style_prefix "quick"
                 style "quick_menu"
 
@@ -148,7 +148,7 @@ screen quick_menu():
                 textbutton _("Save") action ShowMenu('save')
                 textbutton _("Q.Save") action QuickSave()
                 textbutton _("Q.Load") action QuickLoad()
-                textbutton _("Prefs") action ShowMenu('preferences')
+                textbutton _("Settings") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -166,12 +166,28 @@ style quick_menu:
     xalign 0.9
     yalign 1.0
 
+image selected_arrow_anim:
+    "gui/button/quickmenu_selected_foreground.png"
+    yoffset 10
+    block:
+        linear 0.3 xoffset -8
+        linear 0.3 xoffset 0
+        repeat
+
 style quick_button:
     properties gui.button_properties("quick_button")
+    selected_foreground "selected_arrow_anim"
+    left_padding 27
 
 style quick_button_text:
-    properties gui.text_properties("quick_button")
-
+    # properties gui.text_properties("quick_button")
+    font BADSCRIPT
+    insensitive_color GRAY
+    color BLACK
+    hover_color RED
+    selected_color BLACK
+    selected_hover_color RED
+    size 25
 
 ## About screen ################################################################
 ##

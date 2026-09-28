@@ -87,7 +87,9 @@ screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
             xalign 1.0 xoffset -25
             ypos 215
             action MainMenu()
-
+    if main_menu:
+        key "game_menu" action ShowMenu("main_menu")
+    
 
 style gmnav_button:
     xysize (200, 95)
