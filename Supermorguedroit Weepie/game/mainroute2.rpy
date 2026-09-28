@@ -265,7 +265,9 @@ show M main:
 "I shoulder through the frosted glass door into the editor’s office, coat slipping down my arms."
 "Three pitches rattle in my head, each one practiced on the walk over."
 
-show M disgusted 
+show M disgusted:
+    xpos 0.2
+with dissolve 
 
 "Chet’s already there, sprawled in the corner chair, wingtips kicked up on a side desk."
 "Cigarette hanging from his lip, ash dropping onto his wrinkled tie."
@@ -325,7 +327,7 @@ show M angry:
     xpos 0.5 zoom 0.35 yalign 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.4)
 show M disgusted:
-    xpos 0.5 zoom 0.35 yalign 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    xpos 0.5 zoom 0.45 yalign 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with dissolve
 
 "My jaw snaps shut. The fight drains out of me, puddling on the floor."
@@ -336,7 +338,7 @@ b "Good."
 show M disgusted:
     subpixel True 
     parallel:
-        ypos 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 1.0 
+        ypos 1.0 zoom 0.45 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 1.0 
         linear 0.19 ypos 1.04 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(15.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 0.9 
         linear 0.20 ypos 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 1.0 
     parallel:
@@ -344,7 +346,7 @@ show M disgusted:
         linear 0.19 xzoom 1.0 
 with Pause(0.49)
 show M disgusted:
-    ypos 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 yzoom 1.0 
+    ypos 1.0 zoom 0.45 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 yzoom 1.0 
 
 "I nod, stand up, and slip back to my cramped desk in the bullpen."
 "I trade a few empty words with the switchboard girl, shrug my coat back on."
@@ -387,7 +389,8 @@ with dissolve
 "I glance down and pry my fingers open."
 "The newspaper clipping is mashed into a damp wad, stuck to my sweaty hand."
 
-show M disgusted 
+show M disgusted:
+    zoom 0.45
 with dissolve 
 
 m "Absolute garbage."

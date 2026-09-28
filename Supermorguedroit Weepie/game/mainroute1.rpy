@@ -307,6 +307,9 @@ camera:
 show M annoyed:
     xzoom 1.0 yzoom 1.0 
 "I flinch at the pet name."
+show M disgusted:
+    zoom 0.45
+with dissolve 
 m "With all due respect, Chet spells orbit with two t's."
 b "Your hatred toward that man is getting old."
 m "I refuse to write any more columns for the women's page."
@@ -388,14 +391,14 @@ menu:
         m "Must be at the shop already."
         
         show M main:
-            subpixel True 
+            subpixel True zoom 0.45
             xpos 0.12 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
             easein 1.16 xpos 0.42 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
             easeout 1.08 xpos 0.42 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
             easein 1.23 xpos 0.12 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
         with Pause(3.57)
         show M main:
-            xpos 0.12 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+            xpos 0.12 zoom 0.45 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
         "Unwilling to do any real writing, I decide to clean up my room — at least a little."
     "Get to Work":
@@ -957,8 +960,8 @@ with hpunch
 "I pull the glass away from my mouth and set it back on the counter very, very slowly as I struggle to keep a neutral face."
 
 show M disgusted:
-    subpixel True xpos 0.35 zoom 0.35
-    ypos 1.0
+    subpixel True xpos 0.35 zoom 0.45
+    yalign 1.0
     linear 0.07 ypos 1.05
     linear 0.07 ypos 1.0
 with Pause(0.24)
@@ -979,7 +982,7 @@ show A main:
 a "Strawberries. Milk. Ice."
 
 show M disgusted:
-    subpixel True xpos 0.35 zoom 0.35
+    subpixel True xpos 0.35 zoom 0.45
     ypos 1.0
     linear 0.07 ypos 1.05
     linear 0.07 ypos 1.0
@@ -996,7 +999,7 @@ with dissolve
 a "Salt."
 
 show M disgusted:
-    subpixel True xpos 0.35 zoom 0.35
+    subpixel True xpos 0.35 zoom 0.45
     ypos 1.0
     linear 0.07 ypos 1.05
     linear 0.07 ypos 1.0

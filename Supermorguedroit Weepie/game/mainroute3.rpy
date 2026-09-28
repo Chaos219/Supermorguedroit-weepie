@@ -35,11 +35,9 @@ camera:
 "Friday, Special of the Day: Vanilla Milkshake"
 
 camera:
-    subpixel True ypos 68 zoom 1.3 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
-    xpos 1 
-    xpos 1
-    linear 0.5 xpos 300
-    linear 0.5 xpos 568
+    subpixel True 
+    xpos -35 zoom 1.25
+    easein 0.15 xpos -476
 show M annoyed:
     subpixel True xpos 0.16 zoom 0.35 yalign 1.0
     parallel:
@@ -57,11 +55,14 @@ show M annoyed:
         easeout 0.6 xpos 0.3
 show A evil:
     xpos 0.65 yalign 1.0 zoom 0.4
+with Pause(0.3)
+camera:
+    xpos -476
 
 "I take the stairs two at a time, a manilla envelope tucked securely under my arm."
 
 camera:
-    pos (568, 68) 
+    pos (-476, -22) 
 
 show M annoyed:
     subpixel True 
@@ -364,7 +365,7 @@ a "I didn’t ask you to"
 with hpunch
 camera:
     subpixel True 
-    xpos 568 
+    xpos -476
     linear 0.45 xpos 0 
 show M annoyed:
     subpixel True 
@@ -383,7 +384,7 @@ hide A evil
 #Scene 12: Diner Kitchen - Continuous
 camera:
     subpixel True 
-    xpos 568 
+    xpos -476
     linear 0.45 xpos 0 
 show M annoyed:
     subpixel True 
@@ -761,7 +762,7 @@ screen dessert:
         align (0.7, 0.5)
         action Confirm("Choose the Dark Chocolate Cherry cake?", Jump("dessert_oe"))
 
-label oe:
+label dessert_oe:
     "LeeRoy takes the menu back with a smile." 
 
     show L main:
@@ -781,7 +782,7 @@ label oe:
 
     show M main:
         subpixel True xpos 0.12 zoom 0.45
-        ypos 1.0 
+        yalign 1.0
         linear 0.05 ypos 0.98 
         linear 0.05 ypos 1.0 
     with Pause(0.20)
@@ -805,7 +806,7 @@ label oe:
 
     show M main:
         subpixel True xpos 0.12 zoom 0.45
-        ypos 1.0 
+        yalign 1.0
         linear 0.05 ypos 0.98 
         linear 0.05 ypos 1.0 
     with Pause(0.20)
@@ -829,7 +830,7 @@ label oe:
 
     show M main:
         subpixel True xpos 0.12 zoom 0.45
-        ypos 1.0 
+        yalign 1.0
         linear 0.05 ypos 0.98 
         linear 0.05 ypos 1.0 
     with Pause(0.20)
@@ -853,14 +854,14 @@ label oe:
 
     "My spine instantly goes rigid. I set the fruit down on the saucer, the defensive armor snapping right back into place."
 
-    show M annoyed:
-        subpixel True xpos 0.16 zoom 0.35
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
         yalign 1.0 
         linear 0.05 ypos 0.98 
         linear 0.05 ypos 1.0 
     with Pause(0.20)
     show M main:
-        pos (0.16, 1.0)
+        pos (0.12, 1.0)
 
     m "Look, no offence but… it was difficult to read. The penmanship was beautiful, sure, but it was completely illegible. In the restaurant racket, that’s—"
 
@@ -894,7 +895,7 @@ label oe:
 
     show M main:
         subpixel True xpos 0.12 zoom 0.45
-        ypos 1.0 
+        yalign 1.0 
         linear 0.05 ypos 0.98 
         linear 0.05 ypos 1.0 
     with Pause(0.20)
@@ -920,7 +921,7 @@ label oe:
         "Ask them about the paintings.":
             show M main:
                 subpixel True xpos 0.12 zoom 0.45
-                ypos 1.0 
+                yalign 1.00 
                 linear 0.05 ypos 0.98 
                 linear 0.05 ypos 1.0 
             with Pause(0.20)
@@ -937,7 +938,7 @@ label oe:
 
             show M main:
                 subpixel True xpos 0.12 zoom 0.45
-                ypos 1.0 
+                yalign 1.0 
                 linear 0.05 ypos 0.98 
                 linear 0.05 ypos 1.0 
             with Pause(0.20)
@@ -966,35 +967,235 @@ label oe:
 
 label dessert_adelaide:
     "Once I’ve made my choice, Leeroy disappears into the kitchen to go fetch me my dessert."
+    show M main:
+        xpos 0.12 zoom 0.45 yalign  1.0
+    with dissolve 
+
     "I go and sink into the seats of a free booth, and cross my arms over my chest. The view outside is… less dull, I suppose, with all the people. I let myself stare. Who knows, I might catch sight of something interesting."
     "This is a decent spot for people-watching, but the diner’s brand spanking new clients seem to actually be here for food, rather than to offer me scoops on a silver platter."
+
+    show A main:
+        subpixel True 
+        yalign 1.0 zoom 0.53 xpos 0.48
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show A main:
+        yalign 1.0 
+
     a "This seat taken, Dolly?"
+
+    show A happy:
+        xpos 0.57 zoom 0.4
+    with dissolve 
+
     "I raise my head to meet Adelaide’s gaze. Her smile doesn’t quite reach her eyes."
     "Straightening up just a smidge, I gesture for her to sit opposite me."
+
+    show M main:
+            subpixel True xpos 0.12 zoom 0.45
+            ypos 1.0 
+            linear 0.05 ypos 0.98 
+            linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+            pos (0.12, 1.0) 
+
     m "Tired of the kitchen already?"
+
+    show A happy:
+        subpixel True 
+        yalign 1.0 zoom 0.4 xpos 0.57
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show A happy:
+        yalign 1.0 
+
     a "Oh, please. It’s Leeroy’s territory right now. You’re less grating to speak to."
     "I raise an eyebrow. Was that an actual compliment?"
+
+    show M main:
+            subpixel True xpos 0.12 zoom 0.45
+            ypos 1.0 
+            linear 0.05 ypos 0.98 
+            linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+            pos (0.12, 1.0) 
+
     m "Still mad at him?"
+
+    show A main:
+        subpixel True 
+        yalign 1.0 zoom 0.53 xpos 0.48
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show A main:
+        yalign 1.0 
+
     a "Ah… I’m giving a strategic cold shoulder. Wouldn’t want you to have to give him a piece of your brilliant mind once again."
+
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        yalign 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+            pos (0.12, 1.0)
+
     m "What can I say, I know a thing or two about overbearing men."
+
+    show A main:
+        subpixel True 
+        yalign 1.0 zoom 0.53 xpos 0.48
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show A main:
+        yalign 1.0 
+
     a "Mh. Your boss at that journalist gig of yours, is it? That’s where you get your experience? Your… pent-up rage?"
     "I scoff. She’s not wrong, in a sense."
+
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        yalign 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+            pos (0.12, 1.0)
+
     m "Maybe."
     a "Perhaps we ought to thank him."
+
+    show M annoyed:
+        xpos 0.16 zoom 0.35 yalign 1.0
+    with dissolve 
+
     "I grimace, and search for the point of the joke. She’s leaning closer to me on the table, hands obscuring her mouth."
+
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        yalign 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+            pos (0.12, 1.0)
+
     m "For…?"
+
+    show A main:
+        subpixel True 
+        yalign 1.0 zoom 0.53 xpos 0.48
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show A main:
+        yalign 1.0 
+
     a "Had you not been mad at him already, perhaps you wouldn’t have barged in here at all."
+
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        yalign 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+            pos (0.12, 1.0)
+
     m "So, you’re glad that I insulted your milkshake?"
+
+    show A main:
+        subpixel True 
+        yalign 1.0 zoom 0.53 xpos 0.48
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show A main:
+        yalign 1.0
+
     a "You have sensitive tastebuds, which I can recognize. That is all I’ll admit."
+
+    show M main:
+        xpos 0.12 zoom 0.45 yalign 1.0
+    with dissolve 
+
     "I huff. It is not a laugh. It is a slightly amused exhale."
+
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        yalign 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+            pos (0.12, 1.0)
+
     m "I’m not actually that picky. I don’t like milkshakes, and I still tried it. And honestly, I think that if I had actually been looking forward to it, I would’ve thrown up from the sheer disappointment."
+    
+    show A evil:
+        subpixel True 
+        yalign 1.0 zoom 0.4 xpos 0.57
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show A evil:
+        yalign 1.0
+
     a "That’s disgusting, darling. If you do that, I’m banishing you from this establishment."
+
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        yalign 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+            pos (0.12, 1.0)
+
     m "What will you do when a kid gets sick, or someone trashes the bathroom?"
+
+    show A evil:
+        subpixel True 
+        yalign 1.0 zoom 0.4 xpos 0.57
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show A evil:
+        yalign 1.0
+
     a "I’ll make Oe clean it up, and let you write an article about the great diner disaster of the day. Got to keep our name out there if Leeroy wants this place to have any chance of success."
     "I hum as both our gazes fall onto the actually edible milkshake a couple is sharing. I see Adelaide shudder in disgust at the sight."
+   
+    show M main:
+        subpixel True xpos 0.12 zoom 0.45
+        yalign 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M main:
+            pos (0.12, 1.0)
+
     m "What, not a romantic?"
+
+    show A shy:
+        subpixel True 
+        yalign 1.0 zoom 0.4 xpos 0.57
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show A shy:
+        yalign 1.0
+
     a "It’s just… A very unrefined idea of romance."
     "I wonder what her refined version is. Well, no, actually, I don’t wonder. She’s probably just… pretentious about it. High standards, and all."
+    hide A shy
     jump next
 
 label next:
