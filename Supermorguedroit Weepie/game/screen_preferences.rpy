@@ -105,7 +105,9 @@ screen preferences():
                 label _("SFX")
                 bar value Preference("sound volume") style "prefbar"
 
-                textbutton _("MUTE"):
+                null height 5
+
+                textbutton _("MUTE ALL"):
                     action Preference("all mute", "toggle")
                     style_prefix "prefcheck"
                             
@@ -145,6 +147,7 @@ style prefcheck_button:
 
 style prefcheck_button_text:
     is pref_button_text
+    yalign 0.5 yoffset 8
 
 
 

@@ -292,6 +292,7 @@ style confirm_button:
 
 style confirm_button_text:
     align (0.5, 0.5)
+    yoffset 15
     color BLACK
     hover_color WHITE
     
