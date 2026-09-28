@@ -91,7 +91,7 @@ show street
 pause 1.0
 show artists with easeintop
 show art_names with easeinbottom
-pause 1.0
+pause 2.0
 hide art_names with easeoutbottom
 hide artists with easeouttop
 hide street

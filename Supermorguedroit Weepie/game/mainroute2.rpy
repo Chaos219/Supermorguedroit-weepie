@@ -56,11 +56,11 @@ show M annoyed:
 "I drop onto the sagging edge of the mattress, night robe still wrapped around my chin, trapping in the October chill."
 "The fabric reeks of dust and cigarettes."
 "No matter how many times I wash my hair, that smell clings to me like a bad habit."
-"Downstairs, someone’s pushing a broom."
+"Downstairs someone’s pushing a broom."
 "Slow, steady, like they’re getting paid by the hour."
 "That scuff-drag, scuff-drag of stiff bristles on linoleum has been going since I hauled myself up the stairs ten minutes ago."
 "It’s the kind of sound that could drive a person mad."
-"Whoever is down there sweeps like he’s never seen a broom before."
+"Whoever is down there sweeps like they've never seen a broom before."
 m "Who the hell writes notes on their hand?"
 "Silence. Just the groan of the floorboards settling and that relentless scrape."
 m "…like some schoolkid trying to cheat on a spelling test. Tsk."
@@ -86,7 +86,7 @@ camera:
 show M annoyed:
     xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.35 
 
-"I cross the cramped room to the orange crates stacked in the corner my so-called record cabinet."
+"I cross the cramped room to the orange crates stacked in the corner - my so-called record cabinet."
 "I flip through the sleeves, pretending I’m picking at random. I’m not."
 "My fingers land on a battered label, edges frayed and soft."
 "Cleveland, 1957. Muddy Waters."
@@ -96,7 +96,7 @@ show M annoyed:
 "I twist the volume up past the point where any neighbor with sense would start banging on the pipes."
 "Not that it matters. There’s nobody left to bother."
 "Just the diner downstairs, and they already ruined my day."
-"It’s not like they’ve got customers. The place is a ghost town."
+"It’s not like they’ve got customers. This place is a ghost town."
 m "Twenty-nine days. Twenty-nine days, and then I’m on a Greyhound out of here, and I am never looking back."
 
 show M annoyed:
@@ -210,7 +210,7 @@ m "I am absolutely not getting involved."
 "Then the scrape starts up again. Scuff-drag. Scuff-drag."
 
 # Scene 2: Vesper Falls Courier - Newsroom - Day
-scene bg office
+scene bg office with dissolve
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 
@@ -241,7 +241,7 @@ camera:
 show M main:
     pos (0.16, 170) 
 
-"Click. Clack. My low heels echo on the scuffed linoleum as I cross the main room."
+"Click. Clack. My low heels echo on the scuffed linoleum as I cross the main room of the office."
 "Just a handful of desks jammed together, radiator hissing slow and steady."
 "The Underwood in the corner clacks out a lazy rhythm, and the air is thick and yellow with old cigarette smoke."
 
@@ -262,7 +262,7 @@ show M main:
 "Three pitches rattle in my head, each one practiced on the walk over."
 "Chet’s already there, sprawled in the corner chair, wingtips kicked up on a side desk."
 "Cigarette hanging from his lip, ash dropping onto his wrinkled tie."
-m "Mr. Hollis, I’ve got a"
+m "Mr. Hollis, I’ve got a -"
 
 hide M main
 
@@ -451,13 +451,13 @@ show M annoyed
 with dissolve 
 
 "I fold my arms tight against the cold seeping through the glass."
-m "But if this keeps up"
+m "But if this keeps up -"
 
 show M melancholy
 with dissolve 
 
 "I glance back at the sad little tin on the table."
-m "then the diner goes under. And the building goes into foreclosure with it. And I lose the room."
+m "- then the diner goes under. And the building goes into foreclosure with it. And I lose the room."
 "I drop onto the narrow windowsill, right beside my typewriter. The keys press cold against my arm."
 m "And then the saving stops. And then there's no Greyhound to New York."
 m "And then I'm stuck writing the women's page until I'm sixty, just like Hollis said... and mother asks me every single Christmas when I'm finally going to settle down."
@@ -692,7 +692,7 @@ with dissolve
 "He slides into the booth across from me, uninvited, grinning so wide I’m surprised his face doesn’t crack."
 "I look past him at the back wall."
 "It’s covered in framed paintings - cars, mostly."
-"Rows and rows of cars, painted with the kind of grim devotion you’d expect from a monk."
+"Rows and rows of cars, painted with the kind of grim devotion you’d expect from a monk. For some unfathomable reason a katana was hanging above the booths."
 
 show M main:
     subpixel True 
