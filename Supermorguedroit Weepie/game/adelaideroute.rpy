@@ -30,8 +30,7 @@
 label adelaide:
 
 #int. Diner - Afternoon
-hide black
-scene bg diner 
+scene bg diner with fade 
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 
@@ -609,7 +608,8 @@ show A evil:
 
 a "I’ll make sure of that."
 
-scene bg bedroom
+scene black with fade 
+scene bg bedroom with fade 
 
 "She drags me up to my room, where she pushes me on my bed and starts rummaging through my makeup."
 
@@ -1030,11 +1030,9 @@ show A evil:
 
 a "Your loss, but don’t forget the offer stands."
 
-show black
-
+scene black with fade 
 #New Day
-hide black
-scene bg bedroom
+scene bg bedroom with fade 
 camera:
     subpixel True 
     pos (476, 168) zoom 1.25 
@@ -1072,6 +1070,8 @@ show M angry:
 m "I’m gonna DO SOMETHING TO HIM!"
 
 with hpunch
+show M disgusted
+with dissolve 
 
 "I stick even more pins in Chet's picture on my pinboard, a habit whenever I feel angry at him."
 
@@ -1131,13 +1131,13 @@ with easeinright
 
 "I stand up and come closer to her, fuming."
 
-show M angry:
+show M disgusted:
     subpixel True 
     yalign 1.0 zoom 0.35 xpos 0.24
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M angry:
+show M disgusted:
     ypos 1.0  
 
 m "My boss gave it to Chet. Again. Even though it was MY story. MY LEADS."
@@ -1294,10 +1294,9 @@ show A happy:
 
 a "You deserve better than this. So come on. Let’s go!"
 
-show black
 #Office Outside
-hide black
-scene bg office 
+scene black with fade 
+scene bg office with fade 
 
 "We rushed to the Office to catch the Boss before he left the building."
 b "Now, what are you doing here, Sweetheart? Ready to give up?"
@@ -1411,10 +1410,9 @@ show A evil:
 a "We should leave. People are gonna be here soon."
 "She grabs my hand and practically pulls me back to the diner. I just stare at the floor as I follow her. My hands are full of his blood."
 
-show black
 #Diner
-hide black
-scene bg diner
+scene black with fade 
+scene bg diner with fade 
 camera:
     subpixel True pos (0, 0) zoom 1.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.15)*HueMatrix(0.0) 
 
