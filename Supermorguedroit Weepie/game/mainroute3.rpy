@@ -764,45 +764,45 @@ screen dessert:
 label oe:
     "LeeRoy takes the menu back with a smile." 
     
-    LEEROY: "I'll bring it in a moment."
+    l "I'll bring it in a moment."
 
     "He then makes a beeline straight for the kitchen. I find myself staring at the drawings across the room, oblivious to my surroundings. Ōe slides a heavy white saucer across the counter. Resting on it is a single, perfect persimmon—a fruit entirely out of season and nowhere near native to this county. They have cut it into exactly eight identical wedges. The skin is peeled back. It is an arrangement that requires a level of obsessive attention wildly out of proportion for the establishment I am in."
 
-    Dorothy: "Where… did you even get this?"
+    m "Where… did you even get this?"
 
-    ŌE: "Persistance."
+    o "Persistance."
 
     "I pick up one of the wedges and take a bite. The flavor is incredibly sweet. I stop chewing, my journalistic brain catching up with the sentence."
 
-    Dorothy: "Persistence? This diner's only been open a month. Where would you even—"
+    m "Persistence? This diner's only been open a month. Where would you even—"
 
     "Oe does not explain themselves, instead they hint toward the plate."
 
-    ŌE: "Is it good?"
+    o "Is it good?"
 
-    Dorothy: "…I— yes. It's actually very good."
+    m "…I— yes. It's actually very good."
 
     "I finish the slice. Ōe sits perfectly still on the other side of the counter, watching me eat. Their expression is hard to read, it isn't hunger, not exactly. More of an.. interest?"
 
-    ŌE: "You changed the menu."
+    o "You changed the menu."
 
     "My spine instantly goes rigid. I set the fruit down on the saucer, the defensive armor snapping right back into place."
 
-    Dorothy: "Look, no offence but… it was difficult to read. The penmanship was beautiful, sure, but it was completely illegible. In the restaurant racket, that’s—"
+    m "Look, no offence but… it was difficult to read. The penmanship was beautiful, sure, but it was completely illegible. In the restaurant racket, that’s—"
 
-    ŌE: "I am not complaining."
+    o "I am not complaining."
 
     "That stops me. I look at them. They both sound and look entirely sincere-"
 
     "They tilt their head, just a fraction of an inch, studying me."
 
-    ŌE: "I have been thinking about it since Thursday."
+    o "I have been thinking about it since Thursday."
 
     "I don't know what to do with that information. It is unnerving to be perceived this closely."
 
-    Dorothy: "…it's just a board, Ōe."
+    m "…it's just a board, Ōe."
 
-    ŌE: "Yes."
+    o "Yes."
 
     "I glance past their shoulder, looking out toward the dining room. My eyes drift up to the back wall. Dozens of framed oil paintings of cars hang there, each one rendered with what I can only call various degrees of obsessive precision."
 
