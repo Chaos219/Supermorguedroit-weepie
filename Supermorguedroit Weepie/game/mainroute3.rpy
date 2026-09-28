@@ -763,15 +763,7 @@ screen dessert:
 
 label next:
 
-
-show L main:
-    subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
-    xpos 0.45 
-    linear 0.50 xpos 0.9 
-with Pause(0.60)
-show L main:
-    xpos 0.9 
-
+hide L main 
 camera:
     subpixel True 
     zoom 1.0 
@@ -792,8 +784,6 @@ show M melancholy:
     xpos 0.08 xzoom 1.0 yzoom 1.0 zoom 0.4 
 
 "I watch them go, feeling a strange pull in my chest. Is it… no. Can't be."
-
-hide L main 
 
 "I'm a strong independent woman and I do NOT have such impure feelings. Over anyone."
 
@@ -976,6 +966,10 @@ show L main:
     ypos 1.0 xpos 0.4 zoom 0.5
 
 l "Goodnight, Miss Kessler."
+
+hide L main
+scene black
+with fade
 #[adelaide goes brrrrrr kills everyone here]
 
 #testing stuff here
