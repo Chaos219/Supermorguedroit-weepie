@@ -38,6 +38,7 @@ image M main="mc_main.png"
 image M annoyed="mc_annoyed.png"
 image M angry="mc_angry.png"
 image M melancholy="mc_melancholy.png"
+image M disgusted="mc_disgusted.png"
 image A main="adelaide_main.png"
 image A happy="adelaide_happy.png"
 image A shy="adelaide_shy.png"
@@ -600,7 +601,8 @@ with hpunch
 "A second later, a massive CLANG echoes through the floor as something large and metallic violently crashes over."
 "By the time the noise stops, I am already reaching for my shoes."
 # Scene 3. The Supermurgidroid Weepie - Evening
-scene bg diner
+scene black with fade
+scene bg diner with fade 
 show M angry:
     xpos 0.16
     yalign 1.0
@@ -954,13 +956,13 @@ with hpunch
 "My soul takes a brief vacation."
 "I pull the glass away from my mouth and set it back on the counter very, very slowly as I struggle to keep a neutral face."
 
-show M annoyed:
+show M disgusted:
     subpixel True xpos 0.35 zoom 0.35
     ypos 1.0
     linear 0.07 ypos 1.05
     linear 0.07 ypos 1.0
 with Pause(0.24)
-show M annoyed:
+show M disgusted:
     pos (0.35, 1.0) 
 
 m "What is in that?"
@@ -976,13 +978,13 @@ show A main:
 
 a "Strawberries. Milk. Ice."
 
-show M annoyed:
+show M disgusted:
     subpixel True xpos 0.35 zoom 0.35
     ypos 1.0
     linear 0.07 ypos 1.05
     linear 0.07 ypos 1.0
 with Pause(0.24)
-show M annoyed:
+show M disgusted:
     pos (0.35, 1.0) 
 
 m "There's something else."
@@ -993,13 +995,13 @@ with dissolve
 
 a "Salt."
 
-show M annoyed:
+show M disgusted:
     subpixel True xpos 0.35 zoom 0.35
     ypos 1.0
     linear 0.07 ypos 1.05
     linear 0.07 ypos 1.0
 with Pause(0.24)
-show M annoyed:
+show M disgusted:
     pos (0.35, 1.0) 
 
 m "How… much salt?"
@@ -1262,7 +1264,6 @@ hide O main
 "I push the door open and leave."
 "It swings shut behind me, drowning out the rest of their conversation."
 hide M annoyed
-scene bg bedroom
 
     # This ends the game.
 

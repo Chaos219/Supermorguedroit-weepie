@@ -29,7 +29,8 @@
 
 label mainroute2:
 # Scene 1: Dorothy's Apartment - Night
-
+scene black with fade 
+scene bg bedroom with fade 
 camera:
     subpixel True 
     pos (1, 1) zoom 1.0 
@@ -210,7 +211,10 @@ m "I am absolutely not getting involved."
 "Then the scrape starts up again. Scuff-drag. Scuff-drag."
 
 # Scene 2: Vesper Falls Courier - Newsroom - Day
-scene bg office with dissolve
+scene black
+with fade 
+scene bg office 
+with fade 
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 
@@ -260,11 +264,14 @@ show M main:
 
 "I shoulder through the frosted glass door into the editor’s office, coat slipping down my arms."
 "Three pitches rattle in my head, each one practiced on the walk over."
+
+show M disgusted 
+
 "Chet’s already there, sprawled in the corner chair, wingtips kicked up on a side desk."
 "Cigarette hanging from his lip, ash dropping onto his wrinkled tie."
 m "Mr. Hollis, I’ve got a -"
 
-hide M main
+hide M disgusted
 
 b "Kessler. Good. Sit down."
 
@@ -317,7 +324,7 @@ b "Two hundred words."
 show M angry:
     xpos 0.5 zoom 0.35 yalign 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.4)
-show M annoyed:
+show M disgusted:
     xpos 0.5 zoom 0.35 yalign 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with dissolve
 
@@ -326,7 +333,7 @@ m "…Yes, Chief."
 b "Good."
 "He keeps talking, something about the point spread for the pennant race, but it all turns to static."
 
-show M annoyed:
+show M disgusted:
     subpixel True 
     parallel:
         ypos 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 1.0 
@@ -336,7 +343,7 @@ show M annoyed:
         xzoom 1.0 
         linear 0.19 xzoom 1.0 
 with Pause(0.49)
-show M annoyed:
+show M disgusted:
     ypos 1.0 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 yzoom 1.0 
 
 "I nod, stand up, and slip back to my cramped desk in the bullpen."
@@ -379,6 +386,10 @@ with dissolve
 "My fist is so tight, my nails carve little half-moons into my palm."
 "I glance down and pry my fingers open."
 "The newspaper clipping is mashed into a damp wad, stuck to my sweaty hand."
+
+show M disgusted 
+with dissolve 
+
 m "Absolute garbage."
 "I press the crumpled paper against the hallway wall, right where the plaster flakes off in chalky curls."
 "I scrub at the cheap newsprint with my thumb, trying to smooth out the mess I made."
@@ -399,7 +410,8 @@ show M annoyed:
 "Then I fold the clipping in half, neat as I can, tuck it deep in my coat pocket, and head back toward the diner."
 
 # Scene 4: Dorothy's Apartment - Day
-scene bg bedroom
+scene black with fade 
+scene bg bedroom with fade 
 
 "The old shortbread tin sits open on the kitchen table, jammed up against the heavy black Singer just to make enough room to work."
 "Inside, a roll of crumpled bills sits pinched by a tired rubber band, barely thicker than a deck of cards."
@@ -524,7 +536,8 @@ with dissolve
 
 "Deep breath. Out the door and down the stairs."
 # Scene 5: The Supermurgidroid Weepie - Day
-scene bg diner
+scene black with fade 
+scene bg diner with fade 
 show M annoyed:
     xpos 0.16
     yalign 1.0
@@ -1368,7 +1381,10 @@ show M main:
 "Among the scribbled drafts and interview notes, I write the word “morgue” and underline it twice, hard and deep into the page."
 "I’ve got an idea."
 # Scene 6: Dorothy's Apartment - Wednesday Evening
-scene bg bedroom
+scene black with fade 
+scene bg bedroom with fade 
+camera:
+    subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.1)*HueMatrix(0.0) 
 
 "Wednesday, Special of the Day: Cheesy Fries"
 
@@ -1513,7 +1529,7 @@ show O main:
 
 o "I do not know how."
 
-show black 
+scene black with fade 
 hide M annoyed
 hide O main
 
@@ -1521,8 +1537,7 @@ hide O main
 "My father was always too busy for housework, and my mother wouldn’t touch anything with a wire for fear it might hurt."
 "So, the job of handyman landed on me. I know a thing or two about power outages."
 
-hide black
-scene bg bedroom
+scene bg bedroom with fade 
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0) 
 show M annoyed:
@@ -1546,7 +1561,8 @@ show M annoyed:
 
 m "Lead the way."
 # Scene 7: Basement - Continuous
-scene bg diner
+scene black with fade 
+scene bg diner with fade 
 show M annoyed:
     xpos 0.16
     yalign 1.0
@@ -1822,7 +1838,10 @@ m "…Right. Good. Good night."
 hide O main
 hide M annoyed
 # Scene 8: The Supermurgidroid Weepie - Thursday
-scene bg diner
+scene black with fade 
+camera:
+    reset
+scene bg diner with fade
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 
@@ -2046,7 +2065,8 @@ show M annoyed:
 hide L sigh
 hide M annoyed
 # Scene 9: Diner Kitchen - Continuous
-scene bg diner
+scene black with fade 
+scene bg diner with fade 
 show M annoyed:
     xpos 0.16
     yalign 1.0
@@ -2231,7 +2251,8 @@ hide A main
 "Or maybe he's on some new health kick his friend's friend swears by."
 "He says it all so earnestly, I can't even argue. I just shake my head and keep cooking."
 # Scene 10: The Supermurgidroid Weepie - Evening
-scene bg diner
+scene black with fade 
+scene bg diner with fade 
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.15)*HueMatrix(0.0) 
 
