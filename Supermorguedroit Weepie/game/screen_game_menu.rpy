@@ -82,6 +82,12 @@ screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
             ypos 120
             action Return()
 
+        ## HOME ##
+        imagebutton auto "gui/button/home_%s_background.png":
+            xalign 1.0 xoffset -25
+            ypos 215
+            action MainMenu()
+
 
 style gmnav_button:
     xysize (200, 95)
