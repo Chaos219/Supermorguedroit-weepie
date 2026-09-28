@@ -30,7 +30,9 @@ screen file_slots(title):
 
     use game_menu(title):
         viewport id "saveloadvp":
-            draggable True pagekeys True mousewheel True
+            # draggable True 
+            # pagekeys True 
+            mousewheel True
             scrollbars None
 
             xysize (530, 600)
@@ -53,7 +55,7 @@ screen file_slots(title):
                         spacing 15
 
                         if FileLoadable(slot):
-                            add FileScreenshot(slot)
+                            add FileScreenshot(slot) size (200, 100)
                         else:
                             null width 140
 

@@ -21,7 +21,7 @@ screen choice(items):
 
             for i in items:
                 button:
-                    text i.caption
+                    text i.caption ypos 4
                     action SetScreenVariable("selected_action", i.action)
 
         button:
