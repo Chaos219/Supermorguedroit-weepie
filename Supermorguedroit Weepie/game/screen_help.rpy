@@ -10,30 +10,62 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("CONTROLS")):
 
         style_prefix "help"
 
         vbox:
-            spacing 23
+            xalign 0.5 ypos 200
+            spacing 25
 
             hbox:
+                xalign 0.5
+                spacing 25
 
-                textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
-                textbutton _("Mouse") action SetScreenVariable("device", "mouse")
+                hbox:
 
-                if GamepadExists():
-                    textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
+                    textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
+                    textbutton _("Mouse") action SetScreenVariable("device", "mouse")
 
-            if device == "keyboard":
-                use keyboard_help
-            elif device == "mouse":
-                use mouse_help
-            elif device == "gamepad":
-                use gamepad_help
+                    if GamepadExists():
+                        textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
+
+            viewport id "helpvp":
+                draggable True pagekeys True mousewheel True
+                scrollbars None
+
+                xysize (530, 600)
+
+                
+
+                has vbox:
+                    spacing 25
+
+                if device == "keyboard":
+                    use keyboard_help
+                elif device == "mouse":
+                    use mouse_help
+                elif device == "gamepad":
+                    use gamepad_help
+            
+            if GamepadExists() and device == "gamepad":
+                textbutton _("Calibrate"):
+                    style "pref_button"
+                    xalign 0.5
+                    ypos -80
+                    action GamepadCalibrate()
+
+
+        ## SCROLLBAR ##
+        vbar value YScrollValue("helpvp"):
+            ysize 520
+            align (1.0, 0.5) xoffset 35
+
+
 
 
 screen keyboard_help():
+    style_prefix "helpsub"
 
     hbox:
         label _("Enter")
@@ -85,6 +117,7 @@ screen keyboard_help():
 
 
 screen mouse_help():
+    style_prefix "helpsub"
 
     hbox:
         label _("Left Click")
@@ -108,6 +141,7 @@ screen mouse_help():
 
 
 screen gamepad_help():
+    style_prefix "helpsub"
 
     hbox:
         label _("Right Trigger\nA/Bottom Button")
@@ -133,27 +167,37 @@ screen gamepad_help():
         label _("Y/Top Button")
         text _("Hides the user interface.")
 
-    textbutton _("Calibrate") action GamepadCalibrate()
-
-
-style help_button is gui_button
-style help_button_text is gui_button_text
-style help_label is gui_label
-style help_label_text is gui_label_text
-style help_text is gui_text
+    
 
 style help_button:
-    properties gui.button_properties("help_button")
-    xmargin 12
+    xsize 185
+    background None
+    foreground None
+    selected_foreground "gui/button/underline_selected_foreground.png"
 
 style help_button_text:
-    properties gui.text_properties("help_button")
+    size 35
+    font BADSCRIPT
 
-style help_label:
-    xsize 375
-    right_padding 30
+    color GRAY
+    hover_color BLACK
+    selected_color RED
 
-style help_label_text:
-    size gui.text_size
+    xalign 0.5
+
+
+style helpsub_hbox:
+    xfill True
+style helpsub_label_text:
+    font LIBREBOLD
+    size 25
+    underline True
+    color GREEN
+    xsize 200
+
+style helpsub_text:
+    font LIBREREG
+    size 20
+    xsize 300
     xalign 1.0
-    textalign 1.0
+
