@@ -759,10 +759,66 @@ screen dessert:
         idle Transform(dessert_oe, zoom=0.5, matrixcolor=BrightnessMatrix(-0.1))
         hover Transform(dessert_oe, zoom=0.5, matrixcolor=BrightnessMatrix(+0.1))
         align (0.7, 0.5)
-        action Confirm("Choose the Dark Chocolate Cherry cake?", Jump("next"))
+        action Confirm("Choose the Dark Chocolate Cherry cake?", Jump("oe"))
+
+label oe:
+    "LeeRoy takes the menu back with a smile." 
+    
+    LEEROY: "I'll bring it in a moment."
+
+    "He then makes a beeline straight for the kitchen. I find myself staring at the drawings across the room, oblivious to my surroundings. Ōe slides a heavy white saucer across the counter. Resting on it is a single, perfect persimmon—a fruit entirely out of season and nowhere near native to this county. They have cut it into exactly eight identical wedges. The skin is peeled back. It is an arrangement that requires a level of obsessive attention wildly out of proportion for the establishment I am in."
+
+    Dorothy: "Where… did you even get this?"
+
+    ŌE: "Persistance."
+
+    "I pick up one of the wedges and take a bite. The flavor is incredibly sweet. I stop chewing, my journalistic brain catching up with the sentence."
+
+    Dorothy: "Persistence? This diner's only been open a month. Where would you even—"
+
+    "Oe does not explain themselves, instead they hint toward the plate."
+
+    ŌE: "Is it good?"
+
+    Dorothy: "…I— yes. It's actually very good."
+
+    "I finish the slice. Ōe sits perfectly still on the other side of the counter, watching me eat. Their expression is hard to read, it isn't hunger, not exactly. More of an.. interest?"
+
+    ŌE: "You changed the menu."
+
+    "My spine instantly goes rigid. I set the fruit down on the saucer, the defensive armor snapping right back into place."
+
+    Dorothy: "Look, no offence but… it was difficult to read. The penmanship was beautiful, sure, but it was completely illegible. In the restaurant racket, that’s—"
+
+    ŌE: "I am not complaining."
+
+    "That stops me. I look at them. They both sound and look entirely sincere-"
+
+    "They tilt their head, just a fraction of an inch, studying me."
+
+    ŌE: "I have been thinking about it since Thursday."
+
+    "I don't know what to do with that information. It is unnerving to be perceived this closely."
+
+    Dorothy: "…it's just a board, Ōe."
+
+    ŌE: "Yes."
+
+    "I glance past their shoulder, looking out toward the dining room. My eyes drift up to the back wall. Dozens of framed oil paintings of cars hang there, each one rendered with what I can only call various degrees of obsessive precision."
+
+    ◆ CHOICE(s)
+
+    "Ask them about the paintings." → "Were the wall paintings your idea?" I ask, keeping my voice low. Ōe does not answer. They just looks at me, the silence stretching out until the Wurlitzer clicks in the corner. [LISTEN +1]
+
+    "Change the subject." → 
+    "I clear my throat, actively ignoring the sudden tightness in my chest, and point to the rest of the fruit."
+    "Are you going to eat any of this, or did you just slice it up for your own entertainment?"
+    "Ōe simply pushes the saucer an inch closer to me. "
+    "It is for you, Miss Kessler."
+    "I eat the rest in silence."
+    jump next
 
 label next:
-
 hide L main 
 camera:
     subpixel True 
