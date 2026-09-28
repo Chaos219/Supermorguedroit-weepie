@@ -443,7 +443,7 @@ m "LeeRoy, hey!"
 
 show O solemn:
     subpixel True 
-    yalign 1.0 zoom 0.52 xpos 0.5
+    yalign 1.0 zoom 0.55 xpos 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -473,7 +473,7 @@ m "I…uh…do you know where he is?"
 
 show O solemn:
     subpixel True 
-    yalign 1.0 zoom 0.52 xpos 0.5
+    yalign 1.0 zoom 0.55 xpos 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -551,7 +551,7 @@ m "I was going to, ah, go with a friend, but she got sick, and then I thought Le
 
 show O solemn:
     subpixel True 
-    yalign 1.0 zoom 0.52 xpos 0.5
+    yalign 1.0 zoom 0.55 xpos 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -573,7 +573,7 @@ m "I thought he might want to go with me…"
 
 show O solemn:
     subpixel True 
-    yalign 1.0 zoom 0.52 xpos 0.5
+    yalign 1.0 zoom 0.55 xpos 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -651,7 +651,7 @@ m "Do…do YOU want to go?"
 
 show O solemn:
     subpixel True 
-    yalign 1.0 zoom 0.52 xpos 0.35
+    yalign 1.0 zoom 0.55 xpos 0.35
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -711,7 +711,7 @@ show M annoyed:
 m "I'll meet you down here….in half an hour?"
 
 show O solemn:
-    subpixel True xpos 0.35 zoom 0.52
+    subpixel True xpos 0.35 zoom 0.55
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 1.0 
     linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(-10.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 0.95 
     linear 0.10 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) yzoom 1.0 
@@ -853,7 +853,7 @@ m "Er… It's gonna be loud…"
 
 show O solemn:
     subpixel True 
-    yalign 1.0 zoom 0.52 xpos 0.5
+    yalign 1.0 zoom 0.55 xpos 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -911,7 +911,7 @@ camera:
     parallel:
         pos (0, 0) 
         linear 0.10 pos (206, 6) 
-        linear 0.20 pos (383, 81) 
+        linear 0.20 pos (350, 81) 
         linear 0.30 pos (239,81)
     parallel:
         xzoom 1.0 yzoom 1.0 
@@ -923,12 +923,12 @@ camera:
 show M main:
     subpixel True zoom 0.45 
     xpos 0.12 yalign 1.0
-    linear 0.30 xpos 0.2
+    linear 0.30 xpos 0.12
 with Pause(0.40)
 camera:
     pos (239, 81) xzoom 1.0 yzoom 1.0 zoom 1.25 
 show M main:
-    xpos 0.2
+    xpos 0.12
 
 "I was carried along, even though Oe was not."
 
@@ -958,7 +958,8 @@ hide M melancholy
 # Back to narration
 
 show O smile:
-    subpixel True xpos 0.65 zoom 0.5 
+    subpixel True xpos 0.45 zoom 0.5 yalign 1.0
+with dissolve 
 
 "They were, and I could see the crowd starting to giggle behind their hands at them."
 
@@ -969,17 +970,17 @@ show O smile:
 "I was getting ready to come back and say something when I noticed…"
 
 show O smile:
-    subpixel True xpos 0.65 
+    subpixel True xpos 0.45 zoom 0.5 yalign 1.0
     parallel:
         ypos 1.0 zoom 0.5 
-        linear 0.30 ypos 1.28 zoom 0.7 
+        linear 0.30 xpos 0.35 ypos 1.28 zoom 0.7 
     parallel:
         xzoom 1.0 yzoom 1.0 
         linear 0.10 xzoom 0.76 yzoom 1.21 
         linear 0.20 xzoom 1.0 yzoom 1.0 
 with Pause(0.40)
 show O smile:
-    pos (0.65, 1.28) xzoom 1.0 yzoom 1.0 zoom 0.7 
+    pos (0.35, 1.28) xzoom 1.0 yzoom 1.0 zoom 0.7 
 
 # Maybe another Oe zoom in here?
 
@@ -999,7 +1000,9 @@ show O smile:
 
 # Happy Oe here
 
-show O excited
+show O excited:
+    xpos 0.35 zoom 0.53 yalign 1.0
+with dissolve 
 
 "When the Rip-Chords blasted into their big hit song and the crowd whooped and surged, Oe too whooped and surged."
 
@@ -1038,7 +1041,8 @@ show M annoyed:
 
 "I was exhausted, sweaty, wobbling on my feet."
 
-show O main
+show O main:
+    xpos 0.45 zoom 0.5 yalign 1.0
 with dissolve 
 
 # MC tired/exhausted
@@ -1077,13 +1081,13 @@ show M main:
 m "Oe, you're an amazing dancer! You picked it up perfectly!"
 
 show O solemn:
-    subpixel True xpos 0.65 xzoom 1.0 yzoom 1.0 zoom 0.5 
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
-    pos (0.65, 1.0) 
+    pos (0.45, 1.0) 
 
 o "Gratifying of you to say so. The pleasure is mine, to find so many new steps."
 
@@ -1105,81 +1109,366 @@ m "You don't…you don't seem like the kind of person who keeps up with new thin
 # In this monologue, we might change MC's attitude to thoughtful, maybe even sad. same for Oe, though They can also still appear static. This might be a good place for some warm or spooky music too. Also might be a good idea to have a few images vaguely referring to Oe's comments here. 
 
 show O solemn:
-    subpixel True xpos 0.65 xzoom 1.0 yzoom 1.0 zoom 0.5 
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
-    pos (0.65, 1.0)
+    pos (0.45, 1.0)
 
-show M melancholy 
+show M melancholy:
+    xpos 0.16 zoom 0.35 yalign 1.0
 with dissolve 
 
-o """Most things - new or old - pass. You buy a blouse, it lasts a decade, perhaps two at most.
+o "Most things - new or old - pass. You buy a blouse, it lasts a decade, perhaps two at most."
 
-A pipe can last a hundred years if you care for it properly.
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
 
-A well made sword, maintained by an expert, can keep its edge perhaps two hundred. 
+"A pipe can last a hundred years if you care for it properly."
 
-But eventually almost everything that is material fades.
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
 
-If you look at things from the perspective of forever, of infinity, there's very little that can ever last.
+"A well made sword, maintained by an expert, can keep its edge perhaps two hundred. "
 
-None of LeeRoy's cars will be running in twenty years.
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
 
-The diner won't be around in ten years; the building itself will be knocked down in thirty or forty.
+"But eventually almost everything that is material fades."
 
-There'll be another building there before a hundred years are out.
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
 
-Everyone who ever set foot in that building will be dead - except for me, and my friends. 
-Why love anything? It will die. The traces of it will rot and soon even those traces will disappear forever.
+"If you look at things from the perspective of forever, of infinity, there's very little that can ever last."
 
-Leaving you as the only one to mourn.
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
 
-Eventually all you have inside your heart is grief.
+"None of LeeRoy's cars will be running in twenty years."
 
-No other emotion can get inside without knocking over grief's teacups, elbowing grief's belongings off the mantelpiece, bumping against grief's portraits on the wall…
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
 
-I can't grieve or I would go mad. Quite mad.
+"The diner won't be around in ten years; the building itself will be knocked down in thirty or forty."
 
-So…what can we love, then?
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
 
-Something as immortal as we are.
+"There'll be another building there before a hundred years are out."
 
-Art.  Music. Theater.
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
 
-The emotion that flows out of it is real.
+"Everyone who ever set foot in that building will be dead - except for me, and my friends."
 
-You take it in… it stays with you…
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
 
-Even something amateurish or awkward…it stays with you as long as you choose to keep yourself open to it.
+"Why love anything? It will die. The traces of it will rot and soon even those traces will disappear forever."
 
-You let it go when you wish, and not before.
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
 
-And never in grief, but in satisfaction and pleasure.
+"Leaving you as the only one to mourn."
 
-That's why I love hearing new music…and dancing in new ways…
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
 
-…why I love going to the library when they receive new books…
+"Eventually all you have inside your heart is grief."
 
-…why I love to see a gallery opening with a painter or sculptor I've never seen before…
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
 
-…even your little news stories give me pleasure.
+"No other emotion can get inside without knocking over grief's teacups, elbowing grief's belongings off the mantelpiece, bumping against grief's portraits on the wall…"
 
-They don't need to be a work of titanic genius…they just need to be real.  Real today, right now.
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
 
-Tomorrow will be the same as today in so many ways. And if you've seen as many tomorrows as I have, you don't really care about any particular one.
+"I can't grieve or I would go mad. Quite mad."
 
-But there is always something new in the creation of art…
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
 
-This is the first rock and roll concert I've been to, you're right.
+"So…what can we love, then?"
 
-But I certainly hope it won't be my last.
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
 
-There is so much to experience here."""
+"Something as immortal as we are."
+
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
+
+"Art.  Music. Theater."
+
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
+
+"The emotion that flows out of it is real."
+
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
+
+"You take it in… it stays with you…"
+
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
+
+"Even something amateurish or awkward…it stays with you as long as you choose to keep yourself open to it."
+
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
+
+"You let it go when you wish, and not before."
+
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
+
+"And never in grief, but in satisfaction and pleasure."
+
+show O smile:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O smile:
+    pos (0.45, 1.0)
+
+"That's why I love hearing new music…and dancing in new ways…"
+
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
+
+"…why I love going to the library when they receive new books…"
+
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
+
+"…why I love to see a gallery opening with a painter or sculptor I've never seen before…"
+
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
+
+"…even your little news stories give me pleasure."
+
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
+
+"They don't need to be a work of titanic genius…they just need to be real.  Real today, right now."
+
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
+
+"Tomorrow will be the same as today in so many ways. And if you've seen as many tomorrows as I have, you don't really care about any particular one."
+
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    pos (0.45, 1.0)
+
+"But there is always something new in the creation of art…"
+
+show O main:
+    subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    pos (0.47, 1.0)
+
+"This is the first rock and roll concert I've been to, you're right."
+
+show O smile:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O smile:
+    pos (0.45, 1.0)
+
+"But I certainly hope it won't be my last."
+
+show O smile:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    ypos 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O smile:
+    pos (0.45, 1.0)
+
+"There is so much to experience here."
 
 # if we've changed music, background, images, as described above, here they should go back to normal
+
+show O solemn:
+    subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+with dissolve 
 
 "Oe trailed off, the smoke from their pipe finally ending. They tapped the bowl of the pipe on the brick wall, letting the ash fall into the alleyway."
 
@@ -1188,13 +1477,13 @@ There is so much to experience here."""
 # happy oe
 
 show O excited:
-    subpixel True xpos 0.65 xzoom 1.0 yzoom 1.0 zoom 0.5 
+    subpixel True xpos 0.4 zoom 0.55 yalign 1.0
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O excited:
-    pos (0.65, 1.0)
+    pos (0.4, 1.0)
 
 "Oe's face lit up again."
 
@@ -1231,11 +1520,10 @@ with fade
 "New emotional experiences through their own immortal self experiencing art…not through items or places or people…"
 
 "We arrived home."
-
-scene bg diner
-with fade
 camera:
     reset
+scene bg diner
+with fade
 
 # Bg diner
 
@@ -1281,6 +1569,10 @@ with fade
 # Scene OE.05 The library
 scene bg diner 
 with fade 
+
+camera:
+    subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.15)*HueMatrix(0.0) 
+
 # Note that the MC needs to have been given the work ultimatum at this point; a big story or else.
 
 "I was out of groceries a few nights later, so I was stuck eating downstairs."
@@ -1288,13 +1580,13 @@ with fade
 "LeeRoy was not his usual ebullient self, though. He seemed distracted."
 
 show L shrug:
-    subpixel True xpos 0.5 zoom 0.5 
+    subpixel True xpos 0.55 zoom 0.45
     yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show L main:
-    pos (0.5, 1.0) 
+show L shrug:
+    pos (0.55, 1.0) 
 
 l "Hey, have you seen the old one?"
 
@@ -1308,6 +1600,15 @@ show M main:
     yalign 1.0
 
 m "Oe? No, not in a day or two. Why?"
+
+show L shrug:
+    subpixel True xpos 0.55 zoom 0.45
+    yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L shrug:
+    pos (0.55, 1.0) 
 
 l "Well…they didn't come home this morning. It's probably nothing, but they usually are here sleeping in the meat locker when the sun goes down."
 
@@ -1333,6 +1634,15 @@ show M main:
 
 m "When was the last time you saw them?"
 
+show L shrug:
+    subpixel True xpos 0.55 zoom 0.45
+    yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L shrug:
+    pos (0.55, 1.0)  
+
 l "Yesterday evening. they went out right after sundown."
 
 "I suddenly remembered one of Marcia's community calendar entries."
@@ -1341,13 +1651,36 @@ l "Yesterday evening. they went out right after sundown."
 
 "The library will be putting out their new books this week!"
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "I think they were headed to the library. I'll go check it out."
 
+show L shrug:
+    subpixel True xpos 0.55 zoom 0.45
+    yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L shrug:
+    pos (0.55, 1.0) 
 l "Thanks. Books make me fall asleep just thinking about them. Honk shoo!"
 
 "I rolled my eyes at him and headed out."
 
+hide L shrug
+
+scene black 
+with fade
+
 scene bg office 
+with fade 
 
 # bg exterior library at night. kinda "any building at night" works here
 
@@ -1369,15 +1702,46 @@ scene bg office
 
 # Librarian can probably be a silhouette
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "Er, excuse me…"
 
+hide M main
+
 lib "Yes? We're closing in half an hour…."
+
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
 
 m "Yes, well, I'm looking for a friend. They're about this tall, sort of…"
 
 # MC awkward/nervous
 
+show M annoyed:
+    subpixel True 
+    xpos 0.16 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0
+
 m "...grey…"
+
+hide M annoyed
 
 lib "OH!  Oh.  You're with..with them…"
 
@@ -1393,7 +1757,18 @@ lib "But they can't be in the building after we lock it up…tonight…"
 
 # MC neutral/charming
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "I'll let them know. Thank you. They're… eccentric. I'll try to get them to leave before you close."
+
+hide M main
 
 lib "Thanks. They're downstairs in the basement stacks."
 
@@ -1403,17 +1778,48 @@ lib "Thanks. They're downstairs in the basement stacks."
 
 # MC concerned/curious
 
+show O solemn:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "Oe was sitting alone at a table in the middle of the room."
 
 "The lights seemed dimmer closer to them."
 
 "They were just staring forward, lost in thought…"
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "Oe?"
 
 "No answer."
 
 "I didn't know what to do.  I was about to touch their shoulder when I realized how dangerous that might be."
+
+show M main:
+    subpixel True 
+    parallel:
+        xpos 0.12 
+        linear 0.30 xpos 0.34 
+    parallel:
+        ypos 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+with Pause(0.40)
+show M main:
+    pos (0.34, 1.0) 
 
 # Not sure if we can use the movement of the characters on screen to get across this movement, but it's a good spot to put some in if we can
 
@@ -1443,11 +1849,37 @@ m "Oe?"
 
 "Oe was staring at the flyer blankly."
 
+show O main:
+    subpixel True yalign 1.0 zoom 0.5 xpos 0.5
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.20 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 360.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.30)
+show O main:
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 360.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "I looked up at them and they finally spoke."
+
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
 
 o "I shouldn't grieve…I shouldn't grieve…or else what else will I spend my centuries doing but grieving?"
 
 # MC concerned
+
+show M melancholy:
+    subpixel True 
+    xpos 0.36 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M melancholy:
+    yalign 1.0
 
 m "Oe…"
 
@@ -1457,37 +1889,162 @@ m "Oe…"
 
 "Handscroll depicting aftermath of the siege of Shirakawa-den, July 1156. Artist unknown."
 
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
+
 o "I knew the artist… I…"
 
+show O solemn:
+    subpixel True 
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.20 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.30)
+show O solemn:
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "Their voice gave out."
+
+show O solemn:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    yalign 1.0
 
 o "He was my father. He gave it to me."
 # MC is shocked
 
+show M melancholy:
+    subpixel True 
+    xpos 0.36 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M melancholy:
+    yalign 1.0
+
 m "Your father!"
+
+show O solemn:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    yalign 1.0
 
 o "When he came home from the siege I bothered him to paint me the battle."
 
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.52
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
+
 o "I was just a little child, I couldn't have known what he'd seen."
+
+show O smile:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O smile:
+    yalign 1.0
 
 o "Finally he gave in, and just painted this empty field."
 
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.52
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
+
 o "At the time I hated it, but ever since then I've remembered this field of flowers…"
+
+show O solemn:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    yalign 1.0
 
 o "After I was turned, I never saw anyone in my family again."
 
+show O smile:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O smile:
+    yalign 1.0
+
 o "But I saw this field of peaceful flowers in my mind so many times…"
+
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.52
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
 
 o "Now to find out that someone just gave it to the Americans as a bribe…or it was taken as theft…"
 
 # M is shocked
 # Oe is bitter/sad
 
+show M melancholy:
+    subpixel True 
+    xpos 0.36 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M melancholy:
+    yalign 1.0
+
 m "Oe…"
 
 # Oe angry/upset
 
+show O solemn:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    yalign 1.0
+
 o "I hate grieving. I hate it! But I see this and I grieve my father, my home in the hills! I grieve the sun on the flowers! The sun anywhere!"
+
+show M melancholy:
+    subpixel True 
+    xpos 0.36 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M melancholy:
+    yalign 1.0
 
 m "Oh Oe…"
 
@@ -1495,54 +2052,176 @@ m "Oh Oe…"
 
 "Tears of blood formed at the corner of their eyes and they blotted them with a dark handkerchief that would hide the stains."
 
+show O solemn:
+    subpixel True 
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+    linear 0.20 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.30)
+show O solemn:
+    matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+
 "I took their cold hand and held it in both of mine."
 
 # Oe back to normal
 
-show O main
 
 "They didn't pull away. They still hadn't really moved at all since I came into the basement."
 
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
+
 o "It belongs to me, it's mine. But I can't have it, I can't have it! It has lasted this long, eight hundred years, as long as I have, but how much longer?"
+
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
 
 o "Look how frayed it is, look how it's almost pulling apart."
 
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
+
 o "And I'm still the same as the night I left it behind me!"
+
+show M melancholy:
+    subpixel True 
+    xpos 0.36 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M melancholy:
+    yalign 1.0
 
 m "Oe…it's not wrong to want something that belongs to you…something that means something to you."
 
+show M melancholy:
+    subpixel True 
+    xpos 0.36 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M melancholy:
+    yalign 1.0
+
 m "You can't just sit down here in the basement of the library staring at it, hoping your feelings about it will change."
+
+show M melancholy:
+    subpixel True 
+    xpos 0.36 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M melancholy:
+    yalign 1.0
 
 m "Even if they hurt, they're your feelings."
 
 "Oe finally looked back up at me."
 
+show M melancholy:
+    subpixel True 
+    xpos 0.36 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M melancholy:
+    yalign 1.0
+
 m "The exhibition is tomorrow night, do you want to… go see it?"
+
+show O main:
+    subpixel True 
+    parallel:
+        xpos 0.5 xzoom 1.0 yzoom 1.0 
+        linear 0.05 xpos 0.53 xzoom 0.84 yzoom 1.09 
+        linear 0.15 xpos 0.5 xzoom 1.0 yzoom 1.0 
+    parallel:
+        matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+        linear 0.20 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, -5.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
+with Pause(0.30)
+show O main:
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, -5.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 yzoom 1.0 
 
 "They suddenly lurched forward."
 
 # Oe angry
 
-show O solemn
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
+
 
 o "No! I don't want to see it, I want to have it! I want to see it when I lay down to sleep at dawn! I want to see it when I wake up every dusk!"
 
 o "I want to have it, I was ungrateful when my father gave it to me but he's dust and my home is dust and everyone I knew was dust but it's here and I want it!"
 
-# MC determined
+show M main:
+    xpos 0.34 yalign 1.0 zoom 0.45
+with dissolve 
 
 "I felt for Oe in that moment…everything taken from them so long ago and now, just out of their reach, something that they wanted more than anything else."
 
+show M main:
+    subpixel True 
+    xpos 0.34 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "Let's walk home, Oe.  I think we may be able to help each other…"
+
+show O main:
+    subpixel True 
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 yzoom 1.0 
+    linear 0.05 xpos 0.53 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, -5.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 0.84 yzoom 1.09 
+    linear 0.15 xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 yzoom 1.0 
+with Pause(0.30)
+show O main:
+    xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 yzoom 1.0 
 
 # Oe hopeful/warm
 
-show O smile
+show O smile:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O smile:
+    yalign 1.0
 
 # black/transition here
 
+scene black
+with fade 
 
 # Scene OE.06 The Prep
+scene bg office 
+with fade 
 
 "The next day I went to the Sullivan Gallery. It was connected somehow to the city or to the university, through ties of big-money donors, probably."
 
@@ -1558,23 +2237,52 @@ show O smile
 
 # MC is normal/upbeat
 
-show M main
-
 mat "I don't see why your paper needs another set of pictures. They sent a man out yesterday."
+
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
 
 m "That's what I said when they sent me out! Something about some of the layout pictures not coming out."
 
+hide M main
+
 mat "Is that an instant camera?"
+
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
 
 m "It's just for tracing."
 
 "This excuse didn't really make sense but he didn't have time to think about it, there were too many things happening."
+
+hide M main
 
 mat "Well, don't touch any of the cases."
 
 "The artifacts had not yet been put in place, but I was happy to see that the plaques and signs for each of the pieces were being attached to the walls and plinths."
 
 "That made it easy."
+
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
 
 m "I won't be a minute."
 
@@ -1604,12 +2312,19 @@ m "I won't be a minute."
 
 "It made me feel that they were, themselves, just as precious as any of the artifacts that would be displayed here."
 
+scene black
+with fade 
+
 # black/transition
 
 "And I wanted them to have what rightly belonged to them."
 
 
 # Scene OE.07 The heist
+scene bg office 
+with fade 
+camera:
+    subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.15)*HueMatrix(0.0) 
 
 # bg is the exhibition hall at night time. you can add some lights or just make it seem a bit darker
 
@@ -1619,15 +2334,72 @@ m "I won't be a minute."
 
 # Thinking/flashback here maybe? I leave to you how to show this. We could even fully flash back to the diner or MC's apartment in a new scene here
 
+scene bg diner
+with fade 
+camera:
+    subpixel True matrixcolor BrightnessMatrix(-0.1)*SaturationMatrix(0.0) 
+
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.35
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
+
 o "You haven't seen the full power of the blood."
+
+show O solemn:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.35
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    yalign 1.0
 
 o "Few living have.  LeeRoy and Adelaide barely have a fraction of the knowledge that I do."
 
+show O solemn:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.35
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    yalign 1.0
+
 o "They're like children running around a field waving paper swords."
+
+show O main:
+    subpixel True 
+    yalign 1.0 zoom 0.5 xpos 0.35
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O main:
+    yalign 1.0
 
 o "It can be very difficult for a human to look at it directly.  It affects the mind."
 
+show O solemn:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.35
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O solemn:
+    yalign 1.0
+
 o "You have to be focused and practiced. So let's go over it again."
+
+scene bg office 
+with fade 
+camera:
+    reset
+camera:
+    subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.15)*HueMatrix(0.0)    
 
 # Back to the gallery, the MC
 
@@ -1635,13 +2407,44 @@ o "You have to be focused and practiced. So let's go over it again."
 
 "I waved it around rather drunkenly as I flirted with the security guard."
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "Don't you think all these old rich people are phonies?"
+
+hide M main
 
 guard "Couldn't say, ma'am."
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "See, I respect a working man, someone with an actual job that their mother didn't buy for them."
 
+hide M main
+
 guard "Is that so, ma'am."
+
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
 
 m "Someone like you…"
 
@@ -1659,9 +2462,14 @@ m "Someone like you…"
 
 "The lights began to flicker, to dim."
 
+hide M main
+
 guy "What's that sound?"
 
 lady "It sounds like…I don't know what it sounds like…"
+
+show M main:
+    xpos 0.12 zoom 0.45 yalign 1.0
 
 "I was looking up so I saw it immediately. A bat came in through the skylight, then another…"
 
@@ -1675,7 +2483,19 @@ lady "It sounds like…I don't know what it sounds like…"
 
 # MC exaggeratedly upset
 
+show M annoyed:
+    subpixel True 
+    xpos 0.16 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0
+
 m "Oh my god! Save me! I hate bats! Please!"
+
+with hpunch
+hide M annoyed
 
 "I threw myself in his arms and spilled my wine everywhere."
 
@@ -1695,6 +2515,15 @@ m "Oh my god! Save me! I hate bats! Please!"
 
 guard "Are you okay miss?" 
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "You're so brave!!"
 
 "He didn't look brave, the fog was descending from the ceiling at a sinister, relentless pace, the lights snuffed out one by one from the top down."
@@ -1709,17 +2538,55 @@ m "You're so brave!!"
 
 "That's what we didn't want. Witnesses to see them when they were in their normal form."
 
+show M annoyed:
+    subpixel True 
+    xpos 0.16 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0
+
 m "Mr. Burwell! Don't be a hero, run!"
 
 "I grabbed him by the lapels and shoved him backwards through the courtyard door."
 
+show M annoyed:
+    subpixel True 
+    xpos 0.16 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0
+
 m "Run, save yourself!"
 
+show M annoyed:
+    subpixel True 
+    xpos 0.16 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0
+
 m "Ahhhhhhhh!!!!!"
+
+with hpunch
 
 "Within the swirling fog and bats and rats I heard the clunk of the case opening."
 
 "I didn't dare look, I just continued screaming bloody muirder."
+
+show M annoyed:
+    subpixel True 
+    xpos 0.16 zoom 0.35 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    yalign 1.0
 
 m "It's horrible, horrible!!"
 
@@ -1753,47 +2620,153 @@ m "It's horrible, horrible!!"
 
 # MC is excited
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "Stop the presses! I got a big story!"
 
 # black or transition
 
+camera:
+    reset
+scene black
+with fade 
+
 scene bg bedroom 
+with fade 
 
 # bg MC's apartment
 
 # MC enters, happy
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "We did it! I got the front page!"
 
 # Oe, sad
+
+show O main:
+    yalign 1.0 zoom 0.5 xpos 0.5
 
 "Oe was sitting at my little kitchen table, looking at the scroll with sad, longing eyes."
 
 "Not their normal blank expression."
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "Is it…is it what you wanted?"
 
 # Oe happy
 
-show O excited
+show O excited:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O excited:
+    yalign 1.0
 
 o "Yes…yes, it's wonderful. It hurts so badly to look at it.  But it is wonderful to see it."
+
+show M main:
+    subpixel True 
+    xpos 0.12 
+    linear 0.20 xpos 0.43 
+with Pause(0.30)
+show M main:
+    xpos 0.43 
+with easeinleft 
 
 "I impulsively hugged them` from behind."
 
 "They did not resist or flinch."
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "You know…even if you hadn't become a vampire…you would have outlived your father probably."
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "He must have hoped that you would look at it after he was gone."
+
+show O excited:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O excited:
+    yalign 1.0
 
 o "Yes. It made him immortal, just a little bit."
 
 "They turned to face me. Although they were cold to the touch, their expression at last was warm."
 
+show O excited:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O excited:
+    yalign 1.0
+
 o "Congratulations on the front page story. I look forward to reading it tomorrow."
 
+show M main:
+    subpixel True 
+    xpos 0.12 zoom 0.45 yalign 1.0
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    yalign 1.0
+
 m "I couldn't have done it without you."
+
+show O smile:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show O smile:
+    yalign 1.0
 
 o "The kindness was all yours."
 
