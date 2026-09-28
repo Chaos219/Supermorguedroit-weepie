@@ -8,7 +8,7 @@
 transform ts_gmnavbtn():
     on hover:
         xoffset 0
-        linear 0.5 xoffset -100
+        linear 0.20 xoffset -35
     on idle:
         linear 0.5 xoffset 0
     on selected_hover:
@@ -38,7 +38,12 @@ screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
 
             button:
                 at ts_gmnavbtn()
-                if renpy.get_screen("load"):
+                if renpy.get_screen("save"):
+                    foreground Transform("gui/overlay/load_[prefix_]icon.png", yalign=0.5, xpos=50)
+                    selected_foreground Transform("gui/overlay/load_selected_icon.png", yalign=0.5, xpos=50)
+                    selected renpy.get_screen("load")
+                    action ShowMenu("load")
+                elif main_menu:
                     foreground Transform("gui/overlay/load_[prefix_]icon.png", yalign=0.5, xpos=50)
                     selected_foreground Transform("gui/overlay/load_selected_icon.png", yalign=0.5, xpos=50)
                     selected renpy.get_screen("load")
@@ -83,10 +88,11 @@ screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
             action Return()
 
         ## HOME ##
-        imagebutton auto "gui/button/home_%s_background.png":
-            xalign 1.0 xoffset -25
-            ypos 215
-            action MainMenu()
+        if not main_menu:
+            imagebutton auto "gui/button/home_%s_background.png":
+                xalign 1.0 xoffset -25
+                ypos 215
+                action MainMenu()
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
     

@@ -27,6 +27,27 @@ screen preferences():
 
             ## DISPLAY ##
             hbox:
+                # if preferences.fullscreen:
+                #     text("WINDOWED") ypos 5 
+                # else:
+                #     text("WINDOWED") color "#ff0000" ypos 5
+
+                # imagebutton:
+                #     idle "gui/button/switch_left.png"
+                #     hover "gui/button/switch_left.png"
+                #     selected_idle "gui/button/switch_right.png"
+                #     selected_hover "gui/button/switch_right.png"
+                #     padding 10,0,10,0
+                #     action Preference("display", "toggle")
+
+                # if preferences.fullscreen:
+                #     text("FULLSCREEN") color "#ff0000" ypos 5 
+                # else:
+                #     text("FULLSCREEN") ypos 5 
+
+
+
+
                 xfill True
                 textbutton _("WINDOWED"):
                     selected preferences.fullscreen == False
@@ -65,7 +86,7 @@ screen preferences():
 
                 textbutton _("SKIP UNREAD TEXT") action Preference("skip", "toggle")
                 textbutton _("SKIP AFTER CHOICES") action Preference("after choices", "toggle")
-                textbutton _("SKIP TRANSITIONS") action Preference("transitions", "toggle")
+                textbutton _("SKIP TRANSITIONS") action InvertSelected(Preference("transitions", "toggle"))
 
             ## BGM ##
             null height 45
@@ -83,6 +104,11 @@ screen preferences():
 
                 label _("SFX")
                 bar value Preference("sound volume") style "prefbar"
+
+                textbutton _("MUTE"):
+                    action Preference("all mute", "toggle")
+                    style_prefix "prefcheck"
+                            
 
 
 
