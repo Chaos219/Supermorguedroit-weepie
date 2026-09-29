@@ -722,20 +722,26 @@ show M main:
 m "I meant to ask, who did the-"
 
 show L confused:
-    xpos 0.42 ypos 0.05
+    xpos 0.26 ypos 0.05
     zoom 0.5
 with dissolve
 
+
+
+
 "And then LeeRoy’s face falls, all at once, the way a child’s does when a balloon pops."
 
-show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+show L sigh:
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
+
+
+
 with Pause(0.20)
-show L confused:
-    pos (0.42, 0.05) 
+show L sigh:
+    pos (0.26, 0.05) 
 
 l "We had no customers today."
 
@@ -751,15 +757,15 @@ show M main:
 m "…Mm."
 
 show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.42, 0.05)
+    pos (0.26, 0.05)
 
-l "Eleven days our doors have been open, and I’ve had a fella ask to use the payphone, and an old lady who thought we were the First Methodist Church."
+l "Eleven days our doors have been open, and I’ve had a fella asking to use the payphone, and an old lady who thought we were the First Methodist Church."
 "I look at him over the rim of my glass. Then at the eight empty booths lined up behind him."
 "For a second, I think about going easy. I don’t."
 
@@ -773,16 +779,16 @@ show M annoyed:
     xpos 0.12 ypos 0.98 zpos 0.35
 
 m "Well. It’s the name."
-"(Blankly)"
+"I do not try hiding my facial expression."
 
 show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.42, 0.05)
+    pos (0.26, 0.05)
 
 l "What about it?"
 
@@ -798,13 +804,13 @@ show M annoyed:
 m "LeeRoy."
 
 show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.42, 0.05)
+    pos (0.26, 0.05)
 
 l "It’s a great name!"
 
@@ -819,25 +825,28 @@ show M annoyed:
 
 m "It is absolutely not a great name."
 
-show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+show L main:
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
-show L confused:
-    pos (0.42, 0.05)
+show L main:
+    pos (0.26, 0.05)
 
-l "Supermorgiedroit! Like-super. Super cool."
+l "Supermurgitroit! Like-super, Super cool."
+l "And Weepie, cause the food is so good it will make you cry!"
 
-show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+"It does make me want to cry, but certainly not because it's good."
+
+show L main:
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
-show L confused:
-    pos (0.42, 0.05)
+show L main:
+    pos (0.26, 0.05)
 
 l "The Supermurgitroid Weepie. The coolest dinner around."
 "I put my glass down on the table."
@@ -854,13 +863,13 @@ show M annoyed:
 m "Say it slowly."
 
 show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.42, 0.05)
+    pos (0.26, 0.05)
 
 l "Super. Murgit. Droit."
 
@@ -876,26 +885,26 @@ show M annoyed:
 m "Could you read it off the sign outside?"
 
 show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.42, 0.05)
+    pos (0.26, 0.05)
 
 l "It’s reversed, let me- Super. Morgue-"
 "I watch the realisation land."
 
 with hpunch
 show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.42, 0.05)
+    pos (0.26, 0.05)
 
 l "…Morgue."
 
@@ -911,13 +920,13 @@ show M annoyed:
 m "Morgue."
 
 show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.42, 0.05)
+    pos (0.26, 0.05)
 
 l "Super. Morgue."
 
@@ -933,32 +942,32 @@ show M annoyed:
 m "Super Morgue. There is a spelling mistake."
 
 show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.42, 0.05)
+    pos (0.26, 0.05)
 
 l "But-"
 "LeeRoy stares past me at his own sign, glowing red through the window."
 
 show L sigh:
-    subpixel True xpos 0.45 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L sigh:
-    pos (0.45, 60) 
+    pos (0.26, 60) 
 
 l "…so that’s why the Methodist lady gave me an odd look."
 "The brass bell over the front door chimes."
 "Four teenagers spill inside. Heavy wool letterman jackets, saddle shoes, chewing gum."
 "One girl is holding a Kodak Brownie camera."
 "All of them are already laughing before the door swings shut behind them."
-t1 "-no, look at it, I told you, it literally says morgue"
+t1 "- no, look at it, I told you, it literally says morgue -"
 t2 "Take one of me under the sign. Take one of me playing dead under the sign."
 "They cram into a corner booth, buzzing with the kind of excitement that spells trouble."
 
@@ -982,7 +991,7 @@ show L main:
     pos (0.28, 0.05) 
 
 l "Customers."
-"(Calling out)"
+"He raises his voice and calls for the others."
 
 show L main:
     subpixel True xpos 0.28 zoom 0.5 
@@ -1004,7 +1013,7 @@ show A main:
     xpos 0.0 zoom 0.5
 
 "Adelaide comes out of the kitchen with the exact look of someone who’d rather be anywhere else."
-"She ties on a stained canvas apron anyway. She glares at LeeRoy."
+"She pointedly takes off the apron off the hook and hangs it onto another before glaring at LeeRoy."
 
 show A main:
     subpixel True xpos 0.0 zoom 0.5
@@ -1049,13 +1058,13 @@ with dissolve
 o "I swept the floor earlier."
 
 show L sigh:
-    subpixel True xpos 0.45 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L sigh:
-    pos (0.45, 60) 
+    pos (0.26, 60) 
 with dissolve
 
 l "The name! You were in charge of making the sign."
@@ -1072,13 +1081,13 @@ show O solemn:
 o "Yes."
 
 show L sigh:
-    subpixel True xpos 0.45 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L sigh:
-    pos (0.45, 60)
+    pos (0.26, 60)
 
 l "It says morgue."
 
