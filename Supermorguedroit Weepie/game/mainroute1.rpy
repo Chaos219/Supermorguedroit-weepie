@@ -33,6 +33,7 @@ image bg bedroom = im.Scale("images/bedroom_bg.png",1920,1080)
 image bg diner = im.Scale("images/diner_bg.png",1920,1080)
 image bg office = im.Scale("images/office_bg.png",1920,1080)
 image bg library = im.Scale("images/library_bg.png",1920,1080)
+image bg concert = im.Scale("images/concert_bg.png",1920,1080)
 
 # Sprites
 image M main="mc_main.png"
