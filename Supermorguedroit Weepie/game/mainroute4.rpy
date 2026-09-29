@@ -1304,6 +1304,9 @@ camera:
     reset
 scene bg concert with fade 
 
+stop music
+play music "vampdiner_chaotic.ogg"
+
 "Seats were scattered around the outside of the room."
 
 "A few tables were set up near a bar."
@@ -1613,6 +1616,8 @@ m "You don't…you don't seem like the kind of person who keeps up with new thin
 
 # In this monologue, we might change MC's attitude to thoughtful, maybe even sad. same for Oe, though They can also still appear static. This might be a good place for some warm or spooky music too. Also might be a good idea to have a few images vaguely referring to Oe's comments here. 
 
+$ renpy.music.set_volume(0.3)
+
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
@@ -1642,7 +1647,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"A pipe can last a hundred years if you care for it properly."
+o "A pipe can last a hundred years if you care for it properly."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1655,7 +1660,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"A well made sword, maintained by an expert, can keep its edge perhaps two hundred. "
+o "A well made sword, maintained by an expert, can keep its edge perhaps two hundred. "
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1668,7 +1673,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"But eventually almost everything that is material fades."
+o "But eventually almost everything that is material fades."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1681,7 +1686,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"If you look at things from the perspective of forever, of infinity, there's very little that can ever last."
+o "If you look at things from the perspective of forever, of infinity, there's very little that can ever last."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1694,7 +1699,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"None of LeeRoy's cars will be running in twenty years."
+o "None of LeeRoy's cars will be running in twenty years."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1707,7 +1712,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"The diner won't be around in ten years; the building itself will be knocked down in thirty or forty."
+o "The diner won't be around in ten years; the building itself will be knocked down in thirty or forty."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1720,7 +1725,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"There'll be another building there before a hundred years are out."
+o "There'll be another building there before a hundred years are out."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1733,7 +1738,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"Everyone who ever set foot in that building will be dead - except for me, and my friends."
+o "Everyone who ever set foot in that building will be dead - except for me, and my friends."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1746,7 +1751,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"Why love anything? It will die. The traces of it will rot and soon even those traces will disappear forever."
+o "Why love anything? It will die. The traces of it will rot and soon even those traces will disappear forever."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1759,7 +1764,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"Leaving you as the only one to mourn."
+o "Leaving you as the only one to mourn."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1772,7 +1777,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"Eventually all you have inside your heart is grief."
+o "Eventually all you have inside your heart is grief."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1785,7 +1790,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"No other emotion can get inside without knocking over grief's teacups, elbowing grief's belongings off the mantelpiece, bumping against grief's portraits on the wall…"
+o "No other emotion can get inside without knocking over grief's teacups, elbowing grief's belongings off the mantelpiece, bumping against grief's portraits on the wall…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1798,7 +1803,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"I can't grieve or I would go mad. Quite mad."
+o "I can't grieve or I would go mad. Quite mad."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1811,7 +1816,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"So…what can we love, then?"
+o "So…what can we love, then?"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1824,7 +1829,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"Something as immortal as we are."
+o "Something as immortal as we are."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1837,7 +1842,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"Art.  Music. Theater."
+o "Art.  Music. Theater."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1850,7 +1855,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"The emotion that flows out of it is real."
+o "The emotion that flows out of it is real."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1863,7 +1868,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"You take it in… it stays with you…"
+o "You take it in… it stays with you…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1876,7 +1881,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"Even something amateurish or awkward…it stays with you as long as you choose to keep yourself open to it."
+o "Even something amateurish or awkward…it stays with you as long as you choose to keep yourself open to it."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1889,7 +1894,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"You let it go when you wish, and not before."
+o "You let it go when you wish, and not before."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1902,7 +1907,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"And never in grief, but in satisfaction and pleasure."
+o "And never in grief, but in satisfaction and pleasure."
 
 show O smile:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1915,7 +1920,7 @@ show O smile:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"That's why I love hearing new music…and dancing in new ways…"
+o "That's why I love hearing new music…and dancing in new ways…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1928,7 +1933,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"…why I love going to the library when they receive new books…"
+o "…why I love going to the library when they receive new books…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1941,7 +1946,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"…why I love to see a gallery opening with a painter or sculptor I've never seen before…"
+o "…why I love to see a gallery opening with a painter or sculptor I've never seen before…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1954,7 +1959,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"…even your little news stories give me pleasure."
+o "…even your little news stories give me pleasure."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -1967,7 +1972,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"They don't need to be a work of titanic genius…they just need to be real.  Real today, right now."
+o "They don't need to be a work of titanic genius…they just need to be real.  Real today, right now."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1980,7 +1985,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"Tomorrow will be the same as today in so many ways. And if you've seen as many tomorrows as I have, you don't really care about any particular one."
+o "Tomorrow will be the same as today in so many ways. And if you've seen as many tomorrows as I have, you don't really care about any particular one."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1993,7 +1998,7 @@ show O solemn:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"But there is always something new in the creation of art…"
+o "But there is always something new in the creation of art…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
@@ -2006,7 +2011,7 @@ show O main:
     pos (0.47, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"This is the first rock and roll concert I've been to, you're right."
+o "This is the first rock and roll concert I've been to, you're right."
 
 show O smile:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -2019,7 +2024,7 @@ show O smile:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"But I certainly hope it won't be my last."
+o "But I certainly hope it won't be my last."
 
 show O smile:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -2032,9 +2037,11 @@ show O smile:
     pos (0.45, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"There is so much to experience here."
+o "There is so much to experience here."
 
 # if we've changed music, background, images, as described above, here they should go back to normal
+
+$ renpy.music.set_volume(1)
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -2081,6 +2088,9 @@ m "N…no! I'm ready for more!"
 
 scene black
 with fade 
+
+stop music
+play music "retro.ogg"
 
 # transition or black screen
 
