@@ -1099,7 +1099,7 @@ show O main:
     zoom 0.5
 with dissolve 
 
-"(After a long moment of calm consideration)"
+"Ōe considers his words for a few seconds."
 
 show O solemn:
     subpixel True 
@@ -1126,17 +1126,17 @@ with dissolve
 o "I do not always know which letters your language is going to demand."
 
 show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.42, 0.05)
+    pos (0.26, 0.05)
 with dissolve 
 
 l "My- your language-"
-"(Already turning back toward the kitchen)"
+"Ōe is already turning towards the kitchen."
 
 show O main:
     xpos 0.0
@@ -1166,13 +1166,13 @@ show M main:
 m "That’s the name used in the paper, too."
 
 show L confused:
-    subpixel True xpos 0.42 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.42, 0.05)
+    pos (0.26, 0.05)
 
 l "What?"
 
@@ -1218,31 +1218,26 @@ show A main:
 
 "Adelaide walks briskly past us on her way back from taking their order, sliding the handwritten ticket onto the kitchen pass without breaking her stride."
 
-show A main:
-    subpixel True xpos 0.0 zoom 0.5
-    ypos 0 
-    linear 0.05 ypos -10 
-    linear 0.05 ypos 0 
-with Pause(0.20)
-show A main:
-    pos (0.0, 0) 
+show A evil:
+    subpixel True pos (0.12, 54) zoom 0.42 
+
+
 
 a "It isn’t the worst name he’s had."
 
 show L sigh:
-    xpos 0.45
+    xpos 0.26
     ypos 60 zoom 0.5
 
-"(Instantly)"
 
 show L sigh:
-    subpixel True xpos 0.45 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L sigh:
-    pos (0.45, 60) 
+    pos (0.26, 60) 
 
 l "We’re not talking about that."
 
@@ -1258,13 +1253,13 @@ show A main:
 a "I didn’t say which one."
 
 show L sigh:
-    subpixel True xpos 0.45 zoom 0.5 
+    subpixel True xpos 0.26 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L sigh:
-    pos (0.45, 60) 
+    pos (0.26, 60) 
 
 l "We’re not talking about it."
 
@@ -1323,7 +1318,7 @@ hide L main
 
 "One of the boys grabs a napkin with the diner’s logo and stuffs it into his letterman jacket, like a badge of honour."
 "The girl with the camera hangs back outside, standing on the cracked parking lot."
-"She holds the Kodak Brownie up to her eye, squinting through the viewfinder, and photographs the buzzing red neon sign over and over from different angles until the novelty finally wears off and she jogs to catch up with her friends."
+"She holds the Kodak Brownie up to her eye, photographing the buzzing red neon sign over and over until the novelty wears off and she jogs to catch up with her friends."
 "I watch them go from my spot in the vinyl booth, chin in my hand."
 
 show O main:
@@ -1392,7 +1387,6 @@ camera:
 show M main:
     pos (0.12, 0.18) 
 
-"Among the scribbled drafts and interview notes, I write the word 'morgue' and underline it twice, hard and deep into the page."
 "I’ve got an idea."
 # Scene 6: Dorothy's Apartment - Wednesday Evening
 scene black with fade 
@@ -1409,12 +1403,36 @@ show M main:
 
 "Almost a whole day passed."
 "I’m still in my good wool dress."
+
+show M annoyed:
+    subpixel True xpos 0.17 zoom 0.39 
+with dissolve
+
+
 "I put it on this morning to chase a lead at the municipal records office, which turned out to be a whole lot of nothing."
 "If I unzip it now, that’s me surrendering to the day."
+
+
+camera:
+    subpixel True 
+    zoom 1.0 
+    linear 0.32 zoom 1.6 
+with Pause(0.42)
+camera:
+    zoom 1.6 
+
+
 "I’m sprawled sideways in the lumpy armchair, paperback balanced on my knee."
 "In the corner, a jazz record spins, low and steady."
 
 with hpunch
+
+camera:
+    subpixel True ypos 0 zoom 1.0 
+show M main:
+    subpixel True pos (0.12, 1.01) zoom 0.49 
+
+
 show bg bedroom:
     subpixel True 
     matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
@@ -1453,7 +1471,7 @@ show O main:
     matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.3)*HueMatrix(0.0)
 with dissolve 
 
-"Ōe stand in the drafty hallway, holding a thick wax candle."
+"Ōe stands in the drafty hallway, holding a thick wax candle."
 "It isn’t lit."
 "They look at me. They just keep looking at me."
 "The silence stretches out."
@@ -1588,11 +1606,11 @@ show O main:
 
 "I have to really lean into it to get the basement fuse box open."
 "The metal door groans, rust flaking off under my hands."
-"I strike a match against the wall-Oe just stands there, holding the candle."
+"I strike a match against the wall - Oe just stands there, holding the candle."
 "I get the wick lit, drip some wax onto a shelf, and jam the candle in place."
 "My sleeves go up past my elbows. No sense getting them dirtier than they already are."
-"Ōe’s eyes are glued to my hands. I can feel it, pressing down on my skin."
-"If I looked up and met their stare, I’d probably lose my nerve, so I keep my eyes locked on the fuses and pretend I don’t notice."
+"Ōe’s stare is glued to my hands. I can feel it, pressing down on my skin."
+"If I looked up and met it, I’d probably lose my nerve, so I keep my eyes locked on the fuses and pretend I don’t notice."
 
 show M annoyed:
     subpixel True 
