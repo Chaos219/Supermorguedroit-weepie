@@ -1356,6 +1356,9 @@ m "The only one paying will be you!"
 
 with hpunch 
 
+scene murder_cg:
+    size (1920, 1080)
+
 "I quickly saw surprise flash in his eyes as I lunged on him and we fell to the ground."
 
 with hpunch
@@ -1392,6 +1395,8 @@ show M annoyed:
     ypos 1.0
 
 m "You can take his blood if you want."
+
+hide murder_cg
 
 show A evil:
     subpixel True 
