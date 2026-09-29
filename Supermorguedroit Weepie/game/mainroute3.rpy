@@ -464,46 +464,46 @@ show M annoyed:
 m "Then why in the name of God did you send the SOLE financial backer of this establishment out into the alley to do the LAUNDRY?"
 
 show L confused:
-    xpos 0.08 yalign 1.0 zoom 0.45
+    xpos 0.0 yalign 1.0 zoom 0.45
 with dissolve 
 
 "Silence settles over the kitchen. I watch the gears in his head slowly grind into motion."
 
 show L confused:
     subpixel True 
-    ypos 1.0 xpos 0.08 zoom 0.45
+    ypos 1.0 xpos 0.0 zoom 0.45
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L confused:
-    ypos 1.0 xpos 0.08 zoom 0.45
+    ypos 1.0 xpos 0.0 zoom 0.45
 
 l "…Oh. Well. I..."
 "His face drops. Genuine, profound guilt washes over him."
 
+hide M annoyed 
 show L shrug:
     subpixel True 
-    ypos 1.0 xpos 0.08 zoom 0.45
+    ypos 1.0 xpos 0.0 zoom 0.45
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L shrug:
-    ypos 1.0 xpos 0.08 zoom 0.45
-hide M annoyed 
+    ypos 1.0 xpos 0.0 zoom 0.45
 
 l "You’re.. Miss Kessler, you're completely right. I shouldn't have even asked her! ADELAIDE! Addie, could you come back inside, please?"
 
 show L shrug:
     subpixel True 
-    xpos 0.08 
-    linear 0.50 xpos 0.04 
+    xpos 0.0
+    linear 0.50 xpos 0.0
 show A main:
     subpixel True zoom 0.5 
     xpos 1.0 
-    linear 0.50 xpos 0.22 
+    linear 0.50 xpos 0.27
 with Pause(0.60)
 show L shrug:
-    xpos 0.04 
+    xpos 0.0
 show A main:
     xpos 0.22 yalign 1.0
 
@@ -512,7 +512,7 @@ show A main:
 show A main:
     subpixel True zoom 0.5 yalign 1.0
     parallel:
-        xpos 0.22 
+        xpos 0.27
         linear 0.10 xpos 0.22 
     parallel:
         ypos 1.0 
@@ -520,27 +520,28 @@ show A main:
         linear 0.05 ypos 1.0 
 with Pause(0.20)
 show A main:
-    pos (0.22, 1.0) 
+    pos (0.27, 1.0) 
 
 a "I am already here."
 
 show L shrug:
     subpixel True 
-    ypos 1.0 xpos 0.08 zoom 0.45
+    ypos 1.0 xpos 0.0 zoom 0.45
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L shrug:
-    ypos 1.0 xpos 0.08 zoom 0.45
+    ypos 1.0 xpos 0.0 zoom 0.45
 
 l "I am so sorry. I am so, so sorry, I made you put those down. Put that crate right down on the floor. ŌE!"
 
 camera:
     subpixel True 
-    ypos 68 zoom 1.3 
+    ypos -22 zoom 1.25 
     linear 0.20 ypos 0 zoom 1.0 
 show O solemn:
     subpixel True xpos 0.48 yalign 1.0 zoom 0.5
+with Pause(0.30)
 with Pause(0.30)
 camera:
     ypos 0 zoom 1.0 
@@ -550,12 +551,12 @@ camera:
 
 show L shrug:
     subpixel True 
-    ypos 1.0 xpos 0.08 zoom 0.45
+    ypos 1.0 xpos 0.0 zoom 0.45
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L shrug:
-    ypos 1.0 xpos 0.08 zoom 0.45
+    ypos 1.0 xpos 0.0 zoom 0.45
 
 l "Ōe, could you handle the dirty linens, please?"
 
