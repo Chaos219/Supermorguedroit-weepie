@@ -3,8 +3,6 @@
 
 
 label oe:
-<<<<<<< HEAD
-=======
 scene bg office
 with fade
 camera:
@@ -1572,7 +1570,6 @@ hide O main
 
 scene black
 with fade 
->>>>>>> c7568b4894bfa0e00eef6ef3187e82134506136f
 
 # transition/black bg
 
