@@ -124,7 +124,7 @@ stop music
 play sound "phone.ogg"
 "A telephone rings. The shrill sound tears through the silence."
 play music "retro.ogg"
-scene bg bedroom
+scene bg bedroom 
 show M annoyed:
     xpos 0.0
     yalign 1.0

@@ -28,7 +28,7 @@
     #return
 
 label mainroute3:
-scene bg diner 
+scene bg diner with fade 
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 
@@ -678,7 +678,7 @@ menu:
         # [LISTEN +1]
 
 #Scene 13: The Supermurgidroid Weepie - Friday Evening
-scene bg bedroom
+scene bg bedroom with fade 
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.1)*HueMatrix(0.0) 
 
@@ -687,7 +687,8 @@ show M main:
 
 "I close the door behind me. Chief actually approved the piece."
 
-scene bg diner
+scene black with fade 
+scene bg diner with fade 
 
 show M main:
     xpos 0.12 yalign 1.0 zoom 0.45

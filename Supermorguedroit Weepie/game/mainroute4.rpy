@@ -162,7 +162,7 @@ m "Marcia! I'm fine!"
 
 show M main:
     subpixel True 
-    yalign 1.0 zoom 0.45 xpos 0.12
+    yalign 1.0 zoom 0.45 xpos 0.1
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -177,7 +177,7 @@ mar "I'm sorry you're having such a tough time…"
 
 show M main:
     subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
+    xpos 0.1 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -1734,67 +1734,450 @@ with fade
 jump mainroute_end
 
 label adelaide_date:
+scene bg bedroom 
+with fade
 
 # at home
 "I’m, for once, enjoying the quiet of home without chewing on my own thoughts looking for any thread to pull at and turn into a story."
 "In fact, I’ve got my own story to enjoy right here. The beat-up little paperback has been patiently waiting for its time in the spotlight, and it’s decent enough to retain my attention."
 "Not when there’s a knock on my door, though. I grab whatever’s in reach as a bookmark."
 "I turn the deadbolt and open the door just a crack."
+
+show M main:
+    subpixel True 
+    yalign 1.0 zoom 0.45 xpos 0.1
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    ypos 1.0 
+
 m "Oh! Adelaide, I didn’t think you were still in."
+
+show A main:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    yalign 1.0
+
 a "Have you seen the weather, Dolly? I can’t exactly go galavanting in the park right now."
 "I sigh, and hang my head. There’s a bright beam of sunlight filtering in through my curtains."
+
+show M smile:
+    subpixel True 
+    yalign 1.0 zoom 0.45 xpos 0.1
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M smile:
+    ypos 1.0 
+
 m "Right. Uh… Come in, I guess. I’d offer a drink, but I don’t exactly want to be misconstrued in my intentions here."
+
+show A happy: 
+    yalign 1.0 zoom 0.4 xpos 0.6
+with dissolve 
+
 "She gives me a toothy smile."
+
+show A happy:
+    subpixel True 
+    yalign 1.0 zoom 0.4 xpos 0.6
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A happy:
+    yalign 1.0
+
 a "No, better not play at that, darling."
 "I roll my eyes, and straighten my bedsheets purely to give myself something to do while she walks around, taking in the room."
 "She seems to run her hand over everything, but never quite touching. She’s not looking for dust to criticize, merely scoping out the space, what I’ve added to it."
+
+show M smile:
+    subpixel True 
+    yalign 1.0 zoom 0.45 xpos 0.1
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M smile:
+    ypos 1.0 
+
 m "So… Any particular reason I should enjoy your visit today?"
+
+show A evil:
+    subpixel True 
+    yalign 1.0 zoom 0.4 xpos 0.6
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A evil:
+    yalign 1.0
+
 a "Oh, Dorothy."
 "She laughs like it’s a performance."
+
+show A evil:
+    subpixel True 
+    yalign 1.0 zoom 0.4 xpos 0.6
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A evil:
+    yalign 1.0
+
 a "Dorothy, Dorothy. I am, simply put, dreadfully bored."
+
+show M annoyed:
+    subpixel True 
+    yalign 1.0 zoom 0.35 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0
+
 m "And you’ve sought out… me, for entertainment."
+
+show A evil:
+    subpixel True 
+    yalign 1.0 zoom 0.4 xpos 0.6
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A evil:
+    yalign 1.0
+
 a "What can I say! It is you or the jukebox, darling, and you’ve got better conversation."
+
+show M annoyed:
+    subpixel True 
+    yalign 1.0 zoom 0.35 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0
+
 m "Wow, quite the competition I’ve got."
 "She sits at my kitchen table, ankles crossed. A hand comes up to examine my sewing machine, and, just as with everything else, she does not quite make contact with the metal."
+
+show A main:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    yalign 1.0
+
 a "That’s a nice model. Looks well-maintained, too."
+
+show M annoyed:
+    subpixel True 
+    yalign 1.0 zoom 0.35 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0
+
 m "Are you a mechanician, now?"
 "I lay one hand on the table, leaning closer, but not sitting next to her either."
+
+show A main:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    yalign 1.0
+
 a "I simply have an eye for high-quality things. You use this pretty little thing often?"
+
+show M main:
+    subpixel True 
+    yalign 1.0 zoom 0.45 xpos 0.1
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    ypos 1.0 
+
 m "Sure. Everything you’ve seen me wear has gone under the knife with her."
+
+show A main:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    yalign 1.0
+
 a "Her?"
 "I shrug, finally relenting and dragging a chair closer to me with my foot. I plop down into it and wave a hand around the sewing machine."
+
+show M annoyed:
+    subpixel True 
+    yalign 1.0 zoom 0.35 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0
+
 m "Machines are hers. Like boats and cars. I don’t know."
+
+show A main:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    yalign 1.0
+
 a "Well, I’ll have to keep her in mind if I ever need some help repairing our dreary aprons."
 "I wrinkle my nose."
+
+show M annoyed:
+    subpixel True 
+    yalign 1.0 zoom 0.35 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0
+
 m "I’m not putting those greasy monstrosities near my own workspace. I’m already involved enough as it is."
+
+show A main:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    yalign 1.0
+
 a "Well, I suppose that’s only fair."
 "I feel her eyes travelling over my clothes, looking for the seams and patches. She won’t find any, I’m not one to leave loose ends dangling around."
 "She seemingly comes to the same conclusion, because she flits her gaze away to find some other thing to comment on."
+
+show A main:
+    subpixel True 
+    yalign 1.0 zoom 0.53 xpos 0.5
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    yalign 1.0
+
 a "Who is that delightful fellow on the pinboard?"
+
+show M disgusted:
+    subpixel True 
+    yalign 1.0 zoom 0.45 xpos 0.16
+with dissolve 
+
 "I turn. The only visible face is Chet’s, stabbed through and through."
+
+show M disgusted:
+    subpixel True 
+    yalign 1.0 zoom 0.45 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M disgusted:
+    ypos 1.0
+
 m "That would be my… colleague."
 "I don’t even fight to keep the scowl off my face."
+
+show A evil:
+    subpixel True 
+    yalign 1.0 zoom 0.4 xpos 0.6
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A evil:
+    yalign 1.0 
+
 a "Oh? Not your boss? I thought your animosity would be reserved for the source of all your troubles."
+
+show M disgusted:
+    subpixel True 
+    yalign 1.0 zoom 0.45 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M disgusted:
+    ypos 1.0
+
 m "Well, my boss keeps giving my best leads to Chet, so on the board Chet goes. It’s good stress relief."
+
+show A evil:
+    subpixel True 
+    yalign 1.0 zoom 0.4 xpos 0.6
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A evil:
+    yalign 1.0 
+
 a "Mmh, perhaps I should look into doing something like this, then."
+
+show M disgusted:
+    subpixel True 
+    yalign 1.0 zoom 0.45 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M disgusted:
+    ypos 1.0
+
 m "I’ll take cheques for the royalty payments, please and thank you."
 "That actually gets a laugh out of her."
+
+show A evil:
+    subpixel True 
+    yalign 1.0 zoom 0.4 xpos 0.6
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A evil:
+    yalign 1.0 
+
 a "Well, if I were you, I’d at least perfect the technique before patenting it. You should really have your boss just as visible on there, for all the times you’ve complained to me about him."
 "I shrug."
+
+show M disgusted:
+    subpixel True 
+    yalign 1.0 zoom 0.45 xpos 0.16
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M disgusted:
+    ypos 1.0
+
 m "I don’t want to look at his face when I already talk to him on the phone much too often."
+
+show A happy:
+    subpixel True 
+    yalign 1.0 zoom 0.4 xpos 0.6
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A happy:
+    yalign 1.0 
+
 "She nods, accepting my reasoning."
+
+show A main:
+    xpos 0.5 zoom 0.53 yalign 1.0
+with dissolve 
+
+show M main:
+    xpos 0.1 zoom 0.45 yalign 1.0
+with dissolve 
+
 "I spend the rest of the day justifying my interior design choices to her judgemental gaze, and she only leaves once it’s time to go handle the diner."
+
+scene black with fade 
+
 "I close the door slowly behind her, already finding the space empty."
 
 
 label mainroute_end:
 
+    scene bg bedroom with fade 
+
+    camera:
+        subpixel True yzoom 1.0 
+        parallel:
+            xpos 0 xzoom 1.0 
+            linear 0.10 xpos -207 xzoom 1.15 
+            linear 0.20 xpos -198 xzoom 1.0 
+        parallel:
+            ypos 0 zoom 1.0 
+            linear 0.30 ypos -150 zoom 1.25 
+    show M smile:
+        subpixel True 
+        parallel:
+            xpos 0.1 
+            linear 0.10 xpos 0.12 
+            linear 0.20 xpos 0.13 
+        parallel:
+            zoom 0.45 
+            linear 0.29 zoom 0.48 
+    with Pause(0.40)
+    camera:
+        pos (-198, -150) xzoom 1.0 zoom 1.25 
+    show M smile:
+        xpos 0.13 zoom 0.48 
+    
     "The weekend was great and managed to take my mind off of work, but as soon as I lay down in bed my thoughts started attacking me again."
+
+    show M annoyed:
+        xpos 0.15 zoom 0.38 yalign 1.0 
+        subpixel True 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M annoyed:
+        ypos 1.0 
+
     m "Ugh, I wasted so much time today. How am I supposed to get the headline ready in time?"
+
+    show M annoyed:
+        xpos 0.15 zoom 0.38 yalign 1.0 
+        subpixel True 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M annoyed:
+        ypos 1.0 
+
     m "No, it’s fine, constantly stressing won’t help anyways."
+
+    show M annoyed:
+        xpos 0.15 zoom 0.38 yalign 1.0 
+        subpixel True 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M annoyed:
+        ypos 1.0 
+
     m "Think. Come on. Let’s make a battle plan for tomorrow."
+
+    show M annoyed:
+        xpos 0.15 zoom 0.38 yalign 1.0 
+        subpixel True 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M annoyed:
+        ypos 1.0 
+
     m "I mean, I literally live with vampires! I’m sure I can ask one of them for help…"
+
+    show M annoyed:
+        xpos 0.15 zoom 0.38 yalign 1.0 
+        subpixel True 
+        linear 0.05 ypos 0.98 
+        linear 0.05 ypos 1.0 
+    with Pause(0.20)
+    show M annoyed:
+        ypos 1.0 
+
     m "I'll see about it tomorrow."
+
+    scene black with fade
 
     call screen route_select
 
