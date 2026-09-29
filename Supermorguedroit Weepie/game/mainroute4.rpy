@@ -8,51 +8,458 @@ scene black with fade
 scene bg diner with fade 
 
 "The next day I go downstairs to help myself to some milk for my coffee."
+
+show M main:
+    xpos 0.1 zoom 0.45 yalign 1.0
+with dissolve 
+
 "I open the now always freshly stocked fridge and grab the milk bottle when I spot a few bottles filled with a red liquid."
 "Curious I open one up and smell it, getting greeted by the metallic scent of blood."
 "I put the bottle back and turn around to see a very panicked LeeRoy."
+
+show L shrug:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L shrug:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "I- I can explain! Please don’t freak out!"
+
+show M main:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    pos (0.1, 1.0) 
+
 m "I’m not freaking out."
+
+show L shrug:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L shrug:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "There is a good reason, just let me -"
+
+show L confused:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "You’re not?"
+
+show M smile:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M smile:
+    pos (0.1, 1.0) 
+
 m "I mean, no. Don’t see a reason to."
+
+show L confused:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "So, uhm -"
+
+hide M smile
+
 "The others, hearing the conversation, come into the kitchen."
+
+show L confused:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "She found the bottles in the fridge."
+
+show A main:
+    subpixel True zoom 0.5 xpos 0.22
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    pos (0.22, 1.0) 
+
 a "Weren’t exactly hidden."
+
+show O main:
+    xpos -0.05 yalign 1.0 zoom 0.47
+
 o "..."
+
+hide A main
+hide O main
+show M smile:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M smile:
+    pos (0.1, 1.0) 
+
 m "Not like anything about your identity was hidden."
+
+show L confused:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "Our - identity? What do you mean?"
+
+show M smile:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M smile:
+    pos (0.1, 1.0) 
+
 m "I mean the fact that you are all obviously vampires."
+
+show L confused:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "What?"
+
+hide M smile
+show A main:
+    subpixel True zoom 0.5 xpos 0.22
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    pos (0.22, 1.0) 
+
 a "Was about time."
+
+show O main:
+    xpos -0.05 yalign 1.0 zoom 0.47
+
 o "..."
+
+show L confused:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "How did you figure it out?"
+
+hide A main
+hide O main
+show M smile:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M smile:
+    pos (0.1, 1.0) 
+
 m "I’m sorry, were you TRYING to hide it?"
+
+show M smile:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M smile:
+    pos (0.1, 1.0) 
+
 m "LeeRoy, you have fangs. Oe literally looks like a picture book vampire and I have seen Adelaide drinking blood before."
+
+show M smile:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M smile:
+    pos (0.1, 1.0) 
+
 m "You also have some glasses in here that are blood stained - which I really hope you’re not serving customers - and none of you ever ate food even though you are literally managing a diner."
+
+hide M smile 
+show A main:
+    subpixel True zoom 0.5 xpos 0.22
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    pos (0.22, 1.0) 
+
 a "Told you you need to smile less."
+
+show L shrug:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L shrug:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "I can’t help it!"
+
+show L confused:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    ypos 1.0 xpos 0.5 zoom 0.45
+
 l "And, if you already knew, why didn’t you say anything? Aren’t you scared?"
+
+hide A main 
+show M smile:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M smile:
+    pos (0.1, 1.0) 
+
 m "Eh, I figured if you’d wanted me dead, it would’ve happened by now. Also I’m more useful alive than dead."
+
+hide M smile
+show A main:
+    subpixel True zoom 0.5 xpos 0.22
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A main:
+    pos (0.22, 1.0) 
+
 a "Can’t argue with that."
+
+show L shrug:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L shrug:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "In my defense, I don’t drink human blood!"
+
+show A evil:
+    subpixel True zoom 0.45 xpos 0.22
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A evil:
+    pos (0.22, 1.0) 
+
 a "Not yet. One day I’ll get you on the taste."
-l "NO! I told you a thousand times!"
+
+show L confused:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L confused:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
+l "NO! I told you a thousand times!"&
+
+show O main:
+    xpos -0.05 yalign 1.0 zoom 0.47
+
 o "Human blood does taste better."
+
+show L sigh:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L sigh:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "Not you too -"
+
+show O main:
+    xpos -0.05 yalign 1.0 zoom 0.47
+
 o "But I don’t think it’s worth losing your morals for."
+
+show A evil:
+    subpixel True zoom 0.45 xpos 0.22
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A evil:
+    pos (0.22, 1.0) 
+
 a "Luckily I never had those to begin with."
+
+hide A main
+hide O main 
+show M main:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    pos (0.1, 1.0) 
+
 m "Can I make myself my coffee now? I’m tired."
+
+show L sigh:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L sigh:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "Oh, uh, yes. Of course. I’m truly sorry for not telling you earlier."
+
+show M main:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    pos (0.1, 1.0)
+
 m "I’m fine. Really. Now leave me with my coffee."
+
+show L main:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L main:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "Yeah, of course, of course."
 "The vampires turn to leave but I stop LeeRoy before he fully can."
+
+show M main:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    pos (0.1, 1.0)
+
 m "Oh and by the way. If you don’t want me writing about the existence of real vampires in this town, my rent is free from now on."
+
+show L main:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L main:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "Yes, of course!"
+
+show M main:
+    subpixel True xpos 0.1
+    yalign 1.0 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M main:
+    pos (0.1, 1.0)
+
 m "And food as well."
+
+show L main:
+    subpixel True 
+    yalign 1.0 xpos 0.5 zoom 0.45
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show L main:
+    yalign 1.0 xpos 0.5 zoom 0.45
+
 l "O-okay. Yes. Food on the house."
+
+hide L main
+hide M main
+
+show A evil:
+    subpixel True zoom 0.45 xpos 0.22
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A evil:
+    pos (0.22, 1.0)
+
 a "My my, really using this situation for your own gain."
+
+show A evil:
+    subpixel True zoom 0.45 xpos 0.22
+    yalign 1.0 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show A evil:
+    pos (0.22, 1.0)
+
 a "There is a reason we get along."
 #Oe route scene one and two
 scene bg office
@@ -2106,7 +2513,7 @@ label mainroute_end:
             ypos 0 zoom 1.0 
             linear 0.30 ypos -150 zoom 1.25 
     show M smile:
-        subpixel True 
+        subpixel True yalign 1.0
         parallel:
             xpos 0.1 
             linear 0.10 xpos 0.12 
@@ -2118,7 +2525,7 @@ label mainroute_end:
     camera:
         pos (-198, -150) xzoom 1.0 zoom 1.25 
     show M smile:
-        xpos 0.13 zoom 0.48 
+        xpos 0.13 zoom 0.48 yalign 1.0
     
     "The weekend was great and managed to take my mind off of work, but as soon as I lay down in bed my thoughts started attacking me again."
 
