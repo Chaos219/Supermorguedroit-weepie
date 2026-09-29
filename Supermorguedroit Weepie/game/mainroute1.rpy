@@ -618,6 +618,8 @@ camera:
     subpixel True pos (1440, 351) zoom 1.88 
 with hpunch
 play sound "door_slamming.ogg"
+stop music
+play music "vampdiner_chaotic.ogg"
 "I push through the heavy doors at a brisk pace, my winter coat thrown hastily over my nightgown."
 
 camera:
@@ -737,6 +739,9 @@ hide A main
 
 "I march right up to the chrome counter."
 hide cg
+
+stop music
+play music "retro.ogg"
 with hpunch
 show M angry:
     xpos 0.16
