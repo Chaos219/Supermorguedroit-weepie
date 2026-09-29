@@ -293,7 +293,7 @@ show L shrug:
 l "In my defense, I don’t drink human blood!"
 
 show A evil:
-    subpixel True zoom 0.45 xpos 0.22
+    subpixel True zoom 0.37 xpos 0.22
     yalign 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
@@ -336,7 +336,7 @@ show O main:
 o "But I don’t think it’s worth losing your morals for."
 
 show A evil:
-    subpixel True zoom 0.45 xpos 0.22
+    subpixel True zoom 0.37 xpos 0.22
     yalign 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
@@ -441,7 +441,7 @@ hide L main
 hide M main
 
 show A evil:
-    subpixel True zoom 0.45 xpos 0.22
+    subpixel True zoom 0.37 xpos 0.22
     yalign 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
@@ -452,7 +452,7 @@ show A evil:
 a "My my, really using this situation for your own gain."
 
 show A evil:
-    subpixel True zoom 0.45 xpos 0.22
+    subpixel True zoom 0.37 xpos 0.22
     yalign 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
@@ -2500,93 +2500,94 @@ scene black with fade
 
 
 label mainroute_end:
+camera:
+    reset 
+scene bg bedroom with fade 
 
-    scene bg bedroom with fade 
-
-    camera:
-        subpixel True yzoom 1.0 
-        parallel:
-            xpos 0 xzoom 1.0 
-            linear 0.10 xpos -207 xzoom 1.15 
-            linear 0.20 xpos -198 xzoom 1.0 
-        parallel:
-            ypos 0 zoom 1.0 
-            linear 0.30 ypos -150 zoom 1.25 
-    show M smile:
-        subpixel True yalign 1.0
-        parallel:
-            xpos 0.1 
-            linear 0.10 xpos 0.12 
-            linear 0.20 xpos 0.13 
-        parallel:
-            zoom 0.45 
-            linear 0.29 zoom 0.48 
-    with Pause(0.40)
-    camera:
-        pos (-198, -150) xzoom 1.0 zoom 1.25 
-    show M smile:
-        xpos 0.13 zoom 0.48 yalign 1.0
+camera:
+    subpixel True yzoom 1.0 
+    parallel:
+        xpos 0 xzoom 1.0 
+        linear 0.10 xpos -207 xzoom 1.15 
+        linear 0.20 xpos -198 xzoom 1.0 
+    parallel:
+        ypos 0 zoom 1.0 
+        linear 0.30 ypos -150 zoom 1.25 
+show M smile:
+    subpixel True yalign 1.0
+    parallel:
+        xpos 0.1 
+        linear 0.10 xpos 0.12 
+        linear 0.20 xpos 0.13 
+    parallel:
+        zoom 0.45 
+        linear 0.29 zoom 0.48 
+with Pause(0.40)
+camera:
+    pos (-198, -150) xzoom 1.0 zoom 1.25 
+show M smile:
+    xpos 0.13 zoom 0.48 yalign 1.0
     
-    "The weekend was great and managed to take my mind off of work, but as soon as I lay down in bed my thoughts started attacking me again."
+"The weekend was great and managed to take my mind off of work, but as soon as I lay down in bed my thoughts started attacking me again."
 
-    show M annoyed:
-        xpos 0.15 zoom 0.38 yalign 1.0 
-        subpixel True 
-        linear 0.05 ypos 0.98 
-        linear 0.05 ypos 1.0 
-    with Pause(0.20)
-    show M annoyed:
-        ypos 1.0 
+show M annoyed:
+    xpos 0.2 zoom 0.38 yalign 1.0 
+    subpixel True 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 
 
-    m "Ugh, I wasted so much time today. How am I supposed to get the headline ready in time?"
+m "Ugh, I wasted so much time today. How am I supposed to get the headline ready in time?"
 
-    show M annoyed:
-        xpos 0.15 zoom 0.38 yalign 1.0 
-        subpixel True 
-        linear 0.05 ypos 0.98 
-        linear 0.05 ypos 1.0 
-    with Pause(0.20)
-    show M annoyed:
-        ypos 1.0 
+show M annoyed:
+    xpos 0.2 zoom 0.38 yalign 1.0 
+    subpixel True 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 
 
-    m "No, it’s fine, constantly stressing won’t help anyways."
+m "No, it’s fine, constantly stressing won’t help anyways."
 
-    show M annoyed:
-        xpos 0.15 zoom 0.38 yalign 1.0 
-        subpixel True 
-        linear 0.05 ypos 0.98 
-        linear 0.05 ypos 1.0 
-    with Pause(0.20)
-    show M annoyed:
-        ypos 1.0 
+show M annoyed:
+    xpos 0.2 zoom 0.38 yalign 1.0 
+    subpixel True 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 
 
-    m "Think. Come on. Let’s make a battle plan for tomorrow."
+m "Think. Come on. Let’s make a battle plan for tomorrow."
 
-    show M annoyed:
-        xpos 0.15 zoom 0.38 yalign 1.0 
-        subpixel True 
-        linear 0.05 ypos 0.98 
-        linear 0.05 ypos 1.0 
-    with Pause(0.20)
-    show M annoyed:
-        ypos 1.0 
+show M annoyed:
+    xpos 0.2 zoom 0.38 yalign 1.0 
+    subpixel True 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 
 
-    m "I mean, I literally live with vampires! I’m sure I can ask one of them for help…"
+m "I mean, I literally live with vampires! I’m sure I can ask one of them for help…"
 
-    show M annoyed:
-        xpos 0.15 zoom 0.38 yalign 1.0 
-        subpixel True 
-        linear 0.05 ypos 0.98 
-        linear 0.05 ypos 1.0 
-    with Pause(0.20)
-    show M annoyed:
-        ypos 1.0 
+show M annoyed:
+    xpos 0.2 zoom 0.38 yalign 1.0 
+    subpixel True 
+    linear 0.05 ypos 0.98 
+    linear 0.05 ypos 1.0 
+with Pause(0.20)
+show M annoyed:
+    ypos 1.0 
 
-    m "I'll see about it tomorrow."
+m "I'll see about it tomorrow."
 
-    scene black with fade
+scene black with fade
 
-    call screen route_select
+call screen route_select
 
 #ROUTE SELECTION HERE
 #SPRITES OF OE AND ADELAIDE AS IMAGEBUTTONS?
