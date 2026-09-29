@@ -110,7 +110,7 @@ m "Marcia! I'm fine!"
 
 show M main:
     subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.12
+    yalign 1.0 zoom 0.45 xpos 0.12
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -120,6 +120,8 @@ show M main:
 "I started laughing too."
 
 "Marcia touched my arm in a sisterly way."
+
+hide M main
 
 mar "I'm sorry you're having such a tough time…"
 
@@ -265,13 +267,13 @@ b "Say, could you do her household hints column? Something about keeping the chi
 
 # exit boss
 
-show M main:
+show M smile:
     subpixel True 
     xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M main:
+show M smile:
     yalign 1.0
 
 "I was already on my way out of his office, so I was able to pretend I didn't hear him."
@@ -283,7 +285,7 @@ show M main:
 
 "Maybe she was actually sick, or maybe…"
 
-hide M main
+hide M smile
 
 mar "H…hello?"
 
@@ -332,18 +334,18 @@ mar """I have the flu and it's just awful!
 
 On the day the Rip-Chords are here…"""
 
-show M main:
+show M smile:
     subpixel True 
     xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M main:
+show M smile:
     yalign 1.0
 
 m "It's okay, you just rest up. Do you have everything you need? Do you need me to bring some soup over or…"
 
-hide M main
+hide M smile
 
 "She answered much too quickly."
 
@@ -460,13 +462,13 @@ o "He isn't here."
 
 "They were smoking that weird old-fashioned pipe."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "I…uh…do you know where he is?"
@@ -503,13 +505,13 @@ o "What do you have there?"
 
 "Animalistically interested, yet slightly disgusted."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "Er, tickets…"
@@ -602,21 +604,21 @@ camera:
     subpixel True 
     zoom 1.0 
     linear 0.30 zoom 1.15 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.16 
-    linear 0.30 xpos 0.11 
+    xpos 0.12 zoom 0.45
+    linear 0.30 xpos 0.08
 show O main:
     subpixel True 
-    xpos 0.5 
+    xpos 0.5 zoom 0.5
     linear 0.30 xpos 0.35 
 with Pause(0.40)
 camera:
     zoom 1.15 
-show M annoyed:
-    xpos 0.11 
+show M smile:
+    xpos 0.08
 show O main:
-    xpos 0.35 
+    xpos 0.35 zoom 0.5
 
 # Not sure if we can do a zoom in on Oe here? Something where they're like "standing closer"?
 
@@ -636,13 +638,13 @@ show O main:
 
 # You can use italics instead of caps for emphasis here if you want; or rewrite for a different way of emphasizing
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.11 zoom 0.35 yalign 1.0
+    xpos 0.08 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "Do…do YOU want to go?"
@@ -660,13 +662,13 @@ show O solemn:
 
 o "I will accompany you."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.11 zoom 0.35 yalign 1.0
+    xpos 0.08 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "O…okay. That's…that's…"
@@ -686,26 +688,26 @@ o "That's 'cool'?"
 
 "I couldn't tell if they were being sarcastic or not. Their voice hadn't changed at all."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.11 zoom 0.35 yalign 1.0
+    xpos 0.08 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "Y..yeah…that's cool."
 
 "An awkward pause followed. Oe hadn't blinked once since I came into the room."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.11 zoom 0.35 yalign 1.0
+    xpos 0.08 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "I'll meet you down here….in half an hour?"
@@ -813,13 +815,13 @@ show M main:
 
 # MC nervous / awkward smile
 
-show M main:
+show M smile:
     subpixel True 
     xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M main:
+show M smile:
     yalign 1.0
 
 m "Oh! Oh, hehe…yea…you got me."
@@ -840,13 +842,13 @@ m "Oh! Oh, hehe…yea…you got me."
 
 "I felt awkward again, like I'd brought my mom to the concert."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "Er… It's gonna be loud…"
@@ -907,28 +909,31 @@ rip "Thank you…we're gonna start with a song we just wrote…it's called 'Romp
 "The crowd rushed for the dance floor, the music was so lively and exciting."
 
 camera:
-    subpixel True 
+    subpixel True ypos 0 
     parallel:
-        pos (0, 0) 
-        linear 0.10 pos (206, 6) 
-        linear 0.20 pos (350, 81) 
-        linear 0.30 pos (239,81)
+        xpos 0 
+        linear 0.10 xpos -198 
+        linear 0.10 xpos -162 
+        linear 0.10 xpos -243 
     parallel:
-        xzoom 1.0 yzoom 1.0 
-        linear 0.10 xzoom 1.12 yzoom 1.0 
-        linear 0.2 xzoom 1.0 yzoom 1.0
+        xzoom 1.0 
+        linear 0.10 xzoom 1.12 
+        linear 0.10 xzoom 1.0 
+    parallel:
+        yzoom 1.0 
+        linear 0.10 yzoom 1.0 
     parallel:
         zoom 1.0 
         linear 0.30 zoom 1.25 
 show M main:
-    subpixel True zoom 0.45 
-    xpos 0.12 yalign 1.0
-    linear 0.30 xpos 0.12
+    subpixel True zoom 0.45 yalign 1.0
+    pos (0.12, 1.0) 
+    linear 0.30 pos (0.16, 0.95) 
 with Pause(0.40)
 camera:
-    pos (239, 81) xzoom 1.0 yzoom 1.0 zoom 1.25 
+    pos (-243, 0) xzoom 1.0 yzoom 1.0 zoom 1.25 
 show M main:
-    xpos 0.12
+    pos (0.16, 0.95) 
 
 "I was carried along, even though Oe was not."
 
@@ -938,8 +943,8 @@ show M main:
 
 # MC shocked/surprised
 
-show M annoyed:
-    xpos 0.16 zoom 0.35 yalign 1.0
+show M smile:
+    xpos 0.16 zoom 0.45 
 with dissolve 
 
 "To my horror they were now out on the dance floor with everyone else."
@@ -948,7 +953,8 @@ with dissolve
 
 # Thinking here
 
-show M melancholy 
+show M melancholy:
+    xpos 0.2 zoom 0.35
 with dissolve 
 
 "Wait…are they doing the Charleston?"
@@ -1015,7 +1021,7 @@ with dissolve
 # MC enthused/happy here
 
 show M main:
-    xpos 0.12 zoom 0.45 yalign 1.0
+    xpos 0.16 zoom 0.45 yalign 1.0
 
 "Every new dance the crowd did, they picked it up almost instantly: the frug, the shimmy, the watusi, the twist…"
 
@@ -1058,7 +1064,8 @@ with dissolve
 
 "A few scattered knots of concertgoers were smoking. Oe produced their pipe and lit it."
 
-show O solemn
+show O solemn:
+    xpos 0.45 zoom 0.53 yalign 1.0
 with dissolve 
 
 # Oe pipe
@@ -1679,7 +1686,7 @@ hide L shrug
 scene black 
 with fade
 
-scene bg office 
+scene bg library
 with fade 
 
 # bg exterior library at night. kinda "any building at night" works here
@@ -1730,18 +1737,18 @@ m "Yes, well, I'm looking for a friend. They're about this tall, sort of…"
 
 # MC awkward/nervous
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "...grey…"
 
-hide M annoyed
+hide M smile
 
 lib "OH!  Oh.  You're with..with them…"
 
@@ -1901,7 +1908,7 @@ show O main:
 o "I knew the artist… I…"
 
 show O solemn:
-    subpixel True 
+    subpixel True xpos 0.5 zoom 0.53 yalign 1.0
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     linear 0.20 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.30)
@@ -2704,7 +2711,7 @@ with easeinleft
 
 show M main:
     subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
+    xpos 0.43 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2715,7 +2722,7 @@ m "You know…even if you hadn't become a vampire…you would have outlived your
 
 show M main:
     subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
+    xpos 0.43 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2750,7 +2757,7 @@ o "Congratulations on the front page story. I look forward to reading it tomorro
 
 show M main:
     subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
+    xpos 0.43 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
