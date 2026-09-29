@@ -1381,7 +1381,7 @@ camera:
 show M main:
     pos (0.12, 0.18) 
 
-"Among the scribbled drafts and interview notes, I write the word “morgue” and underline it twice, hard and deep into the page."
+"Among the scribbled drafts and interview notes, I write the word 'morgue' and underline it twice, hard and deep into the page."
 "I’ve got an idea."
 # Scene 6: Dorothy's Apartment - Wednesday Evening
 scene black with fade 
