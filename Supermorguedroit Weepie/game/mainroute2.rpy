@@ -401,7 +401,7 @@ m "Absolute garbage."
 
 show M annoyed:
     subpixel True 
-    ypos 1.0 
+    ypos 1.0 zoom 0.35
     linear 0.15 ypos 0.98 
     linear 0.15 ypos 1.0 
     linear 0.15 ypos 0.98 
@@ -570,21 +570,21 @@ show M annoyed:
 show L shrug:
     subpixel True 
     xpos 1.0 zoom 0.5 ypos 60
-    linear 0.35 xpos 0.45
+    linear 0.35 xpos 0.35
 with Pause(0.35)
 show L shrug:
-    xpos 0.45 ypos 60 zoom 0.5
+    xpos 0.35 ypos 60 zoom 0.5
 
 "I barely have time to reach for my pen before LeeRoy materialises at my elbow, clutching a tall, frosted glass in both hands like he’s guarding a sacred relic."
 
 show L shrug:
-    subpixel True xpos 0.45 zoom 0.5 
+    subpixel True xpos 0.35 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L shrug:
-    pos (0.45, 60) 
+    pos (0.35, 60) 
 
 l "On the house."
 
@@ -600,13 +600,13 @@ show M annoyed:
 m "I didn’t order yet."
 
 show L shrug:
-    subpixel True xpos 0.45 zoom 0.5 
+    subpixel True xpos 0.35 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L shrug:
-    pos (0.45, 60) 
+    pos (0.35, 60) 
 
 l "It’s an apology. For the racket."
 "I eye the milkshake. If I were a real journalist, I’d probably turn it down."
@@ -628,13 +628,13 @@ with dissolve
 "He sets it down anyway."
 
 show L sigh:
-    subpixel True xpos 0.45 zoom 0.5 
+    subpixel True xpos 0.35 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L sigh:
-    pos (0.45, 60) 
+    pos (0.35, 60) 
 
 l "I know. I'm just apologising with it."
 "I drag the straw closer and take a sip."
@@ -658,13 +658,13 @@ show M main:
 m "Seems like you took my tips seriously."
 
 show L sigh:
-    subpixel True xpos 0.45 zoom 0.5 
+    subpixel True xpos 0.35 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L sigh:
-    pos (0.45, 60) 
+    pos (0.35, 60) 
 
 l "Sure did. I put the glasses in the freezer."
 
@@ -680,13 +680,13 @@ show M main:
 m "And used less syrup."
 
 show L sigh:
-    subpixel True xpos 0.45 zoom 0.5 
+    subpixel True xpos 0.35 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L sigh:
-    pos (0.45, 60) 
+    pos (0.35, 60) 
 
 l "Four to one ratio."
 
@@ -702,10 +702,12 @@ show M main:
 m "…This is a genuinely good milkshake, LeeRoy. Thank you."
 
 show L main:
-    xpos 0.28
-    ypos 0.05
-    zoom 0.5
-with dissolve 
+    subpixel True 
+    xpos 0.35 
+    linear 0.20 xpos 0.28 
+with Pause(0.30)
+show L main:
+    xpos 0.28 
 
 "He slides into the booth across from me, uninvited, grinning so wide I’m surprised his face doesn’t crack."
 "I look past him at the back wall."
@@ -724,7 +726,7 @@ show M main:
 m "I meant to ask, who did the-"
 
 show L confused:
-    xpos 0.26 ypos 0.05
+    xpos 0.28 ypos 0.05
     zoom 0.5
 with dissolve
 
@@ -734,16 +736,13 @@ with dissolve
 "And then LeeRoy’s face falls, all at once, the way a child’s does when a balloon pops."
 
 show L sigh:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
-
-
-
 with Pause(0.20)
 show L sigh:
-    pos (0.26, 0.05) 
+    pos (0.28, 0.05) 
 
 l "We had no customers today."
 
@@ -759,13 +758,13 @@ show M main:
 m "…Mm."
 
 show L confused:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.26, 0.05)
+    pos (0.28, 0.05)
 
 l "Eleven days our doors have been open, and I’ve had a fella asking to use the payphone, and an old lady who thought we were the First Methodist Church."
 "I look at him over the rim of my glass. Then at the eight empty booths lined up behind him."
@@ -784,13 +783,13 @@ m "Well. It’s the name."
 "I do not try hiding my facial expression."
 
 show L confused:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.26, 0.05)
+    pos (0.28, 0.05)
 
 l "What about it?"
 
@@ -806,13 +805,13 @@ show M annoyed:
 m "LeeRoy."
 
 show L confused:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.26, 0.05)
+    pos (0.28, 0.05)
 
 l "It’s a great name!"
 
@@ -828,13 +827,13 @@ show M annoyed:
 m "It is absolutely not a great name."
 
 show L main:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L main:
-    pos (0.26, 0.05)
+    pos (0.28, 0.05)
 
 l "Supermurgitroit! Like-super, Super cool."
 l "And Weepie, cause the food is so good it will make you cry!"
@@ -842,13 +841,13 @@ l "And Weepie, cause the food is so good it will make you cry!"
 "It does make me want to cry, but certainly not because it's good."
 
 show L main:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L main:
-    pos (0.26, 0.05)
+    pos (0.28, 0.05)
 
 l "The Supermurgitroid Weepie. The coolest dinner around."
 "I put my glass down on the table."
@@ -865,13 +864,13 @@ show M annoyed:
 m "Say it slowly."
 
 show L confused:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.26, 0.05)
+    pos (0.28, 0.05)
 
 l "Super. Murgit. Droit."
 
@@ -887,26 +886,26 @@ show M annoyed:
 m "Could you read it off the sign outside?"
 
 show L confused:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.26, 0.05)
+    pos (0.28, 0.05)
 
 l "It’s reversed, let me- Super. Morgue-"
 "I watch the realisation land."
 
 with hpunch
 show L confused:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.26, 0.05)
+    pos (0.28, 0.05)
 
 l "…Morgue."
 
@@ -922,13 +921,13 @@ show M annoyed:
 m "Morgue."
 
 show L confused:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.26, 0.05)
+    pos (0.28, 0.05)
 
 l "Super. Morgue."
 
@@ -944,25 +943,25 @@ show M annoyed:
 m "Super Morgue. There is a spelling mistake."
 
 show L confused:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 0.05
     linear 0.08 ypos 0.02
     linear 0.06 ypos 0.05
 with Pause(0.20)
 show L confused:
-    pos (0.26, 0.05)
+    pos (0.28, 0.05)
 
 l "But-"
 "LeeRoy stares past me at his own sign, glowing red through the window."
 
 show L sigh:
-    subpixel True xpos 0.26 zoom 0.5 
+    subpixel True xpos 0.28 zoom 0.5 
     ypos 60
     linear 0.08 ypos 55
     linear 0.06 ypos 60
 with Pause(0.20)
 show L sigh:
-    pos (0.26, 60) 
+    pos (0.28, 60) 
 
 l "…so that’s why the Methodist lady gave me an odd look."
 "The brass bell over the front door chimes."

@@ -17,6 +17,7 @@ with dissolve
 "Curious I open one up and smell it, getting greeted by the metallic scent of blood."
 "I put the bottle back and turn around to see a very panicked LeeRoy."
 
+with hpunch
 show L shrug:
     subpixel True 
     yalign 1.0 xpos 0.5 zoom 0.45

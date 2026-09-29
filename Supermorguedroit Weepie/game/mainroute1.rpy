@@ -126,7 +126,7 @@ play sound "phone.ogg"
 play music "retro.ogg"
 scene bg bedroom 
 show M annoyed:
-    xpos 0.0
+    xpos 0.16
     yalign 1.0
     zoom 0.35
 "I bolt upright."
@@ -275,7 +275,7 @@ camera:
     pos (0, 0) yzoom 1.0 zoom 1.0 
     linear 0.55 pos (163, 81) yzoom 1.0 zoom 1.25 
 show M annoyed:
-    subpixel True pos (0.12, 1.2) zoom 0.5
+    subpixel True pos (0.12, 0) zoom 0.5
 with Pause(0.65)
 camera:
     pos (163, 81) yzoom 1.0 zoom 1.25 
@@ -283,7 +283,8 @@ camera:
 
 m "M-Mr. Hollis."
 b "I'm giving Chet the Glenn piece."
-show M melancholy
+show M melancholy:
+    subpixel True pos (0.12, 0) zoom 0.5
 m "T-The… I pitched that. Multiple times. A-And I already have the Mercury press packet, a source at Lewis-"
 b "Dorothy."
 camera:
@@ -301,7 +302,7 @@ camera:
     linear 0.08 xzoom 1.0 
 show M annoyed:
     subpixel True 
-    xzoom 1.0 yzoom 1.0 
+    xzoom 1.0 yzoom 1.0 yalign 0.0
     linear 0.08 xzoom 0.92 yzoom 1.12 
     linear 0.10 xzoom 1.0 yzoom 1.0 
 with Pause(0.5)
@@ -311,34 +312,52 @@ show M annoyed:
     xzoom 1.0 yzoom 1.0 
 "I flinch at the pet name."
 show M disgusted:
-    zoom 0.45
-with dissolve 
+    subpixel True 
+    yalign 0.0 zoom 0.6 xpos 0.16
+    linear 0.05 ypos -0.05
+    linear 0.05 ypos 0.0
+with Pause(0.20)
+show M disgusted:
+    yalign 0.0 zoom 0.6 xpos 0.16
 m "With all due respect, Chet spells orbit with two t's."
+hide M disgusted
 b "Your hatred toward that man is getting old."
+show M disgusted:
+    subpixel True 
+    yalign 0.0 zoom 0.6 xpos 0.16
+    linear 0.05 ypos -0.05
+    linear 0.05 ypos 0.0
+with Pause(0.20)
+show M disgusted:
+    yalign 0.0 zoom 0.6 xpos 0.16
 m "I refuse to write any more columns for the women's page."
+hide M disgusted
 "The man on the other line lets out an exhausted sigh."
 b "You want to play a journalist? Be my guest. I'm giving you a month."
 b "Bring me something worthy of being put on the front page. A story that can sell."
 b "And then we can talk about moving you off the women's page."
-show M melancholy with dissolve
+show M melancholy:
+    subpixel True pos (0.12, 0) zoom 0.5 
+with dissolve
 m "And if I fail?"
+hide M melancholy
 b "You'll write about every wedding, yard sale, and Garden Club, and you'll stop being a nuisance about it."
 show M annoyed:
-    subpixel True 
+    subpixel True yalign 0.0 zoom 0.5
     xpos 0.16 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     linear 0.24 xpos 0.33 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 with Pause(0.34)
 "Click. The line goes dead."
 show M annoyed:
     subpixel True 
-    pos (0.33, 1.5) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.63 
-    linear 0.66 pos (0.16, 1.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.38 
+    pos (0.33, 0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.63 
+    linear 0.66 pos (0.16, 0.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.38 
 with Pause(0.76)
 show M annoyed:
-    pos (0.16, 1.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.38 
+    pos (0.16, 0.0) matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) zoom 0.38 
 "I stand there, my hand clutching the receiver. The dial tone hums against my ear."
 show M angry:
-    subpixel True xpos 0.16 ypos 1.0
+    subpixel True xpos 0.16 yalign 1.0
     parallel:
         xzoom 1.0 yzoom 1.0 
         linear 0.10 xzoom 0.8 yzoom 1.2 
@@ -387,7 +406,7 @@ menu:
 
         "I put the phone back down."
         show M annoyed:
-            xpos 0.12
+            xpos 0.18
             yalign 1.0
             zoom 0.35
         with dissolve
@@ -423,7 +442,8 @@ menu:
 
 
         "Why is this city so obsessed with corn?"
-
+        
+with hpunch
 show M melancholy:
     subpixel True zoom 0.46
     pos (0.28, 1.2)
