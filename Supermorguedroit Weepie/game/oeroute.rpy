@@ -435,13 +435,13 @@ camera:
 "LeeRoy was not his usual ebullient self, though. He seemed distracted."
 
 show L shrug:
-    subpixel True xpos 0.55 zoom 0.45
+    subpixel True xpos 0.4 zoom 0.45
     yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L shrug:
-    pos (0.55, 1.0) 
+    pos (0.4, 1.0) 
 
 l "Hey, have you seen the old one?"
 
@@ -457,13 +457,13 @@ show M main:
 m "Oe? No, not in a day or two. Why?"
 
 show L shrug:
-    subpixel True xpos 0.55 zoom 0.45
+    subpixel True xpos 0.4 zoom 0.45
     yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L shrug:
-    pos (0.55, 1.0) 
+    pos (0.4, 1.0) 
 
 l "Well…they didn't come home this morning. It's probably nothing, but they usually are here sleeping in the meat locker when the sun goes down."
 
@@ -490,13 +490,13 @@ show M main:
 m "When was the last time you saw them?"
 
 show L shrug:
-    subpixel True xpos 0.55 zoom 0.45
+    subpixel True xpos 0.4 zoom 0.45
     yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L shrug:
-    pos (0.55, 1.0)  
+    pos (0.4, 1.0)  
 
 l "Yesterday evening. they went out right after sundown."
 
@@ -518,13 +518,13 @@ show M main:
 m "I think they were headed to the library. I'll go check it out."
 
 show L shrug:
-    subpixel True xpos 0.55 zoom 0.45
+    subpixel True xpos 0.4 zoom 0.45
     yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L shrug:
-    pos (0.55, 1.0) 
+    pos (0.4, 1.0) 
 l "Thanks. Books make me fall asleep just thinking about them. Honk shoo!"
 
 "I rolled my eyes at him and headed out."
@@ -534,6 +534,9 @@ hide L shrug
 scene black 
 with fade
 
+camera:
+    reset 
+    
 scene bg library
 with fade 
 
