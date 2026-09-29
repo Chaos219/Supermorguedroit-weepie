@@ -1680,14 +1680,32 @@ m "I don’t want to look at his face when I already talk to him on the phone mu
 "I close the door slowly behind her, already finding the space empty."
 
 
-
 label mainroute_end:
 
-"The weekend was great and managed to take my mind off of work, but as soon as I lay down in bed my thoughts started attacking me again."
-m "Ugh, I wasted so much time today. How am I supposed to get the headline ready in time?"
-m "No, it’s fine, constantly stressing won’t help anyways."
-m "Think. Come on. Let’s make a battle plan for tomorrow."
-m "I mean, I literally live with vampires! I’m sure I can ask one of them for help…"
-m "I'll see about it tomorrow."
+    "The weekend was great and managed to take my mind off of work, but as soon as I lay down in bed my thoughts started attacking me again."
+    m "Ugh, I wasted so much time today. How am I supposed to get the headline ready in time?"
+    m "No, it’s fine, constantly stressing won’t help anyways."
+    m "Think. Come on. Let’s make a battle plan for tomorrow."
+    m "I mean, I literally live with vampires! I’m sure I can ask one of them for help…"
+    m "I'll see about it tomorrow."
+
+    call screen route_select
+
 #ROUTE SELECTION HERE
 #SPRITES OF OE AND ADELAIDE AS IMAGEBUTTONS?
+
+screen route_select:
+
+    imagebutton:
+        idle Transform("images/adelaide_main.png", zoom=0.5, matrixcolor=BrightnessMatrix(-0.1))
+        hover Transform("images/adelaide_main.png", zoom=0.5, matrixcolor=BrightnessMatrix(+0.1))
+        align (0.1, 0.5)
+        action Confirm("Ask Adelaide for help?",Jump("adelaide"))
+
+    imagebutton:
+        idle Transform("images/oe_main.png", zoom=0.5, matrixcolor=BrightnessMatrix(-0.1))
+        hover Transform("images/oe_main.png", zoom=0.5, matrixcolor=BrightnessMatrix(+0.1))
+        align (0.9, 0.5)
+        action Confirm("Ask Oe for help?", Jump("oe"))
+
+
