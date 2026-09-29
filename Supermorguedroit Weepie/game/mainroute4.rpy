@@ -312,7 +312,7 @@ with Pause(0.20)
 show L confused:
     yalign 1.0 xpos 0.5 zoom 0.45
 
-l "NO! I told you a thousand times!"&
+l "NO! I told you a thousand times!"
 
 show O main:
     xpos -0.05 yalign 1.0 zoom 0.47
