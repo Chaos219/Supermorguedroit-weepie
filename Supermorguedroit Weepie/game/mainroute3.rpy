@@ -402,6 +402,8 @@ camera:
 show M annoyed:
     xpos 0.4
 
+stop music
+play music "vampdiner_chaotic.ogg"
 
 "I cross the checkered linoleum like a summer thunderstorm."
 "Now that I know Adelaide holds the deed to the building and by extension, the lease to my room upstairs LeeRoy holds absolutely zero authority over me."
@@ -532,6 +534,9 @@ show L shrug:
 with Pause(0.20)
 show L shrug:
     ypos 1.0 xpos 0.08 zoom 0.45
+
+stop music
+play music "retro.ogg"
 
 l "I am so sorry. I am so, so sorry, I made you put those down. Put that crate right down on the floor. ŌE!"
 
