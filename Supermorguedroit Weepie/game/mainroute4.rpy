@@ -2349,15 +2349,20 @@ show A main:
     yalign 1.0
 
 a "Well, I’ll have to keep her in mind if I ever need some help repairing our dreary aprons."
+
+show M disgusted:
+    yalign 1.0 zoom 0.35 xpos 0.5
+with dissolve 
+
 "I wrinkle my nose."
 
-show M annoyed:
+show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.16
+    yalign 1.0 zoom 0.43 xpos 0.16
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M disgusted:
     ypos 1.0
 
 m "I’m not putting those greasy monstrosities near my own workspace. I’m already involved enough as it is."
@@ -2388,14 +2393,14 @@ a "Who is that delightful fellow on the pinboard?"
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.45 xpos 0.16
+    yalign 1.0 zoom 0.43 xpos 0.16
 with dissolve 
 
 "I turn. The only visible face is Chet’s, stabbed through and through."
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.45 xpos 0.16
+    yalign 1.0 zoom 0.43 xpos 0.16
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2418,7 +2423,7 @@ a "Oh? Not your boss? I thought your animosity would be reserved for the source 
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.45 xpos 0.16
+    yalign 1.0 zoom 0.43 xpos 0.16
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2440,7 +2445,7 @@ a "Mmh, perhaps I should look into doing something like this, then."
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.45 xpos 0.16
+    yalign 1.0 zoom 0.43 xpos 0.16
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2460,11 +2465,16 @@ show A evil:
     yalign 1.0 
 
 a "Well, if I were you, I’d at least perfect the technique before patenting it. You should really have your boss just as visible on there, for all the times you’ve complained to me about him."
+
+show M annoyed:
+    yalign 1.0 zoom 0.35 xpos 0.16
+with dissolve 
+
 "I shrug."
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.45 xpos 0.16
+    yalign 1.0 zoom 0.43 xpos 0.16
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
