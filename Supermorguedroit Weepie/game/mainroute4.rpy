@@ -4,6 +4,9 @@
 label mainroute4:
 
 #Diner background
+scene black with fade 
+scene bg diner with fade 
+
 "The next day I go downstairs to help myself to some milk for my coffee."
 "I open the now always freshly stocked fridge and grab the milk bottle when I spot a few bottles filled with a red liquid."
 "Curious I open one up and smell it, getting greeted by the metallic scent of blood."
@@ -159,7 +162,7 @@ m "Marcia! I'm fine!"
 
 show M main:
     subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.12
+    yalign 1.0 zoom 0.45 xpos 0.12
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -478,7 +481,6 @@ menu:
 label oe_date:
 scene bg diner
 with fade
-
 # Scene OE.03 - Marcia meets Oe and asks them instead
 
 camera:
@@ -520,13 +522,13 @@ o "He isn't here."
 
 "They were smoking that weird old-fashioned pipe."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "I…uh…do you know where he is?"
@@ -563,13 +565,13 @@ o "What do you have there?"
 
 "Animalistically interested, yet slightly disgusted."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "Er, tickets…"
@@ -662,21 +664,21 @@ camera:
     subpixel True 
     zoom 1.0 
     linear 0.30 zoom 1.15 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.16 
-    linear 0.30 xpos 0.11 
+    xpos 0.12 zoom 0.45
+    linear 0.30 xpos 0.08
 show O main:
     subpixel True 
-    xpos 0.5 
+    xpos 0.5 zoom 0.5
     linear 0.30 xpos 0.35 
 with Pause(0.40)
 camera:
     zoom 1.15 
-show M annoyed:
-    xpos 0.11 
+show M smile:
+    xpos 0.08
 show O main:
-    xpos 0.35 
+    xpos 0.35 zoom 0.5
 
 # Not sure if we can do a zoom in on Oe here? Something where they're like "standing closer"?
 
@@ -696,13 +698,13 @@ show O main:
 
 # You can use italics instead of caps for emphasis here if you want; or rewrite for a different way of emphasizing
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.11 zoom 0.35 yalign 1.0
+    xpos 0.08 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "Do…do YOU want to go?"
@@ -720,13 +722,13 @@ show O solemn:
 
 o "I will accompany you."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.11 zoom 0.35 yalign 1.0
+    xpos 0.08 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "O…okay. That's…that's…"
@@ -746,26 +748,26 @@ o "That's 'cool'?"
 
 "I couldn't tell if they were being sarcastic or not. Their voice hadn't changed at all."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.11 zoom 0.35 yalign 1.0
+    xpos 0.08 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "Y..yeah…that's cool."
 
 "An awkward pause followed. Oe hadn't blinked once since I came into the room."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.11 zoom 0.35 yalign 1.0
+    xpos 0.08 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
 
 m "I'll meet you down here….in half an hour?"
@@ -803,7 +805,7 @@ with fade
 
 camera:
     subpixel True zoom 1.0 
-    matrixcolor BrightnessMatrix(-0.1) * SaturationMatrix(0.75) * TintMatrix("#ff000069")
+    matrixcolor BrightnessMatrix(-0.1) * SaturationMatrix(0.75)
 # background - outside of a theater or other building
 
 "They didn't change their clothes; I don't think I'd ever seen them in anything else."
@@ -873,13 +875,13 @@ show M main:
 
 # MC nervous / awkward smile
 
-show M main:
+show M smile:
     subpixel True 
     xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M main:
+show M smile:
     yalign 1.0
 
 m "Oh! Oh, hehe…yea…you got me."
@@ -887,6 +889,10 @@ m "Oh! Oh, hehe…yea…you got me."
 "Oe didn't smile an inch. But when we walked in we were walking closer together."
 
 # bg interior of the theater
+scene black with fade 
+camera:
+    reset
+scene bg concert with fade 
 
 "Seats were scattered around the outside of the room."
 
@@ -900,25 +906,29 @@ m "Oh! Oh, hehe…yea…you got me."
 
 "I felt awkward again, like I'd brought my mom to the concert."
 
-show M annoyed:
+show M smile:
     subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
+    xpos 0.12 zoom 0.45 yalign 1.0
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show M annoyed:
+show M smile:
     yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 m "Er… It's gonna be loud…"
 
 show O solemn:
     subpixel True 
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     yalign 1.0 zoom 0.55 xpos 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 o "I believe rock and roll music is meant to be performed loudly?"
 
@@ -941,12 +951,14 @@ guy "Ladies and gentlemen, straight from Pascagoula, Florida, live tonight here 
 
 show O main:
     subpixel True 
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     yalign 1.0 zoom 0.5 xpos 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Oe watched me carefully as if I was a bug. They were studying through a magnifying glass."
 
@@ -967,28 +979,33 @@ rip "Thank you…we're gonna start with a song we just wrote…it's called 'Romp
 "The crowd rushed for the dance floor, the music was so lively and exciting."
 
 camera:
-    subpixel True 
+    subpixel True ypos 0 
     parallel:
-        pos (0, 0) 
-        linear 0.10 pos (206, 6) 
-        linear 0.20 pos (350, 81) 
-        linear 0.30 pos (239,81)
+        xpos 0 
+        linear 0.10 xpos -198 
+        linear 0.10 xpos -162 
+        linear 0.10 xpos -243 
     parallel:
-        xzoom 1.0 yzoom 1.0 
-        linear 0.10 xzoom 1.12 yzoom 1.0 
-        linear 0.2 xzoom 1.0 yzoom 1.0
+        xzoom 1.0 
+        linear 0.10 xzoom 1.12 
+        linear 0.10 xzoom 1.0 
+    parallel:
+        yzoom 1.0 
+        linear 0.10 yzoom 1.0 
     parallel:
         zoom 1.0 
         linear 0.30 zoom 1.25 
 show M main:
-    subpixel True zoom 0.45 
-    xpos 0.12 yalign 1.0
-    linear 0.30 xpos 0.12
+    subpixel True zoom 0.45 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
+    pos (0.12, 1.0) 
+    linear 0.30 pos (0.16, 0.95)
 with Pause(0.40)
 camera:
-    pos (239, 81) xzoom 1.0 yzoom 1.0 zoom 1.25 
+    pos (-243, 0) xzoom 1.0 yzoom 1.0 zoom 1.25 
 show M main:
-    xpos 0.12
+    pos (0.16, 0.95) 
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "I was carried along, even though Oe was not."
 
@@ -998,8 +1015,9 @@ show M main:
 
 # MC shocked/surprised
 
-show M annoyed:
-    xpos 0.16 zoom 0.35 yalign 1.0
+show M smile:
+    xpos 0.16 zoom 0.45
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0)  
 with dissolve 
 
 "To my horror they were now out on the dance floor with everyone else."
@@ -1008,7 +1026,9 @@ with dissolve
 
 # Thinking here
 
-show M melancholy 
+show M melancholy:
+    xpos 0.2 zoom 0.35
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 with dissolve 
 
 "Wait…are they doing the Charleston?"
@@ -1019,6 +1039,7 @@ hide M melancholy
 
 show O smile:
     subpixel True xpos 0.45 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 with dissolve 
 
 "They were, and I could see the crowd starting to giggle behind their hands at them."
@@ -1031,6 +1052,7 @@ with dissolve
 
 show O smile:
     subpixel True xpos 0.45 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     parallel:
         ypos 1.0 zoom 0.5 
         linear 0.30 xpos 0.35 ypos 1.28 zoom 0.7 
@@ -1041,6 +1063,7 @@ show O smile:
 with Pause(0.40)
 show O smile:
     pos (0.35, 1.28) xzoom 1.0 yzoom 1.0 zoom 0.7 
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 # Maybe another Oe zoom in here?
 
@@ -1062,6 +1085,7 @@ show O smile:
 
 show O excited:
     xpos 0.35 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 with dissolve 
 
 "When the Rip-Chords blasted into their big hit song and the crowd whooped and surged, Oe too whooped and surged."
@@ -1075,7 +1099,8 @@ with dissolve
 # MC enthused/happy here
 
 show M main:
-    xpos 0.12 zoom 0.45 yalign 1.0
+    xpos 0.16 zoom 0.45 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Every new dance the crowd did, they picked it up almost instantly: the frug, the shimmy, the watusi, the twist…"
 
@@ -1098,11 +1123,13 @@ rip "You're a lovely crowd, we're going to take a little intermission and be bac
 
 show M annoyed:
     xpos 0.2 zoom 0.35 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "I was exhausted, sweaty, wobbling on my feet."
 
 show O main:
     xpos 0.45 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 with dissolve 
 
 # MC tired/exhausted
@@ -1118,7 +1145,9 @@ with dissolve
 
 "A few scattered knots of concertgoers were smoking. Oe produced their pipe and lit it."
 
-show O solemn
+show O solemn:
+    xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 with dissolve 
 
 # Oe pipe
@@ -1131,34 +1160,40 @@ with dissolve
 
 show M main:
     subpixel True 
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     yalign 1.0 zoom 0.45 xpos 0.12
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show M main:
     yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 m "Oe, you're an amazing dancer! You picked it up perfectly!"
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0) 
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 o "Gratifying of you to say so. The pleasure is mine, to find so many new steps."
 
 show M main:
     subpixel True 
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     yalign 1.0 zoom 0.45 xpos 0.12
     linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
+    linear 0.05 ypos 1.0
 with Pause(0.20)
 show M main:
     yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 m "You don't…you don't seem like the kind of person who keeps up with new things…"
 
@@ -1170,357 +1205,422 @@ m "You don't…you don't seem like the kind of person who keeps up with new thin
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 show M melancholy:
     xpos 0.16 zoom 0.35 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 with dissolve 
 
 o "Most things - new or old - pass. You buy a blouse, it lasts a decade, perhaps two at most."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "A pipe can last a hundred years if you care for it properly."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "A well made sword, maintained by an expert, can keep its edge perhaps two hundred. "
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "But eventually almost everything that is material fades."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "If you look at things from the perspective of forever, of infinity, there's very little that can ever last."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "None of LeeRoy's cars will be running in twenty years."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "The diner won't be around in ten years; the building itself will be knocked down in thirty or forty."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "There'll be another building there before a hundred years are out."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Everyone who ever set foot in that building will be dead - except for me, and my friends."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Why love anything? It will die. The traces of it will rot and soon even those traces will disappear forever."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Leaving you as the only one to mourn."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Eventually all you have inside your heart is grief."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "No other emotion can get inside without knocking over grief's teacups, elbowing grief's belongings off the mantelpiece, bumping against grief's portraits on the wall…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "I can't grieve or I would go mad. Quite mad."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "So…what can we love, then?"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Something as immortal as we are."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Art.  Music. Theater."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "The emotion that flows out of it is real."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "You take it in… it stays with you…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Even something amateurish or awkward…it stays with you as long as you choose to keep yourself open to it."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "You let it go when you wish, and not before."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "And never in grief, but in satisfaction and pleasure."
 
 show O smile:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O smile:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "That's why I love hearing new music…and dancing in new ways…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "…why I love going to the library when they receive new books…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "…why I love to see a gallery opening with a painter or sculptor I've never seen before…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "…even your little news stories give me pleasure."
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "They don't need to be a work of titanic genius…they just need to be real.  Real today, right now."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Tomorrow will be the same as today in so many ways. And if you've seen as many tomorrows as I have, you don't really care about any particular one."
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O solemn:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "But there is always something new in the creation of art…"
 
 show O main:
     subpixel True xpos 0.47 zoom 0.5 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O main:
     pos (0.47, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "This is the first rock and roll concert I've been to, you're right."
 
 show O smile:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O smile:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "But I certainly hope it won't be my last."
 
 show O smile:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O smile:
     pos (0.45, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "There is so much to experience here."
 
@@ -1528,6 +1628,7 @@ show O smile:
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 with dissolve 
 
 "Oe trailed off, the smoke from their pipe finally ending. They tapped the bowl of the pipe on the brick wall, letting the ash fall into the alleyway."
@@ -1538,12 +1639,14 @@ with dissolve
 
 show O excited:
     subpixel True xpos 0.4 zoom 0.55 yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     ypos 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show O excited:
     pos (0.4, 1.0)
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 "Oe's face lit up again."
 
@@ -1551,12 +1654,14 @@ o "Time for more? You aren't too tired…"
 
 show M main:
     subpixel True 
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
     yalign 1.0 zoom 0.45 xpos 0.12
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show M main:
     yalign 1.0
+    subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
 # MC happy/determined
 
