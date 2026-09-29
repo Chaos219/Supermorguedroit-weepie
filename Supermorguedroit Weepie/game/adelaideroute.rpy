@@ -350,7 +350,11 @@ with hpunch
 
 a "I DESPISE MOPS! I LOATHE GRIME! I. HATE. LEEROY. I HATE RUINING MY MANICURE! I HATE THAT FLARING BALL IN THE SKY! I HATE–"
 
-with hpunch 
+with hpunch
+
+stop music
+
+play sound "door_slamming.ogg"
 
 camera:
     subpixel True 
@@ -382,6 +386,9 @@ show M annoyed:
 with easeinright
 
 "Panic taking over, I march over to the door and shove it open with a bang. The sudden noise startles Adelaide out of her wits."
+
+play music "retro.ogg"
+
 
 camera:
     subpixel True 

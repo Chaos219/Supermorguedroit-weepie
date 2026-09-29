@@ -537,6 +537,8 @@ show M annoyed:
     zoom 0.35
 with dissolve
 
+play sound "walking_down_stairs.ogg"
+
 "Deep breath. Out the door and down the stairs."
 # Scene 5: The Supermurgidroid Weepie - Day
 scene black with fade 
@@ -1846,6 +1848,8 @@ show M annoyed:
     ypos 1.0 xpos 0.16 zoom 0.35
 
 m "…Right. Good. Good night."
+
+play sound "walking_down_stairs.ogg"
 "I tug my dress close and head up the stairs."
 hide O main
 hide M annoyed

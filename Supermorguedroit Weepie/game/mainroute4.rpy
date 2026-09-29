@@ -781,6 +781,8 @@ show O solemn:
 
 "They just nodded and put their pipe back in their mouth impassively."
 
+play sound "walking_down_stairs.ogg"
+
 "I scurried up the stairs like a little mouse running away from an alley cat."
 
 "What had I gotten myself into?"

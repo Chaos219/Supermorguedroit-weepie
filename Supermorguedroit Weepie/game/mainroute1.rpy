@@ -129,7 +129,7 @@ show M annoyed:
     yalign 1.0
     zoom 0.35
 "I bolt upright."
-"The room smells of stale coffee and aerosol hairspray, and as far as my eye can see, it’s in a state of chaotic disarray."
+"The room smells of stale coffee and aerosol hairspray, and as far as my eye can see, it's in a state of chaotic disarray."
 "Outside my window, dead in the daylight, the diner downstairs is already bleeding its aggressive neon sign through the curtains:"
 "THE SUPERMORGUEDROID WEEPIE."
     
@@ -616,6 +616,7 @@ show cg
 camera:
     subpixel True pos (1440, 351) zoom 1.88 
 with hpunch
+play sound "door_slamming.ogg"
 "I push through the heavy doors at a brisk pace, my winter coat thrown hastily over my nightgown."
 
 camera:

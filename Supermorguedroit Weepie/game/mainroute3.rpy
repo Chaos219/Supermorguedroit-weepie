@@ -171,6 +171,10 @@ show A evil:
     ypos 1.0 
 
 a "He is not my boss."
+
+play sound "traffic_small_town.ogg"
+pause 3
+stop sound
 "A beat. The rhythmic hum of the street traffic seems to drop away for a second."
 
 show M annoyed:
