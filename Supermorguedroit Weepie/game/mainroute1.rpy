@@ -267,6 +267,7 @@ with dissolve
 stop sound
 play sound "pickup.ogg"
 m "Courier, Kessler - ah, I mean. Hello, Dorothy speaking."
+hide M main
 b "Dorothy."
 "His voice is unhurried. Almost too calm. My jaw clenches tight."
 with hpunch
@@ -282,6 +283,7 @@ camera:
 
 
 m "M-Mr. Hollis."
+hide M annoyed
 b "I'm giving Chet the Glenn piece."
 show M melancholy:
     subpixel True pos (0.12, 0) zoom 0.5
