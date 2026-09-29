@@ -32,6 +32,7 @@ define lib = Character("Librarian")
 image bg bedroom = im.Scale("images/bedroom_bg.png",1920,1080)
 image bg diner = im.Scale("images/diner_bg.png",1920,1080)
 image bg office = im.Scale("images/office_bg.png",1920,1080)
+image bg library = im.Scale("images/library_bg.png",1920,1080)
 
 # Sprites
 image M main="mc_main.png"
@@ -39,6 +40,7 @@ image M annoyed="mc_annoyed.png"
 image M angry="mc_angry.png"
 image M melancholy="mc_melancholy.png"
 image M disgusted="mc_disgusted.png"
+image M smile="mc_smile.png"
 image A main="adelaide_main.png"
 image A happy="adelaide_happy.png"
 image A shy="adelaide_shy.png"
