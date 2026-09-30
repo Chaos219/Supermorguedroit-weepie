@@ -988,7 +988,8 @@ label dessert_adelaide:
         xpos 0.12 zoom 0.45 yalign  1.0
     with dissolve 
 
-    "I go and sink into the seats of a free booth, and cross my arms over my chest. The view outside is… less dull, I suppose, with all the people. I let myself stare. Who knows, I might catch sight of something interesting."
+    "I go and sink into the seats of a free booth, and cross my arms over my chest. The view outside is… less dull, I suppose, with all the people." 
+    "I let myself stare. Who knows, I might catch sight of something interesting."
     "This is a decent spot for people-watching, but the diner’s brand spanking new clients seem to actually be here for food, rather than to offer me scoops on a silver platter."
 
     show A main:
@@ -1154,7 +1155,8 @@ label dessert_adelaide:
     show M main:
             pos (0.12, 1.0)
 
-    m "I’m not actually that picky. I don’t like milkshakes, and I still tried it. And honestly, I think that if I had actually been looking forward to it, I would’ve thrown up from the sheer disappointment."
+    m "I’m not actually that picky. I don’t like milkshakes, and I still tried it." 
+    m "And honestly, I think that if I had actually been looking forward to it, I would’ve thrown up from the sheer disappointment."
     
     show A evil:
         subpixel True 
@@ -1187,7 +1189,7 @@ label dessert_adelaide:
     show A evil:
         yalign 1.0
 
-    a "I’ll make Oe clean it up, and let you write an article about the great diner disaster of the day. Got to keep our name out there if Leeroy wants this place to have any chance of success."
+    a "I’ll make Ōe clean it up, and let you write an article about the great diner disaster of the day. Got to keep our name out there if Leeroy wants this place to have any chance of success."
     "I hum as both our gazes fall onto the actually edible milkshake a couple is sharing. I see Adelaide shudder in disgust at the sight."
    
     show M main:
@@ -1276,12 +1278,12 @@ with Pause(0.26)
 show M annoyed:
     xpos 0.16 xzoom 1.0 yzoom 1.0 
 
-"I take another sip. It's quarter to one in the morning."
+"I take another sip of my third coffee today. It's quarter to one in the morning."
 "The diner is thankfully empty and the jukebox had been plugged off for the night. Good riddance."
 "I am perched at the far end of the counter nursing the last bitter dregs of the coffee pot, locked in an amiable argument with LeeRoy."
 "It's quite the dilemma, trying to decide whether Friday's onion burger special has too much onion on it or too little."
 "My position is that it does not."
-"His position is that his eyes water whenever he walks past the prep station a complaint I point out he probably shouldn't be volunteering a potential customer."
+"His position is that his eyes water whenever he walks past the prep station - a complaint I point out he probably shouldn't be volunteeringly telling a potential customer."
 "The brass bell over the front door chimes."
 "A man steps inside. He looks to be in his late forties, wearing a faded coat against the autumn chill."
 "He has a heavy olive-drab duffel bag slung over one shoulder and chalky road dust coating his trousers right up to the knee."
