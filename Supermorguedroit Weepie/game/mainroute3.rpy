@@ -59,7 +59,7 @@ with Pause(0.3)
 camera:
     xpos -476
 
-"I take the stairs two at a time, a manilla envelope tucked securely under my arm."
+"I take the stairs two at a time, a Manila envelope tucked securely under my arm."
 
 camera:
     pos (-476, -22) 
@@ -91,8 +91,8 @@ with Pause(0.20)
 show M annoyed:
     pos (0.3, 1.0) 
 
-m "Whoa sorry, sorry"
-"(Not moving a single inch out of the shadows)"
+m "Whoa sorry, sorry."
+"Adelaide doesn't move an inch out of the shadows."
 
 show A evil:
     subpixel True 
@@ -104,7 +104,7 @@ show A evil:
     ypos 1.0 
 
 a "It is fine. I am just seeing to the linens."
-"(Stopping, shifting the envelope under my arm)"
+"I stop, shifting the envelope under my arm."
 
 show M annoyed:
     subpixel True xpos 0.3 
@@ -159,7 +159,7 @@ show M annoyed:
     pos (0.3, 1.0) 
 
 
-m "Believe me, Adelaide, I know exactly what it’s like to have some overbearing man barking orders at you while you do all the actual heavy lifting"
+m "Believe me, Adelaide, I know exactly what it’s like to have some overbearing man barking orders at you while you do all the actual heavy lifting."
 
 show A evil:
     subpixel True 
@@ -279,7 +279,7 @@ with Pause(0.20)
 show M annoyed:
     pos (0.3, 1.0) 
 
-m "And he doesn’t"
+m "And he doesn’t -"
 
 show A evil:
     subpixel True 
@@ -310,7 +310,7 @@ show A shy:
     ypos 1.0 
 with dissolve 
 
-a "forgetful. He gets caught up in the performance of it all."
+a "- forgetful. He gets caught up in the performance of it all."
 
 show M annoyed:
     subpixel True xpos 0.3 
@@ -320,7 +320,7 @@ with Pause(0.50)
 show M annoyed:
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
-"I turn on my heel. The manila envelope can wait ten minutes."
+"I turn on my heel. The Manila envelope can wait ten minutes."
 "I reach out and grab the heavy brass handle of the diner’s back door."
 
 show A evil:
@@ -332,7 +332,7 @@ with Pause(0.20)
 show A evil:
     ypos 1.0 
 
-a "Miss Kessler"
+a "Miss Kessler -"
 
 show A evil:
     subpixel True 
@@ -342,7 +342,7 @@ with Pause(0.60)
 show A evil:
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
-"(Looking over my shoulder, tossing my coat onto a nearby crate and aggressively rolling up my sleeves)"
+"I look over my shoulder while tossing my coat onto a nearby crate and aggressively rolling up my sleeves."
 
 show M annoyed:
     subpixel True xpos 0.3 
@@ -364,7 +364,7 @@ with Pause(0.20)
 show A evil:
     ypos 1.0 
 
-a "I didn’t ask you to"
+a "I didn’t ask you to -"
 
 with hpunch
 camera:
@@ -406,7 +406,7 @@ stop music
 play music "vampdiner_chaotic.ogg"
 
 "I cross the checkered linoleum like a summer thunderstorm."
-"Now that I know Adelaide holds the deed to the building and by extension, the lease to my room upstairs LeeRoy holds absolutely zero authority over me."
+"Now that I know Adelaide holds the deed to the building and by extension, the lease to my room upstairs, LeeRoy holds absolutely zero authority over me."
 "I am entirely untouchable, and I am SO ready to crack heads."
 
 show M annoyed:
@@ -429,7 +429,7 @@ with Pause(0.20)
 show L main:
     ypos 1.0 
 
-l "Miss Kessler! Do you want to see the sear on these"
+l "Miss Kessler! Do you want to see the sear on these -"
 
 show M annoyed:
     subpixel True xpos 0.4
@@ -673,8 +673,7 @@ menu:
         show A main:
             pos (0.22, 1.0) 
 
-        a "I cannot find the will to refuse him,"
-        "she murmurs."
+        a "I cannot find the will to refuse him..."
         "I look back across the diner toward the kitchen."
         "LeeRoy is beaming over the deep fryer, lifting the wire basket with a look of pure joy over a perfect batch of golden onion rings."
         "His happiness is so bright that I suddenly understand exactly why telling him 'no' didn't even cross her mind."
@@ -704,7 +703,7 @@ show M main:
 "The diner isn't exactly standing-room-only, but there are actual customers in the booths."
 "Six, maybe eight scattered around the room."
 "The Wurlitzer jukebox is finally plugged in, spinning a scratchy 45 that fills the air with a steady bassline."
-"Out on the front sidewalk, visible through the plate glass, two teenage girls are strapping on the diner's roller skates and trying to balance on them with absolutely zero talent, clinging to the brick wall and shrieking with laughter."
+"Out on the front sidewalk two teenage girls are strapping on the diner's roller skates and trying to balance on them with absolutely no talent, clinging to the wall and shrieking with laughter."
 "It is a vast improvement over the silence."
 "I am slumped over the counter with a mug of black coffee, running on pure fumes after spending the entire night hunched over the keys of my Royal typewriter."
 "My shoulders ache, my fingers are stiff, but I would do it all over again in a heartbeat."
@@ -751,6 +750,7 @@ show L main:
 
 l "I would consider it a personal favour if you would be the very first to sample our new dessert menu."
 "I let out a long, exhausted breath. I set my coffee down and lean forward to actually read the board."
+"After some consideration the choice was between the pear pie or dark-chocolate and cherry cake."
 #[CHOICE ROUTES GO HERE]
 #[Whatever happens, happens]
 #"[Name] gives me a lingering look, excuses [herself/himself/themselves], and slips back behind the counter to get back on the clock."
@@ -789,7 +789,11 @@ label dessert_oe:
 
     hide L main
 
-    "He then makes a beeline straight for the kitchen. I find myself staring at the drawings across the room, oblivious to my surroundings. Ōe slides a heavy white saucer across the counter. Resting on it is a single, perfect persimmon—a fruit entirely out of season and nowhere near native to this county. They have cut it into exactly eight identical wedges. The skin is peeled back. It is an arrangement that requires a level of obsessive attention wildly out of proportion for the establishment I am in."
+    "He then makes a beeline straight for the kitchen. I find myself staring at the drawings across the room, oblivious to my surroundings." 
+    "Ōe slides a heavy white saucer across the counter. Resting on it is a single, perfect persimmon—a fruit entirely out of season and nowhere near native to this county." 
+    "They have cut it into exactly eight identical wedges. The skin is peeled back." 
+    "It is an arrangement that requires a level of obsessive attention wildly out of proportion for the establishment I am in."
+    "On the plate next to it is my cake, obviously plated by LeeRoy as it is not standing upright."
 
     show M main:
         subpixel True xpos 0.12 zoom 0.45
@@ -812,6 +816,7 @@ label dessert_oe:
         yalign 1.0
 
     o "Persistance."
+    o "You should try some. It goes well with the cake."
 
     "I pick up one of the wedges and take a bite. The flavor is incredibly sweet. I stop chewing, my journalistic brain catching up with the sentence."
 
@@ -926,7 +931,8 @@ label dessert_oe:
 
     o "Yes."
 
-    "I glance past their shoulder, looking out toward the dining room. My eyes drift up to the back wall. Dozens of framed oil paintings of cars hang there, each one rendered with what I can only call various degrees of obsessive precision."
+    "I glance past their shoulder, looking out toward the dining room. My eyes drift up to the back wall."
+    "Dozens of framed oil paintings of cars hang there, each one rendered with what I can only call various degrees of obsessive precision."
 
     menu:
         "Ask them about the paintings.":
