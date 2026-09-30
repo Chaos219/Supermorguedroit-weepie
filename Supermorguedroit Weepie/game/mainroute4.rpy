@@ -294,13 +294,13 @@ show L shrug:
 l "In my defense, I don’t drink human blood!"
 
 show A evil:
-    subpixel True zoom 0.37 xpos 0.22
+    subpixel True zoom 0.37 xpos 0.3
     yalign 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show A evil:
-    pos (0.22, 1.0) 
+    pos (0.3, 1.0) 
 
 a "Not yet. One day I’ll get you on the taste."
 
@@ -337,13 +337,13 @@ show O main:
 o "But I don’t think it’s worth losing your morals for."
 
 show A evil:
-    subpixel True zoom 0.37 xpos 0.22
+    subpixel True zoom 0.37 xpos 0.3
     yalign 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show A evil:
-    pos (0.22, 1.0) 
+    pos (0.3, 1.0) 
 
 a "Luckily I never had those to begin with."
 
@@ -442,24 +442,24 @@ hide L main
 hide M main
 
 show A evil:
-    subpixel True zoom 0.37 xpos 0.22
+    subpixel True zoom 0.37 xpos 0.3
     yalign 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show A evil:
-    pos (0.22, 1.0)
+    pos (0.3, 1.0)
 
 a "My my, really using this situation for your own gain."
 
 show A evil:
-    subpixel True zoom 0.37 xpos 0.22
+    subpixel True zoom 0.37 xpos 0.3
     yalign 1.0 
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show A evil:
-    pos (0.22, 1.0)
+    pos (0.3, 1.0)
 
 a "There is a reason we get along."
 #Oe route scene one and two
@@ -2362,14 +2362,14 @@ show A main:
 a "Well, I’ll have to keep her in mind if I ever need some help repairing our dreary aprons."
 
 show M disgusted:
-    yalign 1.0 zoom 0.35 xpos 0.5
+    yalign 1.0 zoom 0.45 xpos 0.16
 with dissolve 
 
 "I wrinkle my nose."
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.43 xpos 0.16
+    yalign 1.0 zoom 0.45 xpos 0.16
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2404,14 +2404,14 @@ a "Who is that delightful fellow on the pinboard?"
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.43 xpos 0.16
+    yalign 1.0 zoom 0.45 xpos 0.16
 with dissolve 
 
 "I turn. The only visible face is Chet’s, stabbed through and through."
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.43 xpos 0.16
+    yalign 1.0 zoom 0.45 xpos 0.16
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2434,7 +2434,7 @@ a "Oh? Not your boss? I thought your animosity would be reserved for the source 
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.43 xpos 0.16
+    yalign 1.0 zoom 0.45 xpos 0.16
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2456,7 +2456,7 @@ a "Mmh, perhaps I should look into doing something like this, then."
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.43 xpos 0.16
+    yalign 1.0 zoom 0.45 xpos 0.16
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -2485,7 +2485,7 @@ with dissolve
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.43 xpos 0.16
+    yalign 1.0 zoom 0.45 xpos 0.16
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
