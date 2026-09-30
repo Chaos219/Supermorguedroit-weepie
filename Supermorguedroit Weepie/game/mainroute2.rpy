@@ -2076,12 +2076,12 @@ m "Right. That's it. This is a culinary felony."
 
 show L confused:
     subpixel True 
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L confused:
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
 
 l "Where are you going?"
 
@@ -2098,12 +2098,12 @@ m "Behind the counter."
 
 show L confused:
     subpixel True 
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L confused:
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
 
 l "Wait, Miss Kessler, you can't go behind the-"
 
@@ -2133,7 +2133,7 @@ show M annoyed:
 "I yank open the under-counter icebox, pop the lids off stainless steel prep pans, and make noises of genuine, unfiltered disgust."
 
 show L confused:
-    xpos 0.55
+    xpos 0.36
     yalign 1.0
     zoom 0.5
 
@@ -2176,25 +2176,25 @@ m "Why is the ketchup warm? Why is it sitting next to the radiator? And what-"
 "I grab the glass percolator off the back burner and give it a cautious sniff."
 "Instantly, I regret it. It smells like burnt tyres."
 
-show M annoyed:
+show M disgusted:
     subpixel True 
-    ypos 1.0 xpos 0.16 zoom 0.35
+    ypos 1.0 xpos 0.16 zoom 0.45
     linear 0.05 ypos 0.98
     linear 0.05 ypos 1.0
 with Pause(0.20)
-show M annoyed:
-    ypos 1.0 xpos 0.16 zoom 0.35
+show M disgusted:
+    ypos 1.0 xpos 0.16 zoom 0.45
 
-m "-is this Monday's coffee?"
+m "- is this Monday's coffee?"
 
 show L confused:
     subpixel True yalign 1.0
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L confused:
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
 
 l "We keep it on a low simmer. Just in case somebody comes in."
 
@@ -2232,7 +2232,7 @@ show A main:
 
 hide A main
 show L sigh:
-    xpos 0.55
+    xpos 0.36
     yalign 1.0
     zoom 0.5
 
@@ -2265,7 +2265,7 @@ show O main:
 
 hide O main
 show L main:
-    xpos 0.45
+    xpos 0.26
     yalign 1.0
     zoom 0.5
 
