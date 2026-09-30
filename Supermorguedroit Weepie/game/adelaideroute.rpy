@@ -1065,7 +1065,8 @@ show M angry:
 m "I’m gonna DO SOMETHING TO HIM!"
 
 with hpunch
-show M disgusted
+show M disgusted:
+    xpos 0.16 zoom 0.45 yalign 1.0
 with dissolve 
 
 "I stick even more pins in Chet's picture on my pinboard, a habit whenever I feel angry at him."
@@ -1128,7 +1129,7 @@ with easeinright
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.24
+    yalign 1.0 zoom 0.45 xpos 0.24
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -1373,6 +1374,8 @@ camera:
 
 "After a few solid minutes I finally stood back up, out of breath."
 
+scene bg office with fade
+
 show M annoyed:
     subpixel True 
     yalign 1.0 zoom 0.35 xpos 0.16
@@ -1417,7 +1420,7 @@ camera:
     subpixel True pos (0, 0) zoom 1.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.15)*HueMatrix(0.0) 
 
 show L confused:
-    yalign 1.0 zoom 0.45 xpos 0.6
+    yalign 1.0 zoom 0.45 xpos 0.48
 
 l "Yo, Where were you? What happened?"
 
