@@ -36,14 +36,18 @@ scene bg diner with fade
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
 
-"Still rattled over my latest failure to turn up a single worthwhile headline after pounding the pavement all day, I decide to head back and ask my vamp-landlords for help. Why didn't I think of that before? There's a group of supposed immortals right below me, and here I am, trying to wrangle a story about a cow farm."
-"It is well before opening time, and from the street, the diner looks pitch black with no sign of anyone inside. However, when I try the front door, the knob turns right in my hand. It is… unlocked. What the—! My blood immediately boils."
+"Still rattled over my latest failure to turn up a single worthwhile headline after pounding the pavement all day, I decide to head back and ask my vamp-landlords for help."
+"Why didn't I think of that before? There's a group of supposed immortals right below me, and here I am, trying to wrangle a story about a cow farm."
+"It is well before opening time, and from the street, the diner looks pitch black with no sign of anyone inside. However, when I try the front door, the knob turns right in my hand." 
+"It is… unlocked. What the—! My blood immediately boils."
 "They can't cook, fix drinks, and apparently, they can't lock their OWN establishment either! It figures this place is so affordable; they are practically inviting burglars up my stairs."
 
 with hpunch
 
-"I step inside the dark restaurant, ready to give someone a piece of my mind, when a loud clatter echoes from the back. The unmistakable sound of water spilling on the linoleum, as something metallic falls to the floor."
-"Before I can even process what I am hearing, a string of furious, muffled cursing immediately follows. I follow the racket to the back room, only to find Adelaide stranded in the center of a massive, foamy pool of spilled mop water."
+"I step inside the dark restaurant, ready to give someone a piece of my mind, when a loud clatter echoes from the back." 
+"The unmistakable sound of water spilling on the linoleum, as something metallic falls to the floor."
+"Before I can even process what I am hearing, a string of furious, muffled cursing immediately follows." 
+"I follow the racket to the back room, only to find Adelaide stranded in the center of a massive, foamy pool of spilled mop water."
 
 show A evil:
     subpixel True zoom 0.4 
@@ -76,7 +80,7 @@ hide A evil
 show M annoyed:
     xpos 0.35 yalign 1.0 zoom 0.35 
 
-m "(Who in the world is calling this place at this hour?)"
+"Who in the world is calling this place at this hour?"
 
 hide M annoyed 
 show A evil:
@@ -100,7 +104,7 @@ with Pause(0.26)
 show A evil:
     xzoom 1.0 yzoom 1.0 
 
-"I watch Adelaide furiously dunk the mop back into the, now, empty bucket. She clearly isn’t going to touch that receiver, and the ringing is starting to grate on my nerves."
+"I watch Adelaide furiously dunk the mop back into the now empty bucket. She clearly isn’t going to touch that receiver, and the ringing is starting to grate on my nerves."
 
 hide A evil
 show M annoyed:
@@ -173,7 +177,8 @@ with Pause(0.26)
 show M annoyed:
     yalign 1.0 xpos 0.6
 
-m "Oh, uhhh, right. (How embarassing!)"
+m "Oh, uhhh, right."
+"Well, that's embarrassing."
 
 hide M annoyed 
 
@@ -222,7 +227,8 @@ m "WHAT? How?? Why??"
 
 hide M annoyed 
 
-b "Don’t bark at me, Dorothy. I don’t run the presses. Word on the street is the Chronicle is dropping a massive spread on the auction scandal. The publisher wants to beat them to the punch, which means the layout has to be finalized earlier."
+b "Don’t bark at me, Dorothy. I don’t run the presses. Word on the street is the Chronicle is dropping a massive spread on the auction scandal." 
+"The publisher wants to beat them to the punch, which means the layout has to be finalized earlier."
 
 show M annoyed:
     subpixel True 
@@ -293,7 +299,7 @@ with Pause(0.20)
 show M annoyed:
     yalign 1.0 xpos 0.4
 
-m "(Can he just stop it already?!)"
+"Can he just stop it already?!"
 
 hide M annoyed 
 
@@ -1029,11 +1035,6 @@ scene black with fade
 #New Day
 scene bg bedroom with fade 
 camera:
-    subpixel True 
-    pos (476, 168) zoom 1.25 
-    linear 0.30 pos (0, 0) zoom 1.0 
-with Pause(0.40)
-camera:
     pos (0, 0) zoom 1.0 
 
 "Today’s Special: Blood of your enemies."
@@ -1314,7 +1315,7 @@ with Pause(0.20)
 show M angry:
     ypos 1.0
 
-m "How Dare you? Who do you think you are to treat other humans like that?"
+m "How dare you? Who do you think you are to treat other humans like that?"
 
 show M angry:
     subpixel True 
@@ -1539,5 +1540,7 @@ show A evil:
     yalign 1.0
 
 a "Oh trust me, we have a damn good reason."
+
+"THE END. THANKS FOR PLAYING!"
 
 return
