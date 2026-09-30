@@ -211,7 +211,7 @@ with Pause(0.20)
 show M smile:
     pos (0.1, 1.0) 
 
-m "LeeRoy, you have fangs. Oe literally looks like a picture book vampire and I have seen Adelaide drinking blood before."
+m "LeeRoy, you have fangs. Ōe literally looks like a picture book vampire and I have seen Adelaide drinking blood before."
 
 show M smile:
     subpixel True xpos 0.1
@@ -462,7 +462,7 @@ show A evil:
     pos (0.3, 1.0)
 
 a "There is a reason we get along."
-#Oe route scene one and two
+#Ōe route scene one and two
 scene bg office
 with fade
 camera:
@@ -485,6 +485,8 @@ m "And then…! And then…! He said if I didn't get a real story soon, I'd be i
 hide M annoyed 
 
 mar "Gee, I mean, there's nothing wrong with the women's section, Dorothy…"
+
+"I was talking to my best friend after work."
 
 "Marcia wrote the household tips column and answered letters from housewives about etiquette and recipes."
 
@@ -675,7 +677,7 @@ show M main:
 
 m "Sure, okay. How can I say no?"
 
-"Marcia was the most normal friend I'd made since moving here."
+"Marcia was the most normal friend I'd made since becoming an adult."
 
 "And I truly couldn't wait to see the Rip-chords!"
 
@@ -788,9 +790,9 @@ show M annoyed:
 
 # MC looks concerned/sad
 
-mar """I have the flu and it's just awful!
+mar "I have the flu and it's just awful!"
 
-On the day the Rip-Chords are here…"""
+"The day before the Rip-Chords are here… I certainly won't recover in time."
 
 show M main:
     subpixel True 
@@ -813,7 +815,7 @@ mar "No no! Don't bring me any food. I've got plenty of groceries.."
 
 "Apparently even free food isn't welcome if it's from the Weepie…"
 
-mar "it just burns me up that I won't get to go to the concert…"
+mar "It just burns me up that I won't get to go to the concert…"
 
 show M main:
     subpixel True 
@@ -889,7 +891,7 @@ menu:
 label oe_date:
 scene bg diner
 with fade
-# Scene OE.03 - Marcia meets Oe and asks them instead
+# Scene OE.03 - Marcia meets Ōe and asks them instead
 
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.2)*HueMatrix(0.0) 
@@ -909,7 +911,7 @@ show M main:
 m "LeeRoy, hey!"
 
 # MC looks shocked.
-# Oe is there, neutral
+# Ōe is there, neutral
 
 show O solemn:
     subpixel True 
@@ -922,11 +924,11 @@ show O solemn:
 
 o "He isn't here."
 
-"I was used to the diner being empty of customers but somehow when Oe was the only one there, it seemed even emptier somehow."
+"I was used to the diner being empty of customers but somehow when Ōe was the only one there, it seemed even emptier somehow."
 
 "At least LeeRoy and Adelaide would bicker and fight."
 
-"Oe was just sitting behind the counter looking out the front door blankly."
+"Ōe was just sitting behind the counter looking out the front door blankly."
 
 "They were smoking that weird old-fashioned pipe."
 
@@ -969,7 +971,7 @@ o "What do you have there?"
 
 "I had forgotten I had entered waving the tickets."
 
-"Oe looked at them like an owl looking at a dead mouse."
+"Ōe looked at them like an owl looking at a dead mouse."
 
 "Animalistically interested, yet slightly disgusted."
 
@@ -1088,17 +1090,17 @@ show M smile:
 show O main:
     xpos 0.35 zoom 0.5
 
-# Not sure if we can do a zoom in on Oe here? Something where they're like "standing closer"?
+# Not sure if we can do a zoom in on Ōe here? Something where they're like "standing closer"?
 
 "It was like they were suddenly in my personal space."
 
 "Completely unnerving. They didn't breathe at all, but also weren't holding their breath."
 
-"Of all my downstairs neighbors, Oe seemed most like a living corpse."
+"Of all my downstairs neighbors, Ōe seemed most like a living corpse."
 
 "No - not just any corpse. Undertakers could make corpses look peaceful."
 
-"Oe looked completely lifeless, standing this close."
+"Ōe looked completely lifeless, standing this close."
 
 "It was an intense feeling."
 
@@ -1141,7 +1143,7 @@ show M smile:
 
 m "O…okay. That's…that's…"
 
-# back to normal for Oe. still flat expression
+# back to normal for Ōe. still flat expression
 
 show O main:
     subpixel True 
@@ -1167,7 +1169,7 @@ show M smile:
 
 m "Y..yeah…that's cool."
 
-"An awkward pause followed. Oe hadn't blinked once since I came into the room."
+"An awkward pause followed. Ōe hadn't blinked once since I came into the room."
 
 show M smile:
     subpixel True 
@@ -1178,7 +1180,7 @@ with Pause(0.20)
 show M smile:
     yalign 1.0
 
-m "I'll meet you down here….in half an hour?"
+m "I'll meet you down here…in half an hour?"
 
 show O solemn:
     subpixel True xpos 0.35 zoom 0.55
@@ -1261,7 +1263,7 @@ with Pause(0.30)
 show O main:
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 yzoom 1.0 
 
-"Oe looked up."
+"Ōe looked up."
 
 show M annoyed:
     subpixel True 
@@ -1296,7 +1298,7 @@ show M smile:
 
 m "Oh! Oh, hehe…yea…you got me."
 
-"Oe didn't smile an inch. But when we walked in we were walking closer together."
+"Ōe didn't smile an inch. But when we walked in we were walking closer together."
 
 # bg interior of the theater
 scene black with fade 
@@ -1313,7 +1315,7 @@ play music "vampdiner_chaotic.ogg"
 
 "But most of the audience was milling around the dance floor."
 
-"Oe didn't make their way to a seat or onto the floor, they just stood stock still."
+"Ōe didn't make their way to a seat or onto the floor, they just stood stock still."
 
 "The crowds went around us like water."
 
@@ -1373,7 +1375,7 @@ show O main:
     yalign 1.0
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"Oe watched me carefully as if I was a bug. They were studying through a magnifying glass."
+"Ōe watched me carefully as if I was a bug they were studying through a magnifying glass."
 
 "The lead singer - Johnny 'Rips' Goldman - came to the mike."
 
@@ -1420,11 +1422,11 @@ show M main:
     pos (0.16, 0.95) 
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"I was carried along, even though Oe was not."
+"I was carried along, even though Ōe was not."
 
 "Before I knew it I was dancing away in a huge crowd of people."
 
-"After the first song, then the second, I looked around to see where Oe was."
+"After the first song, then the second, I looked around to see where Ōe was."
 
 # MC shocked/surprised
 
@@ -1459,7 +1461,7 @@ with dissolve
 
 "At first glance they were offputting, awkward…"
 
-"But when they were actually trying to fit in, Oe was almost laughable."
+"But when they were actually trying to fit in, Ōe was almost laughable."
 
 "I was getting ready to come back and say something when I noticed…"
 
@@ -1478,7 +1480,7 @@ show O smile:
     pos (0.35, 1.28) xzoom 1.0 yzoom 1.0 zoom 0.7 
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-# Maybe another Oe zoom in here?
+# Maybe another Ōe zoom in here?
 
 "Their eyes got a glint in them. A sharp, perceptive glint."
 
@@ -1494,20 +1496,20 @@ show O smile:
 
 "It was the first time I'd ever seen it change."
 
-# Happy Oe here
+# Happy Ōe here
 
 show O excited:
     xpos 0.35 zoom 0.53 yalign 1.0
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 with dissolve 
 
-"When the Rip-Chords blasted into their big hit song and the crowd whooped and surged, Oe too whooped and surged."
+"When the Rip-Chords blasted into their big hit song and the crowd whooped and surged, Ōe too whooped and surged."
 
 "The happiness of the dancing had overtaken them."
 
 "As if they had imitated a person having the time of their life until that emotion entered them as well."
 
-"Soon Oe was in the middle of the crowd with me, dancing away."
+"Soon Ōe was in the middle of the crowd with me, dancing away."
 
 # MC enthused/happy here
 
@@ -1517,7 +1519,7 @@ show M main:
 
 "Every new dance the crowd did, they picked it up almost instantly: the frug, the shimmy, the watusi, the twist…"
 
-"Oe clearly had never seen them before, but they learned it instantly, and in a matter of minutes they were throwing themselves into it instead of simply imitating."
+"Ōe clearly had never seen them before, but they learned it instantly, and in a matter of minutes they were throwing themselves into it instead of simply imitating."
 
 "They danced harder than I did."
 
@@ -1546,24 +1548,24 @@ show O main:
 with dissolve 
 
 # MC tired/exhausted
-# Oe back to neutral
+# Ōe back to neutral
 
-"Of course Oe was cool as a cucumber…even cold to the touch when their fingers held my elbow."
+"Of course Ōe was cool as a cucumber…even cold to the touch when their fingers held my elbow."
 
-"For the first time, Oe was leading me instead of me leading them."
+"For the first time, Ōe was leading me instead of me leading them."
 
 "Their cold hand had me by the elbow and we went out into a dingy alleyway."
 
 #fx: city ambience
 
-"A few scattered knots of concertgoers were smoking. Oe produced their pipe and lit it."
+"A few scattered knots of concertgoers were smoking. Ōe produced their pipe and lit it."
 
 show O solemn:
     xpos 0.45 zoom 0.53 yalign 1.0
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 with dissolve 
 
-# Oe pipe
+# Ōe pipe
 
 "Their expression was back to being neutral."
 
@@ -1582,7 +1584,7 @@ show M main:
     yalign 1.0
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-m "Oe, you're an amazing dancer! You picked it up perfectly!"
+m "Ōe, you're an amazing dancer! You picked it up perfectly!"
 
 show O solemn:
     subpixel True xpos 0.45 zoom 0.53 yalign 1.0
@@ -1614,7 +1616,7 @@ m "You don't…you don't seem like the kind of person who keeps up with new thin
 
 "Their cool voice cut through the humid, smoky air."
 
-# In this monologue, we might change MC's attitude to thoughtful, maybe even sad. same for Oe, though They can also still appear static. This might be a good place for some warm or spooky music too. Also might be a good idea to have a few images vaguely referring to Oe's comments here. 
+# In this monologue, we might change MC's attitude to thoughtful, maybe even sad. same for Ōe, though They can also still appear static. This might be a good place for some warm or spooky music too. Also might be a good idea to have a few images vaguely referring to Ōe's comments here. 
 
 $ renpy.music.set_volume(0.3)
 
@@ -2048,7 +2050,7 @@ show O solemn:
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 with dissolve 
 
-"Oe trailed off, the smoke from their pipe finally ending. They tapped the bowl of the pipe on the brick wall, letting the ash fall into the alleyway."
+"Ōe trailed off, the smoke from their pipe finally ending. They tapped the bowl of the pipe on the brick wall, letting the ash fall into the alleyway."
 
 "From inside we heard the crowd begin to cheer again. The band was back."
 
@@ -2065,7 +2067,7 @@ show O excited:
     pos (0.4, 1.0)
     subpixel True blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.1)*HueMatrix(0.0) 
 
-"Oe's face lit up again."
+"Ōe's face lit up again."
 
 o "Time for more? You aren't too tired…"
 
@@ -2625,6 +2627,6 @@ screen route_select:
         idle Transform("images/oe_main.png", zoom=0.5, matrixcolor=BrightnessMatrix(-0.1))
         hover Transform("images/oe_main.png", zoom=0.5, matrixcolor=BrightnessMatrix(+0.1))
         align (0.9, 0.5)
-        action Confirm("Ask Oe for help?", Jump("oe"))
+        action Confirm("Ask Ōe for help?", Jump("oe"))
 
 

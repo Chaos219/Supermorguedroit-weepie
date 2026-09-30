@@ -831,7 +831,7 @@ label dessert_oe:
 
     m "Persistence? This diner's only been open a month. Where would you even—"
 
-    "Oe does not explain themselves, instead they hint toward the plate."
+    "Ōe does not explain themselves, instead they hint toward the plate."
 
     show O smile:
         subpixel True 

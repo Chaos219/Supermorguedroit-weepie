@@ -454,7 +454,7 @@ with Pause(0.20)
 show M main:
     yalign 1.0
 
-m "Oe? No, not in a day or two. Why?"
+m "Ōe? No, not in a day or two. Why?"
 
 show L shrug:
     subpixel True xpos 0.4 zoom 0.45
@@ -544,7 +544,7 @@ with fade
 
 "The library wasn't open for very long after dark."
 
-"I didn't doubt Oe could stay after closing if they wanted to…"
+"I didn't doubt Ōe could stay after closing if they wanted to…"
 
 "But it did worry me that they didn't show up at all back at the diner."
 
@@ -603,7 +603,7 @@ hide M smile
 
 lib "OH!  Oh.  You're with..with them…"
 
-"It was clear that Oe had made an impression."
+"It was clear that Ōe had made an impression."
 
 lib "Can you let them know…I know we sort of…let them stay after closing last night…"
 
@@ -611,7 +611,7 @@ lib "But they can't be in the building after we lock it up…tonight…"
 
 "She said all of this as if she didn't quite know why she had gone along with the idea."
 
-"Oe had clearly used some kind of vampire mesmerism on her."
+"Ōe had clearly used some kind of vampire mesmerism on her."
 
 # MC neutral/charming
 
@@ -632,7 +632,7 @@ lib "Thanks. They're downstairs in the basement stacks."
 
 # bg a bunch of shelves, dimly lit?
 
-# Oe neutral
+# Ōe neutral
 
 # MC concerned/curious
 
@@ -641,7 +641,7 @@ show O solemn:
     yalign 1.0 zoom 0.53 xpos 0.5
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
 
-"Oe was sitting alone at a table in the middle of the room."
+"Ōe was sitting alone at a table in the middle of the room."
 
 "The lights seemed dimmer closer to them."
 
@@ -656,7 +656,7 @@ with Pause(0.20)
 show M main:
     yalign 1.0
 
-m "Oe?"
+m "Ōe?"
 
 "No answer."
 
@@ -705,7 +705,7 @@ show M main:
 
 "There was a picture of the First Lady, wearing her classic pillbox hat, shaking hands with an old man at the bottom of the flyer."
 
-"Oe was staring at the flyer blankly."
+"Ōe was staring at the flyer blankly."
 
 show O main:
     subpixel True yalign 1.0 zoom 0.5 xpos 0.5
@@ -739,7 +739,7 @@ with Pause(0.20)
 show M melancholy:
     yalign 1.0
 
-m "Oe…"
+m "Ōe…"
 
 "They tapped them finger on a picture of a scroll right in the center of the flyer."
 
@@ -869,7 +869,7 @@ show O main:
 o "Now to find out that someone just gave it to the Americans as a bribe…or it was taken as theft…"
 
 # M is shocked
-# Oe is bitter/sad
+# Ōe is bitter/sad
 
 show M melancholy:
     subpixel True 
@@ -880,9 +880,9 @@ with Pause(0.20)
 show M melancholy:
     yalign 1.0
 
-m "Oe…"
+m "Ōe…"
 
-# Oe angry/upset
+# Ōe angry/upset
 
 show O solemn:
     subpixel True 
@@ -904,9 +904,9 @@ with Pause(0.20)
 show M melancholy:
     yalign 1.0
 
-m "Oh Oe…"
+m "Oh Ōe…"
 
-# Oe holding a dark handkerchief?
+# Ōe holding a dark handkerchief?
 
 "Tears of blood formed at the corner of their eyes and they blotted them with a dark handkerchief that would hide the stains."
 
@@ -920,7 +920,7 @@ show O solemn:
 
 "I took their cold hand and held it in both of mine."
 
-# Oe back to normal
+# Ōe back to normal
 
 
 "They didn't pull away. They still hadn't really moved at all since I came into the basement."
@@ -967,7 +967,7 @@ with Pause(0.20)
 show M melancholy:
     yalign 1.0
 
-m "Oe…it's not wrong to want something that belongs to you…something that means something to you."
+m "Ōe…it's not wrong to want something that belongs to you…something that means something to you."
 
 show M melancholy:
     subpixel True 
@@ -991,7 +991,7 @@ show M melancholy:
 
 m "Even if they hurt, they're your feelings."
 
-"Oe finally looked back up at me."
+"Ōe finally looked back up at me."
 
 show M melancholy:
     subpixel True 
@@ -1019,7 +1019,7 @@ show O main:
 
 "They suddenly lurched forward."
 
-# Oe angry
+# Ōe angry
 
 show O main:
     subpixel True 
@@ -1039,7 +1039,7 @@ show M main:
     xpos 0.34 yalign 1.0 zoom 0.45
 with dissolve 
 
-"I felt for Oe in that moment…everything taken from them so long ago and now, just out of their reach, something that they wanted more than anything else."
+"I felt for Ōe in that moment…everything taken from them so long ago and now, just out of their reach, something that they wanted more than anything else."
 
 show M main:
     subpixel True 
@@ -1050,7 +1050,7 @@ with Pause(0.20)
 show M main:
     yalign 1.0
 
-m "Let's walk home, Oe.  I think we may be able to help each other…"
+m "Let's walk home, Ōe.  I think we may be able to help each other…"
 
 show O main:
     subpixel True 
@@ -1061,7 +1061,7 @@ with Pause(0.30)
 show O main:
     xpos 0.5 matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) xzoom 1.0 yzoom 1.0 
 
-# Oe hopeful/warm
+# Ōe hopeful/warm
 
 show O smile:
     subpixel True 
@@ -1156,7 +1156,7 @@ m "I won't be a minute."
 
 "Too bad."
 
-"Finally I located the case that would contain Oe's scroll."
+"Finally I located the case that would contain Ōe's scroll."
 
 "I read the inscription:"
 
@@ -1166,7 +1166,7 @@ m "I won't be a minute."
 
 # back to normal
 
-"I hadn't thought of Oe as someone who might have actual knowledge that nobody else had, but they could have told the historians exactly who and when it was made…"
+"I hadn't thought of Ōe as someone who might have actual knowledge that nobody else had, but they could have told the historians exactly who and when it was made…"
 
 "It made me feel that they were, themselves, just as precious as any of the artifacts that would be displayed here."
 
@@ -1316,7 +1316,7 @@ m "Someone like you…"
 
 "The skylight was open to the sky - just a crack given its size, but a solid eight inches according to my pictures."
 
-"More than enough for Oe."
+"More than enough for Ōe."
 
 "The lights began to flicker, to dim."
 
@@ -1388,7 +1388,7 @@ m "You're so brave!!"
 
 "I scrambled across the floor. The rats went around me. I hope nobody notices…"
 
-"A hand emerged from the fog. Oe's grey, cold hand."
+"A hand emerged from the fog. Ōe's grey, cold hand."
 
 "Quick as a flash, I passed them the keys, then ran for the courtyard door."
 
@@ -1450,7 +1450,7 @@ m "It's horrible, horrible!!"
 
 "That was it. Burwell took to his heels."
 
-"The courtyard had twelve foot walls, but Oe had said it was their best escape route."
+"The courtyard had twelve foot walls, but Ōe had said it was their best escape route."
 
 "They emerged from the fog holding a scroll case, clutching it tight in their grey hands."
 
@@ -1462,7 +1462,7 @@ m "It's horrible, horrible!!"
 
 "They landed so light on their feet that I didn't even hear it."
 
-"Oe had escaped. The plan had worked."
+"Ōe had escaped. The plan had worked."
 
 "I let myself flow back into the rush of panicked attendees."
 
@@ -1514,12 +1514,12 @@ show M main:
 
 m "We did it! I got the front page!"
 
-# Oe, sad
+# Ōe, sad
 
 show O main:
     yalign 1.0 zoom 0.5 xpos 0.5
 
-"Oe was sitting at my little kitchen table, looking at the scroll with sad, longing eyes."
+"Ōe was sitting at my little kitchen table, looking at the scroll with sad, longing eyes."
 
 "Not their normal blank expression."
 
@@ -1534,7 +1534,7 @@ show M main:
 
 m "Is it…is it what you wanted?"
 
-# Oe happy
+# Ōe happy
 
 show O excited:
     subpixel True 

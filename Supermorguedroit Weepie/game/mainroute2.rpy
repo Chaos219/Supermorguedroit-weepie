@@ -1605,7 +1605,7 @@ show O main:
 
 "I have to really lean into it to get the basement fuse box open."
 "The metal door groans, rust flaking off under my hands."
-"I strike a match against the wall - Oe just stands there, holding the candle."
+"I strike a match against the wall - Ōe just stands there, holding the candle."
 "I get the wick lit, drip some wax onto a shelf, and jam the candle in place."
 "My sleeves go up past my elbows. No sense getting them dirtier than they already are."
 "Ōe’s stare is glued to my hands. I can feel it, pressing down on my skin."
