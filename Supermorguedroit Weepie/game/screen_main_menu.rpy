@@ -18,19 +18,23 @@ transform ts_main_menu():
 
 
 define CREDITS_LIST = [
-    Credit("Fairyfaybug", "Writer, BG Artist", ["https://fairyfaybug.itch.io/"]),
+    Credit("Fairyfaybug", "Project Lead, Writer, BG Artist", ["https://fairyfaybug.itch.io/"]),
     Credit("Dael Kurusu", "Music", ["https://regulardael.itch.io/", "https://www.youtube.com/@JimMegamiTensei"]),
-    Credit("Jason Corley", "Write", ["http://jdcorley.itch.io/"]),
+    Credit("Jason Corley", "Writer", ["http://jdcorley.itch.io/"]),
     Credit("Endy", "Writer", None),
     Credit("Inesu", "Programmer", ["https://inesu-11.itch.io/"]),
     Credit("Arvantus", "Programmer", ["https://codexpedia.sk"]),
     Credit("Chaos", "Programmer", None),
-    Credit("Rythen", "Programmer", ["https://rythen-winds.itch.io/"]),
     Credit("Otoke Neko", "UI Designer & Programmer", ["https://otokeneko.carrd.co/"]),
     Credit("Crowlee", "Artist", ["https://linktr.ee/crowlee"]),
     Credit("Graphi", "Artist", ["https://connil-de-la-mienuit.itch.io/", "https://vgen.co/graphi"]),
-    Credit("MaroonDrops", "Artist", None),
-    Credit("freesound_community", "Stock sfx", ["https://pixabay.com/users/freesound_community-46691455/?tab=music&order=latest&pagi=1"])
+    Credit("MaroonDrops", "Artist", ["https://maroondrops.itch.io/"]),
+    Credit("Betto Detto", "Artist", ["https://bettodetto.carrd.co/"]),
+    Credit("Rappa", "Artist", ["https://x.com/SirRappa"]),
+    Credit("freesound_community", "Stock sfx", ["https://pixabay.com/users/freesound_community-46691455/?tab=music&order=latest&pagi=1"]),
+    Credit("J S Mcduff", "Stock Videos", ["https://www.pexels.com/de-de/@j-s-mcduff-2149691498/"]),
+    Credit("dmochas", "Voice Bleeps", ["https://dmochas-assets.itch.io/dmochas-bleeps-pack"]),
+    Credit("Special Thanks", "Misc", ["https://www.pexels.com/de-de/foto/schwarz-und-weiss-schwarzweiss-festival-menge-19488965/", "https://gakaisozai.seesaa.net/upload/detail/01247252N000000000/129247982114516320641_BG43e.jpg.html", "https://uppbeat.io/c/airstream", "https://github.com/kyouryuukunn/renpy-ActionEditor3"])
 ]
 
 screen main_menu():
@@ -72,7 +76,7 @@ screen main_menu():
                 has vbox:
                     spacing 15
                     
-                grid 2 6:
+                grid 2 9:
                     xfill True
                     yspacing 25
 
