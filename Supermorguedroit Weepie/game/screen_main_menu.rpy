@@ -30,6 +30,7 @@ define CREDITS_LIST = [
     Credit("Crowlee", "Artist", ["https://linktr.ee/crowlee"]),
     Credit("Graphi", "Artist", ["https://connil-de-la-mienuit.itch.io/", "https://vgen.co/graphi"]),
     Credit("MaroonDrops", "Artist", None),
+    Credit("freesound_community", "Stock sfx", ["https://pixabay.com/users/freesound_community-46691455/?tab=music&order=latest&pagi=1"])
 ]
 
 screen main_menu():
