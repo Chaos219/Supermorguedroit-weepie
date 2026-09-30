@@ -3,423 +3,6 @@
 
 
 label oe:
-scene bg office
-with fade
-camera:
-    subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
-
-# MC is fuming/annoyed
-# If Marcia isn't a character drawing or sketch then a silhouette is fine
-
-show M annoyed:
-    subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.16
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M annoyed:
-    ypos 1.0 
-
-m "And then…! And then…! He said if I didn't get a real story soon, I'd be in the women's section!"
-
-hide M annoyed 
-
-mar "Gee, I mean, there's nothing wrong with the women's section, Dorothy…"
-
-"Marcia wrote the household tips column and answered letters from housewives about etiquette and recipes."
-
-"She had been sweet to me ever since I was hired - she was always sweet to everyone."
-
-"It drove me nuts that she didn't see how limiting it was compared to being a real reporter."
-
-show M annoyed:
-    subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.16
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M annoyed:
-    ypos 1.0 
-
-m "You're so friendly, I can't even yell at you about it."
-
-hide M annoyed
-
-"Marcia laughed. Her face took on a concerned look."
-
-mar "Okay, but you're all right? When you left work I thought you were going to blow your top."
-
-show M annoyed:
-    subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.16
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M annoyed:
-    ypos 1.0 
-
-m "Yes, I'm all right."
-
-hide M annoyed
-
-mar "Your face was so red…"
-
-show M annoyed:
-    subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.16
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M annoyed:
-    ypos 1.0 
-
-m "Yes, I'm fine now…"
-
-hide M annoyed
-
-mar "You were muttering something under your breath…"
-
-show M annoyed:
-    subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.16
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M annoyed:
-    ypos 1.0 
-
-m "I'm…"
-
-hide M annoyed
-
-mar "It was something about his eyeballs…"
-
-# M flustered and shouting
-show M annoyed:
-    subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.16
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M annoyed:
-    ypos 1.0 
-
-m "Marcia! I'm fine!"
-
-"Marcia's face slipped into a sly smile and she started giggling. She had successfully wound me up."
-
-show M main:
-    subpixel True 
-    yalign 1.0 zoom 0.45 xpos 0.12
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M main:
-    ypos 1.0 
-
-"I started laughing too."
-
-"Marcia touched my arm in a sisterly way."
-
-hide M main
-
-mar "I'm sorry you're having such a tough time…"
-
-show M main:
-    subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M main:
-    yalign 1.0
-
-# MC is smiling
-
-m "Thanks, Marcia."
-
-hide M main
-
-mar """Oh! You know what? One of my favorite bands is coming to town. You should come with me!
-
-It's The Rip-Chords, you've heard of them, right?"""
-
-"I was befuddled. Not because Marcia was asking me to go to a concert with her, but because she didn't strike me as the type to like a rock band like The Rip-Chords."
-
-show M main:
-    subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M main:
-    yalign 1.0
-
-m "The Rip-Chords are coming here?"
-
-hide M main
-
-mar "I know, isn't it ginchy! This little town never has anything happen and my favorite band is going to have a concert."
-
-show M melancholy:
-    xpos 0.16 zoom 0.35 yalign 1.0
-
-"I hadn't thought of Marcia as being a fan of rock music. She seemed more like the light jazz type."
-
-"Something involving a white guy with an accordion."
-
-# MC curious or thoughtful.
-
-show M melancholy:
-    subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M melancholy:
-    yalign 1.0
-
-m "Do you listen to a lot of rock records?"
-
-hide M melancholy 
-
-mar "All that I can get my hands on. The Mucky Mucks, Salt River Navy Band, The Herdsmen, Hub Kapp and the Wheels, …"
-
-"I teased her."
-
-show M main:
-    subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M main:
-    yalign 1.0
-
-# MC playful or happy
-
-m "Marcia, I thought you were a square! Just look at that sweater you're wearing…"
-
-hide M main
-
-mar "I am, I wouldn't dare go to a concert by myself…but I'll go with a friend! Please say you'll come…"
-
-show M main:
-    subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M main:
-    yalign 1.0
-
-# MC agreeable or happy
-
-m "Sure, okay. How can I say no?"
-
-"Marcia was the most normal friend I'd made since moving here."
-
-"And I truly couldn't wait to see the Rip-chords!"
-
-scene black
-with fade
-
-# black screen or background transition of some kind here
-
-"The days flew by until the day of the concert."
-
-# Scene OE.02  - Marcia can't come!
-scene bg office 
-with fade
-# fx - newsroom ambience or theme
-
-"I was handing in my story about the road widening project to the boss."
-
-# boss - impassive, bored, neutral
-# MC - thoughtful
-
-b "Great. I guess we need the filler on page four. You know this won't…"
-
-show M melancholy:
-    subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M melancholy:
-    yalign 1.0
-
-m "I know, I know. I'm working on something. Say, is Marcia around?"
-
-# Not sure if we named the boss or not, just say "the boss" if we didn't
-
-"I knew Mr.Hollis always kept an eye out for Marcia just because of her legs."
-
-"She actually worked hard on her little part of the paper but all he cared about was how tight her skirts were."
-
-hide M melancholy
-
-b "She called in sick today. Some kind of flu."
-
-"He sounded less concerned than disappointed that he didn't get to leer at her."
-
-b "Say, could you do her household hints column? Something about keeping the china closet dusted or whatever?"
-
-# exit boss
-
-show M smile:
-    subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M smile:
-    yalign 1.0
-
-"I was already on my way out of his office, so I was able to pretend I didn't hear him."
-
-"Back at my desk I thought for a second, then grabbed the phone."
-
-# MC is determined or concerned
-# image of rotary phone
-
-"Maybe she was actually sick, or maybe…"
-
-hide M smile
-
-mar "H…hello?"
-
-show M main:
-    subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M main:
-    yalign 1.0
-
-m "Marcia…it's Dorothy.  I heard you were sick…"
-
-"Or was she just playing hooky from work.."
-
-show M main:
-    subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M main:
-    yalign 1.0
-
-m "There's nobody at my desk to hear…are you sick?"
-
-hide M main
-
-mar """Oh…gosh yes Dorothy...I'm fit to be tied… Or…
-
-I guess I would be fit to be tied if I was feeling fit for anything."""
-
-show M annoyed:
-    subpixel True 
-    xpos 0.16 xzoom 1.0 yzoom 1.0 zoom 0.35 yalign 1.0
-    linear 0.10 xpos 0.17 xzoom 0.93 yzoom 1.11 
-    linear 0.10 xpos 0.16 xzoom 1.0 yzoom 1.0 
-with Pause(0.30)
-show M annoyed:
-    xpos 0.16 xzoom 1.0 yzoom 1.0 
-
-# MC looks concerned/sad
-
-mar """I have the flu and it's just awful!
-
-On the day the Rip-Chords are here…"""
-
-show M smile:
-    subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M smile:
-    yalign 1.0
-
-m "It's okay, you just rest up. Do you have everything you need? Do you need me to bring some soup over or…"
-
-hide M smile
-
-"She answered much too quickly."
-
-mar "No no! Don't bring me any food. I've got plenty of groceries.."
-
-# Not sure if we have a  "thought balloon" font like italics or something? Rewrite the next line if we don't use that into more of a narration joke.
-
-"Apparently even free food isn't welcome if it's from the Weepie…"
-
-mar "it just burns me up that I won't get to go to the concert…"
-
-show M main:
-    subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M main:
-    yalign 1.0
-
-m "We'll go another time…"
-
-hide M main
-
-mar "What?! No, you have to go. Don't let my flu stop you…"
-
-show M main:
-    subpixel True 
-    xpos 0.12 zoom 0.45 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M main:
-    yalign 1.0
-
-m "Marcia…"
-
-hide M main
-
-mar "The tickets are in my desk drawer, grab them and go have a good time."
-
-# MC is uncertain, questioning
-
-show M melancholy:
-    subpixel True 
-    xpos 0.16 zoom 0.35 yalign 1.0
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M melancholy:
-    yalign 1.0
-
-m "I don't know…"
-
-hide M melancholy 
-
-mar "I insist. Don't make me argue with you, I…ohh…I have to go…right now!…sorry!"
-
-# fade phone
-
-"She hung up."
-
-"I thought about it for a moment, then went and got the tickets from her desk."
-
-# picture of the tickets
-
-# Cut to black or other transition
-
-
-"Maybe I would ask LeeRoy. It seemed like his kind of concert."
-scene black
-with fade
-
-# transition/black bg
 
 # Scene OE.05 The library
 scene bg diner 
@@ -498,7 +81,7 @@ with Pause(0.20)
 show L shrug:
     pos (0.4, 1.0)  
 
-l "Yesterday evening. they went out right after sundown."
+l "Yesterday evening. They went out right after sundown."
 
 "I suddenly remembered one of Marcia's community calendar entries."
 
@@ -525,7 +108,7 @@ show L shrug:
 with Pause(0.20)
 show L shrug:
     pos (0.4, 1.0) 
-l "Thanks. Books make me fall asleep just thinking about them. Honk shoo!"
+l "Thanks. I'm not as much of a book guy."
 
 "I rolled my eyes at him and headed out."
 
@@ -689,9 +272,9 @@ show M main:
 
 # Not sure if we want to do a leaflet font, box, or other delineation here.
 
-"leaf The Art of the American Expedition!"
+"Leaf The Art of the American Expedition!"
 
-"An exhibition at the Sullivan Gallery"
+"An exhibition at the Sullivan Gallery."
 
 "A hundred years ago, American ships visited Japan for the first time."
 
@@ -741,7 +324,7 @@ show M melancholy:
 
 m "Ōe…"
 
-"They tapped them finger on a picture of a scroll right in the center of the flyer."
+"They tapped their finger on a picture of a scroll right in the center of the flyer."
 
 "The painting showed a brown horizon of mountains and a field of flowers scattered with broken swords. The inscription underneath said:"
 
@@ -1162,7 +745,8 @@ m "I won't be a minute."
 
 # inscription text maybe
 
-"The siege of Shirakawa-den took place in July 1156 during the Heian Rebellion. The exact date of the painting is unknown, but fits the style of the time. The artist is also unknown, but thought to be a member of a provincial household."
+"The siege of Shirakawa-den took place in July 1156 during the Heian Rebellion. The exact date of the painting is unknown, but fits the style of the time." 
+"The artist is also unknown, but thought to be a member of a provincial household."
 
 # back to normal
 
@@ -1337,8 +921,6 @@ show M main:
 
 "The guard I was standing next to was agog as the swarm of bats began to descend on the guests, but he did step forward to help."
 
-"Nothing doing."
-
 # MC exaggeratedly upset
 
 show M annoyed:
@@ -1435,7 +1017,7 @@ with hpunch
 
 "Within the swirling fog and bats and rats I heard the clunk of the case opening."
 
-"I didn't dare look, I just continued screaming bloody muirder."
+"I didn't dare look, I just continued screaming."
 
 show M annoyed:
     subpixel True 
@@ -1629,4 +1211,5 @@ show O smile:
 o "The kindness was all yours."
 
 "Their fingers gently wrapped the scroll and slid it back into the case." 
+"THE END. THANK YOU FOR PLAYING!"
 
