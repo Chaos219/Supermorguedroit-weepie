@@ -72,7 +72,7 @@ screen main_menu():
                 has vbox:
                     spacing 15
                     
-                grid 2 6:
+                grid 2 7:
                     xfill True
                     yspacing 25
 
@@ -108,6 +108,7 @@ screen main_menu():
                 ypos 700
                 style_prefix "mmbtn"
                 
+                activate_sound audio.ui_change_tab
                 
                 text _("FLIP\nBACK")
 
@@ -124,9 +125,15 @@ screen main_menu():
 
 
                 textbutton ("Start Game . . . . . . . . . . .1.50") action Start()  #xpos 1000 ypos 400 action Start()
-                textbutton ("Load Game . . . . . . . . . . . 1.50") action ShowMenu("load")#xpos 1000 ypos 450 action Jump("load")
-                textbutton ("Settings . . . . . . . . . . . .1.50") action ShowMenu("preferences")#xpos 1000 ypos 500 action Jump("preferences")
-                textbutton ("Credits . . . . . . . . . . . . 1.50") action SetScreenVariable("credits_page", True)#xpos 1000 ypos 550 action Jump("help")
+                textbutton ("Load Game . . . . . . . . . . . 1.50"):
+                    activate_sound audio.ui_open_notepad
+                    action ShowMenu("load")#xpos 1000 ypos 450 action Jump("load")
+                textbutton ("Settings . . . . . . . . . . . .1.50"):
+                    activate_sound audio.ui_open_notepad
+                    action ShowMenu("preferences")#xpos 1000 ypos 500 action Jump("preferences")
+                textbutton ("Credits . . . . . . . . . . . . 1.50"):
+                    activate_sound audio.ui_change_tab
+                    action SetScreenVariable("credits_page", True)#xpos 1000 ypos 550 action Jump("help")
                 textbutton ("Quit . . . . . . . . . . . . . .1.50") action Quit()#xpos 1000 ypos 600 action Quit(confirm=not main_menu)
 
             button:
@@ -134,6 +141,7 @@ screen main_menu():
                 ypos 700
                 style_prefix "mmbtn"
                 # TODO: Remember to update with link
+                # game-url/rate?source=game
                 
                 text _("RATE OUR GAME")
 

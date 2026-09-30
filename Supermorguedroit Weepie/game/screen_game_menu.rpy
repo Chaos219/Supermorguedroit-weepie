@@ -22,7 +22,7 @@ screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
     fixed:
         xysize (782, 965)
         align (0.5, 0.5) xoffset 70
-        at ts_main_menu()
+        # at ts_main_menu()
 
         # Back
         add "gui/overlay/notepad_background.png"
@@ -37,6 +37,7 @@ screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
             style_prefix "gmnav"
 
             button:
+                activate_sound audio.ui_change_tab
                 at ts_gmnavbtn()
                 if renpy.get_screen("save"):
                     foreground Transform("gui/overlay/load_[prefix_]icon.png", yalign=0.5, xpos=50)
@@ -55,6 +56,7 @@ screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
                     action ShowMenu("save")
 
             button:
+                activate_sound audio.ui_change_tab
                 at ts_gmnavbtn()
                 foreground Transform("gui/overlay/settings_[prefix_]icon.png", yalign=0.5, xpos=50)
                 selected_foreground Transform("gui/overlay/settings_selected_icon.png", yalign=0.5, xpos=50)
@@ -62,6 +64,7 @@ screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
                 action ShowMenu("preferences")
 
             button:
+                activate_sound audio.ui_change_tab
                 at ts_gmnavbtn()
                 foreground Transform("gui/overlay/controls_[prefix_]icon.png", yalign=0.5, xpos=50)
                 selected_foreground Transform("gui/overlay/controls_selected_icon.png", yalign=0.5, xpos=50)
@@ -85,6 +88,7 @@ screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
         imagebutton auto "gui/button/return2_%s_background.png":
             xalign 1.0 xoffset -25
             ypos 120
+            activate_sound audio.ui_close_notepad
             action Return()
 
         ## HOME ##
@@ -92,9 +96,11 @@ screen game_menu(title=None, scroll=None,yinitial=0.0, spacing=0):
             imagebutton auto "gui/button/home_%s_background.png":
                 xalign 1.0 xoffset -25
                 ypos 215
+                activate_sound audio.ui_close_notepad
                 action MainMenu()
     if main_menu:
-        key "game_menu" action ShowMenu("main_menu")
+        key "game_menu":
+            action ShowMenu("main_menu"), Play("sound", audio.ui_close_notepad)
     
 
 style gmnav_button:

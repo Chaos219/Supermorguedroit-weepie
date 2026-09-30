@@ -3,6 +3,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+define audio.ui_open_notepad = "audio/ui/open_notepad.ogg"
+define audio.ui_close_notepad = "audio/ui/close_notepad.ogg"
+define audio.ui_change_tab = "audio/ui/change_tab.ogg"
 
 # The game starts here.
 
