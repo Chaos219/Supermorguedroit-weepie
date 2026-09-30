@@ -149,7 +149,7 @@ screen main_menu():
                 
                 text _("RATE OUR GAME")
 
-                action NullAction()
+                action Confirm("Open itch.io page?", OpenURL("https://fairyfaybug.itch.io/the-supermorguedroit-weepie/rate?source=game"), Hide())
 
         text "VERSION [config.version]":
             style "main_menu_version"
