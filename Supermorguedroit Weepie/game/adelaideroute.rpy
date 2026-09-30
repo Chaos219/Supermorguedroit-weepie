@@ -30,6 +30,8 @@
 label adelaide:
 
 #int. Diner - Afternoon
+camera:
+    reset 
 scene bg diner with fade 
 camera:
     subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.0)*HueMatrix(0.0) 
@@ -356,15 +358,6 @@ stop music
 
 play sound "door_slamming.ogg"
 
-camera:
-    subpixel True 
-    parallel:
-        xpos 0 
-        linear 0.30 xpos 476 
-        linear 0.50 xpos 8 
-    parallel:
-        ypos 0 zoom 1.0 
-        linear 0.30 ypos 168 zoom 1.25 
 show M annoyed:
     subpixel True 
     matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 180.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
@@ -379,8 +372,6 @@ show M annoyed:
         linear 0.10 ypos 0.9 
         linear 0.10 ypos 1.0 
 with Pause(0.90)
-camera:
-    pos (8, 168) zoom 1.25 
 show M annoyed:
     pos (0.08, 1.0) 
 with easeinright
@@ -389,11 +380,9 @@ with easeinright
 
 play music "retro.ogg"
 
-
 camera:
-    subpixel True 
-    xpos 8 
-    linear 0.30 xpos 476 
+    reset
+
 show M annoyed:
     subpixel True matrixtransform ScaleMatrix(1.0, 1.0, 1.0)*OffsetMatrix(0.0, 0.0, 0.0)*RotateMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0)*OffsetMatrix(0.0, 0.0, 0.0) 
     xpos -0.2 
@@ -403,8 +392,7 @@ show A evil:
     xpos 1260 yalign 1.0 zoom 0.4
     linear 0.30 xpos 1260 
 with Pause(0.40)
-camera:
-    xpos 476 
+
 show M annoyed:
     xpos 0.25 
 show A evil:
@@ -1077,7 +1065,8 @@ show M angry:
 m "I’m gonna DO SOMETHING TO HIM!"
 
 with hpunch
-show M disgusted
+show M disgusted:
+    xpos 0.16 zoom 0.45 yalign 1.0
 with dissolve 
 
 "I stick even more pins in Chet's picture on my pinboard, a habit whenever I feel angry at him."
@@ -1140,7 +1129,7 @@ with easeinright
 
 show M disgusted:
     subpixel True 
-    yalign 1.0 zoom 0.35 xpos 0.24
+    yalign 1.0 zoom 0.45 xpos 0.24
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
@@ -1385,6 +1374,8 @@ camera:
 
 "After a few solid minutes I finally stood back up, out of breath."
 
+scene bg office with fade
+
 show M annoyed:
     subpixel True 
     yalign 1.0 zoom 0.35 xpos 0.16
@@ -1429,7 +1420,7 @@ camera:
     subpixel True pos (0, 0) zoom 1.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.15)*HueMatrix(0.0) 
 
 show L confused:
-    yalign 1.0 zoom 0.45 xpos 0.6
+    yalign 1.0 zoom 0.45 xpos 0.48
 
 l "Yo, Where were you? What happened?"
 

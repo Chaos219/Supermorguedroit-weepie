@@ -209,5 +209,3 @@ init python:
 # define build.itch_project = "renpytom/test-project"
 
 default preferences.volume.music = 0.6
-default preferences.volume.sfx = 0.7
-default preferences.volume.voice = 0.7

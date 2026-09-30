@@ -1667,9 +1667,9 @@ show O main:
     ypos 1.0 xpos 0.5 zoom 0.5
 
 o "Yes."
-"I grab the heavy metal lever and throw the main."
+"I grab the heavy metal lever and throw the main power back on."
 "Somewhere deep in the back of the kitchen, a massive compressor violently coughs awake, and the overhead bulbs in the hall flicker to life, buzzing with a yellowish glow."
-"Ōe blinks at the glare, but it’s a second too late-like he forgot how. It makes my skin crawl."
+"Ōe blinks at the glare, but it’s a second too late - like they forgot how. It makes my skin crawl."
 
 show M annoyed:
     subpixel True 
@@ -1739,6 +1739,8 @@ with Pause(0.20)
 show M annoyed:
     ypos 1.0 xpos 0.16 zoom 0.35
 
+m "And Adelaide?"
+
 show O solemn:
     subpixel True 
     ypos 1.0 xpos 0.44 zoom 0.53
@@ -1785,7 +1787,7 @@ menu:
             ypos 1.0 xpos 0.16 zoom 0.35
 
         m "Shouldn’t concern myself with what?"
-        "Ōe don’t answer."
+        "Ōe doesn’t answer."
 
         show O smile:
             xpos 0.44
@@ -1793,14 +1795,41 @@ menu:
             zoom 0.53
         with dissolve 
 
-        "They just keep smiling at me-a thin, polite, utterly dead smile."
+        "They just keep smiling at me - a thin, polite, utterly dead smile."
+        
+        camera:
+            subpixel True 
+            xpos 0 zoom 1.0 
+            linear 0.36 xpos 486 zoom 1.28 
+        with Pause(0.46)
+        camera:
+            xpos 486 zoom 1.28 
+
         "I wait for them to elaborate, but they don’t blink, don’t shift their weight."
+         
+        camera:
+            subpixel True 
+            pos (486, 0) zoom 1.28 
+            linear 0.42 pos (918, 54) zoom 1.61 
+        with Pause(0.52)
+        camera:
+            pos (918, 54) zoom 1.61 
+
         "Are they even breathing?"
+        
+        camera:
+            subpixel True 
+            pos (918, 54) zoom 1.61 
+            linear 0.42 pos (0, 0) zoom 1.0 
+        with Pause(0.52)
+        camera:
+            pos (0, 0) zoom 1.0 
+        
         "After a full, agonising minute of that stare, my nerves finally fray. I give up."
     "Let it go.":
-        "I snap my mouth shut and let the silence hang, deciding to match his rigid energy."
+        "I snap my mouth shut and let the silence hang, deciding to match their rigid energy."
         "We stand there in the buzzing hallway, locked in an excruciating standoff."
-        "Finally, Ōe tilts his head a fraction of an inch."
+        "Finally, Ōe tilts their head a fraction of an inch."
 
         show O main:
             subpixel True 
@@ -1896,52 +1925,44 @@ show M main:
 
 "I slide into my usual booth."
 "True to Ōe’s word, a heavy porcelain plate with a cheeseburger and a thick mug of black coffee is already waiting on the Formica tabletop."
+show M disgusted with hpunch
 "I stare at the plate. Something about it is just wrong. Deeply, fundamentally wrong."
 "The bun is cold. Texture feels a little clammy when I poke it."
 "The patty is a sickly, uniform grey."
 "Not browned, not seared, just wet and pale, like it was boiled by mistake."
 "There’s a single limp leaf of iceberg lettuce sitting right in the middle. A tragic little hat."
 
-show L shrug:
-    xpos 0.45
+show L main:
+    xpos 0.26
     yalign 1.0
     zoom 0.5
 
 "LeeRoy is on the other side of the counter, hands behind his back, rocking on his heels."
 "He looks like he might vibrate right out of his shoes."
 
-show L shrug:
+show L main:
     subpixel True 
-    ypos 1.0 xpos 0.45 zoom 0.5
+    ypos 1.0 xpos 0.26 zoom 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
-show L shrug:
-    ypos 1.0 xpos 0.45 zoom 0.5
+show L main:
+    ypos 1.0 xpos 0.26 zoom 0.5
 
 l "Well? What do you think? On the house, just like promised."
 "I pick up the burger. The bottom bun is damp. I take a bite. Chew."
 
-show M annoyed:
-    xpos 0.08
-    yalign 1.0
-    zoom 0.35
+show M disgusted
 with dissolve 
 
 "It’s like biting into a wet kitchen sponge."
 with hpunch
 "My face twists through a whole routine before landing on a scowl. I spit it out on the plate. Are they trying to poison me?!"
+hide L main
+show M annoyed:
+    subpixel True pos (0.03, 1.24) zoom 0.55 
 
-show L shrug:
-    subpixel True xpos 0.45 
-show M annoyed:
-    subpixel True xpos 0.08 
-    ypos 1.0 
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M annoyed:
-    pos (0.08, 1.0) 
+
 
 m "LeeRoy. Who made this?"
 
@@ -1949,47 +1970,49 @@ show L main:
     xpos 0.3
     yalign 1.0
     zoom 0.5
+show L main:
+    subpixel True pos (0.13, 1.3) zoom 0.75 
+
     
-"(Beaming proudly)"
+"He beamed proudly."
 
 show L main:
-    subpixel True xpos 0.3 
-    ypos 1.0 zoom 0.5
+    subpixel True xpos 0.13
+    ypos 1.3 zoom 0.75
     linear 0.05 ypos 0.96 
-    linear 0.05 ypos 1.0 
+    linear 0.05 ypos 1.3
 with Pause(0.20)
 show L main:
-    pos (0.3, 1.0) 
+    pos (0.13, 1.3) 
 
 l "I did!"
 
+
 show M annoyed:
-    subpixel True xpos 0.08 
-    ypos 1.0 
-    linear 0.05 ypos 0.98 
-    linear 0.05 ypos 1.0 
-with Pause(0.20)
-show M annoyed:
-    pos (0.08, 1.0) 
+    subpixel True zoom 0.41 ypos 1.0
+show L main:
+    subpixel True pos (0.21, 1.09) zpos 0.0 zoom 0.61 
+with dissolve
+
 
 m "What in God's name have you done to it?"
 
 show L confused:
-    xpos 0.45
+    xpos 0.26
     yalign 1.0
     zoom 0.5
 with dissolve 
 
-"(His smile faltering slightly)"
+"His smile falters slightly."
 
 show L confused:
     subpixel True 
-    ypos 1.0 xpos 0.45 zoom 0.5
+    ypos 1.0 xpos 0.26 zoom 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L confused:
-    ypos 1.0 xpos 0.45 zoom 0.5
+    ypos 1.0 xpos 0.26 zoom 0.5
 
 l "Just the usual. I cooked the meat until it was done."
 
@@ -2007,12 +2030,12 @@ m "And how exactly do you know when ground beef is done, LeeRoy?"
 
 show L confused:
     subpixel True 
-    ypos 1.0 xpos 0.45 zoom 0.5
+    ypos 1.0 xpos 0.26 zoom 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L confused:
-    ypos 1.0 xpos 0.45 zoom 0.5
+    ypos 1.0 xpos 0.26 zoom 0.5
 
 l "…Well. I. Uh. When it stops being red?"
 "I drop the rest of the burger onto the plate. It lands with a wet, sad thud."
@@ -2027,13 +2050,13 @@ show M annoyed:
     linear 0.60 xpos 0.16 
 show L confused:
     subpixel True 
-    xpos 0.45 
-    linear 0.60 xpos 0.55 
+    xpos 0.26
+    linear 0.60 xpos 0.36
 with Pause(0.70)
 show M annoyed:
     xpos 0.16 
 show L confused:
-    xpos 0.55 
+    xpos 0.36
 with Pause(0.60)
 camera:
     zoom 1.0 
@@ -2053,12 +2076,12 @@ m "Right. That's it. This is a culinary felony."
 
 show L confused:
     subpixel True 
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L confused:
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
 
 l "Where are you going?"
 
@@ -2075,12 +2098,12 @@ m "Behind the counter."
 
 show L confused:
     subpixel True 
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L confused:
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
 
 l "Wait, Miss Kessler, you can't go behind the-"
 
@@ -2110,7 +2133,7 @@ show M annoyed:
 "I yank open the under-counter icebox, pop the lids off stainless steel prep pans, and make noises of genuine, unfiltered disgust."
 
 show L confused:
-    xpos 0.55
+    xpos 0.36
     yalign 1.0
     zoom 0.5
 
@@ -2153,25 +2176,25 @@ m "Why is the ketchup warm? Why is it sitting next to the radiator? And what-"
 "I grab the glass percolator off the back burner and give it a cautious sniff."
 "Instantly, I regret it. It smells like burnt tyres."
 
-show M annoyed:
+show M disgusted:
     subpixel True 
-    ypos 1.0 xpos 0.16 zoom 0.35
+    ypos 1.0 xpos 0.16 zoom 0.45
     linear 0.05 ypos 0.98
     linear 0.05 ypos 1.0
 with Pause(0.20)
-show M annoyed:
-    ypos 1.0 xpos 0.16 zoom 0.35
+show M disgusted:
+    ypos 1.0 xpos 0.16 zoom 0.45
 
-m "-is this Monday's coffee?"
+m "- is this Monday's coffee?"
 
 show L confused:
     subpixel True yalign 1.0
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
     linear 0.05 ypos 0.98 
     linear 0.05 ypos 1.0 
 with Pause(0.20)
 show L confused:
-    ypos 1.0 xpos 0.55 zoom 0.5
+    ypos 1.0 xpos 0.36 zoom 0.5
 
 l "We keep it on a low simmer. Just in case somebody comes in."
 
@@ -2209,7 +2232,7 @@ show A main:
 
 hide A main
 show L sigh:
-    xpos 0.55
+    xpos 0.36
     yalign 1.0
     zoom 0.5
 
@@ -2242,7 +2265,7 @@ show O main:
 
 hide O main
 show L main:
-    xpos 0.45
+    xpos 0.26
     yalign 1.0
     zoom 0.5
 
